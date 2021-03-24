@@ -15,7 +15,7 @@
 import { Injectable, Injector } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { TranslateService } from '@ngx-translate/core';
-import { CoreAppProvider, CoreAppSchema } from './app';
+import { CoreAppProvider, CoreAppSchema, CoreStoreConfig } from './app';
 import { CoreEventsProvider } from './events';
 import { CoreLoggerProvider } from './logger';
 import { CoreSitesFactoryProvider } from './sites-factory';
@@ -30,6 +30,7 @@ import { CoreSite, CoreSiteWSPreSets } from '@classes/site';
 import { SQLiteDB, SQLiteDBTableSchema } from '@classes/sqlitedb';
 import { Md5 } from 'ts-md5/dist/md5';
 import { WP_PROVIDER } from '@app/app.module';
+import { makeSingleton } from '@singletons/core.singletons';
 
 /**
  * Response of checking if a site exists and its configuration.
@@ -165,6 +166,41 @@ export interface CoreSiteSchema {
 }
 
 /**
+ * Data about sites to be listed.
+ */
+export interface  CoreLoginSiteInfo {
+    /**
+     * Site name.
+     */
+    name: string;
+
+    /**
+     * Site alias.
+     */
+    alias?: string;
+
+    /**
+     * URL of the site.
+     */
+    url: string;
+
+    /**
+     * Image URL of the site.
+     */
+    imageurl?: string;
+
+    /**
+     * City of the site.
+     */
+    city?: string;
+
+    /**
+     * Countrycode of the site.
+     */
+    countrycode?: string;
+}
+
+/**
  * Registered site schema.
  */
 export interface CoreRegisteredSiteSchema extends CoreSiteSchema {
@@ -174,11 +210,23 @@ export interface CoreRegisteredSiteSchema extends CoreSiteSchema {
     siteId?: string;
 }
 
+/**
+ * Possible reading strategies (for cache).
+ */
 export const enum CoreSitesReadingStrategy {
     OnlyCache,
     PreferCache,
+    OnlyNetwork,
     PreferNetwork,
 }
+
+/**
+ * Common options used when calling a WS through CoreSite.
+ */
+export type CoreSitesCommonWSOptions = {
+    readingStrategy?: CoreSitesReadingStrategy; // Reading strategy.
+    siteId?: string; // Site ID. If not defined, current site.
+};
 
 /*
  * Service to manage and interact with sites.
@@ -324,7 +372,7 @@ export class CoreSitesProvider {
     // Site schema for this provider.
     protected siteSchema: CoreSiteSchema = {
         name: 'CoreSitesProvider',
-        version: 1,
+        version: 2,
         canBeCleared: [ CoreSite.WS_CACHE_TABLE ],
         tables: [
             {
@@ -346,6 +394,14 @@ export class CoreSitesProvider {
                     {
                         name: 'expirationTime',
                         type: 'INTEGER'
+                    },
+                    {
+                        name: 'component',
+                        type: 'TEXT'
+                    },
+                    {
+                        name: 'componentId',
+                        type: 'INTEGER'
                     }
                 ]
             },
@@ -363,13 +419,44 @@ export class CoreSitesProvider {
                     }
                 ]
             }
-        ]
+        ],
+        async migrate (db: SQLiteDB, oldVersion: number, siteId: string): Promise<any> {
+            if (oldVersion && oldVersion < 2) {
+                const newTable = CoreSite.WS_CACHE_TABLE;
+                const oldTable = 'wscache';
+
+                try {
+                    await db.tableExists(oldTable);
+                } catch (error) {
+                    // Old table does not exist, ignore.
+                    return;
+                }
+                // Cannot use insertRecordsFrom because there are extra fields, so manually code INSERT INTO.
+                await db.execute(
+                    'INSERT INTO ' + newTable + ' ' +
+                    'SELECT id, data, key, expirationTime, NULL as component, NULL as componentId ' +
+                    'FROM ' + oldTable);
+
+                try {
+                    await db.dropTable(oldTable);
+                } catch (error) {
+                    // Error deleting old table, ignore.
+                }
+            }
+        }
     };
 
-    constructor(logger: CoreLoggerProvider, private http: HttpClient, private sitesFactory: CoreSitesFactoryProvider,
-            private appProvider: CoreAppProvider, private translate: TranslateService, private urlUtils: CoreUrlUtilsProvider,
-            private eventsProvider: CoreEventsProvider,  private textUtils: CoreTextUtilsProvider,
-            private utils: CoreUtilsProvider, private injector: Injector, private wsProvider: CoreWSProvider,
+    constructor(logger: CoreLoggerProvider,
+            protected http: HttpClient,
+            protected sitesFactory: CoreSitesFactoryProvider,
+            protected appProvider: CoreAppProvider,
+            protected translate: TranslateService,
+            protected urlUtils: CoreUrlUtilsProvider,
+            protected eventsProvider: CoreEventsProvider,
+            protected textUtils: CoreTextUtilsProvider,
+            protected utils: CoreUtilsProvider,
+            protected injector: Injector,
+            protected wsProvider: CoreWSProvider,
             protected domUtils: CoreDomUtilsProvider) {
         this.logger = logger.getInstance('CoreSitesProvider');
 
@@ -388,6 +475,8 @@ export class CoreSitesProvider {
      */
     getDemoSiteData(name: string): any {
         const demoSites = CoreConfigConstants.demo_sites;
+        name = name.toLowerCase();
+
         if (typeof demoSites != 'undefined' && typeof demoSites[name] != 'undefined') {
             return demoSites[name];
         }
@@ -430,7 +519,7 @@ export class CoreSitesProvider {
                     } else if (this.textUtils.getErrorMessageFromError(secondError)) {
                         return Promise.reject(secondError);
                     } else {
-                        return this.translate.instant('core.cannotconnect', {$a: CoreSite.MINIMUM_MOODLE_VERSION});
+                        return this.translate.instant('core.cannotconnecttrouble');
                     }
                 });
             });
@@ -522,8 +611,7 @@ export class CoreSitesProvider {
                                         error.error = this.translate.instant('core.login.sitehasredirect');
                                     } else {
                                         // We can't be sure if there is a redirect or not. Display cannot connect error.
-                                        error.error = this.translate.instant('core.cannotconnect',
-                                            {$a: CoreSite.MINIMUM_MOODLE_VERSION});
+                                        error.error = this.translate.instant('core.cannotconnecttrouble');
                                     }
 
                                     return Promise.reject(error);
@@ -565,11 +653,17 @@ export class CoreSitesProvider {
      * @return A promise to be resolved if the site exists.
      */
     siteExists(siteUrl: string): Promise<void> {
-        return this.http.post(siteUrl + '/login/token.php', {}).timeout(this.wsProvider.getRequestTimeout()).toPromise()
+        return this.http.post(siteUrl + '/login/token.php', { appsitecheck: 1 }).
+                timeout(this.wsProvider.getRequestTimeout()).toPromise()
                 .catch(() => {
             // Default error messages are kinda bad, return our own message.
-            return Promise.reject({error: this.translate.instant('core.cannotconnect', {$a: CoreSite.MINIMUM_MOODLE_VERSION})});
+            return Promise.reject({error: this.translate.instant('core.cannotconnecttrouble')});
         }).then((data: any) => {
+
+            if (data === null) {
+                // Cannot connect.
+                return Promise.reject({error: this.translate.instant('core.cannotconnect', {$a: CoreSite.MINIMUM_MOODLE_VERSION})});
+            }
 
             if (data.errorcode && (data.errorcode == 'enablewsdescription' || data.errorcode == 'requirecorrectaccess')) {
                 return Promise.reject({ errorcode: data.errorcode, error: data.error });
@@ -610,7 +704,7 @@ export class CoreSitesProvider {
 
         return promise.then((data: any): any => {
             if (typeof data == 'undefined') {
-                return Promise.reject(this.translate.instant('core.cannotconnect', {$a: CoreSite.MINIMUM_MOODLE_VERSION}));
+                return Promise.reject(this.translate.instant('core.cannotconnecttrouble'));
             } else {
                 if (typeof data.token != 'undefined') {
                     return { token: data.token, siteUrl: siteUrl, privateToken: data.privatetoken };
@@ -642,7 +736,7 @@ export class CoreSitesProvider {
                 }
             }
         }, () => {
-            return Promise.reject(this.translate.instant('core.cannotconnect', {$a: CoreSite.MINIMUM_MOODLE_VERSION}));
+            return Promise.reject(this.translate.instant('core.cannotconnecttrouble'));
         });
     }
 
@@ -682,6 +776,7 @@ export class CoreSitesProvider {
                         candidateSite.setPrivateToken(privateToken);
                         candidateSite.setInfo(info);
                         candidateSite.setOAuthId(oauthId);
+                        candidateSite.setLoggedOut(false);
 
                     } else {
                         // New site, set site ID and info.
@@ -887,7 +982,7 @@ export class CoreSitesProvider {
      * @return Release number or empty.
      */
     getReleaseNumber(rawRelease: string): string {
-        const matches = rawRelease.match(/^\d(\.\d(\.\d+)?)?/);
+        const matches = rawRelease.match(/^\d+(\.\d+(\.\d+)?)?/);
         if (matches) {
             return matches[0];
         }
@@ -942,33 +1037,36 @@ export class CoreSitesProvider {
     }
 
     /**
+     * Check the app for a site and show a download dialogs if necessary.
+     *
+     * @param config Config object of the site.
+     */
+    async checkApplication(config: any): Promise<void> {
+        await this.checkRequiredMinimumVersion(config);
+    }
+
+    /**
      * Check the required minimum version of the app for a site and shows a download dialog.
      *
-     * @param  config Config object of the site.
-     * @param siteId ID of the site to check. Current site id will be used otherwise.
+     * @param config Config object of the site.
      * @return Resolved with  if meets the requirements, rejected otherwise.
      */
-    checkRequiredMinimumVersion(config: any, siteId?: string): Promise<void> {
+    protected checkRequiredMinimumVersion(config: any): Promise<void> {
         if (config && config.tool_mobile_minimumversion) {
             const requiredVersion = this.convertVersionName(config.tool_mobile_minimumversion),
                 appVersion = this.convertVersionName(CoreConfigConstants.versionname);
 
             if (requiredVersion > appVersion) {
-                let downloadUrl = '';
+                const storesConfig: CoreStoreConfig = {
+                    android: config.tool_mobile_androidappid || false,
+                    ios: config.tool_mobile_iosappid || false,
+                    desktop: config.tool_mobile_setuplink || 'https://download.moodle.org/desktop/',
+                    mobile: config.tool_mobile_setuplink || 'https://download.moodle.org/mobile/',
+                    default: config.tool_mobile_setuplink,
+                };
 
-                if (this.appProvider.isAndroid() && config.tool_mobile_androidappid) {
-                    downloadUrl = 'market://details?id=' + config.tool_mobile_androidappid;
-                } else if (this.appProvider.isIOS() && config.tool_mobile_iosappid) {
-                    downloadUrl = 'itms-apps://itunes.apple.com/app/id' + config.tool_mobile_iosappid;
-                } else if (config.tool_mobile_setuplink) {
-                    downloadUrl = config.tool_mobile_setuplink;
-                } else if (this.appProvider.isMobile()) {
-                    downloadUrl = 'https://download.moodle.org/mobile/';
-                } else {
-                    downloadUrl = 'https://download.moodle.org/desktop/';
-                }
-
-                siteId = siteId || this.getCurrentSiteId();
+                const downloadUrl = this.appProvider.getAppStoreUrl(storesConfig);
+                const siteId = this.getCurrentSiteId();
 
                 // Do not block interface.
                 this.domUtils.showConfirm(
@@ -1059,7 +1157,7 @@ export class CoreSitesProvider {
                 return site.getPublicConfig().catch(() => {
                     return {};
                 }).then((config) => {
-                    return this.checkRequiredMinimumVersion(config).then(() => {
+                    return this.checkApplication(config).then(() => {
                         this.login(siteId);
 
                         // Update site info. We don't block the UI.
@@ -1204,6 +1302,24 @@ export class CoreSitesProvider {
 
             return this.makeSiteFromSiteListEntry(data);
         }
+    }
+
+    /**
+     * Finds a site with a certain URL. It will return the first site found.
+     *
+     * @param siteUrl The site URL.
+     * @return Promise resolved with the site.
+     */
+    async getSiteByUrl(siteUrl: string): Promise<CoreSite> {
+        await this.dbReady;
+
+        const data = await this.appDB.getRecord(CoreSitesProvider.SITES_TABLE, { siteUrl });
+
+        if (typeof this.sites[data.id] != 'undefined') {
+            return this.sites[data.id];
+        }
+
+        return this.makeSiteFromSiteListEntry(data);
     }
 
     /**
@@ -1450,10 +1566,15 @@ export class CoreSitesProvider {
         await this.dbReady;
 
         const site = await this.getSite(siteId);
-        const newValues = {
-            token: '', // Erase the token for security.
+        const newValues: any = {
             loggedOut: loggedOut ? 1 : 0
         };
+
+        if (loggedOut) {
+            // Erase the token for security.
+            newValues.token = '';
+            site.token = '';
+        }
 
         site.setLoggedOut(loggedOut);
 
@@ -1921,9 +2042,28 @@ export class CoreSitesProvider {
                     forceOffline: true,
                 };
             case CoreSitesReadingStrategy.PreferNetwork:
+                return {
+                    getFromCache: false,
+                };
+            case CoreSitesReadingStrategy.OnlyNetwork:
+                return {
+                    getFromCache: false,
+                    emergencyCache: false,
+                };
             default:
                 return {};
         }
     }
 
+    /**
+     * Returns site info found on the backend.
+     *
+     * @param search Searched text.
+     * @return Site info list.
+     */
+    async findSites(search: string): Promise<CoreLoginSiteInfo[]> {
+        return [];
+    }
 }
+
+export class CoreSites extends makeSingleton(CoreSitesProvider) {}

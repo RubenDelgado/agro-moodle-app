@@ -190,7 +190,9 @@ export class AddonModWorkshopSubmissionPage implements OnInit, OnDestroy {
      * @return Resolved when done.
      */
     protected fetchSubmissionData(): Promise<void> {
-        return this.workshopHelper.getSubmissionById(this.workshopId, this.submissionId).then((submissionData) => {
+        return this.workshopHelper.getSubmissionById(this.workshopId, this.submissionId, {
+            cmId: this.module.id,
+        }).then((submissionData) => {
             const promises = [];
 
             this.submission = submissionData;
@@ -207,8 +209,9 @@ export class AddonModWorkshopSubmissionPage implements OnInit, OnDestroy {
 
             if (this.access.canviewallassessments) {
                 // Get new data, different that came from stateParams.
-                promises.push(this.workshopProvider.getSubmissionAssessments(this.workshopId, this.submissionId)
-                        .then((subAssessments) => {
+                promises.push(this.workshopProvider.getSubmissionAssessments(this.workshopId, this.submissionId, {
+                    cmId: this.module.id,
+                }).then((subAssessments) => {
                     // Only allow the student to delete their own submission if it's still editable and hasn't been assessed.
                     if (this.canDelete) {
                         this.canDelete = !subAssessments.length;
@@ -228,22 +231,26 @@ export class AddonModWorkshopSubmissionPage implements OnInit, OnDestroy {
                 }));
             } else if (this.currentUserId == this.userId && this.assessmentId) {
                 // Get new data, different that came from stateParams.
-                promises.push(this.workshopProvider.getAssessment(this.workshopId, this.assessmentId).then((assessment) => {
+                promises.push(this.workshopProvider.getAssessment(this.workshopId, this.assessmentId, {
+                    cmId: this.module.id,
+                }).then((assessment) => {
                     // Only allow the student to delete their own submission if it's still editable and hasn't been assessed.
                     if (this.canDelete) {
                         this.canDelete = !assessment;
                     }
 
-                    assessment.userid = assessment.reviewerid;
-                    assessment = this.workshopHelper.realGradeValue(this.workshop, assessment);
-
-                    if (this.currentUserId == assessment.userid) {
-                        this.ownAssessment = assessment;
-                        assessment.ownAssessment = true;
-                    }
+                    assessment = this.parseAssessment(assessment);
 
                     this.submissionInfo.reviewedby = [assessment];
                 }));
+            } else if (this.workshop.phase == AddonModWorkshopProvider.PHASE_CLOSED && this.userId == this.currentUserId) {
+                this.workshopProvider.getSubmissionAssessments(this.workshopId, this.submissionId, {
+                    cmId: this.module.id,
+                }).then((assessments) => {
+                    this.submissionInfo.reviewedby = assessments.map((assessment) => {
+                        return this.parseAssessment(assessment);
+                    });
+                });
             }
 
             if (this.canAddFeedback || this.workshop.phase == AddonModWorkshopProvider.PHASE_CLOSED) {
@@ -322,6 +329,24 @@ export class AddonModWorkshopSubmissionPage implements OnInit, OnDestroy {
         }).finally(() => {
             this.loaded = true;
         });
+    }
+
+    /**
+     * Parse assessment to be shown.
+     *
+     * @param  assessment Original assessment.
+     * @return Parsed assessment.
+     */
+    protected parseAssessment(assessment: any): any {
+        assessment.userid = assessment.reviewerid;
+        assessment = this.workshopHelper.realGradeValue(this.workshop, assessment);
+
+        if (this.currentUserId == assessment.userid) {
+            this.ownAssessment = assessment;
+            assessment.ownAssessment = true;
+        }
+
+        return assessment;
     }
 
     /**

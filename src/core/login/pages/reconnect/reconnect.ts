@@ -50,6 +50,8 @@ export class CoreLoginReconnectPage {
     protected siteConfig: any;
     protected isLoggedOut: boolean;
     protected siteId: string;
+    protected viewLeft = false;
+    protected eventThrown = false;
 
     constructor(protected navCtrl: NavController,
             navParams: NavParams,
@@ -101,12 +103,12 @@ export class CoreLoginReconnectPage {
             this.showSiteAvatar = this.site.avatar && !this.loginHelper.getFixedSites();
 
             return site.getPublicConfig().then((config) => {
-                return this.sitesProvider.checkRequiredMinimumVersion(config).then(() => {
+                return this.sitesProvider.checkApplication(config).then(() => {
                     // Check logoURL if user avatar is not set.
                     if (this.site.avatar.startsWith(site.infos.siteurl + '/theme/image.php')) {
                         this.showSiteAvatar = false;
-                        this.logoUrl = this.loginHelper.getLogoUrl(config);
                     }
+                    this.logoUrl = this.loginHelper.getLogoUrl(config);
 
                     this.getDataFromConfig(this.siteConfig);
                 }).catch(() => {
@@ -122,6 +124,14 @@ export class CoreLoginReconnectPage {
     }
 
     /**
+     * View destroyed.
+     */
+    ionViewWillUnload(): void {
+        this.viewLeft = true;
+        this.eventsProvider.trigger(CoreEventsProvider.LOGIN_SITE_UNCHECKED, { config: this.siteConfig }, this.siteId);
+    }
+
+    /**
      * Get some data (like identity providers) from the site config.
      *
      * @param config Config to use.
@@ -131,6 +141,11 @@ export class CoreLoginReconnectPage {
 
         this.identityProviders = this.loginHelper.getValidIdentityProviders(config, disabledFeatures);
         this.showForgottenPassword = !this.loginHelper.isForgottenPasswordDisabled(config);
+
+        if (!this.eventThrown && !this.viewLeft) {
+            this.eventThrown = true;
+            this.eventsProvider.trigger(CoreEventsProvider.LOGIN_SITE_CHECKED, { config: config });
+        }
     }
 
     /**
@@ -206,6 +221,9 @@ export class CoreLoginReconnectPage {
 
             if (error.loggedout) {
                 this.cancel();
+            } else if (error.errorcode == 'forcepasswordchangenotice') {
+                // Reset password field.
+                this.credForm.controls.password.reset();
             }
         }).finally(() => {
             modal.dismiss();

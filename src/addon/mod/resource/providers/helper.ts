@@ -104,8 +104,10 @@ export class AddonModResourceHelperProvider {
      * @return Whether the resource should be displayed embeded.
      */
     isDisplayedEmbedded(module: any, display: number): boolean {
+        const currentSite = this.sitesProvider.getCurrentSite();
+
         if ((!module.contents.length && !module.contentsinfo) || !this.fileProvider.isAvailable() ||
-                (!this.sitesProvider.getCurrentSite().isVersionGreaterEqualThan('3.7') && this.isNextcloudFile(module))) {
+                (currentSite && !currentSite.isVersionGreaterEqualThan('3.7') && this.isNextcloudFile(module))) {
             return false;
         }
 
@@ -140,7 +142,7 @@ export class AddonModResourceHelperProvider {
             mimetype = this.mimetypeUtils.getMimeType(ext);
         }
 
-        return mimetype == 'text/html';
+        return mimetype == 'text/html' || mimetype == 'application/xhtml+xml';
     }
 
     /**

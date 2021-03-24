@@ -1,9 +1,9 @@
 {
-    "app_id": "com.moodle.moodlemobile",
+    "app_id": "com.moodle.anima.agro",
     "appname": "Moodle Mobile",
     "desktopappname": "Moodle Desktop",
-    "versioncode": 3820,
-    "versionname": "3.8.2",
+    "versioncode": 3940,
+    "versionname": "1.0.0",
     "cache_update_frequency_usually": 420000,
     "cache_update_frequency_often": 1200000,
     "cache_update_frequency_sometimes": 3600000,
@@ -26,10 +26,12 @@
         "fa": "فارسی",
         "fi": "Suomi",
         "fr": "Français",
+        "gl": "Galego",
         "he": "עברית",
         "hi": "हिंदी",
         "hr": "Hrvatski",
         "hu": "magyar",
+        "hy": "Հայերեն",
         "id": "Indonesian",
         "it": "Italiano",
         "ja": "日本語",
@@ -38,6 +40,7 @@
         "ko": "한국어",
         "lt": "Lietuvių",
         "lv": "Latviešu",
+        "mn": "Монгол",
         "mr": "मराठी",
         "nl": "Nederlands",
         "no": "Norsk - bokmål",
@@ -53,6 +56,7 @@
         "tg": "Тоҷикӣ",
         "tr": "Türkçe",
         "uk": "Українська",
+        "uz": "O'zbekcha",
         "vi": "Vietnamese",
         "zh-cn": "简体中文",
         "zh-tw": "正體中文"
@@ -76,10 +80,12 @@
         75.89,
         93.75
     ],
-    "customurlscheme": "moodlemobile",
-    "siteurl": "",
+    "customurlscheme": "moodle-app-agro",
+    "siteurl": "lms.animamexico.com",
     "sitename": "",
     "multisitesdisplay": "",
+    "sitefindersettings": {},
+    "onlyallowlistedsites": false,
     "skipssoconfirmation": false,
     "forcedefaultlanguage": false,
     "privacypolicy": "https:\/\/moodle.net\/moodle-app-privacy\/",
@@ -93,5 +99,15 @@
     "statusbarbgremotetheme": "#000000",
     "statusbarlighttextremotetheme": true,
     "enableanalytics": false,
-    "forceColorScheme": ""
+    "enableonboarding": true,
+    "forceColorScheme": "",
+    "forceLoginLogo": false,
+    "ioswebviewscheme": "moodleappfs",
+    "appstores": {
+        "android": "com.moodle.anima.agro",
+        "ios": "id633359593",
+        "windows": "moodle-desktop\/9p9bwvhdc8c8",
+        "mac": "id1255924440",
+        "linux": "https:\/\/download.moodle.org\/desktop\/download.php?platform=linux&arch=64"
+    }
 }
