@@ -231,7 +231,7 @@
     "main": "desktop/electron.js",
     "build": {
         "appId": "com.universidad.agro.anima",
-        "productName": "Moodle Desktop",
+        "productName": "Universidad Agro",
         "files": [
             "desktop/electron.js",
             "www/**/*",

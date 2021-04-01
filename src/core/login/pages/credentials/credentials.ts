@@ -27,6 +27,8 @@ import { CoreConfigConstants } from '../../../../configconstants';
 import { CoreCustomURLSchemes } from '@providers/urlschemes';
 import { Subscription } from 'rxjs';
 
+import { InAppBrowser } from '@ionic-native/in-app-browser';
+
 /**
  * Page to enter the user credentials.
  */
@@ -68,7 +70,8 @@ export class CoreLoginCredentialsPage implements OnDestroy {
             private loginHelper: CoreLoginHelperProvider,
             private domUtils: CoreDomUtilsProvider,
             private translate: TranslateService,
-            private eventsProvider: CoreEventsProvider) {
+            private eventsProvider: CoreEventsProvider,
+            private iab: InAppBrowser) {
 
         this.siteUrl = navParams.get('siteUrl');
         this.siteName = navParams.get('siteName') || null;
@@ -307,7 +310,13 @@ export class CoreLoginCredentialsPage implements OnDestroy {
      * Signup button was clicked.
      */
     signup(): void {
-        this.navCtrl.push('CoreLoginEmailSignupPage', { siteUrl: this.siteUrl });
+        //this.navCtrl.push('CoreLoginEmailSignupPage', { siteUrl: this.siteUrl });
+
+        const browser = this.iab.create('https://universidadagro.com.mx/login/signup.php', '_system', 'location=yes,enableviewportscale=yes');
+        //const browser = this.iab.create('https://universidadagro.com.mx/login/signup.php');
+        browser.show()
+
+        //window.open("https://universidadagro.com.mx/login/signup.php",'_system', 'location=yes');
     }
 
     /**
