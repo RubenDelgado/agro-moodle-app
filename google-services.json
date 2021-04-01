@@ -1,33 +1,33 @@
 {
   "project_info": {
-    "project_number": "208026655650",
-    "project_id": "moodle-app-agro",
-    "storage_bucket": "moodle-app-agro.appspot.com"
+    "project_number": "271279357234",
+    "project_id": "universidadagro-ccb6a",
+    "storage_bucket": "universidadagro-ccb6a.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:208026655650:android:cdd87ec71b0d948eb730fb",
+        "mobilesdk_app_id": "1:271279357234:android:fabc267112eecea98a2b2b",
         "android_client_info": {
-          "package_name": "com.moodle.anima.agro"
+          "package_name": "com.universidad.agro.anima"
         }
       },
       "oauth_client": [
         {
-          "client_id": "208026655650-45ncaoeodm9qs0rq47qn5it1kr1u6ni5.apps.googleusercontent.com",
+          "client_id": "271279357234-37viok8ocdtha5nam1jm00d1e2qk5h6r.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyCKO4yrmzZKzbZofOVt8dJE2KynHVBAKoA"
+          "current_key": "AIzaSyCdIh3g85bj49cn5ugJEwwmESBpOvMjklw"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "208026655650-45ncaoeodm9qs0rq47qn5it1kr1u6ni5.apps.googleusercontent.com",
+              "client_id": "271279357234-37viok8ocdtha5nam1jm00d1e2qk5h6r.apps.googleusercontent.com",
               "client_type": 3
             }
           ]

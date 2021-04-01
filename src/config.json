@@ -1,5 +1,5 @@
 {
-    "app_id": "com.moodle.anima.agro",
+    "app_id": "com.universidad.agro.anima",
     "appname": "Moodle Mobile",
     "desktopappname": "Moodle Desktop",
     "versioncode": 3940,
@@ -81,7 +81,7 @@
         93.75
     ],
     "customurlscheme": "moodle-app-agro",
-    "siteurl": "lms.animamexico.com",
+    "siteurl": "universidadagro.com.mx",
     "sitename": "",
     "multisitesdisplay": "",
     "sitefindersettings": {},
@@ -104,7 +104,7 @@
     "forceLoginLogo": false,
     "ioswebviewscheme": "moodleappfs",
     "appstores": {
-        "android": "com.moodle.anima.agro",
+        "android": "com.universidad.agro.anima",
         "ios": "id633359593",
         "windows": "moodle-desktop\/9p9bwvhdc8c8",
         "mac": "id1255924440",

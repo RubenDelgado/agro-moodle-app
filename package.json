@@ -230,7 +230,7 @@
     },
     "main": "desktop/electron.js",
     "build": {
-        "appId": "com.moodle.anima.agro",
+        "appId": "com.universidad.agro.anima",
         "productName": "Moodle Desktop",
         "files": [
             "desktop/electron.js",

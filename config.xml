@@ -1,8 +1,8 @@
 <?xml version='1.0' encoding='utf-8'?>
-<widget android-versionCode="39400" id="com.moodle.anima.agro" ios-CFBundleVersion="3.9.4.0" version="3.9.4" versionCode="39400" xmlns="http://www.w3.org/ns/widgets" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:cdv="http://cordova.apache.org/ns/1.0">
-    <name>Moodle Anima</name>
-    <description>Moodle official app Anima</description>
-    <author email="rdelgado.stc@gmail.com" href="http://www.vmadesolutions.com/">VMADE Solutions team</author>
+<widget android-versionCode="39400" id="com.universidad.agro.anima" ios-CFBundleVersion="3.9.4.0" version="3.9.4" versionCode="39400" xmlns="http://www.w3.org/ns/widgets" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+    <name>Universidad Agro</name>
+    <description>Moodle official para Universidad Agro</description>
+    <author email="rdelgado.stc@gmail.com" href="http://www.vmadesolutions.com/">VMADE Solutions Team</author>
     <content src="index.html" />
     <access origin="*" />
     <access launch-external="yes" origin="tel:*" />
