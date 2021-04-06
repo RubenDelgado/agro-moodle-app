@@ -45,5 +45,5 @@ e2e/build
 /desktop/*
 !/desktop/assets/
 !/desktop/electron.js
-src/configconstants.ts
+#src/configconstants.ts
 .moodleapp-dev-config
