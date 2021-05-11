@@ -111,7 +111,7 @@ var AddonBlogEntriesPage = /** @class */ (function () {
     }
     AddonBlogEntriesPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-addon-blog-entries',template:/*ion-inline-start:"D:\workspace\moodle\agro-moodle-app\src\addon\blog\pages\entries\entries.html"*/'<ion-header>\n\n    <ion-navbar core-back-button>\n\n        <ion-title>{{ title | translate }}</ion-title>\n\n        <ion-buttons end></ion-buttons>\n\n    </ion-navbar>\n\n</ion-header>\n\n<addon-blog-entries class="core-avoid-header" [courseId]="courseId" [userId]="userId" [cmId]="cmId" [entryId]="entryId" [groupId]="groupId" [tagId]="tagId"></addon-blog-entries>\n\n'/*ion-inline-end:"D:\workspace\moodle\agro-moodle-app\src\addon\blog\pages\entries\entries.html"*/,
+            selector: 'page-addon-blog-entries',template:/*ion-inline-start:"C:\Users\sid_m\Documents\ASTER-ANIMA\agro\develop-agro\agro-moodle-app\src\addon\blog\pages\entries\entries.html"*/'<ion-header>\n\n    <ion-navbar core-back-button>\n\n        <ion-title>{{ title | translate }}</ion-title>\n\n        <ion-buttons end></ion-buttons>\n\n    </ion-navbar>\n\n</ion-header>\n\n<addon-blog-entries class="core-avoid-header" [courseId]="courseId" [userId]="userId" [cmId]="cmId" [entryId]="entryId" [groupId]="groupId" [tagId]="tagId"></addon-blog-entries>\n\n'/*ion-inline-end:"C:\Users\sid_m\Documents\ASTER-ANIMA\agro\develop-agro\agro-moodle-app\src\addon\blog\pages\entries\entries.html"*/,
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["t" /* NavParams */]])
     ], AddonBlogEntriesPage);

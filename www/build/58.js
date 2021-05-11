@@ -1,6 +1,6 @@
 webpackJsonp([58],{
 
-/***/ 2093:
+/***/ 2061:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -11,7 +11,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ngx_translate_core__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__components_components_module__ = __webpack_require__(13);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__directives_directives_module__ = __webpack_require__(14);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__section_selector__ = __webpack_require__(2253);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__section_selector__ = __webpack_require__(2217);
 // (C) Copyright 2015 Moodle Pty Ltd.
 //
 // Licensed under the Apache License, Version 2.0 (the "License");
@@ -60,7 +60,7 @@ var CoreCourseSectionSelectorPageModule = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 2253:
+/***/ 2217:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -144,7 +144,7 @@ var CoreCourseSectionSelectorPage = /** @class */ (function () {
     };
     CoreCourseSectionSelectorPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-core-course-section-selector',template:/*ion-inline-start:"D:\workspace\moodle\agro-moodle-app\src\core\course\pages\section-selector\section-selector.html"*/'<ion-header>\n\n    <ion-navbar core-back-button>\n\n        <ion-title>{{ \'core.course.sections\' | translate }}</ion-title>\n\n        <ion-buttons end>\n\n            <button ion-button icon-only (click)="closeModal()" [attr.aria-label]="\'core.close\' | translate">\n\n                <ion-icon name="close"></ion-icon>\n\n            </button>\n\n        </ion-buttons>\n\n    </ion-navbar>\n\n</ion-header>\n\n<ion-content>\n\n    <ion-list id="core-course-section-selector" role="menu" aria-labelledby="core-course-section-button">\n\n        <ng-container *ngFor="let section of sections">\n\n            <a ion-item *ngIf="!section.hiddenbynumsections && section.id != stealthModulesSectionId" text-wrap (click)="selectSection(section)" [class.core-primary-selected-item]="selected.id == section.id" [class.item-dimmed]="section.visible === 0 || section.uservisible === false" detail-none role="menuitem" [attr.aria-hidden]="section.uservisible === false" [attr.aria-label]="section.formattedName || section.name">\n\n                <core-icon name="fa-folder" item-start></core-icon>\n\n                <h2><core-format-text [text]="section.formattedName || section.name" contextLevel="course" [contextInstanceId]="courseId"></core-format-text></h2>\n\n                <core-progress-bar *ngIf="section.progress >= 0" [progress]="section.progress"></core-progress-bar>\n\n                <ion-badge color="secondary" *ngIf="section.visible === 0 && section.uservisible !== false" text-wrap>{{ \'core.course.hiddenfromstudents\' | translate }}</ion-badge>\n\n                <ion-badge color="secondary" *ngIf="section.visible === 0 && section.uservisible === false" text-wrap>{{ \'core.notavailable\' | translate }}</ion-badge>\n\n                <ion-badge color="secondary" *ngIf="section.availabilityinfo" text-wrap><core-format-text [text]=" section.availabilityinfo" contextLevel="course" [contextInstanceId]="courseId"></core-format-text></ion-badge>\n\n            </a>\n\n        </ng-container>\n\n    </ion-list>\n\n</ion-content>\n\n'/*ion-inline-end:"D:\workspace\moodle\agro-moodle-app\src\core\course\pages\section-selector\section-selector.html"*/,
+            selector: 'page-core-course-section-selector',template:/*ion-inline-start:"C:\Users\sid_m\Documents\ASTER-ANIMA\agro\develop-agro\agro-moodle-app\src\core\course\pages\section-selector\section-selector.html"*/'<ion-header>\n\n    <ion-navbar core-back-button>\n\n        <ion-title>{{ \'core.course.sections\' | translate }}</ion-title>\n\n        <ion-buttons end>\n\n            <button ion-button icon-only (click)="closeModal()" [attr.aria-label]="\'core.close\' | translate">\n\n                <ion-icon name="close"></ion-icon>\n\n            </button>\n\n        </ion-buttons>\n\n    </ion-navbar>\n\n</ion-header>\n\n<ion-content>\n\n    <ion-list id="core-course-section-selector" role="menu" aria-labelledby="core-course-section-button">\n\n        <ng-container *ngFor="let section of sections">\n\n            <a ion-item *ngIf="!section.hiddenbynumsections && section.id != stealthModulesSectionId" text-wrap (click)="selectSection(section)" [class.core-primary-selected-item]="selected.id == section.id" [class.item-dimmed]="section.visible === 0 || section.uservisible === false" detail-none role="menuitem" [attr.aria-hidden]="section.uservisible === false" [attr.aria-label]="section.formattedName || section.name">\n\n                <core-icon name="fa-folder" item-start></core-icon>\n\n                <h2><core-format-text [text]="section.formattedName || section.name" contextLevel="course" [contextInstanceId]="courseId"></core-format-text></h2>\n\n                <core-progress-bar *ngIf="section.progress >= 0" [progress]="section.progress"></core-progress-bar>\n\n                <ion-badge color="secondary" *ngIf="section.visible === 0 && section.uservisible !== false" text-wrap>{{ \'core.course.hiddenfromstudents\' | translate }}</ion-badge>\n\n                <ion-badge color="secondary" *ngIf="section.visible === 0 && section.uservisible === false" text-wrap>{{ \'core.notavailable\' | translate }}</ion-badge>\n\n                <ion-badge color="secondary" *ngIf="section.availabilityinfo" text-wrap><core-format-text [text]=" section.availabilityinfo" contextLevel="course" [contextInstanceId]="courseId"></core-format-text></ion-badge>\n\n            </a>\n\n        </ng-container>\n\n    </ion-list>\n\n</ion-content>\n\n'/*ion-inline-end:"C:\Users\sid_m\Documents\ASTER-ANIMA\agro\develop-agro\agro-moodle-app\src\core\course\pages\section-selector\section-selector.html"*/,
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["t" /* NavParams */], __WEBPACK_IMPORTED_MODULE_2__providers_helper__["b" /* CoreCourseHelperProvider */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["G" /* ViewController */]])
     ], CoreCourseSectionSelectorPage);

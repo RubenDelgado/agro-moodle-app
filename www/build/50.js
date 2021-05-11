@@ -1,6 +1,6 @@
 webpackJsonp([50],{
 
-/***/ 2099:
+/***/ 2067:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -8,7 +8,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "CoreCoursesSelfEnrolPasswordPageModule", function() { return CoreCoursesSelfEnrolPasswordPageModule; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(3);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__self_enrol_password__ = __webpack_require__(2259);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__self_enrol_password__ = __webpack_require__(2223);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ngx_translate_core__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__components_components_module__ = __webpack_require__(13);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__directives_directives_module__ = __webpack_require__(14);
@@ -60,7 +60,7 @@ var CoreCoursesSelfEnrolPasswordPageModule = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 2259:
+/***/ 2223:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -132,7 +132,7 @@ var CoreCoursesSelfEnrolPasswordPage = /** @class */ (function () {
     ], CoreCoursesSelfEnrolPasswordPage.prototype, "formElement", void 0);
     CoreCoursesSelfEnrolPasswordPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-core-courses-self-enrol-password',template:/*ion-inline-start:"D:\workspace\moodle\agro-moodle-app\src\core\courses\pages\self-enrol-password\self-enrol-password.html"*/'<ion-header>\n\n    <ion-navbar core-back-button>\n\n        <ion-title>{{ \'core.courses.selfenrolment\' | translate }}</ion-title>\n\n\n\n        <ion-buttons end>\n\n            <button ion-button icon-only (click)="close()" [attr.aria-label]="\'core.close\' | translate">\n\n                <ion-icon name="close"></ion-icon>\n\n            </button>\n\n        </ion-buttons>\n\n    </ion-navbar>\n\n</ion-header>\n\n<ion-content>\n\n    <form ion-list #f="ngForm" (ngSubmit)="submitPassword($event, f.value.password)" #enrolPasswordForm>\n\n        <ion-item>\n\n            <core-show-password item-content [name]="\'password\'">\n\n                <ion-input text-wrap class="core-ioninput-password" name="password" type="password" placeholder="{{ \'core.courses.password\' | translate }}" ngModel [core-auto-focus] [clearOnEdit]="false"></ion-input>\n\n            </core-show-password>\n\n        </ion-item>\n\n        <ion-item>\n\n            <button ion-button block [disabled]="!f.value.password">{{ \'core.courses.enrolme\' | translate }}</button>\n\n        </ion-item>\n\n    </form>\n\n</ion-content>\n\n'/*ion-inline-end:"D:\workspace\moodle\agro-moodle-app\src\core\courses\pages\self-enrol-password\self-enrol-password.html"*/,
+            selector: 'page-core-courses-self-enrol-password',template:/*ion-inline-start:"C:\Users\sid_m\Documents\ASTER-ANIMA\agro\develop-agro\agro-moodle-app\src\core\courses\pages\self-enrol-password\self-enrol-password.html"*/'<ion-header>\n\n    <ion-navbar core-back-button>\n\n        <ion-title>{{ \'core.courses.selfenrolment\' | translate }}</ion-title>\n\n\n\n        <ion-buttons end>\n\n            <button ion-button icon-only (click)="close()" [attr.aria-label]="\'core.close\' | translate">\n\n                <ion-icon name="close"></ion-icon>\n\n            </button>\n\n        </ion-buttons>\n\n    </ion-navbar>\n\n</ion-header>\n\n<ion-content>\n\n    <form ion-list #f="ngForm" (ngSubmit)="submitPassword($event, f.value.password)" #enrolPasswordForm>\n\n        <ion-item>\n\n            <core-show-password item-content [name]="\'password\'">\n\n                <ion-input text-wrap class="core-ioninput-password" name="password" type="password" placeholder="{{ \'core.courses.password\' | translate }}" ngModel [core-auto-focus] [clearOnEdit]="false"></ion-input>\n\n            </core-show-password>\n\n        </ion-item>\n\n        <ion-item>\n\n            <button ion-button block [disabled]="!f.value.password">{{ \'core.courses.enrolme\' | translate }}</button>\n\n        </ion-item>\n\n    </form>\n\n</ion-content>\n\n'/*ion-inline-end:"C:\Users\sid_m\Documents\ASTER-ANIMA\agro\develop-agro\agro-moodle-app\src\core\courses\pages\self-enrol-password\self-enrol-password.html"*/,
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["G" /* ViewController */],
             __WEBPACK_IMPORTED_MODULE_2__providers_events__["b" /* CoreEventsProvider */],

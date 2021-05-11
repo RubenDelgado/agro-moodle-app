@@ -1,6 +1,6 @@
 webpackJsonp([64],{
 
-/***/ 2086:
+/***/ 2056:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -12,7 +12,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__components_components_module__ = __webpack_require__(13);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__directives_directives_module__ = __webpack_require__(14);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__pipes_pipes_module__ = __webpack_require__(66);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__courses_storage__ = __webpack_require__(2247);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__courses_storage__ = __webpack_require__(2212);
 // (C) Copyright 2015 Moodle Pty Ltd.
 //
 // Licensed under the Apache License, Version 2.0 (the "License");
@@ -63,7 +63,7 @@ var AddonStorageManagerCoursesStoragePageModule = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 2247:
+/***/ 2212:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -71,7 +71,7 @@ var AddonStorageManagerCoursesStoragePageModule = /** @class */ (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__core_course_providers_course__ = __webpack_require__(12);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__core_courses_providers_courses__ = __webpack_require__(32);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__singletons_array__ = __webpack_require__(444);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__singletons_array__ = __webpack_require__(443);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__core_course_providers_module_prefetch_delegate__ = __webpack_require__(31);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__core_constants__ = __webpack_require__(18);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__providers_utils_dom__ = __webpack_require__(7);
@@ -386,7 +386,7 @@ var AddonStorageManagerCoursesStoragePage = /** @class */ (function () {
     };
     AddonStorageManagerCoursesStoragePage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-addon-storagemanager-courses-storage',template:/*ion-inline-start:"D:\workspace\moodle\agro-moodle-app\src\addon\storagemanager\pages\courses-storage\courses-storage.html"*/'<ion-header>\n\n    <ion-navbar core-back-button>\n\n        <ion-title>{{ \'addon.storagemanager.managestorage\' | translate }}</ion-title>\n\n    </ion-navbar>\n\n</ion-header>\n\n<ion-content>\n\n    <core-loading [hideUntil]="loaded">\n\n        <ion-card>\n\n            <ion-card-header>\n\n                <h1 text-wrap>{{ \'core.courses.courses\' | translate }}</h1>\n\n                <p text-wrap>{{ \'addon.storagemanager.info\' | translate }}</p>\n\n                <ion-item no-padding padding-top class="size" text-wrap>\n\n                    <ion-icon name="cube" item-start></ion-icon>\n\n                    <h2 text-wrap>{{ \'addon.storagemanager.storageused\' | translate }}</h2>\n\n                    <div item-end>\n\n                        <p text-end>{{ totalSize | coreBytesToSize }}</p>\n\n                    </div>\n\n                    <button ion-button icon-only item-end no-padding (click)="deleteCompletelyDownloadedCourses()" [disabled]="completelyDownloadedCourses.length === 0">\n\n                        <core-icon name="trash" label="{{ \'addon.storagemanager.deletecourses\' | translate }}"></core-icon>\n\n                    </button>\n\n                </ion-item>\n\n            </ion-card-header>\n\n        </ion-card>\n\n        <ion-card>\n\n            <ion-list>\n\n                <ion-item *ngFor="let course of downloadedCourses" class="course">\n\n                    <h2 text-wrap>\n\n                        <span *ngIf="course.displayname">{{ course.displayname }}</span>\n\n                        <span *ngIf="!course.displayname">{{ course.fullname }}</span>\n\n                    </h2>\n\n                    <h3 *ngIf="course.isDownloading">{{ \'core.downloading\' | translate }}</h3>\n\n                    <p>\n\n                        <ion-icon name="cube" item-start></ion-icon>\n\n                        {{ course.totalSize | coreBytesToSize }}\n\n                    </p>\n\n                    <button ion-button icon-only item-end (click)="deleteCourse(course)" [disabled]="course.isDownloading">\n\n                        <core-icon name="trash" label="{{ \'addon.storagemanager.deletedatafrom\' | translate: { name: course.name } }}"></core-icon>\n\n                    </button>\n\n                </ion-item>\n\n            </ion-list>\n\n        </ion-card>\n\n    </core-loading>\n\n</ion-content>\n\n'/*ion-inline-end:"D:\workspace\moodle\agro-moodle-app\src\addon\storagemanager\pages\courses-storage\courses-storage.html"*/,
+            selector: 'page-addon-storagemanager-courses-storage',template:/*ion-inline-start:"C:\Users\sid_m\Documents\ASTER-ANIMA\agro\develop-agro\agro-moodle-app\src\addon\storagemanager\pages\courses-storage\courses-storage.html"*/'<ion-header>\n\n    <ion-navbar core-back-button>\n\n        <ion-title>{{ \'addon.storagemanager.managestorage\' | translate }}</ion-title>\n\n    </ion-navbar>\n\n</ion-header>\n\n<ion-content>\n\n    <core-loading [hideUntil]="loaded">\n\n        <ion-card>\n\n            <ion-card-header>\n\n                <h1 text-wrap>{{ \'core.courses.courses\' | translate }}</h1>\n\n                <p text-wrap>{{ \'addon.storagemanager.info\' | translate }}</p>\n\n                <ion-item no-padding padding-top class="size" text-wrap>\n\n                    <ion-icon name="cube" item-start></ion-icon>\n\n                    <h2 text-wrap>{{ \'addon.storagemanager.storageused\' | translate }}</h2>\n\n                    <div item-end>\n\n                        <p text-end>{{ totalSize | coreBytesToSize }}</p>\n\n                    </div>\n\n                    <button ion-button icon-only item-end no-padding (click)="deleteCompletelyDownloadedCourses()" [disabled]="completelyDownloadedCourses.length === 0">\n\n                        <core-icon name="trash" label="{{ \'addon.storagemanager.deletecourses\' | translate }}"></core-icon>\n\n                    </button>\n\n                </ion-item>\n\n            </ion-card-header>\n\n        </ion-card>\n\n        <ion-card>\n\n            <ion-list>\n\n                <ion-item *ngFor="let course of downloadedCourses" class="course">\n\n                    <h2 text-wrap>\n\n                        <span *ngIf="course.displayname">{{ course.displayname }}</span>\n\n                        <span *ngIf="!course.displayname">{{ course.fullname }}</span>\n\n                    </h2>\n\n                    <h3 *ngIf="course.isDownloading">{{ \'core.downloading\' | translate }}</h3>\n\n                    <p>\n\n                        <ion-icon name="cube" item-start></ion-icon>\n\n                        {{ course.totalSize | coreBytesToSize }}\n\n                    </p>\n\n                    <button ion-button icon-only item-end (click)="deleteCourse(course)" [disabled]="course.isDownloading">\n\n                        <core-icon name="trash" label="{{ \'addon.storagemanager.deletedatafrom\' | translate: { name: course.name } }}"></core-icon>\n\n                    </button>\n\n                </ion-item>\n\n            </ion-list>\n\n        </ion-card>\n\n    </core-loading>\n\n</ion-content>\n\n'/*ion-inline-end:"C:\Users\sid_m\Documents\ASTER-ANIMA\agro\develop-agro\agro-moodle-app\src\addon\storagemanager\pages\courses-storage\courses-storage.html"*/,
         })
     ], AddonStorageManagerCoursesStoragePage);
     return AddonStorageManagerCoursesStoragePage;

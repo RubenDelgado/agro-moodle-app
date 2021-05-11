@@ -1,6 +1,6 @@
 webpackJsonp([132],{
 
-/***/ 2010:
+/***/ 2005:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -11,7 +11,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ngx_translate_core__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__components_components_module__ = __webpack_require__(13);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__directives_directives_module__ = __webpack_require__(14);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__devices__ = __webpack_require__(2166);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__devices__ = __webpack_require__(2161);
 // (C) Copyright 2015 Moodle Pty Ltd.
 //
 // Licensed under the Apache License, Version 2.0 (the "License");
@@ -60,7 +60,7 @@ var AddonMessageOutputAirnotifierDevicesPageModule = /** @class */ (function () 
 
 /***/ }),
 
-/***/ 2166:
+/***/ 2161:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -201,7 +201,7 @@ var AddonMessageOutputAirnotifierDevicesPage = /** @class */ (function () {
     };
     AddonMessageOutputAirnotifierDevicesPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-addon-message-output-airnotifier-devices',template:/*ion-inline-start:"D:\workspace\moodle\agro-moodle-app\src\addon\messageoutput\airnotifier\pages\devices\devices.html"*/'<ion-header>\n\n    <ion-navbar core-back-button>\n\n        <ion-title>{{ \'addon.messageoutput_airnotifier.processorsettingsdesc\' | translate }}</ion-title>\n\n    </ion-navbar>\n\n</ion-header>\n\n<ion-content>\n\n    <ion-refresher [enabled]="devicesLoaded" (ionRefresh)="refreshDevices($event)">\n\n        <ion-refresher-content pullingText="{{ \'core.pulltorefresh\' | translate }}"></ion-refresher-content>\n\n    </ion-refresher>\n\n    <core-loading [hideUntil]="devicesLoaded">\n\n        <ion-list>\n\n            <ion-item text-wrap *ngFor="let device of devices">\n\n                <ion-label [class.core-bold]="device.current">\n\n                    {{ device.name }} {{ device.model }} {{ device.platform }} {{ device.version }}\n\n                    <span *ngIf="device.current">({{ \'core.currentdevice\' | translate }})</span>\n\n                </ion-label>\n\n                <ion-spinner *ngIf="device.updating" item-end></ion-spinner>\n\n                <ion-toggle [disabled]="device.updating" [(ngModel)]="device.enable" (ngModelChange)="enableDevice(device, device.enable)"></ion-toggle>\n\n            </ion-item>\n\n        </ion-list>\n\n    </core-loading>\n\n</ion-content>\n\n'/*ion-inline-end:"D:\workspace\moodle\agro-moodle-app\src\addon\messageoutput\airnotifier\pages\devices\devices.html"*/,
+            selector: 'page-addon-message-output-airnotifier-devices',template:/*ion-inline-start:"C:\Users\sid_m\Documents\ASTER-ANIMA\agro\develop-agro\agro-moodle-app\src\addon\messageoutput\airnotifier\pages\devices\devices.html"*/'<ion-header>\n\n    <ion-navbar core-back-button>\n\n        <ion-title>{{ \'addon.messageoutput_airnotifier.processorsettingsdesc\' | translate }}</ion-title>\n\n    </ion-navbar>\n\n</ion-header>\n\n<ion-content>\n\n    <ion-refresher [enabled]="devicesLoaded" (ionRefresh)="refreshDevices($event)">\n\n        <ion-refresher-content pullingText="{{ \'core.pulltorefresh\' | translate }}"></ion-refresher-content>\n\n    </ion-refresher>\n\n    <core-loading [hideUntil]="devicesLoaded">\n\n        <ion-list>\n\n            <ion-item text-wrap *ngFor="let device of devices">\n\n                <ion-label [class.core-bold]="device.current">\n\n                    {{ device.name }} {{ device.model }} {{ device.platform }} {{ device.version }}\n\n                    <span *ngIf="device.current">({{ \'core.currentdevice\' | translate }})</span>\n\n                </ion-label>\n\n                <ion-spinner *ngIf="device.updating" item-end></ion-spinner>\n\n                <ion-toggle [disabled]="device.updating" [(ngModel)]="device.enable" (ngModelChange)="enableDevice(device, device.enable)"></ion-toggle>\n\n            </ion-item>\n\n        </ion-list>\n\n    </core-loading>\n\n</ion-content>\n\n'/*ion-inline-end:"C:\Users\sid_m\Documents\ASTER-ANIMA\agro\develop-agro\agro-moodle-app\src\addon\messageoutput\airnotifier\pages\devices\devices.html"*/,
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1__providers_utils_dom__["b" /* CoreDomUtilsProvider */], __WEBPACK_IMPORTED_MODULE_3__providers_airnotifier__["a" /* AddonMessageOutputAirnotifierProvider */],
             __WEBPACK_IMPORTED_MODULE_2__core_pushnotifications_providers_pushnotifications__["a" /* CorePushNotificationsProvider */]])

@@ -1,6 +1,6 @@
 webpackJsonp([48],{
 
-/***/ 2102:
+/***/ 2068:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -10,8 +10,8 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(3);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ngx_translate_core__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__directives_directives_module__ = __webpack_require__(14);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__course__ = __webpack_require__(2262);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__components_components_module__ = __webpack_require__(1010);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__course__ = __webpack_require__(2224);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__components_components_module__ = __webpack_require__(1009);
 // (C) Copyright 2015 Moodle Pty Ltd.
 //
 // Licensed under the Apache License, Version 2.0 (the "License");
@@ -60,7 +60,7 @@ var CoreGradesCoursePageModule = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 2262:
+/***/ 2224:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -103,7 +103,7 @@ var CoreGradesCoursePage = /** @class */ (function () {
     }
     CoreGradesCoursePage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-core-grades-course',template:/*ion-inline-start:"D:\workspace\moodle\agro-moodle-app\src\core\grades\pages\course\course.html"*/'<ion-header>\n\n    <ion-navbar core-back-button>\n\n        <ion-title>{{ \'core.grades.grades\' | translate }}</ion-title>\n\n    </ion-navbar>\n\n</ion-header>\n\n<core-grades-course class="core-avoid-header" [courseId]="courseId" [userId]="userId"></core-grades-course>\n\n'/*ion-inline-end:"D:\workspace\moodle\agro-moodle-app\src\core\grades\pages\course\course.html"*/,
+            selector: 'page-core-grades-course',template:/*ion-inline-start:"C:\Users\sid_m\Documents\ASTER-ANIMA\agro\develop-agro\agro-moodle-app\src\core\grades\pages\course\course.html"*/'<ion-header>\n\n    <ion-navbar core-back-button>\n\n        <ion-title>{{ \'core.grades.grades\' | translate }}</ion-title>\n\n    </ion-navbar>\n\n</ion-header>\n\n<core-grades-course class="core-avoid-header" [courseId]="courseId" [userId]="userId"></core-grades-course>\n\n'/*ion-inline-end:"C:\Users\sid_m\Documents\ASTER-ANIMA\agro\develop-agro\agro-moodle-app\src\core\grades\pages\course\course.html"*/,
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["t" /* NavParams */], __WEBPACK_IMPORTED_MODULE_2__providers_sites__["b" /* CoreSitesProvider */]])
     ], CoreGradesCoursePage);

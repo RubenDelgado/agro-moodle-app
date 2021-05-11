@@ -1,6 +1,6 @@
 webpackJsonp([17],{
 
-/***/ 2134:
+/***/ 2094:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -9,7 +9,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(3);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ngx_translate_core__ = __webpack_require__(1);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__index__ = __webpack_require__(2294);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__index__ = __webpack_require__(2250);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__components_components_module__ = __webpack_require__(13);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__directives_directives_module__ = __webpack_require__(14);
 // (C) Copyright 2015 Moodle Pty Ltd.
@@ -60,7 +60,7 @@ var CoreTagIndexPageModule = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 2294:
+/***/ 2250:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -208,7 +208,7 @@ var CoreTagIndexPage = /** @class */ (function () {
     ], CoreTagIndexPage.prototype, "splitviewCtrl", void 0);
     CoreTagIndexPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-core-tag-index',template:/*ion-inline-start:"D:\workspace\moodle\agro-moodle-app\src\core\tag\pages\index\index.html"*/'<ion-header>\n\n    <ion-navbar core-back-button>\n\n        <ion-title>{{ \'core.tag.tag\' | translate }}: {{ tagName }}</ion-title>\n\n    </ion-navbar>\n\n</ion-header>\n\n<core-split-view>\n\n    <ion-content>\n\n        <ion-refresher [enabled]="loaded" (ionRefresh)="refreshData($event)">\n\n            <ion-refresher-content pullingText="{{ \'core.pulltorefresh\' | translate }}"></ion-refresher-content>\n\n        </ion-refresher>\n\n        <core-loading [hideUntil]="loaded">\n\n            <ion-list *ngIf="hasUnsupportedAreas || areas">\n\n                <ion-item text-wrap *ngIf="hasUnsupportedAreas" class="core-warning-item">\n\n                    <ion-icon item-start name="warning" color="warning"></ion-icon>\n\n                    {{ \'core.tag.warningareasnotsupported\' | translate }}\n\n                </ion-item>\n\n                <a ion-item text-wrap *ngFor="let area of areas" [title]="area.nameKey | translate" (click)="openArea(area)" [class.core-split-item-selected]="area.id == selectedAreaId">\n\n                    <h2>{{ area.nameKey | translate }}</h2>\n\n                    <ion-badge item-end *ngIf="area.badge">{{ area.badge }}</ion-badge>\n\n                </a>\n\n            </ion-list>\n\n            <core-empty-box icon="fa-tag" *ngIf="!hasUnsupportedAreas && (!areas || !areas.length)" [message]="\'core.tag.noresultsfor\' | translate: { $a: tagName }"></core-empty-box>\n\n        </core-loading>\n\n    </ion-content>\n\n</core-split-view>\n\n'/*ion-inline-end:"D:\workspace\moodle\agro-moodle-app\src\core\tag\pages\index\index.html"*/,
+            selector: 'page-core-tag-index',template:/*ion-inline-start:"C:\Users\sid_m\Documents\ASTER-ANIMA\agro\develop-agro\agro-moodle-app\src\core\tag\pages\index\index.html"*/'<ion-header>\n\n    <ion-navbar core-back-button>\n\n        <ion-title>{{ \'core.tag.tag\' | translate }}: {{ tagName }}</ion-title>\n\n    </ion-navbar>\n\n</ion-header>\n\n<core-split-view>\n\n    <ion-content>\n\n        <ion-refresher [enabled]="loaded" (ionRefresh)="refreshData($event)">\n\n            <ion-refresher-content pullingText="{{ \'core.pulltorefresh\' | translate }}"></ion-refresher-content>\n\n        </ion-refresher>\n\n        <core-loading [hideUntil]="loaded">\n\n            <ion-list *ngIf="hasUnsupportedAreas || areas">\n\n                <ion-item text-wrap *ngIf="hasUnsupportedAreas" class="core-warning-item">\n\n                    <ion-icon item-start name="warning" color="warning"></ion-icon>\n\n                    {{ \'core.tag.warningareasnotsupported\' | translate }}\n\n                </ion-item>\n\n                <a ion-item text-wrap *ngFor="let area of areas" [title]="area.nameKey | translate" (click)="openArea(area)" [class.core-split-item-selected]="area.id == selectedAreaId">\n\n                    <h2>{{ area.nameKey | translate }}</h2>\n\n                    <ion-badge item-end *ngIf="area.badge">{{ area.badge }}</ion-badge>\n\n                </a>\n\n            </ion-list>\n\n            <core-empty-box icon="fa-tag" *ngIf="!hasUnsupportedAreas && (!areas || !areas.length)" [message]="\'core.tag.noresultsfor\' | translate: { $a: tagName }"></core-empty-box>\n\n        </core-loading>\n\n    </ion-content>\n\n</core-split-view>\n\n'/*ion-inline-end:"C:\Users\sid_m\Documents\ASTER-ANIMA\agro\develop-agro\agro-moodle-app\src\core\tag\pages\index\index.html"*/,
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["t" /* NavParams */], __WEBPACK_IMPORTED_MODULE_4__core_tag_providers_tag__["a" /* CoreTagProvider */], __WEBPACK_IMPORTED_MODULE_2__providers_utils_dom__["b" /* CoreDomUtilsProvider */],
             __WEBPACK_IMPORTED_MODULE_5__core_tag_providers_area_delegate__["a" /* CoreTagAreaDelegate */]])

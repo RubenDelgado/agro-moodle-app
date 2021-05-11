@@ -1,6 +1,6 @@
 webpackJsonp([124],{
 
-/***/ 2022:
+/***/ 2011:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -12,7 +12,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__components_components_module__ = __webpack_require__(13);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__directives_directives_module__ = __webpack_require__(14);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__components_components_module__ = __webpack_require__(1004);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__submission_review__ = __webpack_require__(2178);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__submission_review__ = __webpack_require__(2167);
 // (C) Copyright 2015 Moodle Pty Ltd.
 //
 // Licensed under the Apache License, Version 2.0 (the "License");
@@ -63,7 +63,7 @@ var AddonModAssignSubmissionReviewPageModule = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 2178:
+/***/ 2167:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -74,7 +74,7 @@ var AddonModAssignSubmissionReviewPageModule = /** @class */ (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__providers_utils_dom__ = __webpack_require__(7);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__core_course_providers_course__ = __webpack_require__(12);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__providers_assign__ = __webpack_require__(60);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__components_submission_submission__ = __webpack_require__(446);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__components_submission_submission__ = __webpack_require__(445);
 // (C) Copyright 2015 Moodle Pty Ltd.
 //
 // Licensed under the Apache License, Version 2.0 (the "License");
@@ -232,7 +232,7 @@ var AddonModAssignSubmissionReviewPage = /** @class */ (function () {
     ], AddonModAssignSubmissionReviewPage.prototype, "submissionComponent", void 0);
     AddonModAssignSubmissionReviewPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-addon-mod-assign-submission-review',template:/*ion-inline-start:"D:\workspace\moodle\agro-moodle-app\src\addon\mod\assign\pages\submission-review\submission-review.html"*/'<ion-header>\n\n    <ion-navbar core-back-button>\n\n        <ion-title><core-format-text [text]="title" contextLevel="module" [contextInstanceId]="moduleId" [courseId]="courseId"></core-format-text></ion-title>\n\n\n\n        <ion-buttons end></ion-buttons>\n\n    </ion-navbar>\n\n\n\n    <core-navbar-buttons end>\n\n        <button [hidden]="!canSaveGrades" ion-button button-clear (click)="submitGrade()" [attr.aria-label]="\'core.done\' | translate">\n\n            {{ \'core.done\' | translate }}\n\n        </button>\n\n    </core-navbar-buttons>\n\n</ion-header>\n\n<ion-content>\n\n\n\n    <ion-refresher [enabled]="loaded" (ionRefresh)="refreshSubmission($event)">\n\n        <ion-refresher-content pullingText="{{ \'core.pulltorefresh\' | translate }}"></ion-refresher-content>\n\n    </ion-refresher>\n\n    <core-loading [hideUntil]="loaded">\n\n        <addon-mod-assign-submission [courseId]="courseId" [moduleId]="moduleId" [submitId]="submitId" [blindId]="blindId" [showGrade]="showGrade"></addon-mod-assign-submission>\n\n    </core-loading>\n\n</ion-content>\n\n'/*ion-inline-end:"D:\workspace\moodle\agro-moodle-app\src\addon\mod\assign\pages\submission-review\submission-review.html"*/,
+            selector: 'page-addon-mod-assign-submission-review',template:/*ion-inline-start:"C:\Users\sid_m\Documents\ASTER-ANIMA\agro\develop-agro\agro-moodle-app\src\addon\mod\assign\pages\submission-review\submission-review.html"*/'<ion-header>\n\n    <ion-navbar core-back-button>\n\n        <ion-title><core-format-text [text]="title" contextLevel="module" [contextInstanceId]="moduleId" [courseId]="courseId"></core-format-text></ion-title>\n\n\n\n        <ion-buttons end></ion-buttons>\n\n    </ion-navbar>\n\n\n\n    <core-navbar-buttons end>\n\n        <button [hidden]="!canSaveGrades" ion-button button-clear (click)="submitGrade()" [attr.aria-label]="\'core.done\' | translate">\n\n            {{ \'core.done\' | translate }}\n\n        </button>\n\n    </core-navbar-buttons>\n\n</ion-header>\n\n<ion-content>\n\n\n\n    <ion-refresher [enabled]="loaded" (ionRefresh)="refreshSubmission($event)">\n\n        <ion-refresher-content pullingText="{{ \'core.pulltorefresh\' | translate }}"></ion-refresher-content>\n\n    </ion-refresher>\n\n    <core-loading [hideUntil]="loaded">\n\n        <addon-mod-assign-submission [courseId]="courseId" [moduleId]="moduleId" [submitId]="submitId" [blindId]="blindId" [showGrade]="showGrade"></addon-mod-assign-submission>\n\n    </core-loading>\n\n</ion-content>\n\n'/*ion-inline-end:"C:\Users\sid_m\Documents\ASTER-ANIMA\agro\develop-agro\agro-moodle-app\src\addon\mod\assign\pages\submission-review\submission-review.html"*/,
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["t" /* NavParams */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["s" /* NavController */], __WEBPACK_IMPORTED_MODULE_4__core_course_providers_course__["b" /* CoreCourseProvider */],
             __WEBPACK_IMPORTED_MODULE_2__providers_app__["b" /* CoreAppProvider */], __WEBPACK_IMPORTED_MODULE_5__providers_assign__["a" /* AddonModAssignProvider */],

@@ -1,6 +1,6 @@
 webpackJsonp([41],{
 
-/***/ 2108:
+/***/ 2073:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -9,7 +9,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(3);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__directives_directives_module__ = __webpack_require__(14);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__forgotten_password__ = __webpack_require__(2268);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__forgotten_password__ = __webpack_require__(2229);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__ngx_translate_core__ = __webpack_require__(1);
 // (C) Copyright 2015 Moodle Pty Ltd.
 //
@@ -57,7 +57,7 @@ var CoreLoginForgottenPasswordPageModule = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 2268:
+/***/ 2229:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -170,7 +170,7 @@ var CoreLoginForgottenPasswordPage = /** @class */ (function () {
     ], CoreLoginForgottenPasswordPage.prototype, "formElement", void 0);
     CoreLoginForgottenPasswordPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-core-login-forgotten-password',template:/*ion-inline-start:"D:\workspace\moodle\agro-moodle-app\src\core\login\pages\forgotten-password\forgotten-password.html"*/'<ion-header>\n\n    <ion-navbar core-back-button>\n\n        <ion-title>{{ \'core.login.passwordforgotten\' | translate }}</ion-title>\n\n    </ion-navbar>\n\n</ion-header>\n\n<ion-content>\n\n    <ion-list>\n\n        <ion-item text-wrap>\n\n            {{ \'core.login.passwordforgotteninstructions2\' | translate }}\n\n        </ion-item>\n\n    </ion-list>\n\n    <ion-card>\n\n        <form ion-list [formGroup]="myForm" (ngSubmit)="resetPassword($event)" #resetPasswordForm>\n\n            <ion-item-divider text-wrap>\n\n                {{ \'core.login.searchby\' | translate }}\n\n            </ion-item-divider>\n\n            <div radio-group formControlName="field">\n\n                <ion-item>\n\n                    <ion-label>{{ \'core.login.username\' | translate }}</ion-label>\n\n                    <ion-radio value="username"></ion-radio>\n\n                </ion-item>\n\n                <ion-item>\n\n                    <ion-label>{{ \'core.user.email\' | translate }}</ion-label>\n\n                    <ion-radio value="email"></ion-radio>\n\n                </ion-item>\n\n            </div>\n\n            <ion-item>\n\n                <ion-input type="text" name="value" placeholder="{{ \'core.login.usernameoremail\' | translate }}" formControlName="value" autocapitalize="none" autocorrect="off" [core-auto-focus]="autoFocus"></ion-input>\n\n            </ion-item>\n\n            <ion-item>\n\n                <button text-wrap ion-button block [disabled]="!myForm.valid">{{ \'core.courses.search\' | translate }}</button>\n\n            </ion-item>\n\n        </form>\n\n    </ion-card>\n\n</ion-content>\n\n'/*ion-inline-end:"D:\workspace\moodle\agro-moodle-app\src\core\login\pages\forgotten-password\forgotten-password.html"*/,
+            selector: 'page-core-login-forgotten-password',template:/*ion-inline-start:"C:\Users\sid_m\Documents\ASTER-ANIMA\agro\develop-agro\agro-moodle-app\src\core\login\pages\forgotten-password\forgotten-password.html"*/'<ion-header>\n\n    <ion-navbar core-back-button>\n\n        <ion-title>{{ \'core.login.passwordforgotten\' | translate }}</ion-title>\n\n    </ion-navbar>\n\n</ion-header>\n\n<ion-content>\n\n    <ion-list>\n\n        <ion-item text-wrap>\n\n            {{ \'core.login.passwordforgotteninstructions2\' | translate }}\n\n        </ion-item>\n\n    </ion-list>\n\n    <ion-card>\n\n        <form ion-list [formGroup]="myForm" (ngSubmit)="resetPassword($event)" #resetPasswordForm>\n\n            <ion-item-divider text-wrap>\n\n                {{ \'core.login.searchby\' | translate }}\n\n            </ion-item-divider>\n\n            <div radio-group formControlName="field">\n\n                <ion-item>\n\n                    <ion-label>{{ \'core.login.username\' | translate }}</ion-label>\n\n                    <ion-radio value="username"></ion-radio>\n\n                </ion-item>\n\n                <ion-item>\n\n                    <ion-label>{{ \'core.user.email\' | translate }}</ion-label>\n\n                    <ion-radio value="email"></ion-radio>\n\n                </ion-item>\n\n            </div>\n\n            <ion-item>\n\n                <ion-input type="text" name="value" placeholder="{{ \'core.login.usernameoremail\' | translate }}" formControlName="value" autocapitalize="none" autocorrect="off" [core-auto-focus]="autoFocus"></ion-input>\n\n            </ion-item>\n\n            <ion-item>\n\n                <button text-wrap ion-button block [disabled]="!myForm.valid">{{ \'core.courses.search\' | translate }}</button>\n\n            </ion-item>\n\n        </form>\n\n    </ion-card>\n\n</ion-content>\n\n'/*ion-inline-end:"C:\Users\sid_m\Documents\ASTER-ANIMA\agro\develop-agro\agro-moodle-app\src\core\login\pages\forgotten-password\forgotten-password.html"*/,
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["s" /* NavController */],
             __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["t" /* NavParams */],

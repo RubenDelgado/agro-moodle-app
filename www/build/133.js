@@ -1,6 +1,6 @@
 webpackJsonp([133],{
 
-/***/ 2009:
+/***/ 2004:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -11,7 +11,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ngx_translate_core__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__components_components_module__ = __webpack_require__(13);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__directives_directives_module__ = __webpack_require__(14);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__list__ = __webpack_require__(2165);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__list__ = __webpack_require__(2160);
 // (C) Copyright 2015 Moodle Pty Ltd.
 //
 // Licensed under the Apache License, Version 2.0 (the "License");
@@ -60,7 +60,7 @@ var AddonFilesListPageModule = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 2165:
+/***/ 2160:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -74,7 +74,7 @@ var AddonFilesListPageModule = /** @class */ (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__providers_utils_dom__ = __webpack_require__(7);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__providers_utils_text__ = __webpack_require__(10);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__providers_files__ = __webpack_require__(298);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__providers_helper__ = __webpack_require__(1028);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__providers_helper__ = __webpack_require__(1025);
 // (C) Copyright 2015 Moodle Pty Ltd.
 //
 // Licensed under the Apache License, Version 2.0 (the "License");
@@ -274,7 +274,7 @@ var AddonFilesListPage = /** @class */ (function () {
     };
     AddonFilesListPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-addon-files-list',template:/*ion-inline-start:"D:\workspace\moodle\agro-moodle-app\src\addon\files\pages\list\list.html"*/'<ion-header>\n\n    <ion-navbar core-back-button>\n\n        <ion-title>{{ title }}</ion-title>\n\n    </ion-navbar>\n\n</ion-header>\n\n<ion-content>\n\n    <ion-refresher [enabled]="filesLoaded && (showPrivateFiles || showSiteFiles)" (ionRefresh)="refreshData($event)">\n\n        <ion-refresher-content pullingText="{{ \'core.pulltorefresh\' | translate }}"></ion-refresher-content>\n\n    </ion-refresher>\n\n\n\n    <core-loading [hideUntil]="filesLoaded" *ngIf="showPrivateFiles || showSiteFiles" class="safe-area-page">\n\n        <!-- Allow selecting the files to see: private or site. -->\n\n        <div padding *ngIf="showPrivateFiles && showSiteFiles && !path">\n\n            <ion-select [(ngModel)]="root" (ngModelChange)="rootChanged()" interface="popover" class="core-button-select">\n\n                <ion-option value="my">{{ \'addon.files.privatefiles\' | translate }}</ion-option>\n\n                <ion-option value="site">{{ \'addon.files.sitefiles\' | translate }}</ion-option>\n\n            </ion-select>\n\n        </div>\n\n\n\n        <!-- Display info about space used and space left. -->\n\n        <p class="core-info-card" *ngIf="userQuota && filesInfo && filesInfo.filecount > 0">{{ \'core.quotausage\' | translate:{$a: {used: spaceUsed, total: userQuotaReadable} } }}</p>\n\n\n\n        <!-- List of files. -->\n\n        <ion-list *ngIf="files && files.length > 0">\n\n            <ng-container *ngFor="let file of files">\n\n                <a *ngIf="file.isdir" ion-item class="item-media" navPush="AddonFilesListPage" [navParams]="{path: file.link, title: file.filename}">\n\n                    <img [src]="file.imgPath" alt="" role="presentation" item-start>\n\n                    <p>{{file.filename}}</p>\n\n                </a>\n\n                <core-file *ngIf="!file.isdir" [file]="file" [component]="component" [componentId]="file.contextid"></core-file>\n\n            </ng-container>\n\n        </ion-list>\n\n\n\n        <!-- Message telling there are no files. -->\n\n        <core-empty-box *ngIf="!files || !files.length" icon="folder" [message]="\'addon.files.emptyfilelist\' | translate"></core-empty-box>\n\n    </core-loading>\n\n\n\n    <!-- Upload a private file. -->\n\n    <ion-fab core-fab bottom end *ngIf="showUpload && root != \'site\' && !path">\n\n        <button ion-fab (click)="uploadFile()" [attr.aria-label]="\'core.fileuploader.uploadafile\' | translate">\n\n            <ion-icon name="add"></ion-icon>\n\n        </button>\n\n    </ion-fab>\n\n</ion-content>'/*ion-inline-end:"D:\workspace\moodle\agro-moodle-app\src\addon\files\pages\list\list.html"*/,
+            selector: 'page-addon-files-list',template:/*ion-inline-start:"C:\Users\sid_m\Documents\ASTER-ANIMA\agro\develop-agro\agro-moodle-app\src\addon\files\pages\list\list.html"*/'<ion-header>\n\n    <ion-navbar core-back-button>\n\n        <ion-title>{{ title }}</ion-title>\n\n    </ion-navbar>\n\n</ion-header>\n\n<ion-content>\n\n    <ion-refresher [enabled]="filesLoaded && (showPrivateFiles || showSiteFiles)" (ionRefresh)="refreshData($event)">\n\n        <ion-refresher-content pullingText="{{ \'core.pulltorefresh\' | translate }}"></ion-refresher-content>\n\n    </ion-refresher>\n\n\n\n    <core-loading [hideUntil]="filesLoaded" *ngIf="showPrivateFiles || showSiteFiles" class="safe-area-page">\n\n        <!-- Allow selecting the files to see: private or site. -->\n\n        <div padding *ngIf="showPrivateFiles && showSiteFiles && !path">\n\n            <ion-select [(ngModel)]="root" (ngModelChange)="rootChanged()" interface="popover" class="core-button-select">\n\n                <ion-option value="my">{{ \'addon.files.privatefiles\' | translate }}</ion-option>\n\n                <ion-option value="site">{{ \'addon.files.sitefiles\' | translate }}</ion-option>\n\n            </ion-select>\n\n        </div>\n\n\n\n        <!-- Display info about space used and space left. -->\n\n        <p class="core-info-card" *ngIf="userQuota && filesInfo && filesInfo.filecount > 0">{{ \'core.quotausage\' | translate:{$a: {used: spaceUsed, total: userQuotaReadable} } }}</p>\n\n\n\n        <!-- List of files. -->\n\n        <ion-list *ngIf="files && files.length > 0">\n\n            <ng-container *ngFor="let file of files">\n\n                <a *ngIf="file.isdir" ion-item class="item-media" navPush="AddonFilesListPage" [navParams]="{path: file.link, title: file.filename}">\n\n                    <img [src]="file.imgPath" alt="" role="presentation" item-start>\n\n                    <p>{{file.filename}}</p>\n\n                </a>\n\n                <core-file *ngIf="!file.isdir" [file]="file" [component]="component" [componentId]="file.contextid"></core-file>\n\n            </ng-container>\n\n        </ion-list>\n\n\n\n        <!-- Message telling there are no files. -->\n\n        <core-empty-box *ngIf="!files || !files.length" icon="folder" [message]="\'addon.files.emptyfilelist\' | translate"></core-empty-box>\n\n    </core-loading>\n\n\n\n    <!-- Upload a private file. -->\n\n    <ion-fab core-fab bottom end *ngIf="showUpload && root != \'site\' && !path">\n\n        <button ion-fab (click)="uploadFile()" [attr.aria-label]="\'core.fileuploader.uploadafile\' | translate">\n\n            <ion-icon name="add"></ion-icon>\n\n        </button>\n\n    </ion-fab>\n\n</ion-content>'/*ion-inline-end:"C:\Users\sid_m\Documents\ASTER-ANIMA\agro\develop-agro\agro-moodle-app\src\addon\files\pages\list\list.html"*/,
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["t" /* NavParams */], __WEBPACK_IMPORTED_MODULE_4__providers_events__["b" /* CoreEventsProvider */], __WEBPACK_IMPORTED_MODULE_5__providers_sites__["b" /* CoreSitesProvider */],
             __WEBPACK_IMPORTED_MODULE_6__providers_utils_dom__["b" /* CoreDomUtilsProvider */], __WEBPACK_IMPORTED_MODULE_2__ngx_translate_core__["c" /* TranslateService */], __WEBPACK_IMPORTED_MODULE_3__providers_app__["b" /* CoreAppProvider */],

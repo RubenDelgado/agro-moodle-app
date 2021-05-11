@@ -1,6 +1,6 @@
 webpackJsonp([141],{
 
-/***/ 2001:
+/***/ 1996:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -9,7 +9,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(3);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ngx_translate_core__ = __webpack_require__(1);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__settings__ = __webpack_require__(2157);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__settings__ = __webpack_require__(2152);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__directives_directives_module__ = __webpack_require__(14);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__pipes_pipes_module__ = __webpack_require__(66);
 // (C) Copyright 2015 Moodle Pty Ltd.
@@ -60,7 +60,7 @@ var AddonCalendarSettingsPageModule = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 2157:
+/***/ 2152:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -125,7 +125,7 @@ var AddonCalendarSettingsPage = /** @class */ (function () {
     };
     AddonCalendarSettingsPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-addon-calendar-settings',template:/*ion-inline-start:"D:\workspace\moodle\agro-moodle-app\src\addon\calendar\pages\settings\settings.html"*/'<ion-header>\n\n    <ion-navbar core-back-button>\n\n        <ion-title>{{ \'core.settings.settings\' | translate }}</ion-title>\n\n    </ion-navbar>\n\n</ion-header>\n\n<ion-content>\n\n    <ion-list>\n\n        <ion-item>\n\n            <ion-label>{{ \'addon.calendar.defaultnotificationtime\' | translate }}</ion-label>\n\n            <ion-select [(ngModel)]="defaultTime" (ionChange)="updateDefaultTime($event)" interface="action-sheet">\n\n                <ion-option value="0">{{ \'core.settings.disabled\' | translate }}</ion-option>\n\n                <ion-option value="10">{{ 600 | coreDuration }}</ion-option>\n\n                <ion-option value="30">{{ 1800 | coreDuration }}</ion-option>\n\n                <ion-option value="60">{{ 3600 | coreDuration }}</ion-option>\n\n                <ion-option value="120">{{ 7200 | coreDuration }}</ion-option>\n\n                <ion-option value="360">{{ 21600 | coreDuration }}</ion-option>\n\n                <ion-option value="720">{{ 43200 | coreDuration }}</ion-option>\n\n                <ion-option value="1440">{{ 86400 | coreDuration }}</ion-option>\n\n            </ion-select>\n\n        </ion-item>\n\n    </ion-list>\n\n</ion-content>\n\n'/*ion-inline-end:"D:\workspace\moodle\agro-moodle-app\src\addon\calendar\pages\settings\settings.html"*/,
+            selector: 'page-addon-calendar-settings',template:/*ion-inline-start:"C:\Users\sid_m\Documents\ASTER-ANIMA\agro\develop-agro\agro-moodle-app\src\addon\calendar\pages\settings\settings.html"*/'<ion-header>\n\n    <ion-navbar core-back-button>\n\n        <ion-title>{{ \'core.settings.settings\' | translate }}</ion-title>\n\n    </ion-navbar>\n\n</ion-header>\n\n<ion-content>\n\n    <ion-list>\n\n        <ion-item>\n\n            <ion-label>{{ \'addon.calendar.defaultnotificationtime\' | translate }}</ion-label>\n\n            <ion-select [(ngModel)]="defaultTime" (ionChange)="updateDefaultTime($event)" interface="action-sheet">\n\n                <ion-option value="0">{{ \'core.settings.disabled\' | translate }}</ion-option>\n\n                <ion-option value="10">{{ 600 | coreDuration }}</ion-option>\n\n                <ion-option value="30">{{ 1800 | coreDuration }}</ion-option>\n\n                <ion-option value="60">{{ 3600 | coreDuration }}</ion-option>\n\n                <ion-option value="120">{{ 7200 | coreDuration }}</ion-option>\n\n                <ion-option value="360">{{ 21600 | coreDuration }}</ion-option>\n\n                <ion-option value="720">{{ 43200 | coreDuration }}</ion-option>\n\n                <ion-option value="1440">{{ 86400 | coreDuration }}</ion-option>\n\n            </ion-select>\n\n        </ion-item>\n\n    </ion-list>\n\n</ion-content>\n\n'/*ion-inline-end:"C:\Users\sid_m\Documents\ASTER-ANIMA\agro\develop-agro\agro-moodle-app\src\addon\calendar\pages\settings\settings.html"*/,
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1__providers_calendar__["a" /* AddonCalendarProvider */], __WEBPACK_IMPORTED_MODULE_2__providers_events__["b" /* CoreEventsProvider */],
             __WEBPACK_IMPORTED_MODULE_3__providers_sites__["b" /* CoreSitesProvider */]])

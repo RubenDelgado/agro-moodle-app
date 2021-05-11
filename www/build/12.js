@@ -1,6 +1,6 @@
 webpackJsonp([12],{
 
-/***/ 2140:
+/***/ 2097:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -8,7 +8,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "CoreViewerIframePageModule", function() { return CoreViewerIframePageModule; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(3);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__iframe__ = __webpack_require__(2300);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__iframe__ = __webpack_require__(2253);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__components_components_module__ = __webpack_require__(13);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__directives_directives_module__ = __webpack_require__(14);
 // (C) Copyright 2015 Moodle Pty Ltd.
@@ -57,7 +57,7 @@ var CoreViewerIframePageModule = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 2300:
+/***/ 2253:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -114,7 +114,7 @@ var CoreViewerIframePage = /** @class */ (function () {
     }
     CoreViewerIframePage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-core-viewer-iframe',template:/*ion-inline-start:"D:\workspace\moodle\agro-moodle-app\src\core\viewer\pages\iframe\iframe.html"*/'<ion-header>\n\n    <ion-navbar core-back-button>\n\n        <ion-title>{{ title }}</ion-title>\n\n    </ion-navbar>\n\n</ion-header>\n\n<ion-content>\n\n    <core-loading [hideUntil]="url">\n\n        <core-iframe *ngIf="url" [src]="url"></core-iframe>\n\n    </core-loading>\n\n</ion-content>\n\n'/*ion-inline-end:"D:\workspace\moodle\agro-moodle-app\src\core\viewer\pages\iframe\iframe.html"*/,
+            selector: 'page-core-viewer-iframe',template:/*ion-inline-start:"C:\Users\sid_m\Documents\ASTER-ANIMA\agro\develop-agro\agro-moodle-app\src\core\viewer\pages\iframe\iframe.html"*/'<ion-header>\n\n    <ion-navbar core-back-button>\n\n        <ion-title>{{ title }}</ion-title>\n\n    </ion-navbar>\n\n</ion-header>\n\n<ion-content>\n\n    <core-loading [hideUntil]="url">\n\n        <core-iframe *ngIf="url" [src]="url"></core-iframe>\n\n    </core-loading>\n\n</ion-content>\n\n'/*ion-inline-end:"C:\Users\sid_m\Documents\ASTER-ANIMA\agro\develop-agro\agro-moodle-app\src\core\viewer\pages\iframe\iframe.html"*/,
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["t" /* NavParams */], __WEBPACK_IMPORTED_MODULE_2__providers_sites__["b" /* CoreSitesProvider */]])
     ], CoreViewerIframePage);

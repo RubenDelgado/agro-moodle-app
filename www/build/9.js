@@ -1,6 +1,6 @@
 webpackJsonp([9],{
 
-/***/ 2143:
+/***/ 2101:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -9,7 +9,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(3);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ngx_translate_core__ = __webpack_require__(1);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__text__ = __webpack_require__(2303);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__text__ = __webpack_require__(2257);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__components_components_module__ = __webpack_require__(13);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__directives_directives_module__ = __webpack_require__(14);
 // (C) Copyright 2015 Moodle Pty Ltd.
@@ -63,7 +63,7 @@ var CoreViewerTextPageModule = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 2303:
+/***/ 2257:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -129,7 +129,7 @@ var CoreViewerTextPage = /** @class */ (function () {
     };
     CoreViewerTextPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-core-viewer-text',template:/*ion-inline-start:"D:\workspace\moodle\agro-moodle-app\src\core\viewer\pages\text\text.html"*/'<ion-header>\n\n    <ion-navbar core-back-button>\n\n        <ion-title>{{ title }}</ion-title>\n\n\n\n        <ion-buttons end>\n\n            <button ion-button icon-only (click)="closeModal()" [attr.aria-label]="\'core.close\' | translate">\n\n                <ion-icon name="close"></ion-icon>\n\n            </button>\n\n        </ion-buttons>\n\n    </ion-navbar>\n\n</ion-header>\n\n<ion-content padding>\n\n    <core-format-text [text]="content" [component]="component" [componentId]="componentId" [filter]="filter" [contextLevel]="contextLevel" [contextInstanceId]="instanceId" [courseId]="courseId"></core-format-text>\n\n\n\n    <ion-card *ngIf="files && files.length">\n\n        <core-file *ngFor="let file of files" [file]="file" [component]="component" [componentId]="componentId"></core-file>\n\n    </ion-card>\n\n</ion-content>\n\n<ion-footer color="light" *ngIf="displayCopyButton">\n\n    <button ion-button block color="light" icon-start (click)="copyText()">\n\n        <ion-icon name="copy" aria-hidden="true"></ion-icon>\n\n        {{ \'core.copytoclipboard\' | translate }}\n\n    </button>\n\n</ion-footer>\n\n'/*ion-inline-end:"D:\workspace\moodle\agro-moodle-app\src\core\viewer\pages\text\text.html"*/,
+            selector: 'page-core-viewer-text',template:/*ion-inline-start:"C:\Users\sid_m\Documents\ASTER-ANIMA\agro\develop-agro\agro-moodle-app\src\core\viewer\pages\text\text.html"*/'<ion-header>\n\n    <ion-navbar core-back-button>\n\n        <ion-title>{{ title }}</ion-title>\n\n\n\n        <ion-buttons end>\n\n            <button ion-button icon-only (click)="closeModal()" [attr.aria-label]="\'core.close\' | translate">\n\n                <ion-icon name="close"></ion-icon>\n\n            </button>\n\n        </ion-buttons>\n\n    </ion-navbar>\n\n</ion-header>\n\n<ion-content padding>\n\n    <core-format-text [text]="content" [component]="component" [componentId]="componentId" [filter]="filter" [contextLevel]="contextLevel" [contextInstanceId]="instanceId" [courseId]="courseId"></core-format-text>\n\n\n\n    <ion-card *ngIf="files && files.length">\n\n        <core-file *ngFor="let file of files" [file]="file" [component]="component" [componentId]="componentId"></core-file>\n\n    </ion-card>\n\n</ion-content>\n\n<ion-footer color="light" *ngIf="displayCopyButton">\n\n    <button ion-button block color="light" icon-start (click)="copyText()">\n\n        <ion-icon name="copy" aria-hidden="true"></ion-icon>\n\n        {{ \'core.copytoclipboard\' | translate }}\n\n    </button>\n\n</ion-footer>\n\n'/*ion-inline-end:"C:\Users\sid_m\Documents\ASTER-ANIMA\agro\develop-agro\agro-moodle-app\src\core\viewer\pages\text\text.html"*/,
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["G" /* ViewController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["t" /* NavParams */], __WEBPACK_IMPORTED_MODULE_2__providers_utils_text__["b" /* CoreTextUtilsProvider */]])
     ], CoreViewerTextPage);

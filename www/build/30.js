@@ -1,6 +1,6 @@
 webpackJsonp([30],{
 
-/***/ 2121:
+/***/ 2081:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -9,7 +9,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(3);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ngx_translate_core__ = __webpack_require__(1);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__app__ = __webpack_require__(2281);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__app__ = __webpack_require__(2237);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__components_components_module__ = __webpack_require__(13);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__directives_directives_module__ = __webpack_require__(14);
 // (C) Copyright 2015 Moodle Pty Ltd.
@@ -60,7 +60,7 @@ var CoreAppSettingsPageModule = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 2281:
+/***/ 2237:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -130,7 +130,7 @@ var CoreAppSettingsPage = /** @class */ (function () {
     ], CoreAppSettingsPage.prototype, "splitviewCtrl", void 0);
     CoreAppSettingsPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-core-settings-app',template:/*ion-inline-start:"D:\workspace\moodle\agro-moodle-app\src\core\settings\pages\app\app.html"*/'<ion-header>\n\n    <ion-navbar core-back-button>\n\n        <ion-title>{{ \'core.settings.appsettings\' | translate}}</ion-title>\n\n        <ion-buttons end>\n\n        </ion-buttons>\n\n    </ion-navbar>\n\n</ion-header>\n\n<core-split-view>\n\n    <ion-content>\n\n        <ion-list>\n\n            <a ion-item (click)="openHandler(\'CoreSettingsGeneralPage\')" [title]="\'core.settings.general\' | translate"  [class.core-split-item-selected]="\'CoreSettingsGeneralPage\' == selectedPage" detail-push>\n\n                <ion-icon name="construct" item-start></ion-icon>\n\n                <h2>{{ \'core.settings.general\' | translate }}</h2>\n\n            </a>\n\n            <a ion-item (click)="openHandler(\'CoreSettingsSpaceUsagePage\')" [title]="\'core.settings.spaceusage\' | translate" [class.core-split-item-selected]="\'CoreSettingsSpaceUsagePage\' == selectedPage" detail-push>\n\n                <ion-icon name="stats" item-start></ion-icon>\n\n                <h2>{{ \'core.settings.spaceusage\' | translate }}</h2>\n\n            </a>\n\n            <a ion-item (click)="openHandler(\'CoreSettingsSynchronizationPage\')" [title]="\'core.settings.synchronization\' | translate" [class.core-split-item-selected]="\'CoreSettingsSynchronizationPage\' == selectedPage" detail-push>\n\n                <ion-icon name="sync" item-start></ion-icon>\n\n                <h2>{{ \'core.settings.synchronization\' | translate }}</h2>\n\n            </a>\n\n            <a ion-item *ngIf="isIOS" (click)="openHandler(\'CoreSharedFilesListPage\', {manage: true})" [title]="\'core.sharedfiles.sharedfiles\' | translate" [class.core-split-item-selected]="\'CoreSharedFilesListPage\' == selectedPage" detail-push>\n\n                <ion-icon name="folder" item-start></ion-icon>\n\n                <h2>{{ \'core.sharedfiles.sharedfiles\' | translate }}</h2>\n\n            </a>\n\n            <a ion-item (click)="openHandler(\'CoreSettingsAboutPage\')" [title]="\'core.settings.about\' | translate" [class.core-split-item-selected]="\'CoreSettingsAboutPage\' == selectedPage" detail-push>\n\n                <ion-icon name="contacts" item-start></ion-icon>\n\n                <h2>{{ \'core.settings.about\' | translate }}</h2>\n\n            </a>\n\n        </ion-list>\n\n    </ion-content>\n\n</core-split-view>\n\n'/*ion-inline-end:"D:\workspace\moodle\agro-moodle-app\src\core\settings\pages\app\app.html"*/,
+            selector: 'page-core-settings-app',template:/*ion-inline-start:"C:\Users\sid_m\Documents\ASTER-ANIMA\agro\develop-agro\agro-moodle-app\src\core\settings\pages\app\app.html"*/'<ion-header>\n\n    <ion-navbar core-back-button>\n\n        <ion-title>{{ \'core.settings.appsettings\' | translate}}</ion-title>\n\n        <ion-buttons end>\n\n        </ion-buttons>\n\n    </ion-navbar>\n\n</ion-header>\n\n<core-split-view>\n\n    <ion-content>\n\n        <ion-list>\n\n            <a ion-item (click)="openHandler(\'CoreSettingsGeneralPage\')" [title]="\'core.settings.general\' | translate"  [class.core-split-item-selected]="\'CoreSettingsGeneralPage\' == selectedPage" detail-push>\n\n                <ion-icon name="construct" item-start></ion-icon>\n\n                <h2>{{ \'core.settings.general\' | translate }}</h2>\n\n            </a>\n\n            <a ion-item (click)="openHandler(\'CoreSettingsSpaceUsagePage\')" [title]="\'core.settings.spaceusage\' | translate" [class.core-split-item-selected]="\'CoreSettingsSpaceUsagePage\' == selectedPage" detail-push>\n\n                <ion-icon name="stats" item-start></ion-icon>\n\n                <h2>{{ \'core.settings.spaceusage\' | translate }}</h2>\n\n            </a>\n\n            <a ion-item (click)="openHandler(\'CoreSettingsSynchronizationPage\')" [title]="\'core.settings.synchronization\' | translate" [class.core-split-item-selected]="\'CoreSettingsSynchronizationPage\' == selectedPage" detail-push>\n\n                <ion-icon name="sync" item-start></ion-icon>\n\n                <h2>{{ \'core.settings.synchronization\' | translate }}</h2>\n\n            </a>\n\n            <a ion-item *ngIf="isIOS" (click)="openHandler(\'CoreSharedFilesListPage\', {manage: true})" [title]="\'core.sharedfiles.sharedfiles\' | translate" [class.core-split-item-selected]="\'CoreSharedFilesListPage\' == selectedPage" detail-push>\n\n                <ion-icon name="folder" item-start></ion-icon>\n\n                <h2>{{ \'core.sharedfiles.sharedfiles\' | translate }}</h2>\n\n            </a>\n\n            <a ion-item (click)="openHandler(\'CoreSettingsAboutPage\')" [title]="\'core.settings.about\' | translate" [class.core-split-item-selected]="\'CoreSettingsAboutPage\' == selectedPage" detail-push>\n\n                <ion-icon name="contacts" item-start></ion-icon>\n\n                <h2>{{ \'core.settings.about\' | translate }}</h2>\n\n            </a>\n\n        </ion-list>\n\n    </ion-content>\n\n</core-split-view>\n\n'/*ion-inline-end:"C:\Users\sid_m\Documents\ASTER-ANIMA\agro\develop-agro\agro-moodle-app\src\core\settings\pages\app\app.html"*/,
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["t" /* NavParams */]])
     ], CoreAppSettingsPage);

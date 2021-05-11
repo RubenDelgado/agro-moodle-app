@@ -1,6 +1,6 @@
 webpackJsonp([82],{
 
-/***/ 2065:
+/***/ 2043:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -8,7 +8,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "AddonModQuizPreflightModalModule", function() { return AddonModQuizPreflightModalModule; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(3);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__preflight_modal__ = __webpack_require__(2222);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__preflight_modal__ = __webpack_require__(2199);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ngx_translate_core__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__components_components_module__ = __webpack_require__(13);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__directives_directives_module__ = __webpack_require__(14);
@@ -60,7 +60,7 @@ var AddonModQuizPreflightModalModule = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 2222:
+/***/ 2199:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -194,7 +194,7 @@ var AddonModQuizPreflightModalPage = /** @class */ (function () {
     ], AddonModQuizPreflightModalPage.prototype, "formElement", void 0);
     AddonModQuizPreflightModalPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-addon-mod-quiz-preflight-modal',template:/*ion-inline-start:"D:\workspace\moodle\agro-moodle-app\src\addon\mod\quiz\pages\preflight-modal\preflight-modal.html"*/'<ion-header>\n\n    <ion-navbar core-back-button>\n\n        <ion-title>{{ title | translate }}</ion-title>\n\n        <ion-buttons end>\n\n            <button ion-button icon-only (click)="closeModal()" [attr.aria-label]="\'core.close\' | translate">\n\n                <ion-icon name="close"></ion-icon>\n\n            </button>\n\n        </ion-buttons>\n\n    </ion-navbar>\n\n</ion-header>\n\n<ion-content padding class="addon-mod_quiz-preflight-modal">\n\n    <core-loading [hideUntil]="loaded">\n\n        <form ion-list [formGroup]="preflightForm" (ngSubmit)="sendData($event)" #preflightFormEl>\n\n            <!-- Access rules. -->\n\n            <ng-container *ngFor="let data of accessRulesData; let last = last">\n\n                <core-dynamic-component [component]="data.component" [data]="data.data">\n\n                    <p padding>Couldn\'t find the directive to render this access rule.</p>\n\n                </core-dynamic-component>\n\n                <ion-item-divider *ngIf="!last"></ion-item-divider>\n\n            </ng-container>\n\n\n\n            <button ion-button block type="submit">\n\n                {{ title | translate }}\n\n            </button>\n\n        </form>\n\n    </core-loading>\n\n</ion-content>\n\n'/*ion-inline-end:"D:\workspace\moodle\agro-moodle-app\src\addon\mod\quiz\pages\preflight-modal\preflight-modal.html"*/,
+            selector: 'page-addon-mod-quiz-preflight-modal',template:/*ion-inline-start:"C:\Users\sid_m\Documents\ASTER-ANIMA\agro\develop-agro\agro-moodle-app\src\addon\mod\quiz\pages\preflight-modal\preflight-modal.html"*/'<ion-header>\n\n    <ion-navbar core-back-button>\n\n        <ion-title>{{ title | translate }}</ion-title>\n\n        <ion-buttons end>\n\n            <button ion-button icon-only (click)="closeModal()" [attr.aria-label]="\'core.close\' | translate">\n\n                <ion-icon name="close"></ion-icon>\n\n            </button>\n\n        </ion-buttons>\n\n    </ion-navbar>\n\n</ion-header>\n\n<ion-content padding class="addon-mod_quiz-preflight-modal">\n\n    <core-loading [hideUntil]="loaded">\n\n        <form ion-list [formGroup]="preflightForm" (ngSubmit)="sendData($event)" #preflightFormEl>\n\n            <!-- Access rules. -->\n\n            <ng-container *ngFor="let data of accessRulesData; let last = last">\n\n                <core-dynamic-component [component]="data.component" [data]="data.data">\n\n                    <p padding>Couldn\'t find the directive to render this access rule.</p>\n\n                </core-dynamic-component>\n\n                <ion-item-divider *ngIf="!last"></ion-item-divider>\n\n            </ng-container>\n\n\n\n            <button ion-button block type="submit">\n\n                {{ title | translate }}\n\n            </button>\n\n        </form>\n\n    </core-loading>\n\n</ion-content>\n\n'/*ion-inline-end:"C:\Users\sid_m\Documents\ASTER-ANIMA\agro\develop-agro\agro-moodle-app\src\addon\mod\quiz\pages\preflight-modal\preflight-modal.html"*/,
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["t" /* NavParams */],
             __WEBPACK_IMPORTED_MODULE_3__angular_forms__["a" /* FormBuilder */],

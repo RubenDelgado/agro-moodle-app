@@ -1,6 +1,6 @@
 webpackJsonp([10],{
 
-/***/ 2141:
+/***/ 2099:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -9,7 +9,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(3);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ngx_translate_core__ = __webpack_require__(1);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__qr_scanner__ = __webpack_require__(2301);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__qr_scanner__ = __webpack_require__(2255);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__directives_directives_module__ = __webpack_require__(14);
 // (C) Copyright 2015 Moodle Pty Ltd.
 //
@@ -57,7 +57,7 @@ var CoreViewerQRScannerPageModule = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 2301:
+/***/ 2255:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -140,7 +140,7 @@ var CoreViewerQRScannerPage = /** @class */ (function () {
     };
     CoreViewerQRScannerPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-core-viewer-qr-scanner',template:/*ion-inline-start:"D:\workspace\moodle\agro-moodle-app\src\core\viewer\pages\qr-scanner\qr-scanner.html"*/'<ion-header>\n\n    <ion-navbar core-back-button>\n\n        <ion-title>{{ title }}</ion-title>\n\n\n\n        <ion-buttons end>\n\n            <button ion-button icon-only (click)="cancel()" [attr.aria-label]="\'core.close\' | translate">\n\n                <ion-icon name="close"></ion-icon>\n\n            </button>\n\n        </ion-buttons>\n\n    </ion-navbar>\n\n</ion-header>\n\n<ion-content>\n\n</ion-content>\n\n'/*ion-inline-end:"D:\workspace\moodle\agro-moodle-app\src\core\viewer\pages\qr-scanner\qr-scanner.html"*/,
+            selector: 'page-core-viewer-qr-scanner',template:/*ion-inline-start:"C:\Users\sid_m\Documents\ASTER-ANIMA\agro\develop-agro\agro-moodle-app\src\core\viewer\pages\qr-scanner\qr-scanner.html"*/'<ion-header>\n\n    <ion-navbar core-back-button>\n\n        <ion-title>{{ title }}</ion-title>\n\n\n\n        <ion-buttons end>\n\n            <button ion-button icon-only (click)="cancel()" [attr.aria-label]="\'core.close\' | translate">\n\n                <ion-icon name="close"></ion-icon>\n\n            </button>\n\n        </ion-buttons>\n\n    </ion-navbar>\n\n</ion-header>\n\n<ion-content>\n\n</ion-content>\n\n'/*ion-inline-end:"C:\Users\sid_m\Documents\ASTER-ANIMA\agro\develop-agro\agro-moodle-app\src\core\viewer\pages\qr-scanner\qr-scanner.html"*/,
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_2_ionic_angular__["t" /* NavParams */],
             __WEBPACK_IMPORTED_MODULE_1__ngx_translate_core__["c" /* TranslateService */],
