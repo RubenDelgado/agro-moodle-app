@@ -1,82 +1,45 @@
 webpackJsonp([125],{
 
-/***/ 2022:
+/***/ 2040:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "AddonModAssignSubmissionListPageModule", function() { return AddonModAssignSubmissionListPageModule; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(3);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ngx_translate_core__ = __webpack_require__(1);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__components_components_module__ = __webpack_require__(13);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__directives_directives_module__ = __webpack_require__(14);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__submission_list__ = __webpack_require__(2178);
-// (C) Copyright 2015 Moodle Pty Ltd.
-//
-// Licensed under the Apache License, Version 2.0 (the "License");
-// you may not use this file except in compliance with the License.
-// You may obtain a copy of the License at
-//
-//     http://www.apache.org/licenses/LICENSE-2.0
-//
-// Unless required by applicable law or agreed to in writing, software
-// distributed under the License is distributed on an "AS IS" BASIS,
-// WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-// See the License for the specific language governing permissions and
-// limitations under the License.
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
 
+// EXTERNAL MODULE: ./node_modules/@angular/core/esm5/core.js
+var core = __webpack_require__(0);
 
+// EXTERNAL MODULE: ./node_modules/ionic-angular/index.js + 3 modules
+var ionic_angular = __webpack_require__(5);
 
+// EXTERNAL MODULE: ./node_modules/@ngx-translate/core/index.js + 1 modules
+var _ngx_translate_core = __webpack_require__(3);
 
+// EXTERNAL MODULE: ./src/components/components.module.ts
+var components_module = __webpack_require__(26);
 
+// EXTERNAL MODULE: ./src/directives/directives.module.ts + 2 modules
+var directives_module = __webpack_require__(32);
 
-var AddonModAssignSubmissionListPageModule = /** @class */ (function () {
-    function AddonModAssignSubmissionListPageModule() {
-    }
-    AddonModAssignSubmissionListPageModule = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["J" /* NgModule */])({
-            declarations: [
-                __WEBPACK_IMPORTED_MODULE_5__submission_list__["a" /* AddonModAssignSubmissionListPage */],
-            ],
-            imports: [
-                __WEBPACK_IMPORTED_MODULE_3__components_components_module__["a" /* CoreComponentsModule */],
-                __WEBPACK_IMPORTED_MODULE_4__directives_directives_module__["a" /* CoreDirectivesModule */],
-                __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["l" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_5__submission_list__["a" /* AddonModAssignSubmissionListPage */]),
-                __WEBPACK_IMPORTED_MODULE_2__ngx_translate_core__["b" /* TranslateModule */].forChild()
-            ],
-        })
-    ], AddonModAssignSubmissionListPageModule);
-    return AddonModAssignSubmissionListPageModule;
-}());
+// EXTERNAL MODULE: ./src/pipes/pipes.module.ts + 2 modules
+var pipes_module = __webpack_require__(111);
 
-//# sourceMappingURL=submission-list.module.js.map
+// EXTERNAL MODULE: ./src/providers/app.ts
+var app = __webpack_require__(12);
 
-/***/ }),
+// EXTERNAL MODULE: ./src/providers/sites.ts
+var sites = __webpack_require__(1);
 
-/***/ 2178:
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+// EXTERNAL MODULE: ./src/providers/utils/dom.ts
+var dom = __webpack_require__(4);
 
-"use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AddonModAssignSubmissionListPage; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(3);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ngx_translate_core__ = __webpack_require__(1);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__providers_events__ = __webpack_require__(11);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__providers_sites__ = __webpack_require__(2);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__providers_utils_dom__ = __webpack_require__(7);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__providers_groups__ = __webpack_require__(54);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__providers_assign__ = __webpack_require__(60);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__providers_assign_offline__ = __webpack_require__(103);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__providers_assign_sync__ = __webpack_require__(196);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__providers_helper__ = __webpack_require__(134);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__components_split_view_split_view__ = __webpack_require__(81);
+// EXTERNAL MODULE: ./src/addon/mod/chat/providers/chat.ts
+var chat = __webpack_require__(287);
+
+// EXTERNAL MODULE: ./node_modules/@ionic-native/network/index.js
+var network = __webpack_require__(167);
+
+// CONCATENATED MODULE: ./src/addon/mod/chat/pages/users/users.ts
 // (C) Copyright 2015 Moodle Pty Ltd.
 //
 // Licensed under the Apache License, Version 2.0 (the "License");
@@ -99,46 +62,6 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, generator) {
-    return new (P || (P = Promise))(function (resolve, reject) {
-        function fulfilled(value) { try { step(generator.next(value)); } catch (e) { reject(e); } }
-        function rejected(value) { try { step(generator["throw"](value)); } catch (e) { reject(e); } }
-        function step(result) { result.done ? resolve(result.value) : new P(function (resolve) { resolve(result.value); }).then(fulfilled, rejected); }
-        step((generator = generator.apply(thisArg, _arguments || [])).next());
-    });
-};
-var __generator = (this && this.__generator) || function (thisArg, body) {
-    var _ = { label: 0, sent: function() { if (t[0] & 1) throw t[1]; return t[1]; }, trys: [], ops: [] }, f, y, t, g;
-    return g = { next: verb(0), "throw": verb(1), "return": verb(2) }, typeof Symbol === "function" && (g[Symbol.iterator] = function() { return this; }), g;
-    function verb(n) { return function (v) { return step([n, v]); }; }
-    function step(op) {
-        if (f) throw new TypeError("Generator is already executing.");
-        while (_) try {
-            if (f = 1, y && (t = y[op[0] & 2 ? "return" : op[0] ? "throw" : "next"]) && !(t = t.call(y, op[1])).done) return t;
-            if (y = 0, t) op = [0, t.value];
-            switch (op[0]) {
-                case 0: case 1: t = op; break;
-                case 4: _.label++; return { value: op[1], done: false };
-                case 5: _.label++; y = op[1]; op = [0]; continue;
-                case 7: op = _.ops.pop(); _.trys.pop(); continue;
-                default:
-                    if (!(t = _.trys, t = t.length > 0 && t[t.length - 1]) && (op[0] === 6 || op[0] === 2)) { _ = 0; continue; }
-                    if (op[0] === 3 && (!t || (op[1] > t[0] && op[1] < t[3]))) { _.label = op[1]; break; }
-                    if (op[0] === 6 && _.label < t[1]) { _.label = t[1]; t = op; break; }
-                    if (t && _.label < t[2]) { _.label = t[2]; _.ops.push(op); break; }
-                    if (t[2]) _.ops.pop();
-                    _.trys.pop(); continue;
-            }
-            op = body.call(thisArg, _);
-        } catch (e) { op = [6, e]; y = 0; } finally { f = t = 0; }
-        if (op[0] & 5) throw op[1]; return { value: op[0] ? op[1] : void 0, done: true };
-    }
-};
-
-
-
-
-
 
 
 
@@ -147,308 +70,416 @@ var __generator = (this && this.__generator) || function (thisArg, body) {
 
 
 /**
- * Page that displays a list of submissions of an assignment.
+ * Page that displays the chat session users.
  */
-var AddonModAssignSubmissionListPage = /** @class */ (function () {
-    function AddonModAssignSubmissionListPage(navParams, sitesProvider, eventsProvider, domUtils, translate, assignProvider, assignOfflineProvider, assignHelper, groupsProvider) {
+var users_AddonModChatUsersPage = /** @class */ (function () {
+    function AddonModChatUsersPage(navParams, network, zone, appProvider, sitesProvider, viewCtrl, domUtils, chatProvider) {
         var _this = this;
+        this.appProvider = appProvider;
         this.sitesProvider = sitesProvider;
-        this.eventsProvider = eventsProvider;
+        this.viewCtrl = viewCtrl;
         this.domUtils = domUtils;
-        this.translate = translate;
-        this.assignProvider = assignProvider;
-        this.assignOfflineProvider = assignOfflineProvider;
-        this.assignHelper = assignHelper;
-        this.groupsProvider = groupsProvider;
-        this.groupId = 0; // Group ID to show.
-        this.groupInfo = {
-            groups: [],
-            separateGroups: false,
-            visibleGroups: false
-        };
-        this.moduleId = navParams.get('moduleId');
-        this.courseId = navParams.get('courseId');
-        this.groupId = navParams.get('groupId');
-        this.selectedStatus = navParams.get('status');
-        if (this.selectedStatus) {
-            if (this.selectedStatus == __WEBPACK_IMPORTED_MODULE_7__providers_assign__["a" /* AddonModAssignProvider */].NEED_GRADING) {
-                this.title = this.translate.instant('addon.mod_assign.numberofsubmissionsneedgrading');
-            }
-            else {
-                this.title = this.translate.instant('addon.mod_assign.submissionstatus_' + this.selectedStatus);
-            }
-        }
-        else {
-            this.title = this.translate.instant('addon.mod_assign.numberofparticipants');
-        }
-        // Update data if some grade changes.
-        this.gradedObserver = eventsProvider.on(__WEBPACK_IMPORTED_MODULE_7__providers_assign__["a" /* AddonModAssignProvider */].GRADED_EVENT, function (data) {
-            if (_this.loaded && _this.assign && data.assignmentId == _this.assign.id &&
-                data.userId == sitesProvider.getCurrentSiteUserId()) {
-                // Grade changed, refresh the data.
-                _this.loaded = false;
-                _this.refreshAllData(true).finally(function () {
-                    _this.loaded = true;
-                });
-            }
-        }, sitesProvider.getCurrentSiteId());
-        // Refresh data if this assign is synchronized.
-        var events = [__WEBPACK_IMPORTED_MODULE_9__providers_assign_sync__["b" /* AddonModAssignSyncProvider */].AUTO_SYNCED, __WEBPACK_IMPORTED_MODULE_9__providers_assign_sync__["b" /* AddonModAssignSyncProvider */].MANUAL_SYNCED];
-        this.syncObserver = eventsProvider.onMultiple(events, function (data) {
-            if (!_this.loaded || data.context == 'submission-list') {
-                return;
-            }
-            _this.loaded = false;
-            _this.refreshAllData(false).finally(function () {
-                _this.loaded = true;
+        this.chatProvider = chatProvider;
+        this.users = [];
+        this.usersLoaded = false;
+        this.sessionId = navParams.get('sessionId');
+        this.isOnline = this.appProvider.isOnline();
+        this.currentUserId = this.sitesProvider.getCurrentSiteUserId();
+        this.onlineObserver = network.onchange().subscribe(function () {
+            // Execute the callback in the Angular zone, so change detection doesn't stop working.
+            zone.run(function () {
+                _this.isOnline = _this.appProvider.isOnline();
             });
-        }, this.sitesProvider.getCurrentSiteId());
+        });
     }
     /**
-     * Component being initialized.
+     * View loaded.
      */
-    AddonModAssignSubmissionListPage.prototype.ngOnInit = function () {
+    AddonModChatUsersPage.prototype.ionViewDidLoad = function () {
         var _this = this;
-        this.fetchAssignment(true).finally(function () {
-            if (!_this.selectedSubmissionId && _this.splitviewCtrl.isOn() && _this.submissions.length > 0) {
-                // Take first and load it.
-                _this.loadSubmission(_this.submissions[0]);
-            }
-            _this.loaded = true;
+        this.chatProvider.getChatUsers(this.sessionId, { cmId: this.cmId }).then(function (data) {
+            _this.users = data.users;
+        }).catch(function (error) {
+            _this.domUtils.showErrorModalDefault(error, 'addon.mod_chat.errorwhilegettingchatusers', true);
+        }).finally(function () {
+            _this.usersLoaded = true;
         });
     };
     /**
-     * Fetch assignment data.
+     * Close the chat users modal.
+     */
+    AddonModChatUsersPage.prototype.closeModal = function () {
+        this.viewCtrl.dismiss({ users: this.users });
+    };
+    /**
+     * Add "To user:".
      *
-     * @param sync Whether to try to synchronize data.
-     * @return Promise resolved when done.
+     * @param user User object.
      */
-    AddonModAssignSubmissionListPage.prototype.fetchAssignment = function (sync) {
-        return __awaiter(this, void 0, void 0, function () {
-            var _a, result, error_1, _b, _c, error_2;
-            return __generator(this, function (_d) {
-                switch (_d.label) {
-                    case 0:
-                        _d.trys.push([0, 9, , 10]);
-                        // Get assignment data.
-                        _a = this;
-                        return [4 /*yield*/, this.assignProvider.getAssignment(this.courseId, this.moduleId)];
-                    case 1:
-                        // Get assignment data.
-                        _a.assign = _d.sent();
-                        this.title = this.assign.name || this.title;
-                        if (!sync) return [3 /*break*/, 5];
-                        _d.label = 2;
-                    case 2:
-                        _d.trys.push([2, 4, , 5]);
-                        return [4 /*yield*/, __WEBPACK_IMPORTED_MODULE_9__providers_assign_sync__["a" /* AddonModAssignSync */].instance.syncAssign(this.assign.id)];
-                    case 3:
-                        result = _d.sent();
-                        if (result && result.updated) {
-                            this.eventsProvider.trigger(__WEBPACK_IMPORTED_MODULE_9__providers_assign_sync__["b" /* AddonModAssignSyncProvider */].MANUAL_SYNCED, {
-                                assignId: this.assign.id,
-                                warnings: result.warnings,
-                                gradesBlocked: result.gradesBlocked,
-                                context: 'submission-list',
-                            }, this.sitesProvider.getCurrentSiteId());
-                        }
-                        return [3 /*break*/, 5];
-                    case 4:
-                        error_1 = _d.sent();
-                        return [3 /*break*/, 5];
-                    case 5:
-                        // Get assignment submissions.
-                        _b = this;
-                        return [4 /*yield*/, this.assignProvider.getSubmissions(this.assign.id, { cmId: this.assign.cmid })];
-                    case 6:
-                        // Get assignment submissions.
-                        _b.submissionsData = _d.sent();
-                        if (!this.submissionsData.canviewsubmissions) {
-                            // User shouldn't be able to reach here.
-                            throw new Error('Cannot view submissions.');
-                        }
-                        // Check if groupmode is enabled to avoid showing wrong numbers.
-                        _c = this;
-                        return [4 /*yield*/, this.groupsProvider.getActivityGroupInfo(this.assign.cmid, false)];
-                    case 7:
-                        // Check if groupmode is enabled to avoid showing wrong numbers.
-                        _c.groupInfo = _d.sent();
-                        return [4 /*yield*/, this.setGroup(this.groupsProvider.validateGroupId(this.groupId, this.groupInfo))];
-                    case 8:
-                        _d.sent();
-                        return [3 /*break*/, 10];
-                    case 9:
-                        error_2 = _d.sent();
-                        this.domUtils.showErrorModalDefault(error_2, 'Error getting assigment data.');
-                        return [3 /*break*/, 10];
-                    case 10: return [2 /*return*/];
-                }
-            });
-        });
+    AddonModChatUsersPage.prototype.talkTo = function (user) {
+        this.viewCtrl.dismiss({ talkTo: user.fullname, users: this.users });
     };
     /**
-     * Set group to see the summary.
+     * Beep a user.
      *
-     * @param groupId Group ID.
-     * @return Resolved when done.
+     * @param user User object.
      */
-    AddonModAssignSubmissionListPage.prototype.setGroup = function (groupId) {
-        var _this = this;
-        this.groupId = groupId;
-        this.haveAllParticipants = true;
-        if (!this.sitesProvider.getCurrentSite().wsAvailable('mod_assign_list_participants')) {
-            // Submissions are not displayed in Moodle 3.1 without the local plugin, see MOBILE-2968.
-            this.haveAllParticipants = false;
-            this.submissions = [];
-            return Promise.resolve();
-        }
-        // Fetch submissions and grades.
-        var promises = [
-            this.assignHelper.getSubmissionsUserData(this.assign, this.submissionsData.submissions, this.groupId),
-            // Get assignment grades only if workflow is not enabled to check grading date.
-            !this.assign.markingworkflow ? this.assignProvider.getAssignmentGrades(this.assign.id, { cmId: this.assign.cmid }) :
-                Promise.resolve(null),
-        ];
-        return Promise.all(promises).then(function (_a) {
-            var submissions = _a[0], grades = _a[1];
-            // Filter the submissions to get only the ones with the right status and add some extra data.
-            var getNeedGrading = _this.selectedStatus == __WEBPACK_IMPORTED_MODULE_7__providers_assign__["a" /* AddonModAssignProvider */].NEED_GRADING, searchStatus = getNeedGrading ? __WEBPACK_IMPORTED_MODULE_7__providers_assign__["a" /* AddonModAssignProvider */].SUBMISSION_STATUS_SUBMITTED : _this.selectedStatus, promises = [], showSubmissions = [];
-            submissions.forEach(function (submission) {
-                if (!searchStatus || searchStatus == submission.status) {
-                    promises.push(_this.assignOfflineProvider.getSubmissionGrade(_this.assign.id, submission.userid).catch(function () {
-                        // Ignore errors.
-                    }).then(function (data) {
-                        var promise, notSynced = false;
-                        // Load offline grades.
-                        if (data && submission.timemodified < data.timemodified) {
-                            notSynced = true;
-                        }
-                        if (getNeedGrading) {
-                            // Only show the submissions that need to be graded.
-                            promise = _this.assignProvider.needsSubmissionToBeGraded(submission, _this.assign.id);
-                        }
-                        else {
-                            promise = Promise.resolve(true);
-                        }
-                        return promise.then(function (add) {
-                            if (!add) {
-                                return;
-                            }
-                            if (submission.gradingstatus == 'graded' && !_this.assign.markingworkflow) {
-                                // Get the last grade of the submission.
-                                var grade = grades.filter(function (grade) {
-                                    return grade.userid == submission.userid;
-                                }).reduce(function (a, b) {
-                                    return (a.timemodified > b.timemodified ? a : b);
-                                });
-                                if (grade && grade.timemodified < submission.timemodified) {
-                                    submission.gradingstatus = __WEBPACK_IMPORTED_MODULE_7__providers_assign__["a" /* AddonModAssignProvider */].GRADED_FOLLOWUP_SUBMIT;
-                                }
-                            }
-                            submission.statusColor = _this.assignProvider.getSubmissionStatusColor(submission.status);
-                            submission.gradingColor = _this.assignProvider.getSubmissionGradingStatusColor(submission.gradingstatus);
-                            // Show submission status if not submitted for grading.
-                            if (submission.statusColor != 'success' || !submission.gradingstatus) {
-                                submission.statusTranslated = _this.translate.instant('addon.mod_assign.submissionstatus_' +
-                                    submission.status);
-                            }
-                            else {
-                                submission.statusTranslated = '';
-                            }
-                            if (notSynced) {
-                                submission.gradingStatusTranslationId = 'addon.mod_assign.gradenotsynced';
-                                submission.gradingColor = '';
-                            }
-                            else if (submission.statusColor != 'danger' || submission.gradingColor != 'danger') {
-                                // Show grading status if one of the statuses is not done.
-                                submission.gradingStatusTranslationId =
-                                    _this.assignProvider.getSubmissionGradingStatusTranslationId(submission.gradingstatus);
-                            }
-                            else {
-                                submission.gradingStatusTranslationId = '';
-                            }
-                            showSubmissions.push(submission);
-                        });
-                    }));
-                }
-            });
-            return Promise.all(promises).then(function () {
-                _this.submissions = showSubmissions;
-            });
-        });
+    AddonModChatUsersPage.prototype.beepTo = function (user) {
+        this.viewCtrl.dismiss({ beepTo: user.id, users: this.users });
     };
     /**
-     * Load a certain submission.
-     *
-     * @param submission The submission to load.
+     * Page destroyed.
      */
-    AddonModAssignSubmissionListPage.prototype.loadSubmission = function (submission) {
-        if (this.selectedSubmissionId === submission.submitid && this.splitviewCtrl.isOn()) {
-            // Already selected.
-            return;
-        }
-        this.selectedSubmissionId = submission.submitid;
-        this.splitviewCtrl.push('AddonModAssignSubmissionReviewPage', {
-            courseId: this.courseId,
-            moduleId: this.moduleId,
-            submitId: submission.submitid,
-            blindId: submission.blindid
-        });
+    AddonModChatUsersPage.prototype.ngOnDestroy = function () {
+        this.onlineObserver && this.onlineObserver.unsubscribe();
     };
-    /**
-     * Refresh all the data.
-     *
-     * @param sync Whether to try to synchronize data.
-     * @return Promise resolved when done.
-     */
-    AddonModAssignSubmissionListPage.prototype.refreshAllData = function (sync) {
-        var _this = this;
-        var promises = [];
-        promises.push(this.assignProvider.invalidateAssignmentData(this.courseId));
-        if (this.assign) {
-            promises.push(this.assignProvider.invalidateAllSubmissionData(this.assign.id));
-            promises.push(this.assignProvider.invalidateAssignmentUserMappingsData(this.assign.id));
-            promises.push(this.assignProvider.invalidateAssignmentGradesData(this.assign.id));
-            promises.push(this.assignProvider.invalidateListParticipantsData(this.assign.id));
-        }
-        return Promise.all(promises).finally(function () {
-            return _this.fetchAssignment(sync);
-        });
-    };
-    /**
-     * Refresh the list.
-     *
-     * @param refresher Refresher.
-     */
-    AddonModAssignSubmissionListPage.prototype.refreshList = function (refresher) {
-        this.refreshAllData(true).finally(function () {
-            refresher.complete();
-        });
-    };
-    /**
-     * Component being destroyed.
-     */
-    AddonModAssignSubmissionListPage.prototype.ngOnDestroy = function () {
-        this.gradedObserver && this.gradedObserver.off();
-        this.syncObserver && this.syncObserver.off();
-    };
-    __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_10" /* ViewChild */])(__WEBPACK_IMPORTED_MODULE_11__components_split_view_split_view__["a" /* CoreSplitViewComponent */]),
-        __metadata("design:type", __WEBPACK_IMPORTED_MODULE_11__components_split_view_split_view__["a" /* CoreSplitViewComponent */])
-    ], AddonModAssignSubmissionListPage.prototype, "splitviewCtrl", void 0);
-    AddonModAssignSubmissionListPage = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-addon-mod-assign-submission-list',template:/*ion-inline-start:"D:\workspace\moodle\agro-moodle-app\src\addon\mod\assign\pages\submission-list\submission-list.html"*/'<ion-header>\n\n    <ion-navbar core-back-button>\n\n        <ion-title><core-format-text [text]="title" contextLevel="module" [contextInstanceId]="moduleId"  [courseId]="courseId"></core-format-text></ion-title>\n\n\n\n        <ion-buttons end></ion-buttons>\n\n    </ion-navbar>\n\n</ion-header>\n\n<core-split-view>\n\n    <ion-content>\n\n        <ion-refresher [enabled]="loaded" (ionRefresh)="refreshList($event)">\n\n            <ion-refresher-content pullingText="{{ \'core.pulltorefresh\' | translate }}"></ion-refresher-content>\n\n        </ion-refresher>\n\n        <core-loading [hideUntil]="loaded">\n\n            <core-empty-box *ngIf="!submissions || submissions.length == 0" icon="paper" [message]="\'addon.mod_assign.submissionstatus_\' | translate">\n\n            </core-empty-box>\n\n\n\n            <ion-list>\n\n                <ion-item text-wrap *ngIf="(groupInfo.separateGroups || groupInfo.visibleGroups)">\n\n                    <ion-label id="addon-assign-groupslabel" *ngIf="groupInfo.separateGroups">{{ \'core.groupsseparate\' | translate }}</ion-label>\n\n                    <ion-label id="addon-assign-groupslabel" *ngIf="groupInfo.visibleGroups">{{ \'core.groupsvisible\' | translate }}</ion-label>\n\n                    <ion-select [(ngModel)]="groupId" (ionChange)="setGroup(groupId)" aria-labelledby="addon-assign-groupslabel" interface="action-sheet">\n\n                        <ion-option *ngFor="let groupOpt of groupInfo.groups" [value]="groupOpt.id">{{groupOpt.name}}</ion-option>\n\n                    </ion-select>\n\n                </ion-item>\n\n                <!-- List of submissions. -->\n\n                <ng-container *ngFor="let submission of submissions">\n\n                    <a ion-item text-wrap (click)="loadSubmission(submission)" [class.core-split-item-selected]="submission.submitid == selectedSubmissionId">\n\n                        <ion-avatar core-user-avatar [user]="submission" [linkProfile]="false" item-start></ion-avatar>\n\n                        <h2 *ngIf="submission.userfullname">{{submission.userfullname}}</h2>\n\n                        <h2 *ngIf="!submission.userfullname">{{ \'addon.mod_assign.hiddenuser\' | translate }}{{submission.blindid}}</h2>\n\n                        <p *ngIf="assign.teamsubmission">\n\n                            <span *ngIf="submission.groupname">{{submission.groupname}}</span>\n\n                            <span *ngIf="assign.preventsubmissionnotingroup && !submission.groupname && submission.noGroups && !submission.blindid" class="text-danger">{{ \'addon.mod_assign.noteam\' | translate }}</span>\n\n                            <span *ngIf="assign.preventsubmissionnotingroup && !submission.groupname && submission.manyGroups && !submission.blindid" class="text-danger">{{ \'addon.mod_assign.multipleteams\' | translate }}</span>\n\n                            <span *ngIf="!assign.preventsubmissionnotingroup && !submission.groupname">{{ \'addon.mod_assign.defaultteam\' | translate }}</span>\n\n                        </p>\n\n                        <ion-badge text-center text-wrap [color]="submission.statusColor" *ngIf="submission.statusTranslated">\n\n                            {{ submission.statusTranslated }}\n\n                        </ion-badge>\n\n                        <ion-badge text-center text-wrap [color]="submission.gradingColor" *ngIf="submission.gradingStatusTranslationId">\n\n                            {{ submission.gradingStatusTranslationId | translate }}\n\n                        </ion-badge>\n\n                    </a>\n\n                </ng-container>\n\n\n\n                <ion-item text-wrap class="core-warning-card" *ngIf="!haveAllParticipants" icon-start>\n\n                    <ion-icon name="warning"></ion-icon>\n\n                    {{ \'addon.mod_assign.notallparticipantsareshown\' | translate }}\n\n                </ion-item>\n\n            </ion-list>\n\n        </core-loading>\n\n    </ion-content>\n\n</core-split-view>\n\n'/*ion-inline-end:"D:\workspace\moodle\agro-moodle-app\src\addon\mod\assign\pages\submission-list\submission-list.html"*/,
+    AddonModChatUsersPage = __decorate([
+        Object(core["m" /* Component */])({
+            selector: 'page-addon-mod-chat-users',
+            templateUrl: 'users.html',
         }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["t" /* NavParams */], __WEBPACK_IMPORTED_MODULE_4__providers_sites__["b" /* CoreSitesProvider */], __WEBPACK_IMPORTED_MODULE_3__providers_events__["b" /* CoreEventsProvider */],
-            __WEBPACK_IMPORTED_MODULE_5__providers_utils_dom__["b" /* CoreDomUtilsProvider */], __WEBPACK_IMPORTED_MODULE_2__ngx_translate_core__["c" /* TranslateService */],
-            __WEBPACK_IMPORTED_MODULE_7__providers_assign__["a" /* AddonModAssignProvider */], __WEBPACK_IMPORTED_MODULE_8__providers_assign_offline__["a" /* AddonModAssignOfflineProvider */],
-            __WEBPACK_IMPORTED_MODULE_10__providers_helper__["a" /* AddonModAssignHelperProvider */], __WEBPACK_IMPORTED_MODULE_6__providers_groups__["a" /* CoreGroupsProvider */]])
-    ], AddonModAssignSubmissionListPage);
-    return AddonModAssignSubmissionListPage;
+        __metadata("design:paramtypes", [ionic_angular["t" /* NavParams */], network["a" /* Network */], core["N" /* NgZone */], app["b" /* CoreAppProvider */],
+            sites["b" /* CoreSitesProvider */], ionic_angular["G" /* ViewController */],
+            dom["b" /* CoreDomUtilsProvider */], chat["a" /* AddonModChatProvider */]])
+    ], AddonModChatUsersPage);
+    return AddonModChatUsersPage;
 }());
 
-//# sourceMappingURL=submission-list.js.map
+//# sourceMappingURL=users.js.map
+// CONCATENATED MODULE: ./src/addon/mod/chat/pages/users/users.module.ts
+// (C) Copyright 2015 Moodle Pty Ltd.
+//
+// Licensed under the Apache License, Version 2.0 (the "License");
+// you may not use this file except in compliance with the License.
+// You may obtain a copy of the License at
+//
+//     http://www.apache.org/licenses/LICENSE-2.0
+//
+// Unless required by applicable law or agreed to in writing, software
+// distributed under the License is distributed on an "AS IS" BASIS,
+// WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+// See the License for the specific language governing permissions and
+// limitations under the License.
+var users_module___decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+
+
+
+
+
+
+
+var users_module_AddonModChatUsersPageModule = /** @class */ (function () {
+    function AddonModChatUsersPageModule() {
+    }
+    AddonModChatUsersPageModule = users_module___decorate([
+        Object(core["J" /* NgModule */])({
+            declarations: [
+                users_AddonModChatUsersPage,
+            ],
+            imports: [
+                components_module["a" /* CoreComponentsModule */],
+                directives_module["a" /* CoreDirectivesModule */],
+                pipes_module["a" /* CorePipesModule */],
+                ionic_angular["l" /* IonicPageModule */].forChild(users_AddonModChatUsersPage),
+                _ngx_translate_core["b" /* TranslateModule */].forChild()
+            ],
+        })
+    ], AddonModChatUsersPageModule);
+    return AddonModChatUsersPageModule;
+}());
+
+//# sourceMappingURL=users.module.js.map
+// EXTERNAL MODULE: ./node_modules/ionic-angular/components/action-sheet/action-sheet-component.ngfactory.js
+var action_sheet_component_ngfactory = __webpack_require__(1551);
+
+// EXTERNAL MODULE: ./node_modules/ionic-angular/components/alert/alert-component.ngfactory.js
+var alert_component_ngfactory = __webpack_require__(1552);
+
+// EXTERNAL MODULE: ./node_modules/ionic-angular/components/app/app-root.ngfactory.js
+var app_root_ngfactory = __webpack_require__(1553);
+
+// EXTERNAL MODULE: ./node_modules/ionic-angular/components/loading/loading-component.ngfactory.js
+var loading_component_ngfactory = __webpack_require__(1554);
+
+// EXTERNAL MODULE: ./node_modules/ionic-angular/components/modal/modal-component.ngfactory.js
+var modal_component_ngfactory = __webpack_require__(1555);
+
+// EXTERNAL MODULE: ./node_modules/ionic-angular/components/picker/picker-component.ngfactory.js + 1 modules
+var picker_component_ngfactory = __webpack_require__(1556);
+
+// EXTERNAL MODULE: ./node_modules/ionic-angular/components/popover/popover-component.ngfactory.js
+var popover_component_ngfactory = __webpack_require__(1557);
+
+// EXTERNAL MODULE: ./node_modules/ionic-angular/components/select/select-popover-component.ngfactory.js
+var select_popover_component_ngfactory = __webpack_require__(1558);
+
+// EXTERNAL MODULE: ./node_modules/ionic-angular/components/toast/toast-component.ngfactory.js
+var toast_component_ngfactory = __webpack_require__(1559);
+
+// EXTERNAL MODULE: ./src/components/context-menu/context-menu-popover.ngfactory.js
+var context_menu_popover_ngfactory = __webpack_require__(1560);
+
+// EXTERNAL MODULE: ./src/components/course-picker-menu/course-picker-menu-popover.ngfactory.js
+var course_picker_menu_popover_ngfactory = __webpack_require__(1561);
+
+// EXTERNAL MODULE: ./src/components/recaptcha/recaptchamodal.ngfactory.js
+var recaptchamodal_ngfactory = __webpack_require__(1562);
+
+// EXTERNAL MODULE: ./src/components/bs-tooltip/bs-tooltip.ngfactory.js
+var bs_tooltip_ngfactory = __webpack_require__(1563);
+
+// EXTERNAL MODULE: ./node_modules/ionic-angular/components/button/button.ngfactory.js
+var button_ngfactory = __webpack_require__(47);
+
+// EXTERNAL MODULE: ./node_modules/ionic-angular/components/button/button.js
+var button_button = __webpack_require__(44);
+
+// EXTERNAL MODULE: ./node_modules/ionic-angular/config/config.js
+var config = __webpack_require__(8);
+
+// EXTERNAL MODULE: ./node_modules/ionic-angular/components/icon/icon.js
+var icon = __webpack_require__(48);
+
+// EXTERNAL MODULE: ./node_modules/@ngx-translate/core/src/translate.pipe.js
+var translate_pipe = __webpack_require__(25);
+
+// EXTERNAL MODULE: ./node_modules/@ngx-translate/core/src/translate.service.js
+var translate_service = __webpack_require__(18);
+
+// EXTERNAL MODULE: ./node_modules/ionic-angular/components/item/item.ngfactory.js + 1 modules
+var item_ngfactory = __webpack_require__(31);
+
+// EXTERNAL MODULE: ./node_modules/ionic-angular/components/item/item.js
+var item = __webpack_require__(22);
+
+// EXTERNAL MODULE: ./node_modules/ionic-angular/util/form.js
+var util_form = __webpack_require__(21);
+
+// EXTERNAL MODULE: ./node_modules/ionic-angular/components/item/item-reorder.js + 1 modules
+var item_reorder = __webpack_require__(27);
+
+// EXTERNAL MODULE: ./node_modules/ionic-angular/components/item/item-content.js
+var item_content = __webpack_require__(33);
+
+// EXTERNAL MODULE: ./src/components/user-avatar/user-avatar.ngfactory.js
+var user_avatar_ngfactory = __webpack_require__(218);
+
+// EXTERNAL MODULE: ./src/components/user-avatar/user-avatar.ts
+var user_avatar = __webpack_require__(186);
+
+// EXTERNAL MODULE: ./node_modules/ionic-angular/navigation/nav-controller.js
+var nav_controller = __webpack_require__(20);
+
+// EXTERNAL MODULE: ./src/providers/utils/utils.ts
+var utils = __webpack_require__(2);
+
+// EXTERNAL MODULE: ./src/providers/events.ts
+var events = __webpack_require__(9);
+
+// EXTERNAL MODULE: ./src/components/split-view/split-view.ts
+var split_view = __webpack_require__(29);
+
+// EXTERNAL MODULE: ./node_modules/ionic-angular/components/avatar/avatar.js
+var avatar = __webpack_require__(164);
+
+// EXTERNAL MODULE: ./node_modules/@angular/common/esm5/common.js
+var common = __webpack_require__(7);
+
+// EXTERNAL MODULE: ./node_modules/ionic-angular/components/toolbar/toolbar-header.js
+var toolbar_header = __webpack_require__(379);
+
+// EXTERNAL MODULE: ./node_modules/ionic-angular/navigation/view-controller.js
+var view_controller = __webpack_require__(41);
+
+// EXTERNAL MODULE: ./node_modules/ionic-angular/components/toolbar/navbar.ngfactory.js
+var navbar_ngfactory = __webpack_require__(739);
+
+// EXTERNAL MODULE: ./node_modules/ionic-angular/components/toolbar/navbar.js
+var navbar = __webpack_require__(216);
+
+// EXTERNAL MODULE: ./node_modules/ionic-angular/components/app/app.js + 3 modules
+var app_app = __webpack_require__(35);
+
+// EXTERNAL MODULE: ./src/directives/back-button.ts
+var back_button = __webpack_require__(486);
+
+// EXTERNAL MODULE: ./node_modules/ionic-angular/components/toolbar/toolbar-title.ngfactory.js
+var toolbar_title_ngfactory = __webpack_require__(740);
+
+// EXTERNAL MODULE: ./node_modules/ionic-angular/components/toolbar/toolbar-title.js
+var toolbar_title = __webpack_require__(324);
+
+// EXTERNAL MODULE: ./node_modules/ionic-angular/components/toolbar/toolbar.js
+var toolbar = __webpack_require__(252);
+
+// EXTERNAL MODULE: ./node_modules/ionic-angular/components/toolbar/toolbar-item.js
+var toolbar_item = __webpack_require__(380);
+
+// EXTERNAL MODULE: ./node_modules/ionic-angular/components/content/content.ngfactory.js
+var content_ngfactory = __webpack_require__(185);
+
+// EXTERNAL MODULE: ./node_modules/ionic-angular/components/content/content.js
+var content = __webpack_require__(28);
+
+// EXTERNAL MODULE: ./node_modules/ionic-angular/platform/platform.js + 1 modules
+var platform = __webpack_require__(16);
+
+// EXTERNAL MODULE: ./node_modules/ionic-angular/platform/dom-controller.js
+var dom_controller = __webpack_require__(34);
+
+// EXTERNAL MODULE: ./node_modules/ionic-angular/platform/keyboard.js
+var keyboard = __webpack_require__(112);
+
+// EXTERNAL MODULE: ./src/components/loading/loading.ngfactory.js
+var loading_ngfactory = __webpack_require__(57);
+
+// EXTERNAL MODULE: ./src/components/loading/loading.ts
+var loading = __webpack_require__(54);
+
+// EXTERNAL MODULE: ./node_modules/ionic-angular/navigation/nav-params.js
+var nav_params = __webpack_require__(73);
+
+// CONCATENATED MODULE: ./src/addon/mod/chat/pages/users/users.ngfactory.js
+/**
+ * @fileoverview This file was generated by the Angular template compiler. Do not edit.
+ *
+ * @suppress {suspiciousCode,uselessCode,missingProperties,missingOverride,checkTypes}
+ * tslint:disable
+ */ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+var styles_AddonModChatUsersPage = [];
+var RenderType_AddonModChatUsersPage = core["_30" /* ɵcrt */]({ encapsulation: 2, styles: styles_AddonModChatUsersPage, data: {} });
+
+function View_AddonModChatUsersPage_2(_l) { return core["_58" /* ɵvid */](0, [(_l()(), core["_32" /* ɵeld */](0, 0, null, null, 17, null, null, null, null, null, null, null)), (_l()(), core["_56" /* ɵted */](-1, null, ["\n                "])), (_l()(), core["_32" /* ɵeld */](2, 0, null, null, 6, "button", [["clear", ""], ["icon-left", ""], ["ion-button", ""]], null, [[null, "click"]], function (_v, en, $event) { var ad = true; var _co = _v.component; if (("click" === en)) {
+        var pd_0 = (_co.talkTo(_v.parent.context.$implicit) !== false);
+        ad = (pd_0 && ad);
+    } return ad; }, button_ngfactory["b" /* View_Button_0 */], button_ngfactory["a" /* RenderType_Button */])), core["_31" /* ɵdid */](3, 1097728, [[3, 4]], 0, button_button["a" /* Button */], [[8, ""], config["a" /* Config */], core["t" /* ElementRef */], core["W" /* Renderer */]], { clear: [0, "clear"] }, null), (_l()(), core["_56" /* ɵted */](-1, 0, ["\n                    "])), (_l()(), core["_32" /* ɵeld */](5, 0, null, 0, 1, "ion-icon", [["name", "chatboxes"], ["role", "img"]], [[2, "hide", null]], null, null, null, null)), core["_31" /* ɵdid */](6, 147456, null, 0, icon["a" /* Icon */], [config["a" /* Config */], core["t" /* ElementRef */], core["W" /* Renderer */]], { name: [0, "name"] }, null), (_l()(), core["_56" /* ɵted */](7, 0, ["\n                    ", "\n                "])), core["_48" /* ɵpid */](131072, translate_pipe["a" /* TranslatePipe */], [translate_service["a" /* TranslateService */], core["j" /* ChangeDetectorRef */]]), (_l()(), core["_56" /* ɵted */](-1, null, ["\n                "])), (_l()(), core["_32" /* ɵeld */](10, 0, null, null, 6, "button", [["clear", ""], ["icon-left", ""], ["ion-button", ""]], null, [[null, "click"]], function (_v, en, $event) { var ad = true; var _co = _v.component; if (("click" === en)) {
+        var pd_0 = (_co.beepTo(_v.parent.context.$implicit) !== false);
+        ad = (pd_0 && ad);
+    } return ad; }, button_ngfactory["b" /* View_Button_0 */], button_ngfactory["a" /* RenderType_Button */])), core["_31" /* ɵdid */](11, 1097728, [[3, 4]], 0, button_button["a" /* Button */], [[8, ""], config["a" /* Config */], core["t" /* ElementRef */], core["W" /* Renderer */]], { clear: [0, "clear"] }, null), (_l()(), core["_56" /* ɵted */](-1, 0, ["\n                    "])), (_l()(), core["_32" /* ɵeld */](13, 0, null, 0, 1, "ion-icon", [["name", "notifications"], ["role", "img"]], [[2, "hide", null]], null, null, null, null)), core["_31" /* ɵdid */](14, 147456, null, 0, icon["a" /* Icon */], [config["a" /* Config */], core["t" /* ElementRef */], core["W" /* Renderer */]], { name: [0, "name"] }, null), (_l()(), core["_56" /* ɵted */](15, 0, ["\n                    ", "\n                "])), core["_48" /* ɵpid */](131072, translate_pipe["a" /* TranslatePipe */], [translate_service["a" /* TranslateService */], core["j" /* ChangeDetectorRef */]]), (_l()(), core["_56" /* ɵted */](-1, null, ["\n            "]))], function (_ck, _v) { var currVal_0 = ""; _ck(_v, 3, 0, currVal_0); var currVal_2 = "chatboxes"; _ck(_v, 6, 0, currVal_2); var currVal_4 = ""; _ck(_v, 11, 0, currVal_4); var currVal_6 = "notifications"; _ck(_v, 14, 0, currVal_6); }, function (_ck, _v) { var currVal_1 = core["_45" /* ɵnov */](_v, 6)._hidden; _ck(_v, 5, 0, currVal_1); var currVal_3 = core["_57" /* ɵunv */](_v, 7, 0, core["_45" /* ɵnov */](_v, 8).transform("addon.mod_chat.talk")); _ck(_v, 7, 0, currVal_3); var currVal_5 = core["_45" /* ɵnov */](_v, 14)._hidden; _ck(_v, 13, 0, currVal_5); var currVal_7 = core["_57" /* ɵunv */](_v, 15, 0, core["_45" /* ɵnov */](_v, 16).transform("addon.mod_chat.beep")); _ck(_v, 15, 0, currVal_7); }); }
+function View_AddonModChatUsersPage_1(_l) { return core["_58" /* ɵvid */](0, [(_l()(), core["_32" /* ɵeld */](0, 0, null, null, 16, "ion-item", [["class", "item item-block"], ["text-wrap", ""]], [[2, "addon-mod-chat-user", null]], null, null, item_ngfactory["b" /* View_Item_0 */], item_ngfactory["a" /* RenderType_Item */])), core["_31" /* ɵdid */](1, 1097728, null, 3, item["a" /* Item */], [util_form["a" /* Form */], config["a" /* Config */], core["t" /* ElementRef */], core["W" /* Renderer */], [2, item_reorder["a" /* ItemReorder */]]], null, null), core["_53" /* ɵqud */](335544320, 2, { contentLabel: 0 }), core["_53" /* ɵqud */](603979776, 3, { _buttons: 1 }), core["_53" /* ɵqud */](603979776, 4, { _icons: 1 }), core["_31" /* ɵdid */](5, 16384, null, 0, item_content["a" /* ItemContent */], [], null, null), (_l()(), core["_56" /* ɵted */](-1, 2, ["\n            "])), (_l()(), core["_32" /* ɵeld */](7, 0, null, 0, 2, "ion-avatar", [["core-user-avatar", ""], ["item-start", ""]], null, null, null, user_avatar_ngfactory["b" /* View_CoreUserAvatarComponent_0 */], user_avatar_ngfactory["a" /* RenderType_CoreUserAvatarComponent */])), core["_31" /* ɵdid */](8, 770048, null, 0, user_avatar["a" /* CoreUserAvatarComponent */], [nav_controller["a" /* NavController */], sites["b" /* CoreSitesProvider */], utils["b" /* CoreUtilsProvider */], app["b" /* CoreAppProvider */], events["b" /* CoreEventsProvider */], [2, split_view["a" /* CoreSplitViewComponent */]]], { user: [0, "user"] }, null), core["_31" /* ɵdid */](9, 16384, null, 0, avatar["a" /* Avatar */], [], null, null), (_l()(), core["_56" /* ɵted */](-1, 2, ["\n            "])), (_l()(), core["_32" /* ɵeld */](11, 0, null, 2, 1, "h2", [], null, null, null, null, null)), (_l()(), core["_56" /* ɵted */](12, null, ["", ""])), (_l()(), core["_56" /* ɵted */](-1, 2, ["\n            "])), (_l()(), core["_27" /* ɵand */](16777216, null, 2, 1, null, View_AddonModChatUsersPage_2)), core["_31" /* ɵdid */](15, 16384, null, 0, common["k" /* NgIf */], [core["_12" /* ViewContainerRef */], core["_7" /* TemplateRef */]], { ngIf: [0, "ngIf"] }, null), (_l()(), core["_56" /* ɵted */](-1, 2, ["\n        "]))], function (_ck, _v) { var _co = _v.component; var currVal_1 = _v.context.$implicit; _ck(_v, 8, 0, currVal_1); var currVal_3 = ((_co.currentUserId != _v.context.$implicit.id) && _co.isOnline); _ck(_v, 15, 0, currVal_3); }, function (_ck, _v) { var _co = _v.component; var currVal_0 = ((_co.currentUserId != _v.context.$implicit.id) && _co.isOnline); _ck(_v, 0, 0, currVal_0); var currVal_2 = _v.context.$implicit.fullname; _ck(_v, 12, 0, currVal_2); }); }
+function View_AddonModChatUsersPage_0(_l) { return core["_58" /* ɵvid */](0, [(_l()(), core["_32" /* ɵeld */](0, 0, null, null, 25, "ion-header", [], null, null, null, null, null)), core["_31" /* ɵdid */](1, 16384, null, 0, toolbar_header["a" /* Header */], [config["a" /* Config */], core["t" /* ElementRef */], core["W" /* Renderer */], [2, view_controller["a" /* ViewController */]]], null, null), (_l()(), core["_56" /* ɵted */](-1, null, ["\n    "])), (_l()(), core["_32" /* ɵeld */](3, 0, null, null, 21, "ion-navbar", [["class", "toolbar"], ["core-back-button", ""]], [[8, "hidden", 0], [2, "statusbar-padding", null]], null, null, navbar_ngfactory["b" /* View_Navbar_0 */], navbar_ngfactory["a" /* RenderType_Navbar */])), core["_31" /* ɵdid */](4, 49152, null, 0, navbar["a" /* Navbar */], [app_app["a" /* App */], [2, view_controller["a" /* ViewController */]], [2, nav_controller["a" /* NavController */]], config["a" /* Config */], core["t" /* ElementRef */], core["W" /* Renderer */]], null, null), core["_31" /* ɵdid */](5, 212992, null, 0, back_button["a" /* CoreBackButtonDirective */], [navbar["a" /* Navbar */], translate_service["a" /* TranslateService */], events["b" /* CoreEventsProvider */]], null, null), (_l()(), core["_56" /* ɵted */](-1, 3, ["\n        "])), (_l()(), core["_32" /* ɵeld */](7, 0, null, 3, 3, "ion-title", [], null, null, null, toolbar_title_ngfactory["b" /* View_ToolbarTitle_0 */], toolbar_title_ngfactory["a" /* RenderType_ToolbarTitle */])), core["_31" /* ɵdid */](8, 49152, null, 0, toolbar_title["a" /* ToolbarTitle */], [config["a" /* Config */], core["t" /* ElementRef */], core["W" /* Renderer */], [2, toolbar["a" /* Toolbar */]], [2, navbar["a" /* Navbar */]]], null, null), (_l()(), core["_56" /* ɵted */](9, 0, ["", ""])), core["_48" /* ɵpid */](131072, translate_pipe["a" /* TranslatePipe */], [translate_service["a" /* TranslateService */], core["j" /* ChangeDetectorRef */]]), (_l()(), core["_56" /* ɵted */](-1, 3, ["\n        "])), (_l()(), core["_32" /* ɵeld */](12, 0, null, 2, 11, "ion-buttons", [["end", ""]], null, null, null, null, null)), core["_31" /* ɵdid */](13, 16384, null, 1, toolbar_item["a" /* ToolbarItem */], [config["a" /* Config */], core["t" /* ElementRef */], core["W" /* Renderer */], [2, toolbar["a" /* Toolbar */]], [2, navbar["a" /* Navbar */]]], null, null), core["_53" /* ɵqud */](603979776, 1, { _buttons: 1 }), (_l()(), core["_56" /* ɵted */](-1, null, ["\n            "])), (_l()(), core["_32" /* ɵeld */](16, 0, null, null, 6, "button", [["icon-only", ""], ["ion-button", ""]], [[1, "aria-label", 0]], [[null, "click"]], function (_v, en, $event) { var ad = true; var _co = _v.component; if (("click" === en)) {
+        var pd_0 = (_co.closeModal() !== false);
+        ad = (pd_0 && ad);
+    } return ad; }, button_ngfactory["b" /* View_Button_0 */], button_ngfactory["a" /* RenderType_Button */])), core["_31" /* ɵdid */](17, 1097728, [[1, 4]], 0, button_button["a" /* Button */], [[8, ""], config["a" /* Config */], core["t" /* ElementRef */], core["W" /* Renderer */]], null, null), core["_48" /* ɵpid */](131072, translate_pipe["a" /* TranslatePipe */], [translate_service["a" /* TranslateService */], core["j" /* ChangeDetectorRef */]]), (_l()(), core["_56" /* ɵted */](-1, 0, ["\n                "])), (_l()(), core["_32" /* ɵeld */](20, 0, null, 0, 1, "ion-icon", [["name", "close"], ["role", "img"]], [[2, "hide", null]], null, null, null, null)), core["_31" /* ɵdid */](21, 147456, null, 0, icon["a" /* Icon */], [config["a" /* Config */], core["t" /* ElementRef */], core["W" /* Renderer */]], { name: [0, "name"] }, null), (_l()(), core["_56" /* ɵted */](-1, 0, ["\n            "])), (_l()(), core["_56" /* ɵted */](-1, null, ["\n        "])), (_l()(), core["_56" /* ɵted */](-1, 3, ["\n    "])), (_l()(), core["_56" /* ɵted */](-1, null, ["\n"])), (_l()(), core["_56" /* ɵted */](-1, null, ["\n"])), (_l()(), core["_32" /* ɵeld */](27, 0, null, null, 9, "ion-content", [], [[2, "statusbar-padding", null], [2, "has-refresher", null]], null, null, content_ngfactory["b" /* View_Content_0 */], content_ngfactory["a" /* RenderType_Content */])), core["_31" /* ɵdid */](28, 4374528, null, 0, content["a" /* Content */], [config["a" /* Config */], platform["a" /* Platform */], dom_controller["a" /* DomController */], core["t" /* ElementRef */], core["W" /* Renderer */], app_app["a" /* App */], keyboard["a" /* Keyboard */], core["N" /* NgZone */], [2, view_controller["a" /* ViewController */]], [2, nav_controller["a" /* NavController */]]], null, null), (_l()(), core["_56" /* ɵted */](-1, 1, ["\n    "])), (_l()(), core["_32" /* ɵeld */](30, 0, null, 1, 5, "core-loading", [], null, null, null, loading_ngfactory["b" /* View_CoreLoadingComponent_0 */], loading_ngfactory["a" /* RenderType_CoreLoadingComponent */])), core["_31" /* ɵdid */](31, 638976, null, 0, loading["a" /* CoreLoadingComponent */], [translate_service["a" /* TranslateService */], core["t" /* ElementRef */], events["b" /* CoreEventsProvider */], utils["b" /* CoreUtilsProvider */]], { hideUntil: [0, "hideUntil"] }, null), (_l()(), core["_56" /* ɵted */](-1, 0, ["\n        "])), (_l()(), core["_27" /* ɵand */](16777216, null, 0, 1, null, View_AddonModChatUsersPage_1)), core["_31" /* ɵdid */](34, 802816, null, 0, common["j" /* NgForOf */], [core["_12" /* ViewContainerRef */], core["_7" /* TemplateRef */], core["E" /* IterableDiffers */]], { ngForOf: [0, "ngForOf"] }, null), (_l()(), core["_56" /* ɵted */](-1, 0, ["\n    "])), (_l()(), core["_56" /* ɵted */](-1, 1, ["\n"])), (_l()(), core["_56" /* ɵted */](-1, null, ["\n"]))], function (_ck, _v) { var _co = _v.component; _ck(_v, 5, 0); var currVal_5 = "close"; _ck(_v, 21, 0, currVal_5); var currVal_8 = _co.usersLoaded; _ck(_v, 31, 0, currVal_8); var currVal_9 = _co.users; _ck(_v, 34, 0, currVal_9); }, function (_ck, _v) { var currVal_0 = core["_45" /* ɵnov */](_v, 4)._hidden; var currVal_1 = core["_45" /* ɵnov */](_v, 4)._sbPadding; _ck(_v, 3, 0, currVal_0, currVal_1); var currVal_2 = core["_57" /* ɵunv */](_v, 9, 0, core["_45" /* ɵnov */](_v, 10).transform("addon.mod_chat.currentusers")); _ck(_v, 9, 0, currVal_2); var currVal_3 = core["_57" /* ɵunv */](_v, 16, 0, core["_45" /* ɵnov */](_v, 18).transform("core.close")); _ck(_v, 16, 0, currVal_3); var currVal_4 = core["_45" /* ɵnov */](_v, 21)._hidden; _ck(_v, 20, 0, currVal_4); var currVal_6 = core["_45" /* ɵnov */](_v, 28).statusbarPadding; var currVal_7 = core["_45" /* ɵnov */](_v, 28)._hasRefresher; _ck(_v, 27, 0, currVal_6, currVal_7); }); }
+function View_AddonModChatUsersPage_Host_0(_l) { return core["_58" /* ɵvid */](0, [(_l()(), core["_32" /* ɵeld */](0, 0, null, null, 1, "page-addon-mod-chat-users", [], null, null, null, View_AddonModChatUsersPage_0, RenderType_AddonModChatUsersPage)), core["_31" /* ɵdid */](1, 180224, null, 0, users_AddonModChatUsersPage, [nav_params["a" /* NavParams */], network["a" /* Network */], core["N" /* NgZone */], app["b" /* CoreAppProvider */], sites["b" /* CoreSitesProvider */], view_controller["a" /* ViewController */], dom["b" /* CoreDomUtilsProvider */], chat["a" /* AddonModChatProvider */]], null, null)], null, null); }
+var AddonModChatUsersPageNgFactory = core["_28" /* ɵccf */]("page-addon-mod-chat-users", users_AddonModChatUsersPage, View_AddonModChatUsersPage_Host_0, {}, {}, []);
+
+//# sourceMappingURL=users.ngfactory.js.map
+// EXTERNAL MODULE: ./node_modules/@angular/forms/esm5/forms.js
+var esm5_forms = __webpack_require__(23);
+
+// EXTERNAL MODULE: ./node_modules/@ngx-translate/core/src/translate.loader.js
+var translate_loader = __webpack_require__(375);
+
+// EXTERNAL MODULE: ./node_modules/@ngx-translate/core/src/translate.compiler.js
+var translate_compiler = __webpack_require__(376);
+
+// EXTERNAL MODULE: ./node_modules/@ngx-translate/core/src/translate.parser.js
+var translate_parser = __webpack_require__(378);
+
+// EXTERNAL MODULE: ./node_modules/@ngx-translate/core/src/missing-translation-handler.js
+var missing_translation_handler = __webpack_require__(377);
+
+// EXTERNAL MODULE: ./node_modules/@ngx-translate/core/src/translate.store.js
+var translate_store = __webpack_require__(485);
+
+// EXTERNAL MODULE: ./node_modules/ionic-angular/module.js
+var ionic_angular_module = __webpack_require__(738);
+
+// EXTERNAL MODULE: ./node_modules/ionic-angular/util/module-loader.js
+var module_loader = __webpack_require__(277);
+
+// CONCATENATED MODULE: ./src/addon/mod/chat/pages/users/users.module.ngfactory.js
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "AddonModChatUsersPageModuleNgFactory", function() { return AddonModChatUsersPageModuleNgFactory; });
+/**
+ * @fileoverview This file was generated by the Angular template compiler. Do not edit.
+ *
+ * @suppress {suspiciousCode,uselessCode,missingProperties,missingOverride,checkTypes}
+ * tslint:disable
+ */ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+var AddonModChatUsersPageModuleNgFactory = core["_29" /* ɵcmf */](users_module_AddonModChatUsersPageModule, [], function (_l) { return core["_41" /* ɵmod */]([core["_42" /* ɵmpd */](512, core["o" /* ComponentFactoryResolver */], core["_22" /* ɵCodegenComponentFactoryResolver */], [[8, [action_sheet_component_ngfactory["a" /* ActionSheetCmpNgFactory */], alert_component_ngfactory["a" /* AlertCmpNgFactory */], app_root_ngfactory["a" /* IonicAppNgFactory */], loading_component_ngfactory["a" /* LoadingCmpNgFactory */], modal_component_ngfactory["a" /* ModalCmpNgFactory */], picker_component_ngfactory["a" /* PickerCmpNgFactory */], popover_component_ngfactory["a" /* PopoverCmpNgFactory */], select_popover_component_ngfactory["a" /* SelectPopoverNgFactory */], toast_component_ngfactory["a" /* ToastCmpNgFactory */], context_menu_popover_ngfactory["a" /* CoreContextMenuPopoverComponentNgFactory */], course_picker_menu_popover_ngfactory["a" /* CoreCoursePickerMenuPopoverComponentNgFactory */], recaptchamodal_ngfactory["a" /* CoreRecaptchaModalComponentNgFactory */], bs_tooltip_ngfactory["a" /* CoreBSTooltipComponentNgFactory */], AddonModChatUsersPageNgFactory]], [3, core["o" /* ComponentFactoryResolver */]], core["L" /* NgModuleRef */]]), core["_42" /* ɵmpd */](4608, common["m" /* NgLocalization */], common["l" /* NgLocaleLocalization */], [core["G" /* LOCALE_ID */], [2, common["w" /* ɵa */]]]), core["_42" /* ɵmpd */](4608, esm5_forms["x" /* ɵi */], esm5_forms["x" /* ɵi */], []), core["_42" /* ɵmpd */](4608, esm5_forms["d" /* FormBuilder */], esm5_forms["d" /* FormBuilder */], []), core["_42" /* ɵmpd */](4608, translate_loader["b" /* TranslateLoader */], translate_loader["a" /* TranslateFakeLoader */], []), core["_42" /* ɵmpd */](4608, translate_compiler["a" /* TranslateCompiler */], translate_compiler["b" /* TranslateFakeCompiler */], []), core["_42" /* ɵmpd */](4608, translate_parser["b" /* TranslateParser */], translate_parser["a" /* TranslateDefaultParser */], []), core["_42" /* ɵmpd */](4608, missing_translation_handler["b" /* MissingTranslationHandler */], missing_translation_handler["a" /* FakeMissingTranslationHandler */], []), core["_42" /* ɵmpd */](4608, translate_service["a" /* TranslateService */], translate_service["a" /* TranslateService */], [translate_store["a" /* TranslateStore */], translate_loader["b" /* TranslateLoader */], translate_compiler["a" /* TranslateCompiler */], translate_parser["b" /* TranslateParser */], missing_translation_handler["b" /* MissingTranslationHandler */], translate_service["b" /* USE_DEFAULT_LANG */], translate_service["c" /* USE_STORE */]]), core["_42" /* ɵmpd */](512, common["b" /* CommonModule */], common["b" /* CommonModule */], []), core["_42" /* ɵmpd */](512, esm5_forms["v" /* ɵba */], esm5_forms["v" /* ɵba */], []), core["_42" /* ɵmpd */](512, esm5_forms["i" /* FormsModule */], esm5_forms["i" /* FormsModule */], []), core["_42" /* ɵmpd */](512, esm5_forms["s" /* ReactiveFormsModule */], esm5_forms["s" /* ReactiveFormsModule */], []), core["_42" /* ɵmpd */](512, ionic_angular_module["a" /* IonicModule */], ionic_angular_module["a" /* IonicModule */], []), core["_42" /* ɵmpd */](512, _ngx_translate_core["b" /* TranslateModule */], _ngx_translate_core["b" /* TranslateModule */], []), core["_42" /* ɵmpd */](512, directives_module["a" /* CoreDirectivesModule */], directives_module["a" /* CoreDirectivesModule */], []), core["_42" /* ɵmpd */](512, pipes_module["a" /* CorePipesModule */], pipes_module["a" /* CorePipesModule */], []), core["_42" /* ɵmpd */](512, components_module["a" /* CoreComponentsModule */], components_module["a" /* CoreComponentsModule */], []), core["_42" /* ɵmpd */](512, ionic_angular_module["b" /* IonicPageModule */], ionic_angular_module["b" /* IonicPageModule */], []), core["_42" /* ɵmpd */](512, users_module_AddonModChatUsersPageModule, users_module_AddonModChatUsersPageModule, []), core["_42" /* ɵmpd */](256, translate_service["c" /* USE_STORE */], undefined, []), core["_42" /* ɵmpd */](256, translate_service["b" /* USE_DEFAULT_LANG */], undefined, []), core["_42" /* ɵmpd */](256, module_loader["a" /* LAZY_LOADED_TOKEN */], users_AddonModChatUsersPage, [])]); });
+
+//# sourceMappingURL=users.module.ngfactory.js.map
 
 /***/ })
 

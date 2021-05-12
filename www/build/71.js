@@ -1,87 +1,33 @@
 webpackJsonp([71],{
 
-/***/ 2076:
+/***/ 2103:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "AddonModWorkshopEditSubmissionPageModule", function() { return AddonModWorkshopEditSubmissionPageModule; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(3);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ngx_translate_core__ = __webpack_require__(1);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__components_components_module__ = __webpack_require__(13);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__directives_directives_module__ = __webpack_require__(14);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__edit_submission__ = __webpack_require__(2234);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__core_editor_components_components_module__ = __webpack_require__(130);
-// (C) Copyright 2015 Moodle Pty Ltd.
-//
-// Licensed under the Apache License, Version 2.0 (the "License");
-// you may not use this file except in compliance with the License.
-// You may obtain a copy of the License at
-//
-//     http://www.apache.org/licenses/LICENSE-2.0
-//
-// Unless required by applicable law or agreed to in writing, software
-// distributed under the License is distributed on an "AS IS" BASIS,
-// WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-// See the License for the specific language governing permissions and
-// limitations under the License.
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
 
+// EXTERNAL MODULE: ./node_modules/@angular/core/esm5/core.js
+var core = __webpack_require__(0);
 
+// EXTERNAL MODULE: ./node_modules/ionic-angular/index.js + 3 modules
+var ionic_angular = __webpack_require__(5);
 
+// EXTERNAL MODULE: ./node_modules/@ngx-translate/core/index.js + 1 modules
+var _ngx_translate_core = __webpack_require__(3);
 
+// EXTERNAL MODULE: ./src/components/components.module.ts
+var components_module = __webpack_require__(26);
 
+// EXTERNAL MODULE: ./src/directives/directives.module.ts + 2 modules
+var directives_module = __webpack_require__(32);
 
+// EXTERNAL MODULE: ./src/core/course/providers/helper.ts
+var helper = __webpack_require__(38);
 
-var AddonModWorkshopEditSubmissionPageModule = /** @class */ (function () {
-    function AddonModWorkshopEditSubmissionPageModule() {
-    }
-    AddonModWorkshopEditSubmissionPageModule = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["J" /* NgModule */])({
-            declarations: [
-                __WEBPACK_IMPORTED_MODULE_5__edit_submission__["a" /* AddonModWorkshopEditSubmissionPage */],
-            ],
-            imports: [
-                __WEBPACK_IMPORTED_MODULE_4__directives_directives_module__["a" /* CoreDirectivesModule */],
-                __WEBPACK_IMPORTED_MODULE_3__components_components_module__["a" /* CoreComponentsModule */],
-                __WEBPACK_IMPORTED_MODULE_6__core_editor_components_components_module__["a" /* CoreEditorComponentsModule */],
-                __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["l" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_5__edit_submission__["a" /* AddonModWorkshopEditSubmissionPage */]),
-                __WEBPACK_IMPORTED_MODULE_2__ngx_translate_core__["b" /* TranslateModule */].forChild()
-            ],
-        })
-    ], AddonModWorkshopEditSubmissionPageModule);
-    return AddonModWorkshopEditSubmissionPageModule;
-}());
+// EXTERNAL MODULE: ./src/core/course/providers/course.ts
+var providers_course = __webpack_require__(15);
 
-//# sourceMappingURL=edit-submission.module.js.map
-
-/***/ }),
-
-/***/ 2234:
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AddonModWorkshopEditSubmissionPage; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(3);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_forms__ = __webpack_require__(29);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ngx_translate_core__ = __webpack_require__(1);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__providers_events__ = __webpack_require__(11);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__providers_sites__ = __webpack_require__(2);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__providers_sync__ = __webpack_require__(47);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__providers_file_session__ = __webpack_require__(124);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__providers_utils_dom__ = __webpack_require__(7);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__providers_utils_text__ = __webpack_require__(10);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__core_fileuploader_providers_fileuploader__ = __webpack_require__(55);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__providers_workshop__ = __webpack_require__(123);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__providers_helper__ = __webpack_require__(160);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__providers_offline__ = __webpack_require__(142);
+// CONCATENATED MODULE: ./src/core/course/pages/section-selector/section-selector.ts
 // (C) Copyright 2015 Moodle Pty Ltd.
 //
 // Licensed under the Apache License, Version 2.0 (the "License");
@@ -104,396 +50,464 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, generator) {
-    return new (P || (P = Promise))(function (resolve, reject) {
-        function fulfilled(value) { try { step(generator.next(value)); } catch (e) { reject(e); } }
-        function rejected(value) { try { step(generator["throw"](value)); } catch (e) { reject(e); } }
-        function step(result) { result.done ? resolve(result.value) : new P(function (resolve) { resolve(result.value); }).then(fulfilled, rejected); }
-        step((generator = generator.apply(thisArg, _arguments || [])).next());
-    });
-};
-var __generator = (this && this.__generator) || function (thisArg, body) {
-    var _ = { label: 0, sent: function() { if (t[0] & 1) throw t[1]; return t[1]; }, trys: [], ops: [] }, f, y, t, g;
-    return g = { next: verb(0), "throw": verb(1), "return": verb(2) }, typeof Symbol === "function" && (g[Symbol.iterator] = function() { return this; }), g;
-    function verb(n) { return function (v) { return step([n, v]); }; }
-    function step(op) {
-        if (f) throw new TypeError("Generator is already executing.");
-        while (_) try {
-            if (f = 1, y && (t = y[op[0] & 2 ? "return" : op[0] ? "throw" : "next"]) && !(t = t.call(y, op[1])).done) return t;
-            if (y = 0, t) op = [0, t.value];
-            switch (op[0]) {
-                case 0: case 1: t = op; break;
-                case 4: _.label++; return { value: op[1], done: false };
-                case 5: _.label++; y = op[1]; op = [0]; continue;
-                case 7: op = _.ops.pop(); _.trys.pop(); continue;
-                default:
-                    if (!(t = _.trys, t = t.length > 0 && t[t.length - 1]) && (op[0] === 6 || op[0] === 2)) { _ = 0; continue; }
-                    if (op[0] === 3 && (!t || (op[1] > t[0] && op[1] < t[3]))) { _.label = op[1]; break; }
-                    if (op[0] === 6 && _.label < t[1]) { _.label = t[1]; t = op; break; }
-                    if (t && _.label < t[2]) { _.label = t[2]; _.ops.push(op); break; }
-                    if (t[2]) _.ops.pop();
-                    _.trys.pop(); continue;
-            }
-            op = body.call(thisArg, _);
-        } catch (e) { op = [6, e]; y = 0; } finally { f = t = 0; }
-        if (op[0] & 5) throw op[1]; return { value: op[0] ? op[1] : void 0, done: true };
-    }
-};
-
-
-
-
-
-
-
-
-
-
 
 
 
 
 /**
- * Page that displays the workshop edit submission.
+ * Page that displays course section selector.
  */
-var AddonModWorkshopEditSubmissionPage = /** @class */ (function () {
-    function AddonModWorkshopEditSubmissionPage(navParams, sitesProvider, fileUploaderProvider, workshopProvider, workshopOffline, workshopHelper, navCtrl, fileSessionprovider, syncProvider, textUtils, domUtils, fb, translate, eventsProvider) {
-        this.fileUploaderProvider = fileUploaderProvider;
-        this.workshopProvider = workshopProvider;
-        this.workshopOffline = workshopOffline;
-        this.workshopHelper = workshopHelper;
-        this.navCtrl = navCtrl;
-        this.fileSessionprovider = fileSessionprovider;
-        this.syncProvider = syncProvider;
-        this.textUtils = textUtils;
-        this.domUtils = domUtils;
-        this.fb = fb;
-        this.translate = translate;
-        this.eventsProvider = eventsProvider;
-        this.submission = {
-            id: 0,
-            title: '',
-            content: '',
-            attachmentfiles: [],
-        };
-        this.loaded = false;
-        this.component = __WEBPACK_IMPORTED_MODULE_11__providers_workshop__["a" /* AddonModWorkshopProvider */].COMPONENT;
-        this.editorExtraParams = {};
-        this.originalData = {};
-        this.hasOffline = false;
-        this.editing = false;
-        this.forceLeave = false;
-        this.isDestroyed = false;
-        this.textAvailable = false;
-        this.textRequired = false;
-        this.fileAvailable = false;
-        this.fileRequired = false;
-        this.module = navParams.get('module');
-        this.courseId = navParams.get('courseId');
-        this.access = navParams.get('access');
-        this.submissionId = navParams.get('submissionId');
-        this.workshopId = this.module.instance;
-        this.componentId = this.module.id;
-        this.userId = sitesProvider.getCurrentSiteUserId();
-        this.siteId = sitesProvider.getCurrentSiteId();
-        this.editForm = new __WEBPACK_IMPORTED_MODULE_2__angular_forms__["c" /* FormGroup */]({});
-        this.editForm.addControl('title', this.fb.control('', __WEBPACK_IMPORTED_MODULE_2__angular_forms__["h" /* Validators */].required));
-        this.editForm.addControl('content', this.fb.control(''));
-        if (this.submissionId) {
-            this.editorExtraParams.id = this.submissionId;
+var section_selector_CoreCourseSectionSelectorPage = /** @class */ (function () {
+    function CoreCourseSectionSelectorPage(navParams, courseHelper, viewCtrl) {
+        this.viewCtrl = viewCtrl;
+        this.stealthModulesSectionId = providers_course["b" /* CoreCourseProvider */].STEALTH_MODULES_SECTION_ID;
+        this.sections = navParams.get('sections');
+        this.selected = navParams.get('selected');
+        var course = navParams.get('course');
+        this.courseId = course && course.id;
+        if (course && course.enablecompletion && course.courseformatoptions && course.courseformatoptions.coursedisplay == 1 &&
+            course.completionusertracked !== false) {
+            this.sections.forEach(function (section) {
+                var complete = 0, total = 0;
+                section.modules && section.modules.forEach(function (module) {
+                    if (module.uservisible && typeof module.completiondata != 'undefined' &&
+                        module.completiondata.tracking > providers_course["b" /* CoreCourseProvider */].COMPLETION_TRACKING_NONE) {
+                        total++;
+                        if (module.completiondata.state == providers_course["b" /* CoreCourseProvider */].COMPLETION_COMPLETE ||
+                            module.completiondata.state == providers_course["b" /* CoreCourseProvider */].COMPLETION_COMPLETE_PASS) {
+                            complete++;
+                        }
+                    }
+                });
+                if (total > 0) {
+                    section.progress = complete / total * 100;
+                }
+            });
         }
     }
     /**
-     * Component being initialized.
+     * Close the modal.
      */
-    AddonModWorkshopEditSubmissionPage.prototype.ngOnInit = function () {
-        if (!this.isDestroyed) {
-            // Block the workshop.
-            this.syncProvider.blockOperation(this.component, this.workshopId);
-        }
-        this.fetchSubmissionData();
+    CoreCourseSectionSelectorPage.prototype.closeModal = function () {
+        this.viewCtrl.dismiss();
     };
     /**
-     * Check if we can leave the page or not.
+     * Select a section.
      *
-     * @return Resolved if we can leave it, rejected if not.
+     * @param section Selected section object.
      */
-    AddonModWorkshopEditSubmissionPage.prototype.ionViewCanLeave = function () {
-        return __awaiter(this, void 0, void 0, function () {
-            return __generator(this, function (_a) {
-                switch (_a.label) {
-                    case 0:
-                        if (this.forceLeave) {
-                            return [2 /*return*/];
-                        }
-                        if (!this.hasDataChanged()) return [3 /*break*/, 2];
-                        // Show confirmation if some data has been modified.
-                        return [4 /*yield*/, this.domUtils.showConfirm(this.translate.instant('core.confirmcanceledit'))];
-                    case 1:
-                        // Show confirmation if some data has been modified.
-                        _a.sent();
-                        _a.label = 2;
-                    case 2:
-                        if (this.submission.attachmentfiles) {
-                            // Delete the local files from the tmp folder.
-                            this.fileUploaderProvider.clearTmpFiles(this.submission.attachmentfiles);
-                        }
-                        this.domUtils.triggerFormCancelledEvent(this.formElement, this.siteId);
-                        return [2 /*return*/];
-                }
-            });
-        });
-    };
-    /**
-     * Fetch the submission data.
-     *
-     * @return Resolved when done.
-     */
-    AddonModWorkshopEditSubmissionPage.prototype.fetchSubmissionData = function () {
-        var _this = this;
-        return this.workshopProvider.getWorkshop(this.courseId, this.module.id).then(function (workshopData) {
-            _this.workshop = workshopData;
-            _this.textAvailable = (_this.workshop.submissiontypetext != __WEBPACK_IMPORTED_MODULE_11__providers_workshop__["a" /* AddonModWorkshopProvider */].SUBMISSION_TYPE_DISABLED);
-            _this.textRequired = (_this.workshop.submissiontypetext == __WEBPACK_IMPORTED_MODULE_11__providers_workshop__["a" /* AddonModWorkshopProvider */].SUBMISSION_TYPE_REQUIRED);
-            _this.fileAvailable = (_this.workshop.submissiontypefile != __WEBPACK_IMPORTED_MODULE_11__providers_workshop__["a" /* AddonModWorkshopProvider */].SUBMISSION_TYPE_DISABLED);
-            _this.fileRequired = (_this.workshop.submissiontypefile == __WEBPACK_IMPORTED_MODULE_11__providers_workshop__["a" /* AddonModWorkshopProvider */].SUBMISSION_TYPE_REQUIRED);
-            _this.editForm.controls.content.setValidators(_this.textRequired ? __WEBPACK_IMPORTED_MODULE_2__angular_forms__["h" /* Validators */].required : null);
-            if (_this.submissionId > 0) {
-                _this.editing = true;
-                return _this.workshopHelper.getSubmissionById(_this.workshopId, _this.submissionId, { cmId: _this.module.id })
-                    .then(function (submissionData) {
-                    _this.submission = submissionData;
-                    var canEdit = (_this.userId == submissionData.authorid && _this.access.cansubmit &&
-                        _this.access.modifyingsubmissionallowed);
-                    if (!canEdit) {
-                        // Should not happen, but go back if does.
-                        _this.forceLeavePage();
-                        return;
-                    }
-                });
-            }
-            else if (!_this.access.cansubmit || !_this.access.creatingsubmissionallowed) {
-                // Should not happen, but go back if does.
-                _this.forceLeavePage();
-                return;
-            }
-        }).then(function () {
-            return _this.workshopOffline.getSubmissions(_this.workshopId).then(function (submissionsActions) {
-                if (submissionsActions && submissionsActions.length) {
-                    _this.hasOffline = true;
-                    var actions = _this.workshopHelper.filterSubmissionActions(submissionsActions, _this.editing ?
-                        _this.submission.id : 0);
-                    return _this.workshopHelper.applyOfflineData(_this.submission, actions);
-                }
-                else {
-                    _this.hasOffline = false;
-                }
-            }).finally(function () {
-                _this.originalData.title = _this.submission.title;
-                _this.originalData.content = _this.submission.content;
-                _this.originalData.attachmentfiles = [];
-                _this.submission.attachmentfiles.forEach(function (file) {
-                    var filename;
-                    if (file.filename) {
-                        filename = file.filename;
-                    }
-                    else {
-                        // We don't have filename, extract it from the path.
-                        filename = file.filepath[0] == '/' ? file.filepath.substr(1) : file.filepath;
-                    }
-                    _this.originalData.attachmentfiles.push({
-                        filename: filename,
-                        fileurl: file.fileurl
-                    });
-                });
-            });
-        }).then(function () {
-            _this.editForm.controls['title'].setValue(_this.submission.title);
-            _this.editForm.controls['content'].setValue(_this.submission.content);
-            var submissionId = _this.submission.id || 'newsub';
-            _this.fileSessionprovider.setFiles(_this.component, _this.workshopId + '_' + submissionId, _this.submission.attachmentfiles || []);
-            _this.loaded = true;
-        }).catch(function (message) {
-            _this.loaded = false;
-            _this.domUtils.showErrorModalDefault(message, 'core.course.errorgetmodule', true);
-            _this.forceLeavePage();
-        });
-    };
-    /**
-     * Force leaving the page, without checking for changes.
-     */
-    AddonModWorkshopEditSubmissionPage.prototype.forceLeavePage = function () {
-        this.forceLeave = true;
-        this.navCtrl.pop();
-    };
-    /**
-     * Get the form input data.
-     *
-     * @return Object with all the info.
-     */
-    AddonModWorkshopEditSubmissionPage.prototype.getInputData = function () {
-        var submissionId = this.submission.id || 'newsub';
-        var values = {
-            title: this.editForm.value.title,
-            content: null,
-            attachmentfiles: []
-        };
-        if (this.textAvailable) {
-            values.content = this.editForm.value.content || '';
-        }
-        if (this.fileAvailable) {
-            values.attachmentfiles = this.fileSessionprovider.getFiles(this.component, this.workshopId + '_' + submissionId) || [];
-        }
-        return values;
-    };
-    /**
-     * Check if data has changed.
-     *
-     * @return True if changed or false if not.
-     */
-    AddonModWorkshopEditSubmissionPage.prototype.hasDataChanged = function () {
-        if (!this.loaded) {
-            return false;
-        }
-        var inputData = this.getInputData();
-        if (!this.originalData || typeof this.originalData.title == 'undefined') {
-            // There is no original data, assume it hasn't changed.
-            return false;
-        }
-        if (this.originalData.title != inputData.title || this.textAvailable && this.originalData.content != inputData.content) {
-            return true;
-        }
-        if (this.fileAvailable) {
-            return this.fileUploaderProvider.areFileListDifferent(inputData.attachmentfiles, this.originalData.attachmentfiles);
-        }
-        return false;
-    };
-    /**
-     * Save the submission.
-     */
-    AddonModWorkshopEditSubmissionPage.prototype.save = function () {
-        var _this = this;
-        // Check if data has changed.
-        if (this.hasDataChanged()) {
-            this.saveSubmission().then(function () {
-                // Go back to entry list.
-                _this.forceLeavePage();
-            }).catch(function () {
-                // Nothing to do.
-            });
-        }
-        else {
-            // Nothing to save, just go back.
-            this.forceLeavePage();
+    CoreCourseSectionSelectorPage.prototype.selectSection = function (section) {
+        if (section.uservisible !== false) {
+            this.viewCtrl.dismiss(section);
         }
     };
-    /**
-     * Send submission and save.
-     *
-     * @return Resolved when done.
-     */
-    AddonModWorkshopEditSubmissionPage.prototype.saveSubmission = function () {
-        var _this = this;
-        var inputData = this.getInputData();
-        if (!inputData.title) {
-            this.domUtils.showAlertTranslated('core.notice', 'addon.mod_workshop.submissionrequiredtitle');
-            return Promise.reject(null);
-        }
-        var noText = this.textUtils.htmlIsBlank(inputData.content);
-        var noFiles = !inputData.attachmentfiles.length;
-        if ((this.textRequired && noText) || (this.fileRequired && noFiles) || (noText && noFiles)) {
-            this.domUtils.showAlertTranslated('core.notice', 'addon.mod_workshop.submissionrequiredcontent');
-            return Promise.reject(null);
-        }
-        var allowOffline = true, saveOffline = false;
-        var modal = this.domUtils.showModalLoading('core.sending', true), submissionId = this.submission.id;
-        // Add some HTML to the message if needed.
-        if (this.textAvailable) {
-            inputData.content = this.textUtils.formatHtmlLines(inputData.content);
-        }
-        // Upload attachments first if any.
-        allowOffline = !inputData.attachmentfiles.length;
-        return this.workshopHelper.uploadOrStoreSubmissionFiles(this.workshopId, this.submission.id, inputData.attachmentfiles, this.editing, saveOffline).catch(function () {
-            // Cannot upload them in online, save them in offline.
-            saveOffline = true;
-            allowOffline = true;
-            return _this.workshopHelper.uploadOrStoreSubmissionFiles(_this.workshopId, _this.submission.id, inputData.attachmentfiles, _this.editing, saveOffline);
-        }).then(function (attachmentsId) {
-            if (!saveOffline && !_this.fileAvailable) {
-                attachmentsId = null;
-            }
-            if (_this.editing) {
-                if (saveOffline) {
-                    // Save submission in offline.
-                    return _this.workshopOffline.saveSubmission(_this.workshopId, _this.courseId, inputData.title, inputData.content, attachmentsId, submissionId, 'update').then(function () {
-                        return false;
-                    });
-                }
-                // Try to send it to server.
-                // Don't allow offline if there are attachments since they were uploaded fine.
-                return _this.workshopProvider.updateSubmission(_this.workshopId, submissionId, _this.courseId, inputData.title, inputData.content, attachmentsId, undefined, allowOffline);
-            }
-            if (saveOffline) {
-                // Save submission in offline.
-                return _this.workshopOffline.saveSubmission(_this.workshopId, _this.courseId, inputData.title, inputData.content, attachmentsId, submissionId, 'add').then(function () {
-                    return false;
-                });
-            }
-            // Try to send it to server.
-            // Don't allow offline if there are attachments since they were uploaded fine.
-            return _this.workshopProvider.addSubmission(_this.workshopId, _this.courseId, inputData.title, inputData.content, attachmentsId, undefined, submissionId, allowOffline);
-        }).then(function (newSubmissionId) {
-            _this.domUtils.triggerFormSubmittedEvent(_this.formElement, !!newSubmissionId, _this.siteId);
-            var data = {
-                workshopId: _this.workshopId,
-                cmId: _this.module.cmid
-            };
-            if (newSubmissionId && submissionId) {
-                // Data sent to server, delete stored files (if any).
-                _this.workshopOffline.deleteSubmissionAction(_this.workshopId, submissionId, _this.editing ? 'update' : 'add');
-                _this.workshopHelper.deleteSubmissionStoredFiles(_this.workshopId, submissionId, _this.editing);
-                data['submissionId'] = newSubmissionId;
-            }
-            _this.eventsProvider.trigger(__WEBPACK_IMPORTED_MODULE_4__providers_events__["b" /* CoreEventsProvider */].ACTIVITY_DATA_SENT, { module: 'workshop' });
-            var promise = newSubmissionId ? _this.workshopProvider.invalidateSubmissionData(_this.workshopId, newSubmissionId) :
-                Promise.resolve();
-            return promise.finally(function () {
-                _this.eventsProvider.trigger(__WEBPACK_IMPORTED_MODULE_11__providers_workshop__["a" /* AddonModWorkshopProvider */].SUBMISSION_CHANGED, data, _this.siteId);
-                // Delete the local files from the tmp folder.
-                _this.fileUploaderProvider.clearTmpFiles(inputData.attachmentfiles);
-            });
-        }).catch(function (message) {
-            _this.domUtils.showErrorModalDefault(message, 'Cannot save submission');
-        }).finally(function () {
-            modal.dismiss();
-        });
-    };
-    /**
-     * Component being destroyed.
-     */
-    AddonModWorkshopEditSubmissionPage.prototype.ngOnDestroy = function () {
-        this.isDestroyed = true;
-        this.syncProvider.unblockOperation(this.component, this.workshopId);
-    };
-    __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_10" /* ViewChild */])('editFormEl'),
-        __metadata("design:type", __WEBPACK_IMPORTED_MODULE_0__angular_core__["t" /* ElementRef */])
-    ], AddonModWorkshopEditSubmissionPage.prototype, "formElement", void 0);
-    AddonModWorkshopEditSubmissionPage = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-addon-mod-workshop-edit-submission',template:/*ion-inline-start:"D:\workspace\moodle\agro-moodle-app\src\addon\mod\workshop\pages\edit-submission\edit-submission.html"*/'<ion-header>\n\n    <ion-navbar core-back-button>\n\n        <ion-title>{{ \'addon.mod_workshop.editsubmission\' | translate }}</ion-title>\n\n        <ion-buttons end>\n\n            <button ion-button clear (click)="save()" [attr.aria-label]="\'core.save\' | translate">\n\n                {{ \'core.save\' | translate }}\n\n            </button>\n\n        </ion-buttons>\n\n    </ion-navbar>\n\n</ion-header>\n\n<ion-content>\n\n    <core-loading [hideUntil]="loaded">\n\n        <form ion-list [formGroup]="editForm" *ngIf="workshop" #editFormEl>\n\n            <ion-item text-wrap>\n\n                <ion-label stacked core-mark-required="true">{{ \'addon.mod_workshop.submissiontitle\' | translate }}</ion-label>\n\n                <ion-input name="title" type="text" [placeholder]="\'addon.mod_workshop.submissiontitle\' | translate" formControlName="title"></ion-input>\n\n            </ion-item>\n\n\n\n            <ion-item *ngIf="textAvailable">\n\n                <ion-label stacked [core-mark-required]="textRequired">{{ \'addon.mod_workshop.submissioncontent\' | translate }}</ion-label>\n\n                <core-rich-text-editor item-content [control]="editForm.controls[\'content\']" formControlName="content" [placeholder]="\'addon.mod_workshop.submissioncontent\' | translate"  name="content" [component]="component" [componentId]="componentId" [autoSave]="true" contextLevel="module" [contextInstanceId]="module.id" elementId="content_editor" [draftExtraParams]="editorExtraParams"></core-rich-text-editor>\n\n            </ion-item>\n\n\n\n            <core-attachments *ngIf="fileAvailable" [files]="submission.attachmentfiles" [maxSize]="workshop.maxbytes" [maxSubmissions]="workshop.nattachments" [component]="component" [componentId]="workshop.coursemodule" allowOffline="true" [acceptedTypes]="workshop.submissionfiletypes" [required]="fileRequired"></core-attachments>\n\n        </form>\n\n    </core-loading>\n\n</ion-content>\n\n'/*ion-inline-end:"D:\workspace\moodle\agro-moodle-app\src\addon\mod\workshop\pages\edit-submission\edit-submission.html"*/,
+    CoreCourseSectionSelectorPage = __decorate([
+        Object(core["m" /* Component */])({
+            selector: 'page-core-course-section-selector',
+            templateUrl: 'section-selector.html',
         }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["t" /* NavParams */], __WEBPACK_IMPORTED_MODULE_5__providers_sites__["b" /* CoreSitesProvider */], __WEBPACK_IMPORTED_MODULE_10__core_fileuploader_providers_fileuploader__["b" /* CoreFileUploaderProvider */],
-            __WEBPACK_IMPORTED_MODULE_11__providers_workshop__["a" /* AddonModWorkshopProvider */], __WEBPACK_IMPORTED_MODULE_13__providers_offline__["a" /* AddonModWorkshopOfflineProvider */],
-            __WEBPACK_IMPORTED_MODULE_12__providers_helper__["a" /* AddonModWorkshopHelperProvider */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["s" /* NavController */],
-            __WEBPACK_IMPORTED_MODULE_7__providers_file_session__["b" /* CoreFileSessionProvider */], __WEBPACK_IMPORTED_MODULE_6__providers_sync__["a" /* CoreSyncProvider */],
-            __WEBPACK_IMPORTED_MODULE_9__providers_utils_text__["b" /* CoreTextUtilsProvider */], __WEBPACK_IMPORTED_MODULE_8__providers_utils_dom__["b" /* CoreDomUtilsProvider */], __WEBPACK_IMPORTED_MODULE_2__angular_forms__["a" /* FormBuilder */],
-            __WEBPACK_IMPORTED_MODULE_3__ngx_translate_core__["c" /* TranslateService */], __WEBPACK_IMPORTED_MODULE_4__providers_events__["b" /* CoreEventsProvider */]])
-    ], AddonModWorkshopEditSubmissionPage);
-    return AddonModWorkshopEditSubmissionPage;
+        __metadata("design:paramtypes", [ionic_angular["t" /* NavParams */], helper["b" /* CoreCourseHelperProvider */], ionic_angular["G" /* ViewController */]])
+    ], CoreCourseSectionSelectorPage);
+    return CoreCourseSectionSelectorPage;
 }());
 
-//# sourceMappingURL=edit-submission.js.map
+//# sourceMappingURL=section-selector.js.map
+// CONCATENATED MODULE: ./src/core/course/pages/section-selector/section-selector.module.ts
+// (C) Copyright 2015 Moodle Pty Ltd.
+//
+// Licensed under the Apache License, Version 2.0 (the "License");
+// you may not use this file except in compliance with the License.
+// You may obtain a copy of the License at
+//
+//     http://www.apache.org/licenses/LICENSE-2.0
+//
+// Unless required by applicable law or agreed to in writing, software
+// distributed under the License is distributed on an "AS IS" BASIS,
+// WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+// See the License for the specific language governing permissions and
+// limitations under the License.
+var section_selector_module___decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+
+
+
+
+
+
+var section_selector_module_CoreCourseSectionSelectorPageModule = /** @class */ (function () {
+    function CoreCourseSectionSelectorPageModule() {
+    }
+    CoreCourseSectionSelectorPageModule = section_selector_module___decorate([
+        Object(core["J" /* NgModule */])({
+            declarations: [
+                section_selector_CoreCourseSectionSelectorPage,
+            ],
+            imports: [
+                components_module["a" /* CoreComponentsModule */],
+                directives_module["a" /* CoreDirectivesModule */],
+                ionic_angular["l" /* IonicPageModule */].forChild(section_selector_CoreCourseSectionSelectorPage),
+                _ngx_translate_core["b" /* TranslateModule */].forChild()
+            ],
+        })
+    ], CoreCourseSectionSelectorPageModule);
+    return CoreCourseSectionSelectorPageModule;
+}());
+
+//# sourceMappingURL=section-selector.module.js.map
+// EXTERNAL MODULE: ./node_modules/ionic-angular/components/action-sheet/action-sheet-component.ngfactory.js
+var action_sheet_component_ngfactory = __webpack_require__(1551);
+
+// EXTERNAL MODULE: ./node_modules/ionic-angular/components/alert/alert-component.ngfactory.js
+var alert_component_ngfactory = __webpack_require__(1552);
+
+// EXTERNAL MODULE: ./node_modules/ionic-angular/components/app/app-root.ngfactory.js
+var app_root_ngfactory = __webpack_require__(1553);
+
+// EXTERNAL MODULE: ./node_modules/ionic-angular/components/loading/loading-component.ngfactory.js
+var loading_component_ngfactory = __webpack_require__(1554);
+
+// EXTERNAL MODULE: ./node_modules/ionic-angular/components/modal/modal-component.ngfactory.js
+var modal_component_ngfactory = __webpack_require__(1555);
+
+// EXTERNAL MODULE: ./node_modules/ionic-angular/components/picker/picker-component.ngfactory.js + 1 modules
+var picker_component_ngfactory = __webpack_require__(1556);
+
+// EXTERNAL MODULE: ./node_modules/ionic-angular/components/popover/popover-component.ngfactory.js
+var popover_component_ngfactory = __webpack_require__(1557);
+
+// EXTERNAL MODULE: ./node_modules/ionic-angular/components/select/select-popover-component.ngfactory.js
+var select_popover_component_ngfactory = __webpack_require__(1558);
+
+// EXTERNAL MODULE: ./node_modules/ionic-angular/components/toast/toast-component.ngfactory.js
+var toast_component_ngfactory = __webpack_require__(1559);
+
+// EXTERNAL MODULE: ./src/components/context-menu/context-menu-popover.ngfactory.js
+var context_menu_popover_ngfactory = __webpack_require__(1560);
+
+// EXTERNAL MODULE: ./src/components/course-picker-menu/course-picker-menu-popover.ngfactory.js
+var course_picker_menu_popover_ngfactory = __webpack_require__(1561);
+
+// EXTERNAL MODULE: ./src/components/recaptcha/recaptchamodal.ngfactory.js
+var recaptchamodal_ngfactory = __webpack_require__(1562);
+
+// EXTERNAL MODULE: ./src/components/bs-tooltip/bs-tooltip.ngfactory.js
+var bs_tooltip_ngfactory = __webpack_require__(1563);
+
+// EXTERNAL MODULE: ./src/components/progress-bar/progress-bar.ngfactory.js
+var progress_bar_ngfactory = __webpack_require__(328);
+
+// EXTERNAL MODULE: ./src/components/progress-bar/progress-bar.ts
+var progress_bar = __webpack_require__(260);
+
+// EXTERNAL MODULE: ./node_modules/@angular/platform-browser/esm5/platform-browser.js
+var platform_browser = __webpack_require__(76);
+
+// EXTERNAL MODULE: ./node_modules/ionic-angular/components/badge/badge.js
+var badge = __webpack_require__(144);
+
+// EXTERNAL MODULE: ./node_modules/ionic-angular/config/config.js
+var config = __webpack_require__(8);
+
+// EXTERNAL MODULE: ./node_modules/@ngx-translate/core/src/translate.pipe.js
+var translate_pipe = __webpack_require__(25);
+
+// EXTERNAL MODULE: ./node_modules/@ngx-translate/core/src/translate.service.js
+var translate_service = __webpack_require__(18);
+
+// EXTERNAL MODULE: ./src/directives/format-text.ts
+var format_text = __webpack_require__(49);
+
+// EXTERNAL MODULE: ./src/providers/sites.ts
+var sites = __webpack_require__(1);
+
+// EXTERNAL MODULE: ./src/providers/utils/dom.ts
+var dom = __webpack_require__(4);
+
+// EXTERNAL MODULE: ./src/providers/utils/text.ts
+var utils_text = __webpack_require__(10);
+
+// EXTERNAL MODULE: ./node_modules/ionic-angular/platform/platform.js + 1 modules
+var platform = __webpack_require__(16);
+
+// EXTERNAL MODULE: ./src/providers/utils/utils.ts
+var utils = __webpack_require__(2);
+
+// EXTERNAL MODULE: ./src/providers/utils/url.ts
+var url = __webpack_require__(19);
+
+// EXTERNAL MODULE: ./src/providers/logger.ts
+var logger = __webpack_require__(6);
+
+// EXTERNAL MODULE: ./src/providers/filepool.ts
+var filepool = __webpack_require__(17);
+
+// EXTERNAL MODULE: ./src/core/contentlinks/providers/helper.ts
+var providers_helper = __webpack_require__(14);
+
+// EXTERNAL MODULE: ./node_modules/ionic-angular/navigation/nav-controller.js
+var nav_controller = __webpack_require__(20);
+
+// EXTERNAL MODULE: ./node_modules/ionic-angular/components/content/content.js
+var content = __webpack_require__(28);
+
+// EXTERNAL MODULE: ./src/components/split-view/split-view.ts
+var split_view = __webpack_require__(29);
+
+// EXTERNAL MODULE: ./src/providers/utils/iframe.ts
+var iframe = __webpack_require__(42);
+
+// EXTERNAL MODULE: ./src/providers/events.ts
+var events = __webpack_require__(9);
+
+// EXTERNAL MODULE: ./src/core/filter/providers/filter.ts
+var filter = __webpack_require__(43);
+
+// EXTERNAL MODULE: ./src/core/filter/providers/helper.ts
+var filter_providers_helper = __webpack_require__(30);
+
+// EXTERNAL MODULE: ./src/core/filter/providers/delegate.ts
+var delegate = __webpack_require__(36);
+
+// EXTERNAL MODULE: ./src/providers/urlschemes.ts
+var urlschemes = __webpack_require__(40);
+
+// EXTERNAL MODULE: ./node_modules/ionic-angular/components/item/item.ngfactory.js + 1 modules
+var item_ngfactory = __webpack_require__(31);
+
+// EXTERNAL MODULE: ./node_modules/ionic-angular/components/item/item.js
+var item = __webpack_require__(22);
+
+// EXTERNAL MODULE: ./node_modules/ionic-angular/util/form.js
+var util_form = __webpack_require__(21);
+
+// EXTERNAL MODULE: ./node_modules/ionic-angular/components/item/item-reorder.js + 1 modules
+var item_reorder = __webpack_require__(27);
+
+// EXTERNAL MODULE: ./node_modules/ionic-angular/components/item/item-content.js
+var item_content = __webpack_require__(33);
+
+// EXTERNAL MODULE: ./src/components/icon/icon.ngfactory.js
+var icon_ngfactory = __webpack_require__(85);
+
+// EXTERNAL MODULE: ./src/components/icon/icon.ts
+var icon = __webpack_require__(78);
+
+// EXTERNAL MODULE: ./node_modules/@angular/common/esm5/common.js
+var common = __webpack_require__(7);
+
+// EXTERNAL MODULE: ./node_modules/ionic-angular/components/toolbar/toolbar-header.js
+var toolbar_header = __webpack_require__(379);
+
+// EXTERNAL MODULE: ./node_modules/ionic-angular/navigation/view-controller.js
+var view_controller = __webpack_require__(41);
+
+// EXTERNAL MODULE: ./node_modules/ionic-angular/components/toolbar/navbar.ngfactory.js
+var navbar_ngfactory = __webpack_require__(739);
+
+// EXTERNAL MODULE: ./node_modules/ionic-angular/components/toolbar/navbar.js
+var navbar = __webpack_require__(216);
+
+// EXTERNAL MODULE: ./node_modules/ionic-angular/components/app/app.js + 3 modules
+var app = __webpack_require__(35);
+
+// EXTERNAL MODULE: ./src/directives/back-button.ts
+var back_button = __webpack_require__(486);
+
+// EXTERNAL MODULE: ./node_modules/ionic-angular/components/toolbar/toolbar-title.ngfactory.js
+var toolbar_title_ngfactory = __webpack_require__(740);
+
+// EXTERNAL MODULE: ./node_modules/ionic-angular/components/toolbar/toolbar-title.js
+var toolbar_title = __webpack_require__(324);
+
+// EXTERNAL MODULE: ./node_modules/ionic-angular/components/toolbar/toolbar.js
+var toolbar = __webpack_require__(252);
+
+// EXTERNAL MODULE: ./node_modules/ionic-angular/components/toolbar/toolbar-item.js
+var toolbar_item = __webpack_require__(380);
+
+// EXTERNAL MODULE: ./node_modules/ionic-angular/components/button/button.ngfactory.js
+var button_ngfactory = __webpack_require__(47);
+
+// EXTERNAL MODULE: ./node_modules/ionic-angular/components/button/button.js
+var button_button = __webpack_require__(44);
+
+// EXTERNAL MODULE: ./node_modules/ionic-angular/components/icon/icon.js
+var icon_icon = __webpack_require__(48);
+
+// EXTERNAL MODULE: ./node_modules/ionic-angular/components/content/content.ngfactory.js
+var content_ngfactory = __webpack_require__(185);
+
+// EXTERNAL MODULE: ./node_modules/ionic-angular/platform/dom-controller.js
+var dom_controller = __webpack_require__(34);
+
+// EXTERNAL MODULE: ./node_modules/ionic-angular/platform/keyboard.js
+var keyboard = __webpack_require__(112);
+
+// EXTERNAL MODULE: ./node_modules/ionic-angular/components/list/list.js + 1 modules
+var list = __webpack_require__(87);
+
+// EXTERNAL MODULE: ./node_modules/ionic-angular/gestures/gesture-controller.js
+var gesture_controller = __webpack_require__(45);
+
+// EXTERNAL MODULE: ./node_modules/ionic-angular/navigation/nav-params.js
+var nav_params = __webpack_require__(73);
+
+// CONCATENATED MODULE: ./src/core/course/pages/section-selector/section-selector.ngfactory.js
+/**
+ * @fileoverview This file was generated by the Angular template compiler. Do not edit.
+ *
+ * @suppress {suspiciousCode,uselessCode,missingProperties,missingOverride,checkTypes}
+ * tslint:disable
+ */ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+var styles_CoreCourseSectionSelectorPage = [];
+var RenderType_CoreCourseSectionSelectorPage = core["_30" /* ɵcrt */]({ encapsulation: 2, styles: styles_CoreCourseSectionSelectorPage, data: {} });
+
+function View_CoreCourseSectionSelectorPage_3(_l) { return core["_58" /* ɵvid */](0, [(_l()(), core["_32" /* ɵeld */](0, 0, null, null, 1, "core-progress-bar", [], null, null, null, progress_bar_ngfactory["b" /* View_CoreProgressBarComponent_0 */], progress_bar_ngfactory["a" /* RenderType_CoreProgressBarComponent */])), core["_31" /* ɵdid */](1, 573440, null, 0, progress_bar["a" /* CoreProgressBarComponent */], [platform_browser["c" /* DomSanitizer */]], { progress: [0, "progress"] }, null)], function (_ck, _v) { var currVal_0 = _v.parent.parent.context.$implicit.progress; _ck(_v, 1, 0, currVal_0); }, null); }
+function View_CoreCourseSectionSelectorPage_4(_l) { return core["_58" /* ɵvid */](0, [(_l()(), core["_32" /* ɵeld */](0, 0, null, null, 3, "ion-badge", [["color", "secondary"], ["text-wrap", ""]], null, null, null, null, null)), core["_31" /* ɵdid */](1, 16384, null, 0, badge["a" /* Badge */], [config["a" /* Config */], core["t" /* ElementRef */], core["W" /* Renderer */]], { color: [0, "color"] }, null), (_l()(), core["_56" /* ɵted */](2, null, ["", ""])), core["_48" /* ɵpid */](131072, translate_pipe["a" /* TranslatePipe */], [translate_service["a" /* TranslateService */], core["j" /* ChangeDetectorRef */]])], function (_ck, _v) { var currVal_0 = "secondary"; _ck(_v, 1, 0, currVal_0); }, function (_ck, _v) { var currVal_1 = core["_57" /* ɵunv */](_v, 2, 0, core["_45" /* ɵnov */](_v, 3).transform("core.course.hiddenfromstudents")); _ck(_v, 2, 0, currVal_1); }); }
+function View_CoreCourseSectionSelectorPage_5(_l) { return core["_58" /* ɵvid */](0, [(_l()(), core["_32" /* ɵeld */](0, 0, null, null, 3, "ion-badge", [["color", "secondary"], ["text-wrap", ""]], null, null, null, null, null)), core["_31" /* ɵdid */](1, 16384, null, 0, badge["a" /* Badge */], [config["a" /* Config */], core["t" /* ElementRef */], core["W" /* Renderer */]], { color: [0, "color"] }, null), (_l()(), core["_56" /* ɵted */](2, null, ["", ""])), core["_48" /* ɵpid */](131072, translate_pipe["a" /* TranslatePipe */], [translate_service["a" /* TranslateService */], core["j" /* ChangeDetectorRef */]])], function (_ck, _v) { var currVal_0 = "secondary"; _ck(_v, 1, 0, currVal_0); }, function (_ck, _v) { var currVal_1 = core["_57" /* ɵunv */](_v, 2, 0, core["_45" /* ɵnov */](_v, 3).transform("core.notavailable")); _ck(_v, 2, 0, currVal_1); }); }
+function View_CoreCourseSectionSelectorPage_6(_l) { return core["_58" /* ɵvid */](0, [(_l()(), core["_32" /* ɵeld */](0, 0, null, null, 3, "ion-badge", [["color", "secondary"], ["text-wrap", ""]], null, null, null, null, null)), core["_31" /* ɵdid */](1, 16384, null, 0, badge["a" /* Badge */], [config["a" /* Config */], core["t" /* ElementRef */], core["W" /* Renderer */]], { color: [0, "color"] }, null), (_l()(), core["_32" /* ɵeld */](2, 16777216, null, null, 1, "core-format-text", [["contextLevel", "course"]], null, null, null, null, null)), core["_31" /* ɵdid */](3, 540672, null, 0, format_text["a" /* CoreFormatTextDirective */], [core["t" /* ElementRef */], sites["b" /* CoreSitesProvider */], dom["b" /* CoreDomUtilsProvider */], utils_text["b" /* CoreTextUtilsProvider */], translate_service["a" /* TranslateService */], platform["a" /* Platform */], utils["b" /* CoreUtilsProvider */], url["b" /* CoreUrlUtilsProvider */], logger["b" /* CoreLoggerProvider */], filepool["b" /* CoreFilepoolProvider */], providers_helper["b" /* CoreContentLinksHelperProvider */], [2, nav_controller["a" /* NavController */]], [2, content["a" /* Content */]], [2, split_view["a" /* CoreSplitViewComponent */]], iframe["a" /* CoreIframeUtilsProvider */], events["b" /* CoreEventsProvider */], filter["a" /* CoreFilterProvider */], filter_providers_helper["a" /* CoreFilterHelperProvider */], delegate["a" /* CoreFilterDelegate */], core["_12" /* ViewContainerRef */], urlschemes["b" /* CoreCustomURLSchemesProvider */]], { text: [0, "text"], contextLevel: [1, "contextLevel"], contextInstanceId: [2, "contextInstanceId"] }, null)], function (_ck, _v) { var _co = _v.component; var currVal_0 = "secondary"; _ck(_v, 1, 0, currVal_0); var currVal_1 = _v.parent.parent.context.$implicit.availabilityinfo; var currVal_2 = "course"; var currVal_3 = _co.courseId; _ck(_v, 3, 0, currVal_1, currVal_2, currVal_3); }, null); }
+function View_CoreCourseSectionSelectorPage_2(_l) { return core["_58" /* ɵvid */](0, [(_l()(), core["_32" /* ɵeld */](0, 0, null, null, 25, "a", [["class", "item item-block"], ["detail-none", ""], ["ion-item", ""], ["role", "menuitem"], ["text-wrap", ""]], [[2, "core-primary-selected-item", null], [2, "item-dimmed", null], [1, "aria-hidden", 0], [1, "aria-label", 0]], [[null, "click"]], function (_v, en, $event) { var ad = true; var _co = _v.component; if (("click" === en)) {
+        var pd_0 = (_co.selectSection(_v.parent.context.$implicit) !== false);
+        ad = (pd_0 && ad);
+    } return ad; }, item_ngfactory["b" /* View_Item_0 */], item_ngfactory["a" /* RenderType_Item */])), core["_31" /* ɵdid */](1, 1097728, null, 3, item["a" /* Item */], [util_form["a" /* Form */], config["a" /* Config */], core["t" /* ElementRef */], core["W" /* Renderer */], [2, item_reorder["a" /* ItemReorder */]]], null, null), core["_53" /* ɵqud */](335544320, 2, { contentLabel: 0 }), core["_53" /* ɵqud */](603979776, 3, { _buttons: 1 }), core["_53" /* ɵqud */](603979776, 4, { _icons: 1 }), core["_31" /* ɵdid */](5, 16384, null, 0, item_content["a" /* ItemContent */], [], null, null), (_l()(), core["_56" /* ɵted */](-1, 2, ["\n                "])), (_l()(), core["_32" /* ɵeld */](7, 0, null, 0, 1, "core-icon", [["item-start", ""], ["name", "fa-folder"]], null, null, null, icon_ngfactory["b" /* View_CoreIconComponent_0 */], icon_ngfactory["a" /* RenderType_CoreIconComponent */])), core["_31" /* ɵdid */](8, 704512, null, 0, icon["a" /* CoreIconComponent */], [core["t" /* ElementRef */], config["a" /* Config */]], { name: [0, "name"] }, null), (_l()(), core["_56" /* ɵted */](-1, 2, ["\n                "])), (_l()(), core["_32" /* ɵeld */](10, 0, null, 2, 2, "h2", [], null, null, null, null, null)), (_l()(), core["_32" /* ɵeld */](11, 16777216, null, null, 1, "core-format-text", [["contextLevel", "course"]], null, null, null, null, null)), core["_31" /* ɵdid */](12, 540672, null, 0, format_text["a" /* CoreFormatTextDirective */], [core["t" /* ElementRef */], sites["b" /* CoreSitesProvider */], dom["b" /* CoreDomUtilsProvider */], utils_text["b" /* CoreTextUtilsProvider */], translate_service["a" /* TranslateService */], platform["a" /* Platform */], utils["b" /* CoreUtilsProvider */], url["b" /* CoreUrlUtilsProvider */], logger["b" /* CoreLoggerProvider */], filepool["b" /* CoreFilepoolProvider */], providers_helper["b" /* CoreContentLinksHelperProvider */], [2, nav_controller["a" /* NavController */]], [2, content["a" /* Content */]], [2, split_view["a" /* CoreSplitViewComponent */]], iframe["a" /* CoreIframeUtilsProvider */], events["b" /* CoreEventsProvider */], filter["a" /* CoreFilterProvider */], filter_providers_helper["a" /* CoreFilterHelperProvider */], delegate["a" /* CoreFilterDelegate */], core["_12" /* ViewContainerRef */], urlschemes["b" /* CoreCustomURLSchemesProvider */]], { text: [0, "text"], contextLevel: [1, "contextLevel"], contextInstanceId: [2, "contextInstanceId"] }, null), (_l()(), core["_56" /* ɵted */](-1, 2, ["\n                "])), (_l()(), core["_27" /* ɵand */](16777216, null, 2, 1, null, View_CoreCourseSectionSelectorPage_3)), core["_31" /* ɵdid */](15, 16384, null, 0, common["k" /* NgIf */], [core["_12" /* ViewContainerRef */], core["_7" /* TemplateRef */]], { ngIf: [0, "ngIf"] }, null), (_l()(), core["_56" /* ɵted */](-1, 2, ["\n                "])), (_l()(), core["_27" /* ɵand */](16777216, null, 2, 1, null, View_CoreCourseSectionSelectorPage_4)), core["_31" /* ɵdid */](18, 16384, null, 0, common["k" /* NgIf */], [core["_12" /* ViewContainerRef */], core["_7" /* TemplateRef */]], { ngIf: [0, "ngIf"] }, null), (_l()(), core["_56" /* ɵted */](-1, 2, ["\n                "])), (_l()(), core["_27" /* ɵand */](16777216, null, 2, 1, null, View_CoreCourseSectionSelectorPage_5)), core["_31" /* ɵdid */](21, 16384, null, 0, common["k" /* NgIf */], [core["_12" /* ViewContainerRef */], core["_7" /* TemplateRef */]], { ngIf: [0, "ngIf"] }, null), (_l()(), core["_56" /* ɵted */](-1, 2, ["\n                "])), (_l()(), core["_27" /* ɵand */](16777216, null, 2, 1, null, View_CoreCourseSectionSelectorPage_6)), core["_31" /* ɵdid */](24, 16384, null, 0, common["k" /* NgIf */], [core["_12" /* ViewContainerRef */], core["_7" /* TemplateRef */]], { ngIf: [0, "ngIf"] }, null), (_l()(), core["_56" /* ɵted */](-1, 2, ["\n            "]))], function (_ck, _v) { var _co = _v.component; var currVal_4 = "fa-folder"; _ck(_v, 8, 0, currVal_4); var currVal_5 = (_v.parent.context.$implicit.formattedName || _v.parent.context.$implicit.name); var currVal_6 = "course"; var currVal_7 = _co.courseId; _ck(_v, 12, 0, currVal_5, currVal_6, currVal_7); var currVal_8 = (_v.parent.context.$implicit.progress >= 0); _ck(_v, 15, 0, currVal_8); var currVal_9 = ((_v.parent.context.$implicit.visible === 0) && (_v.parent.context.$implicit.uservisible !== false)); _ck(_v, 18, 0, currVal_9); var currVal_10 = ((_v.parent.context.$implicit.visible === 0) && (_v.parent.context.$implicit.uservisible === false)); _ck(_v, 21, 0, currVal_10); var currVal_11 = _v.parent.context.$implicit.availabilityinfo; _ck(_v, 24, 0, currVal_11); }, function (_ck, _v) { var _co = _v.component; var currVal_0 = (_co.selected.id == _v.parent.context.$implicit.id); var currVal_1 = ((_v.parent.context.$implicit.visible === 0) || (_v.parent.context.$implicit.uservisible === false)); var currVal_2 = (_v.parent.context.$implicit.uservisible === false); var currVal_3 = (_v.parent.context.$implicit.formattedName || _v.parent.context.$implicit.name); _ck(_v, 0, 0, currVal_0, currVal_1, currVal_2, currVal_3); }); }
+function View_CoreCourseSectionSelectorPage_1(_l) { return core["_58" /* ɵvid */](0, [(_l()(), core["_32" /* ɵeld */](0, 0, null, null, 4, null, null, null, null, null, null, null)), (_l()(), core["_56" /* ɵted */](-1, null, ["\n            "])), (_l()(), core["_27" /* ɵand */](16777216, null, null, 1, null, View_CoreCourseSectionSelectorPage_2)), core["_31" /* ɵdid */](3, 16384, null, 0, common["k" /* NgIf */], [core["_12" /* ViewContainerRef */], core["_7" /* TemplateRef */]], { ngIf: [0, "ngIf"] }, null), (_l()(), core["_56" /* ɵted */](-1, null, ["\n        "]))], function (_ck, _v) { var _co = _v.component; var currVal_0 = (!_v.context.$implicit.hiddenbynumsections && (_v.context.$implicit.id != _co.stealthModulesSectionId)); _ck(_v, 3, 0, currVal_0); }, null); }
+function View_CoreCourseSectionSelectorPage_0(_l) { return core["_58" /* ɵvid */](0, [(_l()(), core["_32" /* ɵeld */](0, 0, null, null, 25, "ion-header", [], null, null, null, null, null)), core["_31" /* ɵdid */](1, 16384, null, 0, toolbar_header["a" /* Header */], [config["a" /* Config */], core["t" /* ElementRef */], core["W" /* Renderer */], [2, view_controller["a" /* ViewController */]]], null, null), (_l()(), core["_56" /* ɵted */](-1, null, ["\n    "])), (_l()(), core["_32" /* ɵeld */](3, 0, null, null, 21, "ion-navbar", [["class", "toolbar"], ["core-back-button", ""]], [[8, "hidden", 0], [2, "statusbar-padding", null]], null, null, navbar_ngfactory["b" /* View_Navbar_0 */], navbar_ngfactory["a" /* RenderType_Navbar */])), core["_31" /* ɵdid */](4, 49152, null, 0, navbar["a" /* Navbar */], [app["a" /* App */], [2, view_controller["a" /* ViewController */]], [2, nav_controller["a" /* NavController */]], config["a" /* Config */], core["t" /* ElementRef */], core["W" /* Renderer */]], null, null), core["_31" /* ɵdid */](5, 212992, null, 0, back_button["a" /* CoreBackButtonDirective */], [navbar["a" /* Navbar */], translate_service["a" /* TranslateService */], events["b" /* CoreEventsProvider */]], null, null), (_l()(), core["_56" /* ɵted */](-1, 3, ["\n        "])), (_l()(), core["_32" /* ɵeld */](7, 0, null, 3, 3, "ion-title", [], null, null, null, toolbar_title_ngfactory["b" /* View_ToolbarTitle_0 */], toolbar_title_ngfactory["a" /* RenderType_ToolbarTitle */])), core["_31" /* ɵdid */](8, 49152, null, 0, toolbar_title["a" /* ToolbarTitle */], [config["a" /* Config */], core["t" /* ElementRef */], core["W" /* Renderer */], [2, toolbar["a" /* Toolbar */]], [2, navbar["a" /* Navbar */]]], null, null), (_l()(), core["_56" /* ɵted */](9, 0, ["", ""])), core["_48" /* ɵpid */](131072, translate_pipe["a" /* TranslatePipe */], [translate_service["a" /* TranslateService */], core["j" /* ChangeDetectorRef */]]), (_l()(), core["_56" /* ɵted */](-1, 3, ["\n        "])), (_l()(), core["_32" /* ɵeld */](12, 0, null, 2, 11, "ion-buttons", [["end", ""]], null, null, null, null, null)), core["_31" /* ɵdid */](13, 16384, null, 1, toolbar_item["a" /* ToolbarItem */], [config["a" /* Config */], core["t" /* ElementRef */], core["W" /* Renderer */], [2, toolbar["a" /* Toolbar */]], [2, navbar["a" /* Navbar */]]], null, null), core["_53" /* ɵqud */](603979776, 1, { _buttons: 1 }), (_l()(), core["_56" /* ɵted */](-1, null, ["\n            "])), (_l()(), core["_32" /* ɵeld */](16, 0, null, null, 6, "button", [["icon-only", ""], ["ion-button", ""]], [[1, "aria-label", 0]], [[null, "click"]], function (_v, en, $event) { var ad = true; var _co = _v.component; if (("click" === en)) {
+        var pd_0 = (_co.closeModal() !== false);
+        ad = (pd_0 && ad);
+    } return ad; }, button_ngfactory["b" /* View_Button_0 */], button_ngfactory["a" /* RenderType_Button */])), core["_31" /* ɵdid */](17, 1097728, [[1, 4]], 0, button_button["a" /* Button */], [[8, ""], config["a" /* Config */], core["t" /* ElementRef */], core["W" /* Renderer */]], null, null), core["_48" /* ɵpid */](131072, translate_pipe["a" /* TranslatePipe */], [translate_service["a" /* TranslateService */], core["j" /* ChangeDetectorRef */]]), (_l()(), core["_56" /* ɵted */](-1, 0, ["\n                "])), (_l()(), core["_32" /* ɵeld */](20, 0, null, 0, 1, "ion-icon", [["name", "close"], ["role", "img"]], [[2, "hide", null]], null, null, null, null)), core["_31" /* ɵdid */](21, 147456, null, 0, icon_icon["a" /* Icon */], [config["a" /* Config */], core["t" /* ElementRef */], core["W" /* Renderer */]], { name: [0, "name"] }, null), (_l()(), core["_56" /* ɵted */](-1, 0, ["\n            "])), (_l()(), core["_56" /* ɵted */](-1, null, ["\n        "])), (_l()(), core["_56" /* ɵted */](-1, 3, ["\n    "])), (_l()(), core["_56" /* ɵted */](-1, null, ["\n"])), (_l()(), core["_56" /* ɵted */](-1, null, ["\n"])), (_l()(), core["_32" /* ɵeld */](27, 0, null, null, 9, "ion-content", [], [[2, "statusbar-padding", null], [2, "has-refresher", null]], null, null, content_ngfactory["b" /* View_Content_0 */], content_ngfactory["a" /* RenderType_Content */])), core["_31" /* ɵdid */](28, 4374528, null, 0, content["a" /* Content */], [config["a" /* Config */], platform["a" /* Platform */], dom_controller["a" /* DomController */], core["t" /* ElementRef */], core["W" /* Renderer */], app["a" /* App */], keyboard["a" /* Keyboard */], core["N" /* NgZone */], [2, view_controller["a" /* ViewController */]], [2, nav_controller["a" /* NavController */]]], null, null), (_l()(), core["_56" /* ɵted */](-1, 1, ["\n    "])), (_l()(), core["_32" /* ɵeld */](30, 0, null, 1, 5, "ion-list", [["aria-labelledby", "core-course-section-button"], ["id", "core-course-section-selector"], ["role", "menu"]], null, null, null, null, null)), core["_31" /* ɵdid */](31, 16384, null, 0, list["a" /* List */], [config["a" /* Config */], core["t" /* ElementRef */], core["W" /* Renderer */], platform["a" /* Platform */], gesture_controller["l" /* GestureController */], dom_controller["a" /* DomController */]], null, null), (_l()(), core["_56" /* ɵted */](-1, null, ["\n        "])), (_l()(), core["_27" /* ɵand */](16777216, null, null, 1, null, View_CoreCourseSectionSelectorPage_1)), core["_31" /* ɵdid */](34, 802816, null, 0, common["j" /* NgForOf */], [core["_12" /* ViewContainerRef */], core["_7" /* TemplateRef */], core["E" /* IterableDiffers */]], { ngForOf: [0, "ngForOf"] }, null), (_l()(), core["_56" /* ɵted */](-1, null, ["\n    "])), (_l()(), core["_56" /* ɵted */](-1, 1, ["\n"])), (_l()(), core["_56" /* ɵted */](-1, null, ["\n"]))], function (_ck, _v) { var _co = _v.component; _ck(_v, 5, 0); var currVal_5 = "close"; _ck(_v, 21, 0, currVal_5); var currVal_8 = _co.sections; _ck(_v, 34, 0, currVal_8); }, function (_ck, _v) { var currVal_0 = core["_45" /* ɵnov */](_v, 4)._hidden; var currVal_1 = core["_45" /* ɵnov */](_v, 4)._sbPadding; _ck(_v, 3, 0, currVal_0, currVal_1); var currVal_2 = core["_57" /* ɵunv */](_v, 9, 0, core["_45" /* ɵnov */](_v, 10).transform("core.course.sections")); _ck(_v, 9, 0, currVal_2); var currVal_3 = core["_57" /* ɵunv */](_v, 16, 0, core["_45" /* ɵnov */](_v, 18).transform("core.close")); _ck(_v, 16, 0, currVal_3); var currVal_4 = core["_45" /* ɵnov */](_v, 21)._hidden; _ck(_v, 20, 0, currVal_4); var currVal_6 = core["_45" /* ɵnov */](_v, 28).statusbarPadding; var currVal_7 = core["_45" /* ɵnov */](_v, 28)._hasRefresher; _ck(_v, 27, 0, currVal_6, currVal_7); }); }
+function View_CoreCourseSectionSelectorPage_Host_0(_l) { return core["_58" /* ɵvid */](0, [(_l()(), core["_32" /* ɵeld */](0, 0, null, null, 1, "page-core-course-section-selector", [], null, null, null, View_CoreCourseSectionSelectorPage_0, RenderType_CoreCourseSectionSelectorPage)), core["_31" /* ɵdid */](1, 49152, null, 0, section_selector_CoreCourseSectionSelectorPage, [nav_params["a" /* NavParams */], helper["b" /* CoreCourseHelperProvider */], view_controller["a" /* ViewController */]], null, null)], null, null); }
+var CoreCourseSectionSelectorPageNgFactory = core["_28" /* ɵccf */]("page-core-course-section-selector", section_selector_CoreCourseSectionSelectorPage, View_CoreCourseSectionSelectorPage_Host_0, {}, {}, []);
+
+//# sourceMappingURL=section-selector.ngfactory.js.map
+// EXTERNAL MODULE: ./node_modules/@angular/forms/esm5/forms.js
+var esm5_forms = __webpack_require__(23);
+
+// EXTERNAL MODULE: ./node_modules/@ngx-translate/core/src/translate.loader.js
+var translate_loader = __webpack_require__(375);
+
+// EXTERNAL MODULE: ./node_modules/@ngx-translate/core/src/translate.compiler.js
+var translate_compiler = __webpack_require__(376);
+
+// EXTERNAL MODULE: ./node_modules/@ngx-translate/core/src/translate.parser.js
+var translate_parser = __webpack_require__(378);
+
+// EXTERNAL MODULE: ./node_modules/@ngx-translate/core/src/missing-translation-handler.js
+var missing_translation_handler = __webpack_require__(377);
+
+// EXTERNAL MODULE: ./node_modules/@ngx-translate/core/src/translate.store.js
+var translate_store = __webpack_require__(485);
+
+// EXTERNAL MODULE: ./node_modules/ionic-angular/module.js
+var ionic_angular_module = __webpack_require__(738);
+
+// EXTERNAL MODULE: ./src/pipes/pipes.module.ts + 2 modules
+var pipes_module = __webpack_require__(111);
+
+// EXTERNAL MODULE: ./node_modules/ionic-angular/util/module-loader.js
+var module_loader = __webpack_require__(277);
+
+// CONCATENATED MODULE: ./src/core/course/pages/section-selector/section-selector.module.ngfactory.js
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "CoreCourseSectionSelectorPageModuleNgFactory", function() { return CoreCourseSectionSelectorPageModuleNgFactory; });
+/**
+ * @fileoverview This file was generated by the Angular template compiler. Do not edit.
+ *
+ * @suppress {suspiciousCode,uselessCode,missingProperties,missingOverride,checkTypes}
+ * tslint:disable
+ */ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+var CoreCourseSectionSelectorPageModuleNgFactory = core["_29" /* ɵcmf */](section_selector_module_CoreCourseSectionSelectorPageModule, [], function (_l) { return core["_41" /* ɵmod */]([core["_42" /* ɵmpd */](512, core["o" /* ComponentFactoryResolver */], core["_22" /* ɵCodegenComponentFactoryResolver */], [[8, [action_sheet_component_ngfactory["a" /* ActionSheetCmpNgFactory */], alert_component_ngfactory["a" /* AlertCmpNgFactory */], app_root_ngfactory["a" /* IonicAppNgFactory */], loading_component_ngfactory["a" /* LoadingCmpNgFactory */], modal_component_ngfactory["a" /* ModalCmpNgFactory */], picker_component_ngfactory["a" /* PickerCmpNgFactory */], popover_component_ngfactory["a" /* PopoverCmpNgFactory */], select_popover_component_ngfactory["a" /* SelectPopoverNgFactory */], toast_component_ngfactory["a" /* ToastCmpNgFactory */], context_menu_popover_ngfactory["a" /* CoreContextMenuPopoverComponentNgFactory */], course_picker_menu_popover_ngfactory["a" /* CoreCoursePickerMenuPopoverComponentNgFactory */], recaptchamodal_ngfactory["a" /* CoreRecaptchaModalComponentNgFactory */], bs_tooltip_ngfactory["a" /* CoreBSTooltipComponentNgFactory */], CoreCourseSectionSelectorPageNgFactory]], [3, core["o" /* ComponentFactoryResolver */]], core["L" /* NgModuleRef */]]), core["_42" /* ɵmpd */](4608, common["m" /* NgLocalization */], common["l" /* NgLocaleLocalization */], [core["G" /* LOCALE_ID */], [2, common["w" /* ɵa */]]]), core["_42" /* ɵmpd */](4608, esm5_forms["x" /* ɵi */], esm5_forms["x" /* ɵi */], []), core["_42" /* ɵmpd */](4608, esm5_forms["d" /* FormBuilder */], esm5_forms["d" /* FormBuilder */], []), core["_42" /* ɵmpd */](4608, translate_loader["b" /* TranslateLoader */], translate_loader["a" /* TranslateFakeLoader */], []), core["_42" /* ɵmpd */](4608, translate_compiler["a" /* TranslateCompiler */], translate_compiler["b" /* TranslateFakeCompiler */], []), core["_42" /* ɵmpd */](4608, translate_parser["b" /* TranslateParser */], translate_parser["a" /* TranslateDefaultParser */], []), core["_42" /* ɵmpd */](4608, missing_translation_handler["b" /* MissingTranslationHandler */], missing_translation_handler["a" /* FakeMissingTranslationHandler */], []), core["_42" /* ɵmpd */](4608, translate_service["a" /* TranslateService */], translate_service["a" /* TranslateService */], [translate_store["a" /* TranslateStore */], translate_loader["b" /* TranslateLoader */], translate_compiler["a" /* TranslateCompiler */], translate_parser["b" /* TranslateParser */], missing_translation_handler["b" /* MissingTranslationHandler */], translate_service["b" /* USE_DEFAULT_LANG */], translate_service["c" /* USE_STORE */]]), core["_42" /* ɵmpd */](512, common["b" /* CommonModule */], common["b" /* CommonModule */], []), core["_42" /* ɵmpd */](512, esm5_forms["v" /* ɵba */], esm5_forms["v" /* ɵba */], []), core["_42" /* ɵmpd */](512, esm5_forms["i" /* FormsModule */], esm5_forms["i" /* FormsModule */], []), core["_42" /* ɵmpd */](512, esm5_forms["s" /* ReactiveFormsModule */], esm5_forms["s" /* ReactiveFormsModule */], []), core["_42" /* ɵmpd */](512, ionic_angular_module["a" /* IonicModule */], ionic_angular_module["a" /* IonicModule */], []), core["_42" /* ɵmpd */](512, _ngx_translate_core["b" /* TranslateModule */], _ngx_translate_core["b" /* TranslateModule */], []), core["_42" /* ɵmpd */](512, directives_module["a" /* CoreDirectivesModule */], directives_module["a" /* CoreDirectivesModule */], []), core["_42" /* ɵmpd */](512, pipes_module["a" /* CorePipesModule */], pipes_module["a" /* CorePipesModule */], []), core["_42" /* ɵmpd */](512, components_module["a" /* CoreComponentsModule */], components_module["a" /* CoreComponentsModule */], []), core["_42" /* ɵmpd */](512, ionic_angular_module["b" /* IonicPageModule */], ionic_angular_module["b" /* IonicPageModule */], []), core["_42" /* ɵmpd */](512, section_selector_module_CoreCourseSectionSelectorPageModule, section_selector_module_CoreCourseSectionSelectorPageModule, []), core["_42" /* ɵmpd */](256, translate_service["c" /* USE_STORE */], undefined, []), core["_42" /* ɵmpd */](256, translate_service["b" /* USE_DEFAULT_LANG */], undefined, []), core["_42" /* ɵmpd */](256, module_loader["a" /* LAZY_LOADED_TOKEN */], section_selector_CoreCourseSectionSelectorPage, [])]); });
+
+//# sourceMappingURL=section-selector.module.ngfactory.js.map
 
 /***/ })
 

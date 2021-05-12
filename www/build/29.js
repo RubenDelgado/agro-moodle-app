@@ -1,87 +1,27 @@
 webpackJsonp([29],{
 
-/***/ 2125:
+/***/ 2153:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "CoreSettingsDeviceInfoPageModule", function() { return CoreSettingsDeviceInfoPageModule; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(3);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ngx_translate_core__ = __webpack_require__(1);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__deviceinfo__ = __webpack_require__(2285);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__components_components_module__ = __webpack_require__(13);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__directives_directives_module__ = __webpack_require__(14);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__pipes_pipes_module__ = __webpack_require__(66);
-// (C) Copyright 2015 Moodle Pty Ltd.
-//
-// Licensed under the Apache License, Version 2.0 (the "License");
-// you may not use this file except in compliance with the License.
-// You may obtain a copy of the License at
-//
-//     http://www.apache.org/licenses/LICENSE-2.0
-//
-// Unless required by applicable law or agreed to in writing, software
-// distributed under the License is distributed on an "AS IS" BASIS,
-// WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-// See the License for the specific language governing permissions and
-// limitations under the License.
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
 
+// EXTERNAL MODULE: ./node_modules/@angular/core/esm5/core.js
+var core = __webpack_require__(0);
 
+// EXTERNAL MODULE: ./node_modules/ionic-angular/index.js + 3 modules
+var ionic_angular = __webpack_require__(5);
 
+// EXTERNAL MODULE: ./node_modules/@ngx-translate/core/index.js + 1 modules
+var _ngx_translate_core = __webpack_require__(3);
 
+// EXTERNAL MODULE: ./src/providers/utils/dom.ts
+var dom = __webpack_require__(4);
 
+// EXTERNAL MODULE: ./src/providers/utils/utils.ts
+var utils = __webpack_require__(2);
 
-
-var CoreSettingsDeviceInfoPageModule = /** @class */ (function () {
-    function CoreSettingsDeviceInfoPageModule() {
-    }
-    CoreSettingsDeviceInfoPageModule = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["J" /* NgModule */])({
-            declarations: [
-                __WEBPACK_IMPORTED_MODULE_3__deviceinfo__["a" /* CoreSettingsDeviceInfoPage */]
-            ],
-            imports: [
-                __WEBPACK_IMPORTED_MODULE_4__components_components_module__["a" /* CoreComponentsModule */],
-                __WEBPACK_IMPORTED_MODULE_5__directives_directives_module__["a" /* CoreDirectivesModule */],
-                __WEBPACK_IMPORTED_MODULE_6__pipes_pipes_module__["a" /* CorePipesModule */],
-                __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["l" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_3__deviceinfo__["a" /* CoreSettingsDeviceInfoPage */]),
-                __WEBPACK_IMPORTED_MODULE_2__ngx_translate_core__["b" /* TranslateModule */].forChild()
-            ],
-        })
-    ], CoreSettingsDeviceInfoPageModule);
-    return CoreSettingsDeviceInfoPageModule;
-}());
-
-//# sourceMappingURL=deviceinfo.module.js.map
-
-/***/ }),
-
-/***/ 2285:
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return CoreSettingsDeviceInfoPage; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(3);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ionic_native_device__ = __webpack_require__(236);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ionic_native_network__ = __webpack_require__(120);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__ngx_translate_core__ = __webpack_require__(1);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__providers_app__ = __webpack_require__(8);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__providers_file__ = __webpack_require__(26);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__providers_init__ = __webpack_require__(97);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__providers_lang__ = __webpack_require__(101);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__providers_utils_utils__ = __webpack_require__(4);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__providers_local_notifications__ = __webpack_require__(96);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__providers_sites__ = __webpack_require__(2);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__configconstants__ = __webpack_require__(59);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__core_pushnotifications_providers_pushnotifications__ = __webpack_require__(91);
+// CONCATENATED MODULE: ./src/core/viewer/pages/qr-scanner/qr-scanner.ts
 // (C) Copyright 2015 Moodle Pty Ltd.
 //
 // Licensed under the Apache License, Version 2.0 (the "License");
@@ -109,183 +49,320 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 
 
 
-
-
-
-
-
-
-
-
-
 /**
- * Page that displays the device information.
+ * Page to scan a QR code.
  */
-var CoreSettingsDeviceInfoPage = /** @class */ (function () {
-    function CoreSettingsDeviceInfoPage(platform, device, network, zone, appProvider, fileProvider, initDelegate, langProvider, sitesProvider, localNotificationsProvider, pushNotificationsProvider, utils, translate) {
+var qr_scanner_CoreViewerQRScannerPage = /** @class */ (function () {
+    function CoreViewerQRScannerPage(params, translate, viewCtrl, domUtils, utils) {
         var _this = this;
+        this.viewCtrl = viewCtrl;
+        this.domUtils = domUtils;
         this.utils = utils;
-        this.translate = translate;
-        this.deviceInfo = {
-            versionName: __WEBPACK_IMPORTED_MODULE_12__configconstants__["a" /* CoreConfigConstants */].versionname,
-            versionCode: __WEBPACK_IMPORTED_MODULE_12__configconstants__["a" /* CoreConfigConstants */].versioncode,
-            compilationTime: __WEBPACK_IMPORTED_MODULE_12__configconstants__["a" /* CoreConfigConstants */].compilationtime,
-            lastCommit: __WEBPACK_IMPORTED_MODULE_12__configconstants__["a" /* CoreConfigConstants */].lastcommit,
-            networkStatus: appProvider.isOnline() ? 'online' : 'offline',
-            wifiConnection: appProvider.isWifi() ? 'yes' : 'no',
-            localNotifAvailable: localNotificationsProvider.isAvailable() ? 'yes' : 'no',
-            pushId: pushNotificationsProvider.getPushId(),
-        };
-        if (window.location && window.location.href) {
-            var url = window.location.href;
-            this.deviceInfo.locationHref = url.substr(0, url.indexOf('#'));
-        }
-        var navigator = window.navigator;
-        if (navigator) {
-            if (navigator.userAgent) {
-                this.deviceInfo.userAgent = navigator.userAgent;
+        this.title = params.get('title') || translate.instant('core.scanqr');
+        this.utils.startScanQR().then(function (text) {
+            // Text captured, return it.
+            text = typeof text == 'string' ? text.trim() : '';
+            _this.closeModal(text);
+        }).catch(function (error) {
+            if (!_this.domUtils.isCanceledError(error)) {
+                // Show error and stop scanning.
+                _this.domUtils.showErrorModalDefault(error, 'An error occurred.');
+                _this.utils.stopScanQR();
             }
-            if (navigator.language) {
-                this.deviceInfo.browserLanguage = navigator.language;
-            }
-        }
-        if (device) {
-            if (device.cordova) {
-                this.deviceInfo.cordovaVersion = device.cordova;
-            }
-            if (device.platform) {
-                this.deviceInfo.platform = device.platform;
-            }
-            if (device.version) {
-                this.deviceInfo.osVersion = device.version;
-            }
-            if (device.model) {
-                this.deviceInfo.model = device.model;
-            }
-            if (device.uuid) {
-                this.deviceInfo.uuid = device.uuid;
-            }
-        }
-        if (appProvider.isMobile()) {
-            this.deviceInfo.deviceType = platform.is('tablet') ? 'tablet' : 'phone';
-            if (appProvider.isAndroid()) {
-                this.deviceInfo.deviceOs = 'android';
-                this.deviceOsTranslated = 'Android';
-            }
-            else if (appProvider.isIOS()) {
-                this.deviceInfo.deviceOs = 'ios';
-                this.deviceOsTranslated = 'iOS';
-            }
-            else {
-                var matches = navigator.userAgent.match(/\(([^\)]*)\)/);
-                if (matches && matches.length > 1) {
-                    this.deviceInfo.deviceOs = matches[1];
-                    this.deviceOsTranslated = matches[1];
-                }
-                else {
-                    this.deviceInfo.deviceOs = 'unknown';
-                    this.deviceOsTranslated = this.translate.instant('core.unknown');
-                }
-            }
-        }
-        else {
-            this.deviceInfo.deviceType = appProvider.isDesktop() ? 'desktop' : 'browser';
-            if (appProvider.isLinux()) {
-                this.deviceInfo.deviceOs = 'linux';
-                this.deviceOsTranslated = 'Linux';
-            }
-            else if (appProvider.isMac()) {
-                this.deviceInfo.deviceOs = 'mac';
-                this.deviceOsTranslated = 'MacOS';
-            }
-            else if (appProvider.isWindows()) {
-                this.deviceInfo.deviceOs = 'windows';
-                this.deviceOsTranslated = 'Windows';
-            }
-            else {
-                var matches = navigator.userAgent.match(/\(([^\)]*)\)/);
-                if (matches && matches.length > 1) {
-                    this.deviceInfo.deviceOs = matches[1];
-                    this.deviceOsTranslated = matches[1];
-                }
-                else {
-                    this.deviceInfo.deviceOs = 'unknown';
-                    this.deviceOsTranslated = this.translate.instant('core.unknown');
-                }
-            }
-        }
-        langProvider.getCurrentLanguage().then(function (lang) {
-            _this.deviceInfo.currentLanguage = lang;
-            _this.currentLangName = __WEBPACK_IMPORTED_MODULE_12__configconstants__["a" /* CoreConfigConstants */].languages[lang];
-        });
-        if (fileProvider.isAvailable()) {
-            fileProvider.getBasePath().then(function (basepath) {
-                _this.deviceInfo.fileSystemRoot = basepath;
-                _this.fsClickable = fileProvider.usesHTMLAPI();
-            });
-        }
-        if (window.screen) {
-            this.deviceInfo.screen = window.innerWidth + 'x' + window.innerHeight +
-                ' (' + window.screen.width + 'x' + window.screen.height + ')';
-        }
-        var currentSite = sitesProvider.getCurrentSite();
-        this.deviceInfo.siteUrl = (currentSite && currentSite.getURL()) ||
-            (typeof __WEBPACK_IMPORTED_MODULE_12__configconstants__["a" /* CoreConfigConstants */].siteurl == 'string' && __WEBPACK_IMPORTED_MODULE_12__configconstants__["a" /* CoreConfigConstants */].siteurl);
-        this.deviceInfo.isPrefixedUrl = !!__WEBPACK_IMPORTED_MODULE_12__configconstants__["a" /* CoreConfigConstants */].siteurl;
-        this.deviceInfo.siteId = currentSite && currentSite.getId();
-        this.deviceInfo.siteVersion = currentSite && currentSite.getInfo().release;
-        // Refresh online status when changes.
-        this.onlineObserver = network.onchange().subscribe(function () {
-            // Execute the callback in the Angular zone, so change detection doesn't stop working.
-            zone.run(function () {
-                _this.deviceInfo.networkStatus = appProvider.isOnline() ? 'online' : 'offline';
-            });
+            _this.closeModal();
         });
     }
     /**
-     * Copies device info into the clipboard.
+     * Cancel scanning.
      */
-    CoreSettingsDeviceInfoPage.prototype.copyInfo = function () {
-        this.utils.copyToClipboard(JSON.stringify(this.deviceInfo));
+    CoreViewerQRScannerPage.prototype.cancel = function () {
+        this.utils.stopScanQR();
     };
     /**
-     * Copies device info item into the clipboard.
+     * Close modal.
      *
-     * @param e Event.
+     * @param text The text to return (if any).
      */
-    CoreSettingsDeviceInfoPage.prototype.copyItemInfo = function (e) {
-        e.preventDefault();
-        var el = e.target;
-        this.utils.copyToClipboard(el.closest('ion-item').textContent.trim());
+    CoreViewerQRScannerPage.prototype.closeModal = function (text) {
+        this.viewCtrl.dismiss(text);
     };
     /**
-     * Page destroyed.
+     * View will leave.
      */
-    CoreSettingsDeviceInfoPage.prototype.ngOnDestroy = function () {
-        this.onlineObserver && this.onlineObserver.unsubscribe();
+    CoreViewerQRScannerPage.prototype.ionViewWillLeave = function () {
+        // If this code is reached and scan hasn't been stopped yet it means the user clicked the back button, cancel.
+        this.utils.stopScanQR();
     };
-    CoreSettingsDeviceInfoPage = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-core-settings-deviceinfo',template:/*ion-inline-start:"D:\workspace\moodle\agro-moodle-app\src\core\settings\pages\deviceinfo\deviceinfo.html"*/'<ion-header>\n\n    <ion-navbar core-back-button>\n\n        <ion-title>{{ \'core.settings.deviceinfo\' | translate }}</ion-title>\n\n        <ion-buttons end>\n\n            <button ion-button icon-only (click)="copyInfo()" [attr.aria-label]="\'core.settings.copyinfo\' | translate">\n\n                <ion-icon name="copy"></ion-icon>\n\n            </button>\n\n        </ion-buttons>\n\n    </ion-navbar>\n\n</ion-header>\n\n<ion-content>\n\n    <ion-item text-wrap (longPress)="copyItemInfo($event)">\n\n        <h2>{{ \'core.settings.appversion\' | translate}}</h2>\n\n        <p>{{ deviceInfo.versionName }} ({{ deviceInfo.versionCode }})</p>\n\n    </ion-item>\n\n    <ion-item text-wrap (longPress)="copyItemInfo($event)">\n\n        <h2>{{ \'core.settings.compilationinfo\' | translate }}</h2>\n\n        <p *ngIf="deviceInfo.compilationTime">{{ deviceInfo.compilationTime | coreFormatDate: "LLL Z": false }}</p>\n\n        <p *ngIf="deviceInfo.lastCommit">{{ deviceInfo.lastCommit }}</p>\n\n    </ion-item>\n\n    <ion-item text-wrap *ngIf="deviceInfo.siteUrl" (longPress)="copyItemInfo($event)">\n\n        <h2>{{ \'core.settings.siteinfo\' | translate }}<ng-container *ngIf="deviceInfo.isPrefixedUrl"> *</ng-container></h2>\n\n        <p><a [href]="deviceInfo.siteUrl" core-link auto-login="yes">{{ deviceInfo.siteUrl }}</a></p>\n\n        <p *ngIf="deviceInfo.siteVersion">{{ deviceInfo.siteVersion }}</p>\n\n        <p *ngIf="deviceInfo.siteId">{{ deviceInfo.siteId }}</p>\n\n    </ion-item>\n\n    <ion-item text-wrap *ngIf="deviceInfo.fileSystemRoot" (longPress)="copyItemInfo($event)">\n\n        <h2>{{ \'core.settings.filesystemroot\' | translate}}</h2>\n\n        <p><a *ngIf="fsClickable" [href]="deviceInfo.fileSystemRoot" core-link auto-login="no">{{ deviceInfo.fileSystemRoot }}</a></p>\n\n        <p *ngIf="!fsClickable">{{ deviceInfo.fileSystemRoot }}</p>\n\n    </ion-item>\n\n    <ion-item text-wrap *ngIf="deviceInfo.userAgent" (longPress)="copyItemInfo($event)">\n\n        <h2>{{ \'core.settings.navigatoruseragent\' | translate}}</h2>\n\n        <p>{{ deviceInfo.userAgent }}</p>\n\n    </ion-item>\n\n    <ion-item text-wrap *ngIf="deviceInfo.browserLanguage" (longPress)="copyItemInfo($event)">\n\n        <h2>{{ \'core.settings.navigatorlanguage\' | translate}}</h2>\n\n        <p>{{ deviceInfo.browserLanguage }}</p>\n\n    </ion-item>\n\n    <ion-item text-wrap *ngIf="deviceInfo.currentLanguage" (longPress)="copyItemInfo($event)">\n\n        <h2>{{ \'core.settings.currentlanguage\' | translate}}</h2>\n\n        <p>{{ currentLangName }} ({{ deviceInfo.currentLanguage }})</p>\n\n    </ion-item>\n\n    <ion-item text-wrap *ngIf="deviceInfo.locationHref" (longPress)="copyItemInfo($event)">\n\n        <h2>{{ \'core.settings.locationhref\' | translate}}</h2>\n\n        <p>{{ deviceInfo.locationHref }}</p>\n\n    </ion-item>\n\n    <ion-item text-wrap *ngIf="deviceInfo.deviceType" (longPress)="copyItemInfo($event)">\n\n        <h2>{{ \'core.settings.displayformat\' | translate}}</h2>\n\n        <p>{{ \'core.\' + deviceInfo.deviceType | translate }}</p>\n\n    </ion-item>\n\n    <ion-item text-wrap *ngIf="deviceInfo.deviceOs && deviceOsTranslated" (longPress)="copyItemInfo($event)">\n\n        <h2>{{ \'core.settings.deviceos\' | translate}}</h2>\n\n        <p>{{ deviceOsTranslated }}</p>\n\n    </ion-item>\n\n    <ion-item text-wrap *ngIf="deviceInfo.screen" (longPress)="copyItemInfo($event)">\n\n        <h2>{{ \'core.settings.screen\' | translate}}</h2>\n\n        <p>{{ deviceInfo.screen | translate }}</p>\n\n    </ion-item>\n\n    <ion-item text-wrap (longPress)="copyItemInfo($event)">\n\n        <h2>{{ \'core.settings.networkstatus\' | translate}}</h2>\n\n        <p>{{ \'core.\' + deviceInfo.networkStatus | translate }}</p>\n\n    </ion-item>\n\n    <ion-item text-wrap (longPress)="copyItemInfo($event)">\n\n        <h2>{{ \'core.settings.wificonnection\' | translate}}</h2>\n\n        <p>{{ \'core.\' + deviceInfo.wifiConnection | translate }}</p>\n\n    </ion-item>\n\n    <ion-item text-wrap *ngIf="deviceInfo.cordovaVersion" (longPress)="copyItemInfo($event)">\n\n        <h2>{{ \'core.settings.cordovaversion\' | translate}}</h2>\n\n        <p>{{ deviceInfo.cordovaVersion }}</p>\n\n    </ion-item>\n\n    <ion-item text-wrap *ngIf="deviceInfo.platform" (longPress)="copyItemInfo($event)">\n\n        <h2>{{ \'core.settings.cordovadeviceplatform\' | translate}}</h2>\n\n        <p>{{ deviceInfo.platform }}</p>\n\n    </ion-item>\n\n    <ion-item text-wrap *ngIf="deviceInfo.osVersion" (longPress)="copyItemInfo($event)">\n\n        <h2>{{ \'core.settings.cordovadeviceosversion\' | translate}}</h2>\n\n        <p>{{ deviceInfo.osVersion }}</p>\n\n    </ion-item>\n\n    <ion-item text-wrap *ngIf="deviceInfo.model" (longPress)="copyItemInfo($event)">\n\n        <h2>{{ \'core.settings.cordovadevicemodel\' | translate}}</h2>\n\n        <p>{{ deviceInfo.model }}</p>\n\n    </ion-item>\n\n    <ion-item text-wrap *ngIf="deviceInfo.uuid" (longPress)="copyItemInfo($event)">\n\n        <h2>{{ \'core.settings.cordovadeviceuuid\' | translate}}</h2>\n\n        <p>{{ deviceInfo.uuid }}</p>\n\n    </ion-item>\n\n    <ion-item text-wrap *ngIf="deviceInfo.pushId" (longPress)="copyItemInfo($event)">\n\n        <h2>{{ \'core.settings.pushid\' | translate}}</h2>\n\n        <p>{{ deviceInfo.pushId }}</p>\n\n    </ion-item>\n\n    <ion-item text-wrap (longPress)="copyItemInfo($event)">\n\n        <h2>{{ \'core.settings.localnotifavailable\' | translate}}</h2>\n\n        <p>{{ \'core.\' + deviceInfo.localNotifAvailable | translate }}</p>\n\n    </ion-item>\n\n</ion-content>\n\n'/*ion-inline-end:"D:\workspace\moodle\agro-moodle-app\src\core\settings\pages\deviceinfo\deviceinfo.html"*/,
+    CoreViewerQRScannerPage = __decorate([
+        Object(core["m" /* Component */])({
+            selector: 'page-core-viewer-qr-scanner',
+            templateUrl: 'qr-scanner.html',
         }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["v" /* Platform */],
-            __WEBPACK_IMPORTED_MODULE_2__ionic_native_device__["a" /* Device */],
-            __WEBPACK_IMPORTED_MODULE_3__ionic_native_network__["a" /* Network */],
-            __WEBPACK_IMPORTED_MODULE_0__angular_core__["N" /* NgZone */],
-            __WEBPACK_IMPORTED_MODULE_5__providers_app__["b" /* CoreAppProvider */],
-            __WEBPACK_IMPORTED_MODULE_6__providers_file__["b" /* CoreFileProvider */],
-            __WEBPACK_IMPORTED_MODULE_7__providers_init__["a" /* CoreInitDelegate */],
-            __WEBPACK_IMPORTED_MODULE_8__providers_lang__["a" /* CoreLangProvider */],
-            __WEBPACK_IMPORTED_MODULE_11__providers_sites__["b" /* CoreSitesProvider */],
-            __WEBPACK_IMPORTED_MODULE_10__providers_local_notifications__["a" /* CoreLocalNotificationsProvider */],
-            __WEBPACK_IMPORTED_MODULE_13__core_pushnotifications_providers_pushnotifications__["a" /* CorePushNotificationsProvider */],
-            __WEBPACK_IMPORTED_MODULE_9__providers_utils_utils__["b" /* CoreUtilsProvider */],
-            __WEBPACK_IMPORTED_MODULE_4__ngx_translate_core__["c" /* TranslateService */]])
-    ], CoreSettingsDeviceInfoPage);
-    return CoreSettingsDeviceInfoPage;
+        __metadata("design:paramtypes", [ionic_angular["t" /* NavParams */],
+            _ngx_translate_core["c" /* TranslateService */],
+            ionic_angular["G" /* ViewController */],
+            dom["b" /* CoreDomUtilsProvider */],
+            utils["b" /* CoreUtilsProvider */]])
+    ], CoreViewerQRScannerPage);
+    return CoreViewerQRScannerPage;
 }());
 
-//# sourceMappingURL=deviceinfo.js.map
+//# sourceMappingURL=qr-scanner.js.map
+// EXTERNAL MODULE: ./src/directives/directives.module.ts + 2 modules
+var directives_module = __webpack_require__(32);
+
+// CONCATENATED MODULE: ./src/core/viewer/pages/qr-scanner/qr-scanner.module.ts
+// (C) Copyright 2015 Moodle Pty Ltd.
+//
+// Licensed under the Apache License, Version 2.0 (the "License");
+// you may not use this file except in compliance with the License.
+// You may obtain a copy of the License at
+//
+//     http://www.apache.org/licenses/LICENSE-2.0
+//
+// Unless required by applicable law or agreed to in writing, software
+// distributed under the License is distributed on an "AS IS" BASIS,
+// WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+// See the License for the specific language governing permissions and
+// limitations under the License.
+var qr_scanner_module___decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+
+
+
+
+
+var qr_scanner_module_CoreViewerQRScannerPageModule = /** @class */ (function () {
+    function CoreViewerQRScannerPageModule() {
+    }
+    CoreViewerQRScannerPageModule = qr_scanner_module___decorate([
+        Object(core["J" /* NgModule */])({
+            declarations: [
+                qr_scanner_CoreViewerQRScannerPage
+            ],
+            imports: [
+                directives_module["a" /* CoreDirectivesModule */],
+                ionic_angular["l" /* IonicPageModule */].forChild(qr_scanner_CoreViewerQRScannerPage),
+                _ngx_translate_core["b" /* TranslateModule */].forChild()
+            ]
+        })
+    ], CoreViewerQRScannerPageModule);
+    return CoreViewerQRScannerPageModule;
+}());
+
+//# sourceMappingURL=qr-scanner.module.js.map
+// EXTERNAL MODULE: ./node_modules/ionic-angular/components/action-sheet/action-sheet-component.ngfactory.js
+var action_sheet_component_ngfactory = __webpack_require__(1551);
+
+// EXTERNAL MODULE: ./node_modules/ionic-angular/components/alert/alert-component.ngfactory.js
+var alert_component_ngfactory = __webpack_require__(1552);
+
+// EXTERNAL MODULE: ./node_modules/ionic-angular/components/app/app-root.ngfactory.js
+var app_root_ngfactory = __webpack_require__(1553);
+
+// EXTERNAL MODULE: ./node_modules/ionic-angular/components/loading/loading-component.ngfactory.js
+var loading_component_ngfactory = __webpack_require__(1554);
+
+// EXTERNAL MODULE: ./node_modules/ionic-angular/components/modal/modal-component.ngfactory.js
+var modal_component_ngfactory = __webpack_require__(1555);
+
+// EXTERNAL MODULE: ./node_modules/ionic-angular/components/picker/picker-component.ngfactory.js + 1 modules
+var picker_component_ngfactory = __webpack_require__(1556);
+
+// EXTERNAL MODULE: ./node_modules/ionic-angular/components/popover/popover-component.ngfactory.js
+var popover_component_ngfactory = __webpack_require__(1557);
+
+// EXTERNAL MODULE: ./node_modules/ionic-angular/components/select/select-popover-component.ngfactory.js
+var select_popover_component_ngfactory = __webpack_require__(1558);
+
+// EXTERNAL MODULE: ./node_modules/ionic-angular/components/toast/toast-component.ngfactory.js
+var toast_component_ngfactory = __webpack_require__(1559);
+
+// EXTERNAL MODULE: ./node_modules/ionic-angular/components/toolbar/toolbar-header.js
+var toolbar_header = __webpack_require__(379);
+
+// EXTERNAL MODULE: ./node_modules/ionic-angular/config/config.js
+var config = __webpack_require__(8);
+
+// EXTERNAL MODULE: ./node_modules/ionic-angular/navigation/view-controller.js
+var view_controller = __webpack_require__(41);
+
+// EXTERNAL MODULE: ./node_modules/ionic-angular/components/toolbar/navbar.ngfactory.js
+var navbar_ngfactory = __webpack_require__(739);
+
+// EXTERNAL MODULE: ./node_modules/ionic-angular/components/toolbar/navbar.js
+var navbar = __webpack_require__(216);
+
+// EXTERNAL MODULE: ./node_modules/ionic-angular/components/app/app.js + 3 modules
+var app = __webpack_require__(35);
+
+// EXTERNAL MODULE: ./node_modules/ionic-angular/navigation/nav-controller.js
+var nav_controller = __webpack_require__(20);
+
+// EXTERNAL MODULE: ./src/directives/back-button.ts
+var back_button = __webpack_require__(486);
+
+// EXTERNAL MODULE: ./node_modules/@ngx-translate/core/src/translate.service.js
+var translate_service = __webpack_require__(18);
+
+// EXTERNAL MODULE: ./src/providers/events.ts
+var events = __webpack_require__(9);
+
+// EXTERNAL MODULE: ./node_modules/ionic-angular/components/toolbar/toolbar-title.ngfactory.js
+var toolbar_title_ngfactory = __webpack_require__(740);
+
+// EXTERNAL MODULE: ./node_modules/ionic-angular/components/toolbar/toolbar-title.js
+var toolbar_title = __webpack_require__(324);
+
+// EXTERNAL MODULE: ./node_modules/ionic-angular/components/toolbar/toolbar.js
+var toolbar = __webpack_require__(252);
+
+// EXTERNAL MODULE: ./node_modules/ionic-angular/components/toolbar/toolbar-item.js
+var toolbar_item = __webpack_require__(380);
+
+// EXTERNAL MODULE: ./node_modules/ionic-angular/components/button/button.ngfactory.js
+var button_ngfactory = __webpack_require__(47);
+
+// EXTERNAL MODULE: ./node_modules/ionic-angular/components/button/button.js
+var button_button = __webpack_require__(44);
+
+// EXTERNAL MODULE: ./node_modules/@ngx-translate/core/src/translate.pipe.js
+var translate_pipe = __webpack_require__(25);
+
+// EXTERNAL MODULE: ./node_modules/ionic-angular/components/icon/icon.js
+var icon = __webpack_require__(48);
+
+// EXTERNAL MODULE: ./node_modules/ionic-angular/components/content/content.ngfactory.js
+var content_ngfactory = __webpack_require__(185);
+
+// EXTERNAL MODULE: ./node_modules/ionic-angular/components/content/content.js
+var content = __webpack_require__(28);
+
+// EXTERNAL MODULE: ./node_modules/ionic-angular/platform/platform.js + 1 modules
+var platform = __webpack_require__(16);
+
+// EXTERNAL MODULE: ./node_modules/ionic-angular/platform/dom-controller.js
+var dom_controller = __webpack_require__(34);
+
+// EXTERNAL MODULE: ./node_modules/ionic-angular/platform/keyboard.js
+var keyboard = __webpack_require__(112);
+
+// EXTERNAL MODULE: ./node_modules/ionic-angular/navigation/nav-params.js
+var nav_params = __webpack_require__(73);
+
+// CONCATENATED MODULE: ./src/core/viewer/pages/qr-scanner/qr-scanner.ngfactory.js
+/**
+ * @fileoverview This file was generated by the Angular template compiler. Do not edit.
+ *
+ * @suppress {suspiciousCode,uselessCode,missingProperties,missingOverride,checkTypes}
+ * tslint:disable
+ */ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+var styles_CoreViewerQRScannerPage = [];
+var RenderType_CoreViewerQRScannerPage = core["_30" /* ɵcrt */]({ encapsulation: 2, styles: styles_CoreViewerQRScannerPage, data: {} });
+
+function View_CoreViewerQRScannerPage_0(_l) { return core["_58" /* ɵvid */](0, [(_l()(), core["_32" /* ɵeld */](0, 0, null, null, 24, "ion-header", [], null, null, null, null, null)), core["_31" /* ɵdid */](1, 16384, null, 0, toolbar_header["a" /* Header */], [config["a" /* Config */], core["t" /* ElementRef */], core["W" /* Renderer */], [2, view_controller["a" /* ViewController */]]], null, null), (_l()(), core["_56" /* ɵted */](-1, null, ["\n    "])), (_l()(), core["_32" /* ɵeld */](3, 0, null, null, 20, "ion-navbar", [["class", "toolbar"], ["core-back-button", ""]], [[8, "hidden", 0], [2, "statusbar-padding", null]], null, null, navbar_ngfactory["b" /* View_Navbar_0 */], navbar_ngfactory["a" /* RenderType_Navbar */])), core["_31" /* ɵdid */](4, 49152, null, 0, navbar["a" /* Navbar */], [app["a" /* App */], [2, view_controller["a" /* ViewController */]], [2, nav_controller["a" /* NavController */]], config["a" /* Config */], core["t" /* ElementRef */], core["W" /* Renderer */]], null, null), core["_31" /* ɵdid */](5, 212992, null, 0, back_button["a" /* CoreBackButtonDirective */], [navbar["a" /* Navbar */], translate_service["a" /* TranslateService */], events["b" /* CoreEventsProvider */]], null, null), (_l()(), core["_56" /* ɵted */](-1, 3, ["\n        "])), (_l()(), core["_32" /* ɵeld */](7, 0, null, 3, 2, "ion-title", [], null, null, null, toolbar_title_ngfactory["b" /* View_ToolbarTitle_0 */], toolbar_title_ngfactory["a" /* RenderType_ToolbarTitle */])), core["_31" /* ɵdid */](8, 49152, null, 0, toolbar_title["a" /* ToolbarTitle */], [config["a" /* Config */], core["t" /* ElementRef */], core["W" /* Renderer */], [2, toolbar["a" /* Toolbar */]], [2, navbar["a" /* Navbar */]]], null, null), (_l()(), core["_56" /* ɵted */](9, 0, ["", ""])), (_l()(), core["_56" /* ɵted */](-1, 3, ["\n\n        "])), (_l()(), core["_32" /* ɵeld */](11, 0, null, 2, 11, "ion-buttons", [["end", ""]], null, null, null, null, null)), core["_31" /* ɵdid */](12, 16384, null, 1, toolbar_item["a" /* ToolbarItem */], [config["a" /* Config */], core["t" /* ElementRef */], core["W" /* Renderer */], [2, toolbar["a" /* Toolbar */]], [2, navbar["a" /* Navbar */]]], null, null), core["_53" /* ɵqud */](603979776, 1, { _buttons: 1 }), (_l()(), core["_56" /* ɵted */](-1, null, ["\n            "])), (_l()(), core["_32" /* ɵeld */](15, 0, null, null, 6, "button", [["icon-only", ""], ["ion-button", ""]], [[1, "aria-label", 0]], [[null, "click"]], function (_v, en, $event) { var ad = true; var _co = _v.component; if (("click" === en)) {
+        var pd_0 = (_co.cancel() !== false);
+        ad = (pd_0 && ad);
+    } return ad; }, button_ngfactory["b" /* View_Button_0 */], button_ngfactory["a" /* RenderType_Button */])), core["_31" /* ɵdid */](16, 1097728, [[1, 4]], 0, button_button["a" /* Button */], [[8, ""], config["a" /* Config */], core["t" /* ElementRef */], core["W" /* Renderer */]], null, null), core["_48" /* ɵpid */](131072, translate_pipe["a" /* TranslatePipe */], [translate_service["a" /* TranslateService */], core["j" /* ChangeDetectorRef */]]), (_l()(), core["_56" /* ɵted */](-1, 0, ["\n                "])), (_l()(), core["_32" /* ɵeld */](19, 0, null, 0, 1, "ion-icon", [["name", "close"], ["role", "img"]], [[2, "hide", null]], null, null, null, null)), core["_31" /* ɵdid */](20, 147456, null, 0, icon["a" /* Icon */], [config["a" /* Config */], core["t" /* ElementRef */], core["W" /* Renderer */]], { name: [0, "name"] }, null), (_l()(), core["_56" /* ɵted */](-1, 0, ["\n            "])), (_l()(), core["_56" /* ɵted */](-1, null, ["\n        "])), (_l()(), core["_56" /* ɵted */](-1, 3, ["\n    "])), (_l()(), core["_56" /* ɵted */](-1, null, ["\n"])), (_l()(), core["_56" /* ɵted */](-1, null, ["\n"])), (_l()(), core["_32" /* ɵeld */](26, 0, null, null, 2, "ion-content", [], [[2, "statusbar-padding", null], [2, "has-refresher", null]], null, null, content_ngfactory["b" /* View_Content_0 */], content_ngfactory["a" /* RenderType_Content */])), core["_31" /* ɵdid */](27, 4374528, null, 0, content["a" /* Content */], [config["a" /* Config */], platform["a" /* Platform */], dom_controller["a" /* DomController */], core["t" /* ElementRef */], core["W" /* Renderer */], app["a" /* App */], keyboard["a" /* Keyboard */], core["N" /* NgZone */], [2, view_controller["a" /* ViewController */]], [2, nav_controller["a" /* NavController */]]], null, null), (_l()(), core["_56" /* ɵted */](-1, 1, ["\n"])), (_l()(), core["_56" /* ɵted */](-1, null, ["\n"]))], function (_ck, _v) { _ck(_v, 5, 0); var currVal_5 = "close"; _ck(_v, 20, 0, currVal_5); }, function (_ck, _v) { var _co = _v.component; var currVal_0 = core["_45" /* ɵnov */](_v, 4)._hidden; var currVal_1 = core["_45" /* ɵnov */](_v, 4)._sbPadding; _ck(_v, 3, 0, currVal_0, currVal_1); var currVal_2 = _co.title; _ck(_v, 9, 0, currVal_2); var currVal_3 = core["_57" /* ɵunv */](_v, 15, 0, core["_45" /* ɵnov */](_v, 17).transform("core.close")); _ck(_v, 15, 0, currVal_3); var currVal_4 = core["_45" /* ɵnov */](_v, 20)._hidden; _ck(_v, 19, 0, currVal_4); var currVal_6 = core["_45" /* ɵnov */](_v, 27).statusbarPadding; var currVal_7 = core["_45" /* ɵnov */](_v, 27)._hasRefresher; _ck(_v, 26, 0, currVal_6, currVal_7); }); }
+function View_CoreViewerQRScannerPage_Host_0(_l) { return core["_58" /* ɵvid */](0, [(_l()(), core["_32" /* ɵeld */](0, 0, null, null, 1, "page-core-viewer-qr-scanner", [], null, null, null, View_CoreViewerQRScannerPage_0, RenderType_CoreViewerQRScannerPage)), core["_31" /* ɵdid */](1, 49152, null, 0, qr_scanner_CoreViewerQRScannerPage, [nav_params["a" /* NavParams */], translate_service["a" /* TranslateService */], view_controller["a" /* ViewController */], dom["b" /* CoreDomUtilsProvider */], utils["b" /* CoreUtilsProvider */]], null, null)], null, null); }
+var CoreViewerQRScannerPageNgFactory = core["_28" /* ɵccf */]("page-core-viewer-qr-scanner", qr_scanner_CoreViewerQRScannerPage, View_CoreViewerQRScannerPage_Host_0, {}, {}, []);
+
+//# sourceMappingURL=qr-scanner.ngfactory.js.map
+// EXTERNAL MODULE: ./node_modules/@angular/common/esm5/common.js
+var common = __webpack_require__(7);
+
+// EXTERNAL MODULE: ./node_modules/@angular/forms/esm5/forms.js
+var esm5_forms = __webpack_require__(23);
+
+// EXTERNAL MODULE: ./node_modules/@ngx-translate/core/src/translate.loader.js
+var translate_loader = __webpack_require__(375);
+
+// EXTERNAL MODULE: ./node_modules/@ngx-translate/core/src/translate.compiler.js
+var translate_compiler = __webpack_require__(376);
+
+// EXTERNAL MODULE: ./node_modules/@ngx-translate/core/src/translate.parser.js
+var translate_parser = __webpack_require__(378);
+
+// EXTERNAL MODULE: ./node_modules/@ngx-translate/core/src/missing-translation-handler.js
+var missing_translation_handler = __webpack_require__(377);
+
+// EXTERNAL MODULE: ./node_modules/@ngx-translate/core/src/translate.store.js
+var translate_store = __webpack_require__(485);
+
+// EXTERNAL MODULE: ./node_modules/ionic-angular/module.js
+var ionic_angular_module = __webpack_require__(738);
+
+// EXTERNAL MODULE: ./node_modules/ionic-angular/util/module-loader.js
+var module_loader = __webpack_require__(277);
+
+// CONCATENATED MODULE: ./src/core/viewer/pages/qr-scanner/qr-scanner.module.ngfactory.js
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "CoreViewerQRScannerPageModuleNgFactory", function() { return CoreViewerQRScannerPageModuleNgFactory; });
+/**
+ * @fileoverview This file was generated by the Angular template compiler. Do not edit.
+ *
+ * @suppress {suspiciousCode,uselessCode,missingProperties,missingOverride,checkTypes}
+ * tslint:disable
+ */ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+var CoreViewerQRScannerPageModuleNgFactory = core["_29" /* ɵcmf */](qr_scanner_module_CoreViewerQRScannerPageModule, [], function (_l) { return core["_41" /* ɵmod */]([core["_42" /* ɵmpd */](512, core["o" /* ComponentFactoryResolver */], core["_22" /* ɵCodegenComponentFactoryResolver */], [[8, [action_sheet_component_ngfactory["a" /* ActionSheetCmpNgFactory */], alert_component_ngfactory["a" /* AlertCmpNgFactory */], app_root_ngfactory["a" /* IonicAppNgFactory */], loading_component_ngfactory["a" /* LoadingCmpNgFactory */], modal_component_ngfactory["a" /* ModalCmpNgFactory */], picker_component_ngfactory["a" /* PickerCmpNgFactory */], popover_component_ngfactory["a" /* PopoverCmpNgFactory */], select_popover_component_ngfactory["a" /* SelectPopoverNgFactory */], toast_component_ngfactory["a" /* ToastCmpNgFactory */], CoreViewerQRScannerPageNgFactory]], [3, core["o" /* ComponentFactoryResolver */]], core["L" /* NgModuleRef */]]), core["_42" /* ɵmpd */](4608, common["m" /* NgLocalization */], common["l" /* NgLocaleLocalization */], [core["G" /* LOCALE_ID */], [2, common["w" /* ɵa */]]]), core["_42" /* ɵmpd */](4608, esm5_forms["x" /* ɵi */], esm5_forms["x" /* ɵi */], []), core["_42" /* ɵmpd */](4608, esm5_forms["d" /* FormBuilder */], esm5_forms["d" /* FormBuilder */], []), core["_42" /* ɵmpd */](4608, translate_loader["b" /* TranslateLoader */], translate_loader["a" /* TranslateFakeLoader */], []), core["_42" /* ɵmpd */](4608, translate_compiler["a" /* TranslateCompiler */], translate_compiler["b" /* TranslateFakeCompiler */], []), core["_42" /* ɵmpd */](4608, translate_parser["b" /* TranslateParser */], translate_parser["a" /* TranslateDefaultParser */], []), core["_42" /* ɵmpd */](4608, missing_translation_handler["b" /* MissingTranslationHandler */], missing_translation_handler["a" /* FakeMissingTranslationHandler */], []), core["_42" /* ɵmpd */](4608, translate_service["a" /* TranslateService */], translate_service["a" /* TranslateService */], [translate_store["a" /* TranslateStore */], translate_loader["b" /* TranslateLoader */], translate_compiler["a" /* TranslateCompiler */], translate_parser["b" /* TranslateParser */], missing_translation_handler["b" /* MissingTranslationHandler */], translate_service["b" /* USE_DEFAULT_LANG */], translate_service["c" /* USE_STORE */]]), core["_42" /* ɵmpd */](512, directives_module["a" /* CoreDirectivesModule */], directives_module["a" /* CoreDirectivesModule */], []), core["_42" /* ɵmpd */](512, common["b" /* CommonModule */], common["b" /* CommonModule */], []), core["_42" /* ɵmpd */](512, esm5_forms["v" /* ɵba */], esm5_forms["v" /* ɵba */], []), core["_42" /* ɵmpd */](512, esm5_forms["i" /* FormsModule */], esm5_forms["i" /* FormsModule */], []), core["_42" /* ɵmpd */](512, esm5_forms["s" /* ReactiveFormsModule */], esm5_forms["s" /* ReactiveFormsModule */], []), core["_42" /* ɵmpd */](512, ionic_angular_module["a" /* IonicModule */], ionic_angular_module["a" /* IonicModule */], []), core["_42" /* ɵmpd */](512, ionic_angular_module["b" /* IonicPageModule */], ionic_angular_module["b" /* IonicPageModule */], []), core["_42" /* ɵmpd */](512, _ngx_translate_core["b" /* TranslateModule */], _ngx_translate_core["b" /* TranslateModule */], []), core["_42" /* ɵmpd */](512, qr_scanner_module_CoreViewerQRScannerPageModule, qr_scanner_module_CoreViewerQRScannerPageModule, []), core["_42" /* ɵmpd */](256, module_loader["a" /* LAZY_LOADED_TOKEN */], qr_scanner_CoreViewerQRScannerPage, []), core["_42" /* ɵmpd */](256, translate_service["c" /* USE_STORE */], undefined, []), core["_42" /* ɵmpd */](256, translate_service["b" /* USE_DEFAULT_LANG */], undefined, [])]); });
+
+//# sourceMappingURL=qr-scanner.module.ngfactory.js.map
 
 /***/ })
 

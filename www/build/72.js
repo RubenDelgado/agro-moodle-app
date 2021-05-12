@@ -1,92 +1,39 @@
 webpackJsonp([72],{
 
-/***/ 2080:
+/***/ 2102:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "AddonModWorkshopAssessmentPageModule", function() { return AddonModWorkshopAssessmentPageModule; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(3);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ngx_translate_core__ = __webpack_require__(1);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__components_components_module__ = __webpack_require__(13);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__directives_directives_module__ = __webpack_require__(14);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__components_components_module__ = __webpack_require__(436);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__assessment__ = __webpack_require__(2239);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__core_editor_components_components_module__ = __webpack_require__(130);
-// (C) Copyright 2015 Moodle Pty Ltd.
-//
-// Licensed under the Apache License, Version 2.0 (the "License");
-// you may not use this file except in compliance with the License.
-// You may obtain a copy of the License at
-//
-//     http://www.apache.org/licenses/LICENSE-2.0
-//
-// Unless required by applicable law or agreed to in writing, software
-// distributed under the License is distributed on an "AS IS" BASIS,
-// WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-// See the License for the specific language governing permissions and
-// limitations under the License.
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
 
+// EXTERNAL MODULE: ./node_modules/@angular/core/esm5/core.js
+var core = __webpack_require__(0);
 
+// EXTERNAL MODULE: ./node_modules/ionic-angular/index.js + 3 modules
+var ionic_angular = __webpack_require__(5);
 
+// EXTERNAL MODULE: ./node_modules/@ngx-translate/core/index.js + 1 modules
+var _ngx_translate_core = __webpack_require__(3);
 
+// EXTERNAL MODULE: ./src/providers/utils/dom.ts
+var dom = __webpack_require__(4);
 
+// EXTERNAL MODULE: ./src/core/course/providers/course.ts
+var course = __webpack_require__(15);
 
+// EXTERNAL MODULE: ./src/core/course/providers/module-delegate.ts
+var module_delegate = __webpack_require__(63);
 
+// EXTERNAL MODULE: ./src/core/course/providers/helper.ts
+var helper = __webpack_require__(38);
 
-var AddonModWorkshopAssessmentPageModule = /** @class */ (function () {
-    function AddonModWorkshopAssessmentPageModule() {
-    }
-    AddonModWorkshopAssessmentPageModule = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["J" /* NgModule */])({
-            declarations: [
-                __WEBPACK_IMPORTED_MODULE_6__assessment__["a" /* AddonModWorkshopAssessmentPage */],
-            ],
-            imports: [
-                __WEBPACK_IMPORTED_MODULE_4__directives_directives_module__["a" /* CoreDirectivesModule */],
-                __WEBPACK_IMPORTED_MODULE_3__components_components_module__["a" /* CoreComponentsModule */],
-                __WEBPACK_IMPORTED_MODULE_5__components_components_module__["a" /* AddonModWorkshopComponentsModule */],
-                __WEBPACK_IMPORTED_MODULE_7__core_editor_components_components_module__["a" /* CoreEditorComponentsModule */],
-                __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["l" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_6__assessment__["a" /* AddonModWorkshopAssessmentPage */]),
-                __WEBPACK_IMPORTED_MODULE_2__ngx_translate_core__["b" /* TranslateModule */].forChild()
-            ],
-        })
-    ], AddonModWorkshopAssessmentPageModule);
-    return AddonModWorkshopAssessmentPageModule;
-}());
+// EXTERNAL MODULE: ./src/providers/sites.ts
+var sites = __webpack_require__(1);
 
-//# sourceMappingURL=assessment.module.js.map
+// EXTERNAL MODULE: ./src/core/constants.ts
+var constants = __webpack_require__(37);
 
-/***/ }),
-
-/***/ 2239:
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AddonModWorkshopAssessmentPage; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(3);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_forms__ = __webpack_require__(29);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ngx_translate_core__ = __webpack_require__(1);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__providers_events__ = __webpack_require__(11);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__providers_sites__ = __webpack_require__(2);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__providers_sync__ = __webpack_require__(47);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__providers_utils_dom__ = __webpack_require__(7);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__providers_utils_text__ = __webpack_require__(10);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__core_course_providers_course__ = __webpack_require__(12);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__core_user_providers_user__ = __webpack_require__(30);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__core_grades_providers_helper__ = __webpack_require__(132);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__providers_workshop__ = __webpack_require__(123);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__providers_helper__ = __webpack_require__(160);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__providers_offline__ = __webpack_require__(142);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__providers_sync__ = __webpack_require__(234);
+// CONCATENATED MODULE: ./src/core/course/pages/list-mod-type/list-mod-type.ts
 // (C) Copyright 2015 Moodle Pty Ltd.
 //
 // Licensed under the Apache License, Version 2.0 (the "License");
@@ -109,49 +56,6 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, generator) {
-    return new (P || (P = Promise))(function (resolve, reject) {
-        function fulfilled(value) { try { step(generator.next(value)); } catch (e) { reject(e); } }
-        function rejected(value) { try { step(generator["throw"](value)); } catch (e) { reject(e); } }
-        function step(result) { result.done ? resolve(result.value) : new P(function (resolve) { resolve(result.value); }).then(fulfilled, rejected); }
-        step((generator = generator.apply(thisArg, _arguments || [])).next());
-    });
-};
-var __generator = (this && this.__generator) || function (thisArg, body) {
-    var _ = { label: 0, sent: function() { if (t[0] & 1) throw t[1]; return t[1]; }, trys: [], ops: [] }, f, y, t, g;
-    return g = { next: verb(0), "throw": verb(1), "return": verb(2) }, typeof Symbol === "function" && (g[Symbol.iterator] = function() { return this; }), g;
-    function verb(n) { return function (v) { return step([n, v]); }; }
-    function step(op) {
-        if (f) throw new TypeError("Generator is already executing.");
-        while (_) try {
-            if (f = 1, y && (t = y[op[0] & 2 ? "return" : op[0] ? "throw" : "next"]) && !(t = t.call(y, op[1])).done) return t;
-            if (y = 0, t) op = [0, t.value];
-            switch (op[0]) {
-                case 0: case 1: t = op; break;
-                case 4: _.label++; return { value: op[1], done: false };
-                case 5: _.label++; y = op[1]; op = [0]; continue;
-                case 7: op = _.ops.pop(); _.trys.pop(); continue;
-                default:
-                    if (!(t = _.trys, t = t.length > 0 && t[t.length - 1]) && (op[0] === 6 || op[0] === 2)) { _ = 0; continue; }
-                    if (op[0] === 3 && (!t || (op[1] > t[0] && op[1] < t[3]))) { _.label = op[1]; break; }
-                    if (op[0] === 6 && _.label < t[1]) { _.label = t[1]; t = op; break; }
-                    if (t && _.label < t[2]) { _.label = t[2]; _.ops.push(op); break; }
-                    if (t[2]) _.ops.pop();
-                    _.trys.pop(); continue;
-            }
-            op = body.call(thisArg, _);
-        } catch (e) { op = [6, e]; y = 0; } finally { f = t = 0; }
-        if (op[0] & 5) throw op[1]; return { value: op[0] ? op[1] : void 0, done: true };
-    }
-};
-
-
-
-
-
-
-
-
 
 
 
@@ -161,325 +65,452 @@ var __generator = (this && this.__generator) || function (thisArg, body) {
 
 
 /**
- * Page that displays a workshop assessment.
+ * Page that displays comments.
  */
-var AddonModWorkshopAssessmentPage = /** @class */ (function () {
-    function AddonModWorkshopAssessmentPage(navParams, sitesProvider, courseProvider, workshopProvider, workshopOffline, workshopHelper, navCtrl, syncProvider, textUtils, fb, translate, eventsProvider, domUtils, gradesHelper, userProvider) {
-        var _this = this;
+var list_mod_type_CoreCourseListModTypePage = /** @class */ (function () {
+    function CoreCourseListModTypePage(navParams, courseProvider, moduleDelegate, domUtils, courseHelper, sitesProvider) {
         this.courseProvider = courseProvider;
-        this.workshopProvider = workshopProvider;
-        this.workshopOffline = workshopOffline;
-        this.workshopHelper = workshopHelper;
-        this.navCtrl = navCtrl;
-        this.syncProvider = syncProvider;
-        this.textUtils = textUtils;
-        this.fb = fb;
-        this.translate = translate;
-        this.eventsProvider = eventsProvider;
+        this.moduleDelegate = moduleDelegate;
         this.domUtils = domUtils;
-        this.gradesHelper = gradesHelper;
-        this.userProvider = userProvider;
-        this.evaluating = false;
+        this.courseHelper = courseHelper;
+        this.sitesProvider = sitesProvider;
+        this.sections = [];
         this.loaded = false;
-        this.evaluate = {
-            text: '',
-            grade: -1,
-            weight: 1
-        };
-        this.weights = [];
-        this.originalEvaluation = {};
-        this.hasOffline = false;
-        this.isDestroyed = false;
-        this.forceLeave = false;
-        this.assessment = navParams.get('assessment');
-        this.submission = navParams.get('submission') || {};
-        this.profile = navParams.get('profile');
+        this.downloadEnabled = false;
+        this.archetypes = {}; // To speed up the check of modules.
+        this.title = navParams.get('title');
         this.courseId = navParams.get('courseId');
-        this.assessmentId = this.assessment.assessmentid || this.assessment.id;
-        this.workshopId = this.submission.workshopid || null;
-        this.siteId = sitesProvider.getCurrentSiteId();
-        this.currentUserId = sitesProvider.getCurrentSiteUserId();
-        this.showGrade = this.workshopHelper.showGrade;
-        this.evaluateForm = new __WEBPACK_IMPORTED_MODULE_2__angular_forms__["c" /* FormGroup */]({});
-        this.evaluateForm.addControl('weight', this.fb.control('', __WEBPACK_IMPORTED_MODULE_2__angular_forms__["h" /* Validators */].required));
-        this.evaluateForm.addControl('grade', this.fb.control(''));
-        this.evaluateForm.addControl('text', this.fb.control(''));
-        // Refresh workshop on sync.
-        this.syncObserver = this.eventsProvider.on(__WEBPACK_IMPORTED_MODULE_15__providers_sync__["a" /* AddonModWorkshopSyncProvider */].AUTO_SYNCED, function (data) {
-            // Update just when all database is synced.
-            if (_this.workshopId === data.workshopId) {
-                _this.loaded = false;
-                _this.refreshAllData();
-            }
-        }, this.siteId);
+        this.modName = navParams.get('modName');
     }
     /**
-     * Component being initialized.
+     * View loaded.
      */
-    AddonModWorkshopAssessmentPage.prototype.ngOnInit = function () {
-        this.fetchAssessmentData();
-    };
-    /**
-     * Check if we can leave the page or not.
-     *
-     * @return Resolved if we can leave it, rejected if not.
-     */
-    AddonModWorkshopAssessmentPage.prototype.ionViewCanLeave = function () {
-        return __awaiter(this, void 0, void 0, function () {
-            return __generator(this, function (_a) {
-                switch (_a.label) {
-                    case 0:
-                        if (this.forceLeave || !this.evaluating) {
-                            return [2 /*return*/];
-                        }
-                        if (!this.hasEvaluationChanged()) {
-                            return [2 /*return*/];
-                        }
-                        // Show confirmation if some data has been modified.
-                        return [4 /*yield*/, this.domUtils.showConfirm(this.translate.instant('core.confirmcanceledit'))];
-                    case 1:
-                        // Show confirmation if some data has been modified.
-                        _a.sent();
-                        this.domUtils.triggerFormCancelledEvent(this.formElement, this.siteId);
-                        return [2 /*return*/];
-                }
-            });
-        });
-    };
-    /**
-     * Fetch the assessment data.
-     *
-     * @return Resolved when done.
-     */
-    AddonModWorkshopAssessmentPage.prototype.fetchAssessmentData = function () {
+    CoreCourseListModTypePage.prototype.ionViewDidLoad = function () {
         var _this = this;
-        return this.workshopProvider.getWorkshopById(this.courseId, this.workshopId).then(function (workshopData) {
-            _this.workshop = workshopData;
-            _this.title = _this.workshop.name;
-            _this.strategy = _this.workshop.strategy;
-            return _this.courseProvider.getModuleBasicGradeInfo(workshopData.coursemodule);
-        }).then(function (gradeInfo) {
-            _this.maxGrade = gradeInfo.grade;
-            return _this.workshopProvider.getWorkshopAccessInformation(_this.workshopId, { cmId: _this.workshop.coursemodule });
-        }).then(function (accessData) {
-            _this.access = accessData;
-            // Load Weights selector.
-            if (_this.assessmentId && (accessData.canallocate || accessData.canoverridegrades)) {
-                if (!_this.isDestroyed) {
-                    // Block the workshop.
-                    _this.syncProvider.blockOperation(__WEBPACK_IMPORTED_MODULE_12__providers_workshop__["a" /* AddonModWorkshopProvider */].COMPONENT, _this.workshopId);
-                }
-                _this.evaluating = true;
-            }
-            else {
-                _this.evaluating = false;
-            }
-            if (_this.evaluating || _this.workshop.phase == __WEBPACK_IMPORTED_MODULE_12__providers_workshop__["a" /* AddonModWorkshopProvider */].PHASE_CLOSED) {
-                // Get all info of the assessment.
-                return _this.workshopHelper.getReviewerAssessmentById(_this.workshopId, _this.assessmentId, {
-                    userId: _this.profile && _this.profile.id,
-                    cmId: _this.workshop.coursemodule,
-                }).then(function (assessment) {
-                    var defaultGrade, promise;
-                    _this.assessment = _this.workshopHelper.realGradeValue(_this.workshop, assessment);
-                    _this.evaluate.text = _this.assessment.feedbackreviewer || '';
-                    _this.evaluate.weight = _this.assessment.weight;
-                    if (_this.evaluating) {
-                        if (accessData.canallocate) {
-                            _this.weights = [];
-                            for (var i = 16; i >= 0; i--) {
-                                _this.weights[i] = i;
-                            }
-                        }
-                        if (accessData.canoverridegrades) {
-                            defaultGrade = _this.translate.instant('addon.mod_workshop.notoverridden');
-                            promise = _this.gradesHelper.makeGradesMenu(_this.workshop.gradinggrade, undefined, defaultGrade, -1)
-                                .then(function (grades) {
-                                _this.evaluationGrades = grades;
-                            });
-                        }
-                        else {
-                            promise = Promise.resolve();
-                        }
-                        return promise.then(function () {
-                            return _this.workshopOffline.getEvaluateAssessment(_this.workshopId, _this.assessmentId)
-                                .then(function (offlineAssess) {
-                                _this.hasOffline = true;
-                                _this.evaluate.weight = offlineAssess.weight;
-                                if (accessData.canoverridegrades) {
-                                    _this.evaluate.text = offlineAssess.feedbacktext || '';
-                                    _this.evaluate.grade = offlineAssess.gradinggradeover || -1;
-                                }
-                            }).catch(function () {
-                                _this.hasOffline = false;
-                                // No offline, load online.
-                                if (accessData.canoverridegrades) {
-                                    _this.evaluate.text = _this.assessment.feedbackreviewer || '';
-                                    _this.evaluate.grade = _this.assessment.gradinggradeover || -1;
-                                }
-                            });
-                        }).finally(function () {
-                            _this.originalEvaluation.weight = _this.evaluate.weight;
-                            if (accessData.canoverridegrades) {
-                                _this.originalEvaluation.text = _this.evaluate.text;
-                                _this.originalEvaluation.grade = _this.evaluate.grade;
-                            }
-                            _this.evaluateForm.controls['weight'].setValue(_this.evaluate.weight);
-                            if (accessData.canoverridegrades) {
-                                _this.evaluateForm.controls['grade'].setValue(_this.evaluate.grade);
-                                _this.evaluateForm.controls['text'].setValue(_this.evaluate.text);
-                            }
-                        });
-                    }
-                    else if (_this.workshop.phase == __WEBPACK_IMPORTED_MODULE_12__providers_workshop__["a" /* AddonModWorkshopProvider */].PHASE_CLOSED && _this.assessment.gradinggradeoverby) {
-                        return _this.userProvider.getProfile(_this.assessment.gradinggradeoverby, _this.courseId, true)
-                            .then(function (profile) {
-                            _this.evaluateByProfile = profile;
-                        });
-                    }
-                });
-            }
-        }).catch(function (message) {
-            _this.domUtils.showErrorModalDefault(message, 'mm.course.errorgetmodule', true);
-        }).finally(function () {
+        this.downloadEnabled = !this.sitesProvider.getCurrentSite().isOfflineDisabled();
+        this.fetchData().finally(function () {
             _this.loaded = true;
         });
     };
     /**
-     * Force leaving the page, without checking for changes.
-     */
-    AddonModWorkshopAssessmentPage.prototype.forceLeavePage = function () {
-        this.forceLeave = true;
-        this.navCtrl.pop();
-    };
-    /**
-     * Check if data has changed.
-     *
-     * @return True if changed, false otherwise.
-     */
-    AddonModWorkshopAssessmentPage.prototype.hasEvaluationChanged = function () {
-        if (!this.loaded || !this.evaluating) {
-            return false;
-        }
-        var inputData = this.evaluateForm.value;
-        if (this.originalEvaluation.weight != inputData.weight) {
-            return true;
-        }
-        if (this.access && this.access.canoverridegrades) {
-            if (this.originalEvaluation.text != inputData.text) {
-                return true;
-            }
-            if (this.originalEvaluation.grade != inputData.grade) {
-                return true;
-            }
-        }
-        return false;
-    };
-    /**
-     * Convenience function to refresh all the data.
+     * Fetches the data.
      *
      * @return Resolved when done.
      */
-    AddonModWorkshopAssessmentPage.prototype.refreshAllData = function () {
+    CoreCourseListModTypePage.prototype.fetchData = function () {
         var _this = this;
-        var promises = [];
-        promises.push(this.workshopProvider.invalidateWorkshopData(this.courseId));
-        promises.push(this.workshopProvider.invalidateWorkshopAccessInformationData(this.workshopId));
-        promises.push(this.workshopProvider.invalidateReviewerAssesmentsData(this.workshopId));
-        if (this.assessmentId) {
-            promises.push(this.workshopProvider.invalidateAssessmentFormData(this.workshopId, this.assessmentId));
-            promises.push(this.workshopProvider.invalidateAssessmentData(this.workshopId, this.assessmentId));
-        }
-        return Promise.all(promises).finally(function () {
-            _this.eventsProvider.trigger(__WEBPACK_IMPORTED_MODULE_12__providers_workshop__["a" /* AddonModWorkshopProvider */].ASSESSMENT_INVALIDATED, _this.siteId);
-            return _this.fetchAssessmentData();
+        // Get all the modules in the course.
+        return this.courseProvider.getSections(this.courseId, false, true).then(function (sections) {
+            _this.sections = sections.filter(function (section) {
+                if (!section.modules) {
+                    return false;
+                }
+                section.modules = section.modules.filter(function (mod) {
+                    if (mod.uservisible === false || !_this.courseProvider.moduleHasView(mod)) {
+                        // Ignore this module.
+                        return false;
+                    }
+                    if (_this.modName === 'resources') {
+                        // Check that the module is a resource.
+                        if (typeof _this.archetypes[mod.modname] == 'undefined') {
+                            _this.archetypes[mod.modname] = _this.moduleDelegate.supportsFeature(mod.modname, constants["a" /* CoreConstants */].FEATURE_MOD_ARCHETYPE, constants["a" /* CoreConstants */].MOD_ARCHETYPE_OTHER);
+                        }
+                        if (_this.archetypes[mod.modname] == constants["a" /* CoreConstants */].MOD_ARCHETYPE_RESOURCE) {
+                            return true;
+                        }
+                    }
+                    else if (mod.modname == _this.modName) {
+                        return true;
+                    }
+                });
+                return section.modules.length > 0;
+            });
+            _this.courseHelper.addHandlerDataForModules(_this.sections, _this.courseId);
+        }).catch(function (error) {
+            _this.domUtils.showErrorModalDefault(error, 'Error getting data');
         });
     };
     /**
-     * Pull to refresh.
+     * Refresh the data.
      *
      * @param refresher Refresher.
      */
-    AddonModWorkshopAssessmentPage.prototype.refreshAssessment = function (refresher) {
-        if (this.loaded) {
-            this.refreshAllData().finally(function () {
+    CoreCourseListModTypePage.prototype.refreshData = function (refresher) {
+        var _this = this;
+        this.courseProvider.invalidateSections(this.courseId).finally(function () {
+            return _this.fetchData().finally(function () {
                 refresher.complete();
             });
-        }
-    };
-    /**
-     * Save the assessment evaluation.
-     */
-    AddonModWorkshopAssessmentPage.prototype.saveEvaluation = function () {
-        var _this = this;
-        // Check if data has changed.
-        if (this.hasEvaluationChanged()) {
-            this.sendEvaluation().then(function () {
-                _this.forceLeavePage();
-            });
-        }
-        else {
-            // Nothing to save, just go back.
-            this.forceLeavePage();
-        }
-    };
-    /**
-     * Sends the evaluation to be saved on the server.
-     *
-     * @return Resolved when done.
-     */
-    AddonModWorkshopAssessmentPage.prototype.sendEvaluation = function () {
-        var _this = this;
-        var modal = this.domUtils.showModalLoading('core.sending', true), inputData = this.evaluateForm.value;
-        inputData.grade = inputData.grade >= 0 ? inputData.grade : '';
-        // Add some HTML to the message if needed.
-        inputData.text = this.textUtils.formatHtmlLines(inputData.text);
-        // Try to send it to server.
-        return this.workshopProvider.evaluateAssessment(this.workshopId, this.assessmentId, this.courseId, inputData.text, inputData.weight, inputData.grade).then(function (result) {
-            _this.domUtils.triggerFormSubmittedEvent(_this.formElement, !!result, _this.siteId);
-            var data = {
-                workshopId: _this.workshopId,
-                assessmentId: _this.assessmentId,
-                userId: _this.currentUserId
-            };
-            return _this.workshopProvider.invalidateAssessmentData(_this.workshopId, _this.assessmentId).finally(function () {
-                _this.eventsProvider.trigger(__WEBPACK_IMPORTED_MODULE_12__providers_workshop__["a" /* AddonModWorkshopProvider */].ASSESSMENT_SAVED, data, _this.siteId);
-            });
-        }).catch(function (message) {
-            _this.domUtils.showErrorModalDefault(message, 'Cannot save assessment evaluation');
-        }).finally(function () {
-            modal.dismiss();
         });
     };
-    /**
-     * Component being destroyed.
-     */
-    AddonModWorkshopAssessmentPage.prototype.ngOnDestroy = function () {
-        this.isDestroyed = true;
-        this.syncObserver && this.syncObserver.off();
-        // Restore original back functions.
-        this.syncProvider.unblockOperation(__WEBPACK_IMPORTED_MODULE_12__providers_workshop__["a" /* AddonModWorkshopProvider */].COMPONENT, this.workshopId);
-    };
-    __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_10" /* ViewChild */])('evaluateFormEl'),
-        __metadata("design:type", __WEBPACK_IMPORTED_MODULE_0__angular_core__["t" /* ElementRef */])
-    ], AddonModWorkshopAssessmentPage.prototype, "formElement", void 0);
-    AddonModWorkshopAssessmentPage = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-addon-mod-workshop-assessment-page',template:/*ion-inline-start:"D:\workspace\moodle\agro-moodle-app\src\addon\mod\workshop\pages\assessment\assessment.html"*/'<ion-header>\n\n    <ion-navbar core-back-button>\n\n        <ion-title><core-format-text [text]="title" contextLevel="module" [contextInstanceId]="workshop && workshop.coursemodule" [courseId]="courseId"></core-format-text></ion-title>\n\n        <ion-buttons end [hidden]="!evaluating">\n\n            <button ion-button clear (click)="saveEvaluation()" [attr.aria-label]="\'core.save\' | translate">\n\n                {{ \'core.save\' | translate }}\n\n            </button>\n\n        </ion-buttons>\n\n    </ion-navbar>\n\n</ion-header>\n\n<ion-content>\n\n    <ion-refresher [enabled]="loaded" (ionRefresh)="refreshAssessment($event)" *ngIf="!evaluating">\n\n        <ion-refresher-content pullingText="{{ \'core.pulltorefresh\' | translate }}"></ion-refresher-content>\n\n    </ion-refresher>\n\n    <core-loading [hideUntil]="loaded">\n\n\n\n        <ion-item text-wrap>\n\n            <ion-avatar *ngIf="profile" core-user-avatar [user]="profile" item-start [courseId]="courseId" [userId]="profile.id"></ion-avatar>\n\n\n\n            <h2 *ngIf="profile && profile.fullname">{{profile.fullname}}</h2>\n\n\n\n            <p *ngIf="workshop && assessment && showGrade(assessment.grade)">\n\n                {{ \'addon.mod_workshop.submissiongradeof\' | translate:{$a: workshop.grade } }}: {{assessment.grade}}\n\n            </p>\n\n            <p *ngIf="access && access.canviewallsubmissions && assessment && showGrade(assessment.gradinggrade)" [class.core-has-overriden-grade]=" showGrade(assessment.gradinggrade)">\n\n                {{ \'addon.mod_workshop.gradinggradeof\' | translate:{$a: workshop.gradinggrade } }}: {{assessment.gradinggrade}}\n\n            </p>\n\n            <p *ngIf="access && access.canviewallsubmissions && assessment && showGrade(assessment.gradinggradeover)" class="core-overriden-grade">\n\n                {{ \'addon.mod_workshop.gradinggradeover\' | translate }}: {{assessment.gradinggradeover}}\n\n            </p>\n\n            <p *ngIf="assessment && assessment.weight && assessment.weight != 1">\n\n                {{ \'addon.mod_workshop.weightinfo\' | translate:{$a: assessment.weight } }}\n\n            </p>\n\n            <ion-badge *ngIf="!assessment || !showGrade(assessment.grade)" color="danger">\n\n                {{ \'addon.mod_workshop.notassessed\' | translate }}\n\n            </ion-badge>\n\n        </ion-item>\n\n\n\n        <addon-mod-workshop-assessment-strategy *ngIf="assessment && assessmentId && showGrade(assessment.grade) && workshop && access" [workshop]="workshop" [access]="access" [assessmentId]="assessmentId" [userId]="profile && profile.id" [strategy]="strategy"></addon-mod-workshop-assessment-strategy>\n\n\n\n        <form ion-list [formGroup]="evaluateForm" *ngIf="evaluating" #evaluateFormEl>\n\n            <ion-item text-wrap>\n\n                <h2>{{ \'addon.mod_workshop.assessmentsettings\' | translate }}</h2>\n\n            </ion-item>\n\n            <ion-item text-wrap *ngIf="access.canallocate">\n\n                <ion-label stacked core-mark-required="true">{{ \'addon.mod_workshop.assessmentweight\' | translate }}</ion-label>\n\n                <ion-select formControlName="weight" required="true" interface="action-sheet">\n\n                    <ion-option *ngFor="let w of weights" [value]="w">{{ w }}</ion-option>\n\n                </ion-select>\n\n            </ion-item>\n\n            <ion-item text-wrap>\n\n                <h2>{{ \'addon.mod_workshop.gradinggradecalculated\' | translate }}</h2>\n\n                <p>{{ assessment.gradinggrade }}</p>\n\n            </ion-item>\n\n            <ion-item text-wrap *ngIf="access.canoverridegrades">\n\n                <ion-label stacked>{{ \'addon.mod_workshop.gradinggradeover\' | translate }}</ion-label>\n\n                <ion-select formControlName="grade" interface="action-sheet">\n\n                    <ion-option *ngFor="let grade of evaluationGrades" [value]="grade.value">{{grade.label}}</ion-option>\n\n                </ion-select>\n\n            </ion-item>\n\n            <ion-item *ngIf="access.canoverridegrades">\n\n                <ion-label stacked>{{ \'addon.mod_workshop.feedbackreviewer\' | translate }}</ion-label>\n\n                <core-rich-text-editor item-content [control]="evaluateForm.controls[\'text\']" formControlName="text" [autoSave]="true" contextLevel="module" [contextInstanceId]="workshop.coursemodule" elementId="feedbackreviewer_editor" [draftExtraParams]="{asid: assessmentId}"></core-rich-text-editor>\n\n            </ion-item>\n\n        </form>\n\n        <ion-list *ngIf="!evaluating && evaluate && evaluate.text">\n\n            <ion-item text-wrap>\n\n                <ion-avatar core-user-avatar *ngIf="evaluateGradingByProfile" [user]="evaluateGradingByProfile" item-start [courseId]="courseId" [userId]="evaluateGradingByProfile.id"></ion-avatar>\n\n                <h2 *ngIf="evaluateGradingByProfile && evaluateGradingByProfile.fullname">{{ \'addon.mod_workshop.feedbackby\' | translate : {$a: evaluateGradingByProfile.fullname} }}</h2>\n\n                <core-format-text [text]="evaluate.text" contextLevel="module" [contextInstanceId]="workshop.coursemodule" [courseId]="courseId"></core-format-text>\n\n            </ion-item>\n\n        </ion-list>\n\n    </core-loading>\n\n</ion-content>\n\n'/*ion-inline-end:"D:\workspace\moodle\agro-moodle-app\src\addon\mod\workshop\pages\assessment\assessment.html"*/,
+    CoreCourseListModTypePage = __decorate([
+        Object(core["m" /* Component */])({
+            selector: 'page-core-course-list-mod-type',
+            templateUrl: 'list-mod-type.html',
         }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["t" /* NavParams */], __WEBPACK_IMPORTED_MODULE_5__providers_sites__["b" /* CoreSitesProvider */], __WEBPACK_IMPORTED_MODULE_9__core_course_providers_course__["b" /* CoreCourseProvider */],
-            __WEBPACK_IMPORTED_MODULE_12__providers_workshop__["a" /* AddonModWorkshopProvider */], __WEBPACK_IMPORTED_MODULE_14__providers_offline__["a" /* AddonModWorkshopOfflineProvider */],
-            __WEBPACK_IMPORTED_MODULE_13__providers_helper__["a" /* AddonModWorkshopHelperProvider */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["s" /* NavController */],
-            __WEBPACK_IMPORTED_MODULE_6__providers_sync__["a" /* CoreSyncProvider */], __WEBPACK_IMPORTED_MODULE_8__providers_utils_text__["b" /* CoreTextUtilsProvider */], __WEBPACK_IMPORTED_MODULE_2__angular_forms__["a" /* FormBuilder */],
-            __WEBPACK_IMPORTED_MODULE_3__ngx_translate_core__["c" /* TranslateService */], __WEBPACK_IMPORTED_MODULE_4__providers_events__["b" /* CoreEventsProvider */],
-            __WEBPACK_IMPORTED_MODULE_7__providers_utils_dom__["b" /* CoreDomUtilsProvider */], __WEBPACK_IMPORTED_MODULE_11__core_grades_providers_helper__["a" /* CoreGradesHelperProvider */],
-            __WEBPACK_IMPORTED_MODULE_10__core_user_providers_user__["b" /* CoreUserProvider */]])
-    ], AddonModWorkshopAssessmentPage);
-    return AddonModWorkshopAssessmentPage;
+        __metadata("design:paramtypes", [ionic_angular["t" /* NavParams */], course["b" /* CoreCourseProvider */], module_delegate["a" /* CoreCourseModuleDelegate */],
+            dom["b" /* CoreDomUtilsProvider */], helper["b" /* CoreCourseHelperProvider */],
+            sites["b" /* CoreSitesProvider */]])
+    ], CoreCourseListModTypePage);
+    return CoreCourseListModTypePage;
 }());
 
-//# sourceMappingURL=assessment.js.map
+//# sourceMappingURL=list-mod-type.js.map
+// EXTERNAL MODULE: ./src/components/components.module.ts
+var components_module = __webpack_require__(26);
+
+// EXTERNAL MODULE: ./src/directives/directives.module.ts + 2 modules
+var directives_module = __webpack_require__(32);
+
+// EXTERNAL MODULE: ./src/core/course/components/components.module.ts
+var components_components_module = __webpack_require__(74);
+
+// CONCATENATED MODULE: ./src/core/course/pages/list-mod-type/list-mod-type.module.ts
+// (C) Copyright 2015 Moodle Pty Ltd.
+//
+// Licensed under the Apache License, Version 2.0 (the "License");
+// you may not use this file except in compliance with the License.
+// You may obtain a copy of the License at
+//
+//     http://www.apache.org/licenses/LICENSE-2.0
+//
+// Unless required by applicable law or agreed to in writing, software
+// distributed under the License is distributed on an "AS IS" BASIS,
+// WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+// See the License for the specific language governing permissions and
+// limitations under the License.
+var list_mod_type_module___decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+
+
+
+
+
+
+
+var list_mod_type_module_CoreCourseListModTypePageModule = /** @class */ (function () {
+    function CoreCourseListModTypePageModule() {
+    }
+    CoreCourseListModTypePageModule = list_mod_type_module___decorate([
+        Object(core["J" /* NgModule */])({
+            declarations: [
+                list_mod_type_CoreCourseListModTypePage
+            ],
+            imports: [
+                components_module["a" /* CoreComponentsModule */],
+                directives_module["a" /* CoreDirectivesModule */],
+                components_components_module["a" /* CoreCourseComponentsModule */],
+                ionic_angular["l" /* IonicPageModule */].forChild(list_mod_type_CoreCourseListModTypePage),
+                _ngx_translate_core["b" /* TranslateModule */].forChild()
+            ],
+        })
+    ], CoreCourseListModTypePageModule);
+    return CoreCourseListModTypePageModule;
+}());
+
+//# sourceMappingURL=list-mod-type.module.js.map
+// EXTERNAL MODULE: ./node_modules/ionic-angular/components/action-sheet/action-sheet-component.ngfactory.js
+var action_sheet_component_ngfactory = __webpack_require__(1551);
+
+// EXTERNAL MODULE: ./node_modules/ionic-angular/components/alert/alert-component.ngfactory.js
+var alert_component_ngfactory = __webpack_require__(1552);
+
+// EXTERNAL MODULE: ./node_modules/ionic-angular/components/app/app-root.ngfactory.js
+var app_root_ngfactory = __webpack_require__(1553);
+
+// EXTERNAL MODULE: ./node_modules/ionic-angular/components/loading/loading-component.ngfactory.js
+var loading_component_ngfactory = __webpack_require__(1554);
+
+// EXTERNAL MODULE: ./node_modules/ionic-angular/components/modal/modal-component.ngfactory.js
+var modal_component_ngfactory = __webpack_require__(1555);
+
+// EXTERNAL MODULE: ./node_modules/ionic-angular/components/picker/picker-component.ngfactory.js + 1 modules
+var picker_component_ngfactory = __webpack_require__(1556);
+
+// EXTERNAL MODULE: ./node_modules/ionic-angular/components/popover/popover-component.ngfactory.js
+var popover_component_ngfactory = __webpack_require__(1557);
+
+// EXTERNAL MODULE: ./node_modules/ionic-angular/components/select/select-popover-component.ngfactory.js
+var select_popover_component_ngfactory = __webpack_require__(1558);
+
+// EXTERNAL MODULE: ./node_modules/ionic-angular/components/toast/toast-component.ngfactory.js
+var toast_component_ngfactory = __webpack_require__(1559);
+
+// EXTERNAL MODULE: ./src/components/context-menu/context-menu-popover.ngfactory.js
+var context_menu_popover_ngfactory = __webpack_require__(1560);
+
+// EXTERNAL MODULE: ./src/components/course-picker-menu/course-picker-menu-popover.ngfactory.js
+var course_picker_menu_popover_ngfactory = __webpack_require__(1561);
+
+// EXTERNAL MODULE: ./src/components/recaptcha/recaptchamodal.ngfactory.js
+var recaptchamodal_ngfactory = __webpack_require__(1562);
+
+// EXTERNAL MODULE: ./src/components/bs-tooltip/bs-tooltip.ngfactory.js
+var bs_tooltip_ngfactory = __webpack_require__(1563);
+
+// EXTERNAL MODULE: ./src/core/block/components/only-title-block/only-title-block.ngfactory.js
+var only_title_block_ngfactory = __webpack_require__(1566);
+
+// EXTERNAL MODULE: ./src/core/block/components/pre-rendered-block/pre-rendered-block.ngfactory.js
+var pre_rendered_block_ngfactory = __webpack_require__(1567);
+
+// EXTERNAL MODULE: ./src/core/block/components/course-blocks/course-blocks.ngfactory.js
+var course_blocks_ngfactory = __webpack_require__(1564);
+
+// EXTERNAL MODULE: ./src/core/course/components/unsupported-module/unsupported-module.ngfactory.js
+var unsupported_module_ngfactory = __webpack_require__(1565);
+
+// EXTERNAL MODULE: ./src/core/course/components/tag-area/tag-area.ngfactory.js
+var tag_area_ngfactory = __webpack_require__(1568);
+
+// EXTERNAL MODULE: ./src/components/empty-box/empty-box.ngfactory.js
+var empty_box_ngfactory = __webpack_require__(126);
+
+// EXTERNAL MODULE: ./src/components/empty-box/empty-box.ts
+var empty_box = __webpack_require__(118);
+
+// EXTERNAL MODULE: ./node_modules/@ngx-translate/core/src/translate.pipe.js
+var translate_pipe = __webpack_require__(25);
+
+// EXTERNAL MODULE: ./node_modules/@ngx-translate/core/src/translate.service.js
+var translate_service = __webpack_require__(18);
+
+// EXTERNAL MODULE: ./src/core/course/components/module/module.ngfactory.js + 1 modules
+var module_ngfactory = __webpack_require__(1578);
+
+// EXTERNAL MODULE: ./src/core/course/components/module/module.ts
+var module_module = __webpack_require__(494);
+
+// EXTERNAL MODULE: ./node_modules/ionic-angular/navigation/nav-controller.js
+var nav_controller = __webpack_require__(20);
+
+// EXTERNAL MODULE: ./src/core/course/providers/module-prefetch-delegate.ts
+var module_prefetch_delegate = __webpack_require__(53);
+
+// EXTERNAL MODULE: ./src/providers/events.ts
+var events = __webpack_require__(9);
+
+// EXTERNAL MODULE: ./node_modules/@angular/common/esm5/common.js
+var common = __webpack_require__(7);
+
+// EXTERNAL MODULE: ./node_modules/ionic-angular/components/toolbar/toolbar-header.js
+var toolbar_header = __webpack_require__(379);
+
+// EXTERNAL MODULE: ./node_modules/ionic-angular/config/config.js
+var config = __webpack_require__(8);
+
+// EXTERNAL MODULE: ./node_modules/ionic-angular/navigation/view-controller.js
+var view_controller = __webpack_require__(41);
+
+// EXTERNAL MODULE: ./node_modules/ionic-angular/components/toolbar/navbar.ngfactory.js
+var navbar_ngfactory = __webpack_require__(739);
+
+// EXTERNAL MODULE: ./node_modules/ionic-angular/components/toolbar/navbar.js
+var navbar = __webpack_require__(216);
+
+// EXTERNAL MODULE: ./node_modules/ionic-angular/components/app/app.js + 3 modules
+var app = __webpack_require__(35);
+
+// EXTERNAL MODULE: ./src/directives/back-button.ts
+var back_button = __webpack_require__(486);
+
+// EXTERNAL MODULE: ./node_modules/ionic-angular/components/toolbar/toolbar-title.ngfactory.js
+var toolbar_title_ngfactory = __webpack_require__(740);
+
+// EXTERNAL MODULE: ./node_modules/ionic-angular/components/toolbar/toolbar-title.js
+var toolbar_title = __webpack_require__(324);
+
+// EXTERNAL MODULE: ./node_modules/ionic-angular/components/toolbar/toolbar.js
+var toolbar = __webpack_require__(252);
+
+// EXTERNAL MODULE: ./node_modules/ionic-angular/components/content/content.ngfactory.js
+var content_ngfactory = __webpack_require__(185);
+
+// EXTERNAL MODULE: ./node_modules/ionic-angular/components/content/content.js
+var content = __webpack_require__(28);
+
+// EXTERNAL MODULE: ./node_modules/ionic-angular/platform/platform.js + 1 modules
+var platform = __webpack_require__(16);
+
+// EXTERNAL MODULE: ./node_modules/ionic-angular/platform/dom-controller.js
+var dom_controller = __webpack_require__(34);
+
+// EXTERNAL MODULE: ./node_modules/ionic-angular/platform/keyboard.js
+var keyboard = __webpack_require__(112);
+
+// EXTERNAL MODULE: ./node_modules/ionic-angular/components/refresher/refresher.js
+var refresher = __webpack_require__(163);
+
+// EXTERNAL MODULE: ./node_modules/ionic-angular/gestures/gesture-controller.js
+var gesture_controller = __webpack_require__(45);
+
+// EXTERNAL MODULE: ./node_modules/ionic-angular/components/refresher/refresher-content.ngfactory.js
+var refresher_content_ngfactory = __webpack_require__(217);
+
+// EXTERNAL MODULE: ./node_modules/ionic-angular/components/refresher/refresher-content.js
+var refresher_content = __webpack_require__(178);
+
+// EXTERNAL MODULE: ./src/components/loading/loading.ngfactory.js
+var loading_ngfactory = __webpack_require__(57);
+
+// EXTERNAL MODULE: ./src/components/loading/loading.ts
+var loading = __webpack_require__(54);
+
+// EXTERNAL MODULE: ./src/providers/utils/utils.ts
+var utils = __webpack_require__(2);
+
+// EXTERNAL MODULE: ./node_modules/ionic-angular/components/list/list.js + 1 modules
+var list = __webpack_require__(87);
+
+// EXTERNAL MODULE: ./node_modules/ionic-angular/navigation/nav-params.js
+var nav_params = __webpack_require__(73);
+
+// CONCATENATED MODULE: ./src/core/course/pages/list-mod-type/list-mod-type.ngfactory.js
+/**
+ * @fileoverview This file was generated by the Angular template compiler. Do not edit.
+ *
+ * @suppress {suspiciousCode,uselessCode,missingProperties,missingOverride,checkTypes}
+ * tslint:disable
+ */ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+var styles_CoreCourseListModTypePage = [];
+var RenderType_CoreCourseListModTypePage = core["_30" /* ɵcrt */]({ encapsulation: 2, styles: styles_CoreCourseListModTypePage, data: {} });
+
+function View_CoreCourseListModTypePage_1(_l) { return core["_58" /* ɵvid */](0, [(_l()(), core["_32" /* ɵeld */](0, 0, null, null, 2, "core-empty-box", [["icon", "qr-scanner"]], null, null, null, empty_box_ngfactory["b" /* View_CoreEmptyBoxComponent_0 */], empty_box_ngfactory["a" /* RenderType_CoreEmptyBoxComponent */])), core["_31" /* ɵdid */](1, 49152, null, 0, empty_box["a" /* CoreEmptyBoxComponent */], [], { message: [0, "message"], icon: [1, "icon"] }, null), core["_48" /* ɵpid */](131072, translate_pipe["a" /* TranslatePipe */], [translate_service["a" /* TranslateService */], core["j" /* ChangeDetectorRef */]])], function (_ck, _v) { var currVal_0 = core["_57" /* ɵunv */](_v, 1, 0, core["_45" /* ɵnov */](_v, 2).transform("core.course.nocontentavailable")); var currVal_1 = "qr-scanner"; _ck(_v, 1, 0, currVal_0, currVal_1); }, null); }
+function View_CoreCourseListModTypePage_4(_l) { return core["_58" /* ɵvid */](0, [(_l()(), core["_32" /* ɵeld */](0, 0, null, null, 1, "core-course-module", [], null, null, null, module_ngfactory["b" /* View_CoreCourseModuleComponent_0 */], module_ngfactory["a" /* RenderType_CoreCourseModuleComponent */])), core["_31" /* ɵdid */](1, 245760, null, 0, module_module["a" /* CoreCourseModuleComponent */], [[2, nav_controller["a" /* NavController */]], module_prefetch_delegate["b" /* CoreCourseModulePrefetchDelegate */], dom["b" /* CoreDomUtilsProvider */], helper["b" /* CoreCourseHelperProvider */], events["b" /* CoreEventsProvider */], sites["b" /* CoreSitesProvider */], course["b" /* CoreCourseProvider */]], { module: [0, "module"], courseId: [1, "courseId"], section: [2, "section"], enabled: [3, "enabled"] }, null)], function (_ck, _v) { var _co = _v.component; var currVal_0 = _v.parent.context.$implicit; var currVal_1 = _co.courseId; var currVal_2 = _v.parent.parent.context.$implicit; var currVal_3 = _co.downloadEnabled; _ck(_v, 1, 0, currVal_0, currVal_1, currVal_2, currVal_3); }, null); }
+function View_CoreCourseListModTypePage_3(_l) { return core["_58" /* ɵvid */](0, [(_l()(), core["_32" /* ɵeld */](0, 0, null, null, 4, null, null, null, null, null, null, null)), (_l()(), core["_56" /* ɵted */](-1, null, ["\n                    "])), (_l()(), core["_27" /* ɵand */](16777216, null, null, 1, null, View_CoreCourseListModTypePage_4)), core["_31" /* ɵdid */](3, 16384, null, 0, common["k" /* NgIf */], [core["_12" /* ViewContainerRef */], core["_7" /* TemplateRef */]], { ngIf: [0, "ngIf"] }, null), (_l()(), core["_56" /* ɵted */](-1, null, ["\n                "]))], function (_ck, _v) { var currVal_0 = (_v.context.$implicit.visibleoncoursepage !== 0); _ck(_v, 3, 0, currVal_0); }, null); }
+function View_CoreCourseListModTypePage_2(_l) { return core["_58" /* ɵvid */](0, [(_l()(), core["_32" /* ɵeld */](0, 0, null, null, 4, null, null, null, null, null, null, null)), (_l()(), core["_56" /* ɵted */](-1, null, ["\n                "])), (_l()(), core["_27" /* ɵand */](16777216, null, null, 1, null, View_CoreCourseListModTypePage_3)), core["_31" /* ɵdid */](3, 802816, null, 0, common["j" /* NgForOf */], [core["_12" /* ViewContainerRef */], core["_7" /* TemplateRef */], core["E" /* IterableDiffers */]], { ngForOf: [0, "ngForOf"] }, null), (_l()(), core["_56" /* ɵted */](-1, null, ["\n            "]))], function (_ck, _v) { var currVal_0 = _v.context.$implicit.modules; _ck(_v, 3, 0, currVal_0); }, null); }
+function View_CoreCourseListModTypePage_0(_l) { return core["_58" /* ɵvid */](0, [(_l()(), core["_32" /* ɵeld */](0, 0, null, null, 11, "ion-header", [], null, null, null, null, null)), core["_31" /* ɵdid */](1, 16384, null, 0, toolbar_header["a" /* Header */], [config["a" /* Config */], core["t" /* ElementRef */], core["W" /* Renderer */], [2, view_controller["a" /* ViewController */]]], null, null), (_l()(), core["_56" /* ɵted */](-1, null, ["\n    "])), (_l()(), core["_32" /* ɵeld */](3, 0, null, null, 7, "ion-navbar", [["class", "toolbar"], ["core-back-button", ""]], [[8, "hidden", 0], [2, "statusbar-padding", null]], null, null, navbar_ngfactory["b" /* View_Navbar_0 */], navbar_ngfactory["a" /* RenderType_Navbar */])), core["_31" /* ɵdid */](4, 49152, null, 0, navbar["a" /* Navbar */], [app["a" /* App */], [2, view_controller["a" /* ViewController */]], [2, nav_controller["a" /* NavController */]], config["a" /* Config */], core["t" /* ElementRef */], core["W" /* Renderer */]], null, null), core["_31" /* ɵdid */](5, 212992, null, 0, back_button["a" /* CoreBackButtonDirective */], [navbar["a" /* Navbar */], translate_service["a" /* TranslateService */], events["b" /* CoreEventsProvider */]], null, null), (_l()(), core["_56" /* ɵted */](-1, 3, ["\n        "])), (_l()(), core["_32" /* ɵeld */](7, 0, null, 3, 2, "ion-title", [], null, null, null, toolbar_title_ngfactory["b" /* View_ToolbarTitle_0 */], toolbar_title_ngfactory["a" /* RenderType_ToolbarTitle */])), core["_31" /* ɵdid */](8, 49152, null, 0, toolbar_title["a" /* ToolbarTitle */], [config["a" /* Config */], core["t" /* ElementRef */], core["W" /* Renderer */], [2, toolbar["a" /* Toolbar */]], [2, navbar["a" /* Navbar */]]], null, null), (_l()(), core["_56" /* ɵted */](9, 0, ["", ""])), (_l()(), core["_56" /* ɵted */](-1, 3, ["\n    "])), (_l()(), core["_56" /* ɵted */](-1, null, ["\n"])), (_l()(), core["_56" /* ɵted */](-1, null, ["\n"])), (_l()(), core["_32" /* ɵeld */](13, 0, null, null, 24, "ion-content", [], [[2, "statusbar-padding", null], [2, "has-refresher", null]], null, null, content_ngfactory["b" /* View_Content_0 */], content_ngfactory["a" /* RenderType_Content */])), core["_31" /* ɵdid */](14, 4374528, null, 0, content["a" /* Content */], [config["a" /* Config */], platform["a" /* Platform */], dom_controller["a" /* DomController */], core["t" /* ElementRef */], core["W" /* Renderer */], app["a" /* App */], keyboard["a" /* Keyboard */], core["N" /* NgZone */], [2, view_controller["a" /* ViewController */]], [2, nav_controller["a" /* NavController */]]], null, null), (_l()(), core["_56" /* ɵted */](-1, 1, ["\n    "])), (_l()(), core["_32" /* ɵeld */](16, 0, null, 2, 6, "ion-refresher", [], [[2, "refresher-active", null], [4, "top", null]], [[null, "ionRefresh"]], function (_v, en, $event) { var ad = true; var _co = _v.component; if (("ionRefresh" === en)) {
+        var pd_0 = (_co.refreshData($event) !== false);
+        ad = (pd_0 && ad);
+    } return ad; }, null, null)), core["_31" /* ɵdid */](17, 212992, null, 0, refresher["a" /* Refresher */], [platform["a" /* Platform */], content["a" /* Content */], core["N" /* NgZone */], gesture_controller["l" /* GestureController */]], { enabled: [0, "enabled"] }, { ionRefresh: "ionRefresh" }), (_l()(), core["_56" /* ɵted */](-1, null, ["\n        "])), (_l()(), core["_32" /* ɵeld */](19, 0, null, null, 2, "ion-refresher-content", [], [[1, "state", 0]], null, null, refresher_content_ngfactory["b" /* View_RefresherContent_0 */], refresher_content_ngfactory["a" /* RenderType_RefresherContent */])), core["_31" /* ɵdid */](20, 114688, null, 0, refresher_content["a" /* RefresherContent */], [refresher["a" /* Refresher */], config["a" /* Config */]], { pullingText: [0, "pullingText"] }, null), core["_48" /* ɵpid */](131072, translate_pipe["a" /* TranslatePipe */], [translate_service["a" /* TranslateService */], core["j" /* ChangeDetectorRef */]]), (_l()(), core["_56" /* ɵted */](-1, null, ["\n    "])), (_l()(), core["_56" /* ɵted */](-1, 1, ["\n    "])), (_l()(), core["_32" /* ɵeld */](24, 0, null, 1, 12, "core-loading", [], null, null, null, loading_ngfactory["b" /* View_CoreLoadingComponent_0 */], loading_ngfactory["a" /* RenderType_CoreLoadingComponent */])), core["_31" /* ɵdid */](25, 638976, null, 0, loading["a" /* CoreLoadingComponent */], [translate_service["a" /* TranslateService */], core["t" /* ElementRef */], events["b" /* CoreEventsProvider */], utils["b" /* CoreUtilsProvider */]], { hideUntil: [0, "hideUntil"] }, null), (_l()(), core["_56" /* ɵted */](-1, 0, ["\n        "])), (_l()(), core["_27" /* ɵand */](16777216, null, 0, 1, null, View_CoreCourseListModTypePage_1)), core["_31" /* ɵdid */](28, 16384, null, 0, common["k" /* NgIf */], [core["_12" /* ViewContainerRef */], core["_7" /* TemplateRef */]], { ngIf: [0, "ngIf"] }, null), (_l()(), core["_56" /* ɵted */](-1, 0, ["\n\n        "])), (_l()(), core["_32" /* ɵeld */](30, 0, null, 0, 5, "ion-list", [], null, null, null, null, null)), core["_31" /* ɵdid */](31, 16384, null, 0, list["a" /* List */], [config["a" /* Config */], core["t" /* ElementRef */], core["W" /* Renderer */], platform["a" /* Platform */], gesture_controller["l" /* GestureController */], dom_controller["a" /* DomController */]], null, null), (_l()(), core["_56" /* ɵted */](-1, null, ["\n            "])), (_l()(), core["_27" /* ɵand */](16777216, null, null, 1, null, View_CoreCourseListModTypePage_2)), core["_31" /* ɵdid */](34, 802816, null, 0, common["j" /* NgForOf */], [core["_12" /* ViewContainerRef */], core["_7" /* TemplateRef */], core["E" /* IterableDiffers */]], { ngForOf: [0, "ngForOf"] }, null), (_l()(), core["_56" /* ɵted */](-1, null, ["\n        "])), (_l()(), core["_56" /* ɵted */](-1, 0, ["\n    "])), (_l()(), core["_56" /* ɵted */](-1, 1, ["\n"])), (_l()(), core["_56" /* ɵted */](-1, null, ["\n"]))], function (_ck, _v) { var _co = _v.component; _ck(_v, 5, 0); var currVal_7 = _co.loaded; _ck(_v, 17, 0, currVal_7); var currVal_9 = core["_35" /* ɵinlineInterpolate */](1, "", core["_57" /* ɵunv */](_v, 20, 0, core["_45" /* ɵnov */](_v, 21).transform("core.pulltorefresh")), ""); _ck(_v, 20, 0, currVal_9); var currVal_10 = _co.loaded; _ck(_v, 25, 0, currVal_10); var currVal_11 = (!_co.sections || !_co.sections.length); _ck(_v, 28, 0, currVal_11); var currVal_12 = _co.sections; _ck(_v, 34, 0, currVal_12); }, function (_ck, _v) { var _co = _v.component; var currVal_0 = core["_45" /* ɵnov */](_v, 4)._hidden; var currVal_1 = core["_45" /* ɵnov */](_v, 4)._sbPadding; _ck(_v, 3, 0, currVal_0, currVal_1); var currVal_2 = _co.title; _ck(_v, 9, 0, currVal_2); var currVal_3 = core["_45" /* ɵnov */](_v, 14).statusbarPadding; var currVal_4 = core["_45" /* ɵnov */](_v, 14)._hasRefresher; _ck(_v, 13, 0, currVal_3, currVal_4); var currVal_5 = (core["_45" /* ɵnov */](_v, 17).state !== "inactive"); var currVal_6 = core["_45" /* ɵnov */](_v, 17)._top; _ck(_v, 16, 0, currVal_5, currVal_6); var currVal_8 = core["_45" /* ɵnov */](_v, 20).r.state; _ck(_v, 19, 0, currVal_8); }); }
+function View_CoreCourseListModTypePage_Host_0(_l) { return core["_58" /* ɵvid */](0, [(_l()(), core["_32" /* ɵeld */](0, 0, null, null, 1, "page-core-course-list-mod-type", [], null, null, null, View_CoreCourseListModTypePage_0, RenderType_CoreCourseListModTypePage)), core["_31" /* ɵdid */](1, 49152, null, 0, list_mod_type_CoreCourseListModTypePage, [nav_params["a" /* NavParams */], course["b" /* CoreCourseProvider */], module_delegate["a" /* CoreCourseModuleDelegate */], dom["b" /* CoreDomUtilsProvider */], helper["b" /* CoreCourseHelperProvider */], sites["b" /* CoreSitesProvider */]], null, null)], null, null); }
+var CoreCourseListModTypePageNgFactory = core["_28" /* ɵccf */]("page-core-course-list-mod-type", list_mod_type_CoreCourseListModTypePage, View_CoreCourseListModTypePage_Host_0, {}, {}, []);
+
+//# sourceMappingURL=list-mod-type.ngfactory.js.map
+// EXTERNAL MODULE: ./node_modules/@angular/forms/esm5/forms.js
+var esm5_forms = __webpack_require__(23);
+
+// EXTERNAL MODULE: ./node_modules/@ngx-translate/core/src/translate.loader.js
+var translate_loader = __webpack_require__(375);
+
+// EXTERNAL MODULE: ./node_modules/@ngx-translate/core/src/translate.compiler.js
+var translate_compiler = __webpack_require__(376);
+
+// EXTERNAL MODULE: ./node_modules/@ngx-translate/core/src/translate.parser.js
+var translate_parser = __webpack_require__(378);
+
+// EXTERNAL MODULE: ./node_modules/@ngx-translate/core/src/missing-translation-handler.js
+var missing_translation_handler = __webpack_require__(377);
+
+// EXTERNAL MODULE: ./node_modules/@ngx-translate/core/src/translate.store.js
+var translate_store = __webpack_require__(485);
+
+// EXTERNAL MODULE: ./node_modules/ionic-angular/module.js
+var ionic_angular_module = __webpack_require__(738);
+
+// EXTERNAL MODULE: ./src/pipes/pipes.module.ts + 2 modules
+var pipes_module = __webpack_require__(111);
+
+// EXTERNAL MODULE: ./src/core/block/components/components.module.ts
+var block_components_components_module = __webpack_require__(278);
+
+// EXTERNAL MODULE: ./node_modules/ionic-angular/util/module-loader.js
+var module_loader = __webpack_require__(277);
+
+// CONCATENATED MODULE: ./src/core/course/pages/list-mod-type/list-mod-type.module.ngfactory.js
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "CoreCourseListModTypePageModuleNgFactory", function() { return CoreCourseListModTypePageModuleNgFactory; });
+/**
+ * @fileoverview This file was generated by the Angular template compiler. Do not edit.
+ *
+ * @suppress {suspiciousCode,uselessCode,missingProperties,missingOverride,checkTypes}
+ * tslint:disable
+ */ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+var CoreCourseListModTypePageModuleNgFactory = core["_29" /* ɵcmf */](list_mod_type_module_CoreCourseListModTypePageModule, [], function (_l) { return core["_41" /* ɵmod */]([core["_42" /* ɵmpd */](512, core["o" /* ComponentFactoryResolver */], core["_22" /* ɵCodegenComponentFactoryResolver */], [[8, [action_sheet_component_ngfactory["a" /* ActionSheetCmpNgFactory */], alert_component_ngfactory["a" /* AlertCmpNgFactory */], app_root_ngfactory["a" /* IonicAppNgFactory */], loading_component_ngfactory["a" /* LoadingCmpNgFactory */], modal_component_ngfactory["a" /* ModalCmpNgFactory */], picker_component_ngfactory["a" /* PickerCmpNgFactory */], popover_component_ngfactory["a" /* PopoverCmpNgFactory */], select_popover_component_ngfactory["a" /* SelectPopoverNgFactory */], toast_component_ngfactory["a" /* ToastCmpNgFactory */], context_menu_popover_ngfactory["a" /* CoreContextMenuPopoverComponentNgFactory */], course_picker_menu_popover_ngfactory["a" /* CoreCoursePickerMenuPopoverComponentNgFactory */], recaptchamodal_ngfactory["a" /* CoreRecaptchaModalComponentNgFactory */], bs_tooltip_ngfactory["a" /* CoreBSTooltipComponentNgFactory */], only_title_block_ngfactory["a" /* CoreBlockOnlyTitleComponentNgFactory */], pre_rendered_block_ngfactory["a" /* CoreBlockPreRenderedComponentNgFactory */], course_blocks_ngfactory["a" /* CoreBlockCourseBlocksComponentNgFactory */], unsupported_module_ngfactory["a" /* CoreCourseUnsupportedModuleComponentNgFactory */], tag_area_ngfactory["a" /* CoreCourseTagAreaComponentNgFactory */], CoreCourseListModTypePageNgFactory]], [3, core["o" /* ComponentFactoryResolver */]], core["L" /* NgModuleRef */]]), core["_42" /* ɵmpd */](4608, common["m" /* NgLocalization */], common["l" /* NgLocaleLocalization */], [core["G" /* LOCALE_ID */], [2, common["w" /* ɵa */]]]), core["_42" /* ɵmpd */](4608, esm5_forms["x" /* ɵi */], esm5_forms["x" /* ɵi */], []), core["_42" /* ɵmpd */](4608, esm5_forms["d" /* FormBuilder */], esm5_forms["d" /* FormBuilder */], []), core["_42" /* ɵmpd */](4608, translate_loader["b" /* TranslateLoader */], translate_loader["a" /* TranslateFakeLoader */], []), core["_42" /* ɵmpd */](4608, translate_compiler["a" /* TranslateCompiler */], translate_compiler["b" /* TranslateFakeCompiler */], []), core["_42" /* ɵmpd */](4608, translate_parser["b" /* TranslateParser */], translate_parser["a" /* TranslateDefaultParser */], []), core["_42" /* ɵmpd */](4608, missing_translation_handler["b" /* MissingTranslationHandler */], missing_translation_handler["a" /* FakeMissingTranslationHandler */], []), core["_42" /* ɵmpd */](4608, translate_service["a" /* TranslateService */], translate_service["a" /* TranslateService */], [translate_store["a" /* TranslateStore */], translate_loader["b" /* TranslateLoader */], translate_compiler["a" /* TranslateCompiler */], translate_parser["b" /* TranslateParser */], missing_translation_handler["b" /* MissingTranslationHandler */], translate_service["b" /* USE_DEFAULT_LANG */], translate_service["c" /* USE_STORE */]]), core["_42" /* ɵmpd */](512, common["b" /* CommonModule */], common["b" /* CommonModule */], []), core["_42" /* ɵmpd */](512, esm5_forms["v" /* ɵba */], esm5_forms["v" /* ɵba */], []), core["_42" /* ɵmpd */](512, esm5_forms["i" /* FormsModule */], esm5_forms["i" /* FormsModule */], []), core["_42" /* ɵmpd */](512, esm5_forms["s" /* ReactiveFormsModule */], esm5_forms["s" /* ReactiveFormsModule */], []), core["_42" /* ɵmpd */](512, ionic_angular_module["a" /* IonicModule */], ionic_angular_module["a" /* IonicModule */], []), core["_42" /* ɵmpd */](512, _ngx_translate_core["b" /* TranslateModule */], _ngx_translate_core["b" /* TranslateModule */], []), core["_42" /* ɵmpd */](512, directives_module["a" /* CoreDirectivesModule */], directives_module["a" /* CoreDirectivesModule */], []), core["_42" /* ɵmpd */](512, pipes_module["a" /* CorePipesModule */], pipes_module["a" /* CorePipesModule */], []), core["_42" /* ɵmpd */](512, components_module["a" /* CoreComponentsModule */], components_module["a" /* CoreComponentsModule */], []), core["_42" /* ɵmpd */](512, block_components_components_module["a" /* CoreBlockComponentsModule */], block_components_components_module["a" /* CoreBlockComponentsModule */], []), core["_42" /* ɵmpd */](512, components_components_module["a" /* CoreCourseComponentsModule */], components_components_module["a" /* CoreCourseComponentsModule */], []), core["_42" /* ɵmpd */](512, ionic_angular_module["b" /* IonicPageModule */], ionic_angular_module["b" /* IonicPageModule */], []), core["_42" /* ɵmpd */](512, list_mod_type_module_CoreCourseListModTypePageModule, list_mod_type_module_CoreCourseListModTypePageModule, []), core["_42" /* ɵmpd */](256, translate_service["c" /* USE_STORE */], undefined, []), core["_42" /* ɵmpd */](256, translate_service["b" /* USE_DEFAULT_LANG */], undefined, []), core["_42" /* ɵmpd */](256, module_loader["a" /* LAZY_LOADED_TOKEN */], list_mod_type_CoreCourseListModTypePage, [])]); });
+
+//# sourceMappingURL=list-mod-type.module.ngfactory.js.map
 
 /***/ })
 

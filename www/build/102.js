@@ -1,91 +1,27 @@
 webpackJsonp([102],{
 
-/***/ 2044:
+/***/ 2067:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "AddonModForumNewDiscussionPageModule", function() { return AddonModForumNewDiscussionPageModule; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(3);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ngx_translate_core__ = __webpack_require__(1);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__components_components_module__ = __webpack_require__(13);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__directives_directives_module__ = __webpack_require__(14);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__new_discussion__ = __webpack_require__(2200);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__core_editor_components_components_module__ = __webpack_require__(130);
-// (C) Copyright 2015 Moodle Pty Ltd.
-//
-// Licensed under the Apache License, Version 2.0 (the "License");
-// you may not use this file except in compliance with the License.
-// You may obtain a copy of the License at
-//
-//     http://www.apache.org/licenses/LICENSE-2.0
-//
-// Unless required by applicable law or agreed to in writing, software
-// distributed under the License is distributed on an "AS IS" BASIS,
-// WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-// See the License for the specific language governing permissions and
-// limitations under the License.
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
 
+// EXTERNAL MODULE: ./node_modules/@angular/core/esm5/core.js
+var core = __webpack_require__(0);
 
+// EXTERNAL MODULE: ./node_modules/ionic-angular/index.js + 3 modules
+var ionic_angular = __webpack_require__(5);
 
+// EXTERNAL MODULE: ./src/providers/events.ts
+var events = __webpack_require__(9);
 
+// EXTERNAL MODULE: ./src/providers/sites.ts
+var sites = __webpack_require__(1);
 
+// EXTERNAL MODULE: ./src/providers/utils/dom.ts
+var dom = __webpack_require__(4);
 
-
-var AddonModForumNewDiscussionPageModule = /** @class */ (function () {
-    function AddonModForumNewDiscussionPageModule() {
-    }
-    AddonModForumNewDiscussionPageModule = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["J" /* NgModule */])({
-            declarations: [
-                __WEBPACK_IMPORTED_MODULE_5__new_discussion__["a" /* AddonModForumNewDiscussionPage */],
-            ],
-            imports: [
-                __WEBPACK_IMPORTED_MODULE_3__components_components_module__["a" /* CoreComponentsModule */],
-                __WEBPACK_IMPORTED_MODULE_4__directives_directives_module__["a" /* CoreDirectivesModule */],
-                __WEBPACK_IMPORTED_MODULE_6__core_editor_components_components_module__["a" /* CoreEditorComponentsModule */],
-                __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["l" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_5__new_discussion__["a" /* AddonModForumNewDiscussionPage */]),
-                __WEBPACK_IMPORTED_MODULE_2__ngx_translate_core__["b" /* TranslateModule */].forChild()
-            ],
-        })
-    ], AddonModForumNewDiscussionPageModule);
-    return AddonModForumNewDiscussionPageModule;
-}());
-
-//# sourceMappingURL=new-discussion.module.js.map
-
-/***/ }),
-
-/***/ 2200:
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AddonModForumNewDiscussionPage; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_forms__ = __webpack_require__(29);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_ionic_angular__ = __webpack_require__(3);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ngx_translate_core__ = __webpack_require__(1);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__providers_events__ = __webpack_require__(11);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__providers_groups__ = __webpack_require__(54);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__providers_sites__ = __webpack_require__(2);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__providers_sync__ = __webpack_require__(47);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__providers_utils_dom__ = __webpack_require__(7);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__providers_utils_text__ = __webpack_require__(10);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__providers_utils_utils__ = __webpack_require__(4);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__core_fileuploader_providers_fileuploader__ = __webpack_require__(55);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__components_split_view_split_view__ = __webpack_require__(81);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__core_editor_components_rich_text_editor_rich_text_editor_ts__ = __webpack_require__(1008);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__providers_forum__ = __webpack_require__(100);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__providers_offline__ = __webpack_require__(180);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__providers_helper__ = __webpack_require__(233);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_17__providers_sync__ = __webpack_require__(197);
+// CONCATENATED MODULE: ./src/addon/mod/lesson/pages/password-modal/password-modal.ts
 // (C) Copyright 2015 Moodle Pty Ltd.
 //
 // Licensed under the Apache License, Version 2.0 (the "License");
@@ -108,578 +44,393 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-var __param = (this && this.__param) || function (paramIndex, decorator) {
-    return function (target, key) { decorator(target, key, paramIndex); }
-};
-var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, generator) {
-    return new (P || (P = Promise))(function (resolve, reject) {
-        function fulfilled(value) { try { step(generator.next(value)); } catch (e) { reject(e); } }
-        function rejected(value) { try { step(generator["throw"](value)); } catch (e) { reject(e); } }
-        function step(result) { result.done ? resolve(result.value) : new P(function (resolve) { resolve(result.value); }).then(fulfilled, rejected); }
-        step((generator = generator.apply(thisArg, _arguments || [])).next());
-    });
-};
-var __generator = (this && this.__generator) || function (thisArg, body) {
-    var _ = { label: 0, sent: function() { if (t[0] & 1) throw t[1]; return t[1]; }, trys: [], ops: [] }, f, y, t, g;
-    return g = { next: verb(0), "throw": verb(1), "return": verb(2) }, typeof Symbol === "function" && (g[Symbol.iterator] = function() { return this; }), g;
-    function verb(n) { return function (v) { return step([n, v]); }; }
-    function step(op) {
-        if (f) throw new TypeError("Generator is already executing.");
-        while (_) try {
-            if (f = 1, y && (t = y[op[0] & 2 ? "return" : op[0] ? "throw" : "next"]) && !(t = t.call(y, op[1])).done) return t;
-            if (y = 0, t) op = [0, t.value];
-            switch (op[0]) {
-                case 0: case 1: t = op; break;
-                case 4: _.label++; return { value: op[1], done: false };
-                case 5: _.label++; y = op[1]; op = [0]; continue;
-                case 7: op = _.ops.pop(); _.trys.pop(); continue;
-                default:
-                    if (!(t = _.trys, t = t.length > 0 && t[t.length - 1]) && (op[0] === 6 || op[0] === 2)) { _ = 0; continue; }
-                    if (op[0] === 3 && (!t || (op[1] > t[0] && op[1] < t[3]))) { _.label = op[1]; break; }
-                    if (op[0] === 6 && _.label < t[1]) { _.label = t[1]; t = op; break; }
-                    if (t && _.label < t[2]) { _.label = t[2]; _.ops.push(op); break; }
-                    if (t[2]) _.ops.pop();
-                    _.trys.pop(); continue;
-            }
-            op = body.call(thisArg, _);
-        } catch (e) { op = [6, e]; y = 0; } finally { f = t = 0; }
-        if (op[0] & 5) throw op[1]; return { value: op[0] ? op[1] : void 0, done: true };
-    }
-};
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
 
 
 /**
- * Page that displays the new discussion form.
+ * Modal that asks the password for a lesson.
  */
-var AddonModForumNewDiscussionPage = /** @class */ (function () {
-    function AddonModForumNewDiscussionPage(navParams, navCtrl, translate, domUtils, eventsProvider, groupsProvider, sitesProvider, syncProvider, uploaderProvider, textUtils, utils, forumProvider, forumOffline, forumSync, forumHelper, svComponent) {
-        this.navCtrl = navCtrl;
-        this.translate = translate;
-        this.domUtils = domUtils;
+var password_modal_AddonModLessonPasswordModalPage = /** @class */ (function () {
+    function AddonModLessonPasswordModalPage(viewCtrl, eventsProvider, sitesProvider, domUtils) {
+        this.viewCtrl = viewCtrl;
         this.eventsProvider = eventsProvider;
-        this.groupsProvider = groupsProvider;
         this.sitesProvider = sitesProvider;
-        this.syncProvider = syncProvider;
-        this.uploaderProvider = uploaderProvider;
-        this.textUtils = textUtils;
-        this.utils = utils;
-        this.forumProvider = forumProvider;
-        this.forumOffline = forumOffline;
-        this.forumSync = forumSync;
-        this.forumHelper = forumHelper;
-        this.svComponent = svComponent;
-        this.component = __WEBPACK_IMPORTED_MODULE_14__providers_forum__["a" /* AddonModForumProvider */].COMPONENT;
-        this.messageControl = new __WEBPACK_IMPORTED_MODULE_1__angular_forms__["b" /* FormControl */]();
-        this.groupsLoaded = false;
-        this.showGroups = false;
-        this.hasOffline = false;
-        this.canCreateAttachments = true; // Assume we can by default.
-        this.canPin = false;
-        this.showForm = false;
-        this.groups = [];
-        this.groupIds = [];
-        this.newDiscussion = {
-            subject: '',
-            message: null,
-            postToAllGroups: false,
-            groupId: 0,
-            subscribe: true,
-            pin: false,
-            files: []
-        };
-        this.advanced = false; // Display all form fields.
-        this.accessInfo = {};
-        this.isDestroyed = false;
-        this.forceLeave = false;
-        this.courseId = navParams.get('courseId');
-        this.cmId = navParams.get('cmId');
-        this.forumId = navParams.get('forumId');
-        this.timeCreated = navParams.get('timeCreated');
+        this.domUtils = domUtils;
     }
     /**
-     * Component being initialized.
-     */
-    AddonModForumNewDiscussionPage.prototype.ngOnInit = function () {
-        var _this = this;
-        this.fetchDiscussionData().finally(function () {
-            _this.groupsLoaded = true;
-        });
-    };
-    /**
-     * User entered the page that contains the component.
-     */
-    AddonModForumNewDiscussionPage.prototype.ionViewDidEnter = function () {
-        var _this = this;
-        if (this.syncObserver) {
-            // Already setup.
-            return;
-        }
-        // Refresh data if this discussion is synchronized automatically.
-        this.syncObserver = this.eventsProvider.on(__WEBPACK_IMPORTED_MODULE_17__providers_sync__["a" /* AddonModForumSyncProvider */].AUTO_SYNCED, function (data) {
-            if (data.forumId == _this.forumId && data.userId == _this.sitesProvider.getCurrentSiteUserId()) {
-                _this.domUtils.showAlertTranslated('core.notice', 'core.contenteditingsynced');
-                _this.returnToDiscussions();
-            }
-        }, this.sitesProvider.getCurrentSiteId());
-        // Trigger view event, to highlight the current opened discussion in the split view.
-        this.eventsProvider.trigger(__WEBPACK_IMPORTED_MODULE_14__providers_forum__["a" /* AddonModForumProvider */].VIEW_DISCUSSION_EVENT, {
-            forumId: this.forumId,
-            discussion: -this.timeCreated
-        }, this.sitesProvider.getCurrentSiteId());
-    };
-    /**
-     * Fetch if forum uses groups and the groups it uses.
+     * Send the password back.
      *
-     * @param refresh Whether we're refreshing data.
-     * @return Promise resolved when done.
+     * @param e Event.
+     * @param password The input element.
      */
-    AddonModForumNewDiscussionPage.prototype.fetchDiscussionData = function (refresh) {
-        var _this = this;
-        return this.groupsProvider.getActivityGroupMode(this.cmId).then(function (mode) {
-            var promises = [];
-            if (mode === __WEBPACK_IMPORTED_MODULE_5__providers_groups__["a" /* CoreGroupsProvider */].SEPARATEGROUPS || mode === __WEBPACK_IMPORTED_MODULE_5__providers_groups__["a" /* CoreGroupsProvider */].VISIBLEGROUPS) {
-                promises.push(_this.groupsProvider.getActivityAllowedGroups(_this.cmId).then(function (result) {
-                    var promise;
-                    if (mode === __WEBPACK_IMPORTED_MODULE_5__providers_groups__["a" /* CoreGroupsProvider */].VISIBLEGROUPS) {
-                        // We need to check which of the returned groups the user can post to.
-                        promise = _this.validateVisibleGroups(result.groups);
-                    }
-                    else {
-                        // WS already filters groups, no need to do it ourselves. Add "All participants" if needed.
-                        promise = _this.addAllParticipantsOption(result.groups, true);
-                    }
-                    return promise.then(function (forumGroups) {
-                        if (forumGroups.length > 0) {
-                            _this.groups = forumGroups;
-                            _this.groupIds = forumGroups.map(function (group) { return group.id; }).filter(function (id) { return id > 0; });
-                            // Do not override group id.
-                            _this.newDiscussion.groupId = _this.newDiscussion.groupId || forumGroups[0].id;
-                            _this.showGroups = true;
-                            if (_this.groupIds.length <= 1) {
-                                _this.newDiscussion.postToAllGroups = false;
-                            }
-                        }
-                        else {
-                            var message = mode === __WEBPACK_IMPORTED_MODULE_5__providers_groups__["a" /* CoreGroupsProvider */].SEPARATEGROUPS ?
-                                'addon.mod_forum.cannotadddiscussionall' : 'addon.mod_forum.cannotadddiscussion';
-                            return Promise.reject(_this.translate.instant(message));
-                        }
-                    });
-                }));
-            }
-            else {
-                _this.showGroups = false;
-                _this.newDiscussion.postToAllGroups = false;
-                // Use the canAddDiscussion WS to check if the user can add attachments and pin discussions.
-                promises.push(_this.forumProvider.canAddDiscussionToAll(_this.forumId, { cmId: _this.cmId }).then(function (response) {
-                    _this.canPin = !!response.canpindiscussions;
-                    _this.canCreateAttachments = !!response.cancreateattachment;
-                }).catch(function () {
-                    // Ignore errors, use default values.
-                }));
-            }
-            // Get forum.
-            promises.push(_this.forumProvider.getForum(_this.courseId, _this.cmId).then(function (forum) {
-                _this.forum = forum;
-            }));
-            // Get access information.
-            promises.push(_this.forumProvider.getAccessInformation(_this.forumId, { cmId: _this.cmId }).then(function (accessInfo) {
-                _this.accessInfo = accessInfo;
-            }));
-            return Promise.all(promises);
-        }).then(function () {
-            // If editing a discussion, get offline data.
-            if (_this.timeCreated && !refresh) {
-                _this.syncId = _this.forumSync.getForumSyncId(_this.forumId);
-                return _this.forumSync.waitForSync(_this.syncId).then(function () {
-                    // Do not block if the scope is already destroyed.
-                    if (!_this.isDestroyed) {
-                        _this.syncProvider.blockOperation(__WEBPACK_IMPORTED_MODULE_14__providers_forum__["a" /* AddonModForumProvider */].COMPONENT, _this.syncId);
-                    }
-                    return _this.forumOffline.getNewDiscussion(_this.forumId, _this.timeCreated).then(function (discussion) {
-                        _this.hasOffline = true;
-                        discussion.options = discussion.options || {};
-                        if (discussion.groupid == __WEBPACK_IMPORTED_MODULE_14__providers_forum__["a" /* AddonModForumProvider */].ALL_GROUPS) {
-                            _this.newDiscussion.groupId = _this.groups[0].id;
-                            _this.newDiscussion.postToAllGroups = true;
-                        }
-                        else {
-                            _this.newDiscussion.groupId = discussion.groupid;
-                            _this.newDiscussion.postToAllGroups = false;
-                        }
-                        _this.newDiscussion.subject = discussion.subject;
-                        _this.newDiscussion.message = discussion.message;
-                        _this.newDiscussion.subscribe = discussion.options.discussionsubscribe;
-                        _this.newDiscussion.pin = discussion.options.discussionpinned;
-                        _this.messageControl.setValue(discussion.message);
-                        // Treat offline attachments if any.
-                        var promise;
-                        if (discussion.options.attachmentsid && discussion.options.attachmentsid.offline) {
-                            promise = _this.forumHelper.getNewDiscussionStoredFiles(_this.forumId, _this.timeCreated).then(function (files) {
-                                _this.newDiscussion.files = files;
-                            });
-                        }
-                        return Promise.resolve(promise).then(function () {
-                            // Show advanced fields by default if any of them has not the default value.
-                            if (!_this.newDiscussion.subscribe || _this.newDiscussion.pin || _this.newDiscussion.files.length ||
-                                _this.groups.length > 0 && _this.newDiscussion.groupId != _this.groups[0].id ||
-                                _this.newDiscussion.postToAllGroups) {
-                                _this.advanced = true;
-                            }
-                        });
-                    });
-                });
-            }
-        }).then(function () {
-            if (!_this.originalData) {
-                // Initialize original data.
-                _this.originalData = {
-                    subject: _this.newDiscussion.subject,
-                    message: _this.newDiscussion.message,
-                    files: _this.newDiscussion.files.slice(),
-                };
-            }
-            _this.showForm = true;
-        }).catch(function (message) {
-            _this.domUtils.showErrorModalDefault(message, 'addon.mod_forum.errorgetgroups', true);
-            _this.showForm = false;
-        });
+    AddonModLessonPasswordModalPage.prototype.submitPassword = function (e, password) {
+        e.preventDefault();
+        e.stopPropagation();
+        this.domUtils.triggerFormSubmittedEvent(this.formElement, false, this.sitesProvider.getCurrentSiteId());
+        this.viewCtrl.dismiss(password.value);
     };
     /**
-     * Validate which of the groups returned by getActivityAllowedGroups in visible groups should be shown to post to.
-     *
-     * @param forumGroups Forum groups.
-     * @return Promise resolved with the list of groups.
+     * Close modal.
      */
-    AddonModForumNewDiscussionPage.prototype.validateVisibleGroups = function (forumGroups) {
-        var _this = this;
-        // We first check if the user can post to all the groups.
-        return this.forumProvider.canAddDiscussionToAll(this.forumId, { cmId: this.cmId }).catch(function () {
-            // The call failed, let's assume he can't.
-            return {
-                status: false,
-                canpindiscussions: false,
-                cancreateattachment: true
-            };
-        }).then(function (response) {
-            _this.canPin = !!response.canpindiscussions;
-            _this.canCreateAttachments = !!response.cancreateattachment;
-            if (response.status) {
-                // The user can post to all groups, add the "All participants" option and return them all.
-                return _this.addAllParticipantsOption(forumGroups, false);
-            }
-            else {
-                // The user can't post to all groups, let's check which groups he can post to.
-                var promises_1 = [];
-                var filtered_1 = [];
-                forumGroups.forEach(function (group) {
-                    promises_1.push(_this.forumProvider.canAddDiscussion(_this.forumId, group.id, { cmId: _this.cmId }).catch(function () {
-                        /* The call failed, let's return true so the group is shown. If the user can't post to
-                           it an error will be shown when he tries to add the discussion. */
-                        return {
-                            status: true
-                        };
-                    }).then(function (response) {
-                        if (response.status) {
-                            filtered_1.push(group);
-                        }
-                    }));
-                });
-                return Promise.all(promises_1).then(function () {
-                    return filtered_1;
-                });
-            }
-        });
-    };
-    /**
-     * Filter forum groups, returning only those that are inside user groups.
-     *
-     * @param forumGroups Forum groups.
-     * @param userGroups User groups.
-     * @return Filtered groups.
-     */
-    AddonModForumNewDiscussionPage.prototype.filterGroups = function (forumGroups, userGroups) {
-        var filtered = [];
-        var userGroupsIds = userGroups.map(function (g) { return g.id; });
-        forumGroups.forEach(function (fg) {
-            if (userGroupsIds.indexOf(fg.id) > -1) {
-                filtered.push(fg);
-            }
-        });
-        return filtered;
-    };
-    /**
-     * Add the "All participants" option to a list of groups if the user can add a discussion to all participants.
-     *
-     * @param groups Groups.
-     * @param check True to check if the user can add a discussion to all participants.
-     * @return Promise resolved with the list of groups.
-     */
-    AddonModForumNewDiscussionPage.prototype.addAllParticipantsOption = function (groups, check) {
-        var _this = this;
-        if (!this.forumProvider.isAllParticipantsFixed()) {
-            // All participants has a bug, don't add it.
-            return Promise.resolve(groups);
-        }
-        var promise;
-        if (check) {
-            // We need to check if the user can add a discussion to all participants.
-            promise = this.forumProvider.canAddDiscussionToAll(this.forumId, { cmId: this.cmId }).then(function (response) {
-                _this.canPin = !!response.canpindiscussions;
-                _this.canCreateAttachments = !!response.cancreateattachment;
-                return response.status;
-            }).catch(function () {
-                // The call failed, let's assume he can't.
-                return false;
-            });
-        }
-        else {
-            // No need to check, assume the user can.
-            promise = Promise.resolve(true);
-        }
-        return promise.then(function (canAdd) {
-            if (canAdd) {
-                groups.unshift({
-                    courseid: _this.courseId,
-                    id: __WEBPACK_IMPORTED_MODULE_14__providers_forum__["a" /* AddonModForumProvider */].ALL_PARTICIPANTS,
-                    name: _this.translate.instant('core.allparticipants')
-                });
-            }
-            return groups;
-        });
-    };
-    /**
-     * Pull to refresh.
-     *
-     * @param refresher Refresher.
-     */
-    AddonModForumNewDiscussionPage.prototype.refreshGroups = function (refresher) {
-        var _this = this;
-        var promises = [
-            this.groupsProvider.invalidateActivityGroupMode(this.cmId),
-            this.groupsProvider.invalidateActivityAllowedGroups(this.cmId),
-            this.forumProvider.invalidateCanAddDiscussion(this.forumId),
-        ];
-        Promise.all(promises).finally(function () {
-            _this.fetchDiscussionData(true).finally(function () {
-                refresher.complete();
-            });
-        });
-    };
-    /**
-     * Convenience function to update or return to discussions depending on device.
-     *
-     * @param discussionIds Ids of the new discussions.
-     * @param discTimecreated The time created of the discussion (if offline).
-     */
-    AddonModForumNewDiscussionPage.prototype.returnToDiscussions = function (discussionIds, discTimecreated) {
-        var data = {
-            forumId: this.forumId,
-            cmId: this.cmId,
-            discussionIds: discussionIds,
-            discTimecreated: discTimecreated
-        };
-        this.eventsProvider.trigger(__WEBPACK_IMPORTED_MODULE_14__providers_forum__["a" /* AddonModForumProvider */].NEW_DISCUSSION_EVENT, data, this.sitesProvider.getCurrentSiteId());
-        // Delete the local files from the tmp folder.
-        this.uploaderProvider.clearTmpFiles(this.newDiscussion.files);
-        if (this.svComponent && this.svComponent.isOn()) {
-            // Empty form.
-            this.hasOffline = false;
-            this.newDiscussion.subject = '';
-            this.newDiscussion.message = null;
-            this.newDiscussion.files = [];
-            this.newDiscussion.postToAllGroups = false;
-            this.messageEditor.clearText();
-            this.originalData = this.utils.clone(this.newDiscussion);
-            this.forceLeave = true; // Avoid asking for confirmation.
-            // Trigger view event, to highlight the current opened discussion in the split view.
-            this.eventsProvider.trigger(__WEBPACK_IMPORTED_MODULE_14__providers_forum__["a" /* AddonModForumProvider */].VIEW_DISCUSSION_EVENT, {
-                forumId: this.forumId,
-                discussion: 0
-            }, this.sitesProvider.getCurrentSiteId());
-        }
-        else {
-            this.forceLeave = true; // Avoid asking for confirmation.
-            this.navCtrl.pop();
-        }
-    };
-    /**
-     * Message changed.
-     *
-     * @param text The new text.
-     */
-    AddonModForumNewDiscussionPage.prototype.onMessageChange = function (text) {
-        this.newDiscussion.message = text;
-    };
-    /**
-     * Add a new discussion.
-     */
-    AddonModForumNewDiscussionPage.prototype.add = function () {
-        var _this = this;
-        var forumName = this.forum.name;
-        var subject = this.newDiscussion.subject;
-        var message = this.newDiscussion.message;
-        var pin = this.newDiscussion.pin;
-        var attachments = this.newDiscussion.files;
-        var discTimecreated = this.timeCreated || Date.now();
-        var options = {
-            discussionsubscribe: !!this.newDiscussion.subscribe
-        };
-        if (!subject) {
-            this.domUtils.showErrorModal('addon.mod_forum.erroremptysubject', true);
-            return;
-        }
-        if (!message) {
-            this.domUtils.showErrorModal('addon.mod_forum.erroremptymessage', true);
-            return;
-        }
-        var modal = this.domUtils.showModalLoading('core.sending', true);
-        // Add some HTML to the message if needed.
-        message = this.textUtils.formatHtmlLines(message);
-        if (pin) {
-            options.discussionpinned = true;
-        }
-        var groupIds = this.newDiscussion.postToAllGroups ? this.groupIds : [this.newDiscussion.groupId];
-        this.forumHelper.addNewDiscussion(this.forumId, forumName, this.courseId, subject, message, attachments, options, groupIds, discTimecreated).then(function (discussionIds) {
-            if (discussionIds) {
-                // Data sent to server, delete stored files (if any).
-                _this.forumHelper.deleteNewDiscussionStoredFiles(_this.forumId, discTimecreated);
-                _this.eventsProvider.trigger(__WEBPACK_IMPORTED_MODULE_4__providers_events__["b" /* CoreEventsProvider */].ACTIVITY_DATA_SENT, { module: 'forum' });
-            }
-            if (discussionIds && discussionIds.length < groupIds.length) {
-                // Some discussions could not be created.
-                _this.domUtils.showErrorModalDefault(null, 'addon.mod_forum.errorposttoallgroups', true);
-            }
-            _this.domUtils.triggerFormSubmittedEvent(_this.formElement, !!discussionIds, _this.sitesProvider.getCurrentSiteId());
-            _this.returnToDiscussions(discussionIds, discTimecreated);
-        }).catch(function (message) {
-            _this.domUtils.showErrorModalDefault(message, 'addon.mod_forum.cannotcreatediscussion', true);
-        }).finally(function () {
-            modal.dismiss();
-        });
-    };
-    /**
-     * Discard an offline saved discussion.
-     */
-    AddonModForumNewDiscussionPage.prototype.discard = function () {
-        var _this = this;
-        this.domUtils.showConfirm(this.translate.instant('core.areyousure')).then(function () {
-            var promises = [];
-            promises.push(_this.forumOffline.deleteNewDiscussion(_this.forumId, _this.timeCreated));
-            promises.push(_this.forumHelper.deleteNewDiscussionStoredFiles(_this.forumId, _this.timeCreated).catch(function () {
-                // Ignore errors, maybe there are no files.
-            }));
-            return Promise.all(promises).then(function () {
-                _this.domUtils.triggerFormCancelledEvent(_this.formElement, _this.sitesProvider.getCurrentSiteId());
-                _this.returnToDiscussions();
-            });
-        }).catch(function () {
-            // Cancelled.
-        });
-    };
-    /**
-     * Show or hide advanced form fields.
-     */
-    AddonModForumNewDiscussionPage.prototype.toggleAdvanced = function () {
-        this.advanced = !this.advanced;
-    };
-    /**
-     * Check if we can leave the page or not.
-     *
-     * @return Resolved if we can leave it, rejected if not.
-     */
-    AddonModForumNewDiscussionPage.prototype.ionViewCanLeave = function () {
-        return __awaiter(this, void 0, void 0, function () {
-            return __generator(this, function (_a) {
-                switch (_a.label) {
-                    case 0:
-                        if (this.forceLeave) {
-                            return [2 /*return*/];
-                        }
-                        if (!this.forumHelper.hasPostDataChanged(this.newDiscussion, this.originalData)) return [3 /*break*/, 2];
-                        // Show confirmation if some data has been modified.
-                        return [4 /*yield*/, this.domUtils.showConfirm(this.translate.instant('core.confirmcanceledit'))];
-                    case 1:
-                        // Show confirmation if some data has been modified.
-                        _a.sent();
-                        _a.label = 2;
-                    case 2:
-                        // Delete the local files from the tmp folder.
-                        this.uploaderProvider.clearTmpFiles(this.newDiscussion.files);
-                        if (this.formElement) {
-                            this.domUtils.triggerFormCancelledEvent(this.formElement, this.sitesProvider.getCurrentSiteId());
-                        }
-                        return [2 /*return*/];
-                }
-            });
-        });
-    };
-    /**
-     * Runs when the page is about to leave and no longer be the active page.
-     */
-    AddonModForumNewDiscussionPage.prototype.ionViewWillLeave = function () {
-        this.syncObserver && this.syncObserver.off();
-        delete this.syncObserver;
-    };
-    /**
-     * Page destroyed.
-     */
-    AddonModForumNewDiscussionPage.prototype.ngOnDestroy = function () {
-        if (this.syncId) {
-            this.syncProvider.unblockOperation(__WEBPACK_IMPORTED_MODULE_14__providers_forum__["a" /* AddonModForumProvider */].COMPONENT, this.syncId);
-        }
-        this.isDestroyed = true;
+    AddonModLessonPasswordModalPage.prototype.closeModal = function () {
+        this.domUtils.triggerFormCancelledEvent(this.formElement, this.sitesProvider.getCurrentSiteId());
+        this.viewCtrl.dismiss();
     };
     __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_10" /* ViewChild */])('newDiscFormEl'),
-        __metadata("design:type", __WEBPACK_IMPORTED_MODULE_0__angular_core__["t" /* ElementRef */])
-    ], AddonModForumNewDiscussionPage.prototype, "formElement", void 0);
-    __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_10" /* ViewChild */])(__WEBPACK_IMPORTED_MODULE_13__core_editor_components_rich_text_editor_rich_text_editor_ts__["a" /* CoreEditorRichTextEditorComponent */]),
-        __metadata("design:type", __WEBPACK_IMPORTED_MODULE_13__core_editor_components_rich_text_editor_rich_text_editor_ts__["a" /* CoreEditorRichTextEditorComponent */])
-    ], AddonModForumNewDiscussionPage.prototype, "messageEditor", void 0);
-    AddonModForumNewDiscussionPage = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-addon-mod-forum-new-discussion',template:/*ion-inline-start:"D:\workspace\moodle\agro-moodle-app\src\addon\mod\forum\pages\new-discussion\new-discussion.html"*/'<ion-header>\n\n    <ion-navbar core-back-button>\n\n        <ion-title>{{ \'addon.mod_forum.addanewdiscussion\' | translate }}</ion-title>\n\n        <ion-buttons end>\n\n            <!-- The context menu will be added in here. -->\n\n        </ion-buttons>\n\n    </ion-navbar>\n\n</ion-header>\n\n<ion-content>\n\n    <ion-refresher [enabled]="groupsLoaded" (ionRefresh)="refreshGroups($event)">\n\n        <ion-refresher-content pullingText="{{ \'core.pulltorefresh\' | translate }}"></ion-refresher-content>\n\n    </ion-refresher>\n\n\n\n    <core-loading [hideUntil]="groupsLoaded">\n\n        <form ion-list *ngIf="showForm" #newDiscFormEl>\n\n            <ion-item>\n\n                <ion-label stacked>{{ \'addon.mod_forum.subject\' | translate }}</ion-label>\n\n                <ion-input type="text" [placeholder]="\'addon.mod_forum.subject\' | translate" [(ngModel)]="newDiscussion.subject" name="subject"></ion-input>\n\n            </ion-item>\n\n            <ion-item>\n\n                <ion-label stacked>{{ \'addon.mod_forum.message\' | translate }}</ion-label>\n\n                <core-rich-text-editor item-content [control]="messageControl" (contentChanged)="onMessageChange($event)" [placeholder]="\'addon.mod_forum.message\' | translate" name="addon_mod_forum_new_discussion" [component]="component" [componentId]="forum.cmid" [autoSave]="true" contextLevel="module" [contextInstanceId]="forum.cmid" elementId="message"></core-rich-text-editor>\n\n            </ion-item>\n\n            <ion-item-divider text-wrap (click)="toggleAdvanced()" class="core-expandable">\n\n                <core-icon *ngIf="!advanced" name="fa-caret-right" item-start></core-icon>\n\n                <core-icon *ngIf="advanced" name="fa-caret-down" item-start></core-icon>\n\n                {{ \'addon.mod_forum.advanced\' | translate }}\n\n            </ion-item-divider>\n\n            <ng-container *ngIf="advanced">\n\n                <ion-item *ngIf="showGroups && groupIds.length > 1 && accessInfo.cancanposttomygroups">\n\n                    <ion-label>{{ \'addon.mod_forum.posttomygroups\' | translate }}</ion-label>\n\n                    <ion-toggle [(ngModel)]="newDiscussion.postToAllGroups" name="postallgroups"></ion-toggle>\n\n                </ion-item>\n\n                <ion-item *ngIf="showGroups">\n\n                    <ion-label id="addon-mod-forum-groupslabel">{{ \'addon.mod_forum.group\' | translate }}</ion-label>\n\n                    <ion-select [(ngModel)]="newDiscussion.groupId" [disabled]="newDiscussion.postToAllGroups" aria-labelledby="addon-mod-forum-groupslabel" interface="action-sheet" name="groupid">\n\n                        <ion-option *ngFor="let group of groups" [value]="group.id">{{ group.name }}</ion-option>\n\n                    </ion-select>\n\n                </ion-item>\n\n                <ion-item>\n\n                    <ion-label>{{ \'addon.mod_forum.discussionsubscription\' | translate }}</ion-label>\n\n                    <ion-toggle [(ngModel)]="newDiscussion.subscribe" name="subscribe"></ion-toggle>\n\n                </ion-item>\n\n                <ion-item *ngIf="canPin">\n\n                    <ion-label>{{ \'addon.mod_forum.discussionpinned\' | translate }}</ion-label>\n\n                    <ion-toggle [(ngModel)]="newDiscussion.pin" name="pin"></ion-toggle>\n\n                </ion-item>\n\n                <core-attachments *ngIf="canCreateAttachments && forum && forum.maxattachments > 0" [files]="newDiscussion.files" [maxSize]="forum.maxbytes" [maxSubmissions]="forum.maxattachments" [component]="component" [componentId]="forum.cmid" [allowOffline]="true"></core-attachments>\n\n            </ng-container>\n\n            <ion-item>\n\n                <ion-row>\n\n                    <ion-col>\n\n                        <button ion-button block (click)="add()" [disabled]="newDiscussion.subject == \'\' || newDiscussion.message == null">{{ \'addon.mod_forum.posttoforum\' | translate }}</button>\n\n                    </ion-col>\n\n                    <ion-col *ngIf="hasOffline">\n\n                        <button ion-button block color="light" (click)="discard()">{{ \'core.discard\' | translate }}</button>\n\n                    </ion-col>\n\n                </ion-row>\n\n            </ion-item>\n\n        </form>\n\n    </core-loading>\n\n</ion-content>\n\n'/*ion-inline-end:"D:\workspace\moodle\agro-moodle-app\src\addon\mod\forum\pages\new-discussion\new-discussion.html"*/,
+        Object(core["_10" /* ViewChild */])('passwordForm'),
+        __metadata("design:type", core["t" /* ElementRef */])
+    ], AddonModLessonPasswordModalPage.prototype, "formElement", void 0);
+    AddonModLessonPasswordModalPage = __decorate([
+        Object(core["m" /* Component */])({
+            selector: 'page-addon-mod-lesson-password-modal',
+            templateUrl: 'password-modal.html',
         }),
-        __param(15, Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["O" /* Optional */])()),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_2_ionic_angular__["t" /* NavParams */],
-            __WEBPACK_IMPORTED_MODULE_2_ionic_angular__["s" /* NavController */],
-            __WEBPACK_IMPORTED_MODULE_3__ngx_translate_core__["c" /* TranslateService */],
-            __WEBPACK_IMPORTED_MODULE_8__providers_utils_dom__["b" /* CoreDomUtilsProvider */],
-            __WEBPACK_IMPORTED_MODULE_4__providers_events__["b" /* CoreEventsProvider */],
-            __WEBPACK_IMPORTED_MODULE_5__providers_groups__["a" /* CoreGroupsProvider */],
-            __WEBPACK_IMPORTED_MODULE_6__providers_sites__["b" /* CoreSitesProvider */],
-            __WEBPACK_IMPORTED_MODULE_7__providers_sync__["a" /* CoreSyncProvider */],
-            __WEBPACK_IMPORTED_MODULE_11__core_fileuploader_providers_fileuploader__["b" /* CoreFileUploaderProvider */],
-            __WEBPACK_IMPORTED_MODULE_9__providers_utils_text__["b" /* CoreTextUtilsProvider */],
-            __WEBPACK_IMPORTED_MODULE_10__providers_utils_utils__["b" /* CoreUtilsProvider */],
-            __WEBPACK_IMPORTED_MODULE_14__providers_forum__["a" /* AddonModForumProvider */],
-            __WEBPACK_IMPORTED_MODULE_15__providers_offline__["a" /* AddonModForumOfflineProvider */],
-            __WEBPACK_IMPORTED_MODULE_17__providers_sync__["a" /* AddonModForumSyncProvider */],
-            __WEBPACK_IMPORTED_MODULE_16__providers_helper__["a" /* AddonModForumHelperProvider */],
-            __WEBPACK_IMPORTED_MODULE_12__components_split_view_split_view__["a" /* CoreSplitViewComponent */]])
-    ], AddonModForumNewDiscussionPage);
-    return AddonModForumNewDiscussionPage;
+        __metadata("design:paramtypes", [ionic_angular["G" /* ViewController */],
+            events["b" /* CoreEventsProvider */],
+            sites["b" /* CoreSitesProvider */],
+            dom["b" /* CoreDomUtilsProvider */]])
+    ], AddonModLessonPasswordModalPage);
+    return AddonModLessonPasswordModalPage;
 }());
 
-//# sourceMappingURL=new-discussion.js.map
+//# sourceMappingURL=password-modal.js.map
+// EXTERNAL MODULE: ./node_modules/@ngx-translate/core/index.js + 1 modules
+var _ngx_translate_core = __webpack_require__(3);
+
+// EXTERNAL MODULE: ./src/components/components.module.ts
+var components_module = __webpack_require__(26);
+
+// EXTERNAL MODULE: ./src/directives/directives.module.ts + 2 modules
+var directives_module = __webpack_require__(32);
+
+// CONCATENATED MODULE: ./src/addon/mod/lesson/pages/password-modal/password-modal.module.ts
+// (C) Copyright 2015 Moodle Pty Ltd.
+//
+// Licensed under the Apache License, Version 2.0 (the "License");
+// you may not use this file except in compliance with the License.
+// You may obtain a copy of the License at
+//
+//     http://www.apache.org/licenses/LICENSE-2.0
+//
+// Unless required by applicable law or agreed to in writing, software
+// distributed under the License is distributed on an "AS IS" BASIS,
+// WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+// See the License for the specific language governing permissions and
+// limitations under the License.
+var password_modal_module___decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+
+
+
+
+
+
+var password_modal_module_AddonModLessonPasswordModalPageModule = /** @class */ (function () {
+    function AddonModLessonPasswordModalPageModule() {
+    }
+    AddonModLessonPasswordModalPageModule = password_modal_module___decorate([
+        Object(core["J" /* NgModule */])({
+            declarations: [
+                password_modal_AddonModLessonPasswordModalPage
+            ],
+            imports: [
+                components_module["a" /* CoreComponentsModule */],
+                directives_module["a" /* CoreDirectivesModule */],
+                ionic_angular["l" /* IonicPageModule */].forChild(password_modal_AddonModLessonPasswordModalPage),
+                _ngx_translate_core["b" /* TranslateModule */].forChild()
+            ]
+        })
+    ], AddonModLessonPasswordModalPageModule);
+    return AddonModLessonPasswordModalPageModule;
+}());
+
+//# sourceMappingURL=password-modal.module.js.map
+// EXTERNAL MODULE: ./node_modules/ionic-angular/components/action-sheet/action-sheet-component.ngfactory.js
+var action_sheet_component_ngfactory = __webpack_require__(1551);
+
+// EXTERNAL MODULE: ./node_modules/ionic-angular/components/alert/alert-component.ngfactory.js
+var alert_component_ngfactory = __webpack_require__(1552);
+
+// EXTERNAL MODULE: ./node_modules/ionic-angular/components/app/app-root.ngfactory.js
+var app_root_ngfactory = __webpack_require__(1553);
+
+// EXTERNAL MODULE: ./node_modules/ionic-angular/components/loading/loading-component.ngfactory.js
+var loading_component_ngfactory = __webpack_require__(1554);
+
+// EXTERNAL MODULE: ./node_modules/ionic-angular/components/modal/modal-component.ngfactory.js
+var modal_component_ngfactory = __webpack_require__(1555);
+
+// EXTERNAL MODULE: ./node_modules/ionic-angular/components/picker/picker-component.ngfactory.js + 1 modules
+var picker_component_ngfactory = __webpack_require__(1556);
+
+// EXTERNAL MODULE: ./node_modules/ionic-angular/components/popover/popover-component.ngfactory.js
+var popover_component_ngfactory = __webpack_require__(1557);
+
+// EXTERNAL MODULE: ./node_modules/ionic-angular/components/select/select-popover-component.ngfactory.js
+var select_popover_component_ngfactory = __webpack_require__(1558);
+
+// EXTERNAL MODULE: ./node_modules/ionic-angular/components/toast/toast-component.ngfactory.js
+var toast_component_ngfactory = __webpack_require__(1559);
+
+// EXTERNAL MODULE: ./src/components/context-menu/context-menu-popover.ngfactory.js
+var context_menu_popover_ngfactory = __webpack_require__(1560);
+
+// EXTERNAL MODULE: ./src/components/course-picker-menu/course-picker-menu-popover.ngfactory.js
+var course_picker_menu_popover_ngfactory = __webpack_require__(1561);
+
+// EXTERNAL MODULE: ./src/components/recaptcha/recaptchamodal.ngfactory.js
+var recaptchamodal_ngfactory = __webpack_require__(1562);
+
+// EXTERNAL MODULE: ./src/components/bs-tooltip/bs-tooltip.ngfactory.js
+var bs_tooltip_ngfactory = __webpack_require__(1563);
+
+// EXTERNAL MODULE: ./node_modules/ionic-angular/components/toolbar/toolbar-header.js
+var toolbar_header = __webpack_require__(379);
+
+// EXTERNAL MODULE: ./node_modules/ionic-angular/config/config.js
+var config = __webpack_require__(8);
+
+// EXTERNAL MODULE: ./node_modules/ionic-angular/navigation/view-controller.js
+var view_controller = __webpack_require__(41);
+
+// EXTERNAL MODULE: ./node_modules/ionic-angular/components/toolbar/navbar.ngfactory.js
+var navbar_ngfactory = __webpack_require__(739);
+
+// EXTERNAL MODULE: ./node_modules/ionic-angular/components/toolbar/navbar.js
+var navbar = __webpack_require__(216);
+
+// EXTERNAL MODULE: ./node_modules/ionic-angular/components/app/app.js + 3 modules
+var app = __webpack_require__(35);
+
+// EXTERNAL MODULE: ./node_modules/ionic-angular/navigation/nav-controller.js
+var nav_controller = __webpack_require__(20);
+
+// EXTERNAL MODULE: ./src/directives/back-button.ts
+var back_button = __webpack_require__(486);
+
+// EXTERNAL MODULE: ./node_modules/@ngx-translate/core/src/translate.service.js
+var translate_service = __webpack_require__(18);
+
+// EXTERNAL MODULE: ./node_modules/ionic-angular/components/toolbar/toolbar-title.ngfactory.js
+var toolbar_title_ngfactory = __webpack_require__(740);
+
+// EXTERNAL MODULE: ./node_modules/ionic-angular/components/toolbar/toolbar-title.js
+var toolbar_title = __webpack_require__(324);
+
+// EXTERNAL MODULE: ./node_modules/ionic-angular/components/toolbar/toolbar.js
+var toolbar = __webpack_require__(252);
+
+// EXTERNAL MODULE: ./node_modules/@ngx-translate/core/src/translate.pipe.js
+var translate_pipe = __webpack_require__(25);
+
+// EXTERNAL MODULE: ./node_modules/ionic-angular/components/toolbar/toolbar-item.js
+var toolbar_item = __webpack_require__(380);
+
+// EXTERNAL MODULE: ./node_modules/ionic-angular/components/button/button.ngfactory.js
+var button_ngfactory = __webpack_require__(47);
+
+// EXTERNAL MODULE: ./node_modules/ionic-angular/components/button/button.js
+var button_button = __webpack_require__(44);
+
+// EXTERNAL MODULE: ./node_modules/ionic-angular/components/icon/icon.js
+var icon = __webpack_require__(48);
+
+// EXTERNAL MODULE: ./node_modules/ionic-angular/components/content/content.ngfactory.js
+var content_ngfactory = __webpack_require__(185);
+
+// EXTERNAL MODULE: ./node_modules/ionic-angular/components/content/content.js
+var content = __webpack_require__(28);
+
+// EXTERNAL MODULE: ./node_modules/ionic-angular/platform/platform.js + 1 modules
+var platform = __webpack_require__(16);
+
+// EXTERNAL MODULE: ./node_modules/ionic-angular/platform/dom-controller.js
+var dom_controller = __webpack_require__(34);
+
+// EXTERNAL MODULE: ./node_modules/ionic-angular/platform/keyboard.js
+var keyboard = __webpack_require__(112);
+
+// EXTERNAL MODULE: ./node_modules/@angular/forms/esm5/forms.js
+var esm5_forms = __webpack_require__(23);
+
+// EXTERNAL MODULE: ./node_modules/ionic-angular/components/item/item.ngfactory.js + 1 modules
+var item_ngfactory = __webpack_require__(31);
+
+// EXTERNAL MODULE: ./node_modules/ionic-angular/components/item/item.js
+var item = __webpack_require__(22);
+
+// EXTERNAL MODULE: ./node_modules/ionic-angular/util/form.js
+var util_form = __webpack_require__(21);
+
+// EXTERNAL MODULE: ./node_modules/ionic-angular/components/item/item-reorder.js + 1 modules
+var item_reorder = __webpack_require__(27);
+
+// EXTERNAL MODULE: ./node_modules/ionic-angular/components/item/item-content.js
+var item_content = __webpack_require__(33);
+
+// EXTERNAL MODULE: ./src/components/show-password/show-password.ngfactory.js
+var show_password_ngfactory = __webpack_require__(754);
+
+// EXTERNAL MODULE: ./src/components/show-password/show-password.ts
+var show_password = __webpack_require__(387);
+
+// EXTERNAL MODULE: ./src/providers/utils/utils.ts
+var utils = __webpack_require__(2);
+
+// EXTERNAL MODULE: ./node_modules/ionic-angular/components/label/label.js
+var label = __webpack_require__(69);
+
+// EXTERNAL MODULE: ./node_modules/ionic-angular/components/input/input.ngfactory.js
+var input_ngfactory = __webpack_require__(115);
+
+// EXTERNAL MODULE: ./src/directives/auto-focus.ts
+var auto_focus = __webpack_require__(385);
+
+// EXTERNAL MODULE: ./node_modules/ionic-angular/components/input/input.js
+var input = __webpack_require__(95);
+
+// CONCATENATED MODULE: ./src/addon/mod/lesson/pages/password-modal/password-modal.ngfactory.js
+/**
+ * @fileoverview This file was generated by the Angular template compiler. Do not edit.
+ *
+ * @suppress {suspiciousCode,uselessCode,missingProperties,missingOverride,checkTypes}
+ * tslint:disable
+ */ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+var styles_AddonModLessonPasswordModalPage = [];
+var RenderType_AddonModLessonPasswordModalPage = core["_30" /* ɵcrt */]({ encapsulation: 2, styles: styles_AddonModLessonPasswordModalPage, data: {} });
+
+function View_AddonModLessonPasswordModalPage_0(_l) { return core["_58" /* ɵvid */](0, [core["_53" /* ɵqud */](402653184, 1, { formElement: 0 }), (_l()(), core["_32" /* ɵeld */](1, 0, null, null, 25, "ion-header", [], null, null, null, null, null)), core["_31" /* ɵdid */](2, 16384, null, 0, toolbar_header["a" /* Header */], [config["a" /* Config */], core["t" /* ElementRef */], core["W" /* Renderer */], [2, view_controller["a" /* ViewController */]]], null, null), (_l()(), core["_56" /* ɵted */](-1, null, ["\n    "])), (_l()(), core["_32" /* ɵeld */](4, 0, null, null, 21, "ion-navbar", [["class", "toolbar"], ["core-back-button", ""]], [[8, "hidden", 0], [2, "statusbar-padding", null]], null, null, navbar_ngfactory["b" /* View_Navbar_0 */], navbar_ngfactory["a" /* RenderType_Navbar */])), core["_31" /* ɵdid */](5, 49152, null, 0, navbar["a" /* Navbar */], [app["a" /* App */], [2, view_controller["a" /* ViewController */]], [2, nav_controller["a" /* NavController */]], config["a" /* Config */], core["t" /* ElementRef */], core["W" /* Renderer */]], null, null), core["_31" /* ɵdid */](6, 212992, null, 0, back_button["a" /* CoreBackButtonDirective */], [navbar["a" /* Navbar */], translate_service["a" /* TranslateService */], events["b" /* CoreEventsProvider */]], null, null), (_l()(), core["_56" /* ɵted */](-1, 3, ["\n        "])), (_l()(), core["_32" /* ɵeld */](8, 0, null, 3, 3, "ion-title", [], null, null, null, toolbar_title_ngfactory["b" /* View_ToolbarTitle_0 */], toolbar_title_ngfactory["a" /* RenderType_ToolbarTitle */])), core["_31" /* ɵdid */](9, 49152, null, 0, toolbar_title["a" /* ToolbarTitle */], [config["a" /* Config */], core["t" /* ElementRef */], core["W" /* Renderer */], [2, toolbar["a" /* Toolbar */]], [2, navbar["a" /* Navbar */]]], null, null), (_l()(), core["_56" /* ɵted */](10, 0, ["", ""])), core["_48" /* ɵpid */](131072, translate_pipe["a" /* TranslatePipe */], [translate_service["a" /* TranslateService */], core["j" /* ChangeDetectorRef */]]), (_l()(), core["_56" /* ɵted */](-1, 3, ["\n        "])), (_l()(), core["_32" /* ɵeld */](13, 0, null, 2, 11, "ion-buttons", [["end", ""]], null, null, null, null, null)), core["_31" /* ɵdid */](14, 16384, null, 1, toolbar_item["a" /* ToolbarItem */], [config["a" /* Config */], core["t" /* ElementRef */], core["W" /* Renderer */], [2, toolbar["a" /* Toolbar */]], [2, navbar["a" /* Navbar */]]], null, null), core["_53" /* ɵqud */](603979776, 2, { _buttons: 1 }), (_l()(), core["_56" /* ɵted */](-1, null, ["\n            "])), (_l()(), core["_32" /* ɵeld */](17, 0, null, null, 6, "button", [["icon-only", ""], ["ion-button", ""]], [[1, "aria-label", 0]], [[null, "click"]], function (_v, en, $event) { var ad = true; var _co = _v.component; if (("click" === en)) {
+        var pd_0 = (_co.closeModal() !== false);
+        ad = (pd_0 && ad);
+    } return ad; }, button_ngfactory["b" /* View_Button_0 */], button_ngfactory["a" /* RenderType_Button */])), core["_31" /* ɵdid */](18, 1097728, [[2, 4]], 0, button_button["a" /* Button */], [[8, ""], config["a" /* Config */], core["t" /* ElementRef */], core["W" /* Renderer */]], null, null), core["_48" /* ɵpid */](131072, translate_pipe["a" /* TranslatePipe */], [translate_service["a" /* TranslateService */], core["j" /* ChangeDetectorRef */]]), (_l()(), core["_56" /* ɵted */](-1, 0, ["\n                "])), (_l()(), core["_32" /* ɵeld */](21, 0, null, 0, 1, "ion-icon", [["name", "close"], ["role", "img"]], [[2, "hide", null]], null, null, null, null)), core["_31" /* ɵdid */](22, 147456, null, 0, icon["a" /* Icon */], [config["a" /* Config */], core["t" /* ElementRef */], core["W" /* Renderer */]], { name: [0, "name"] }, null), (_l()(), core["_56" /* ɵted */](-1, 0, ["\n            "])), (_l()(), core["_56" /* ɵted */](-1, null, ["\n        "])), (_l()(), core["_56" /* ɵted */](-1, 3, ["\n    "])), (_l()(), core["_56" /* ɵted */](-1, null, ["\n"])), (_l()(), core["_56" /* ɵted */](-1, null, ["\n"])), (_l()(), core["_32" /* ɵeld */](28, 0, null, null, 47, "ion-content", [["class", "addon-mod_lesson-password-modal"], ["padding", ""]], [[2, "statusbar-padding", null], [2, "has-refresher", null]], null, null, content_ngfactory["b" /* View_Content_0 */], content_ngfactory["a" /* RenderType_Content */])), core["_31" /* ɵdid */](29, 4374528, null, 0, content["a" /* Content */], [config["a" /* Config */], platform["a" /* Platform */], dom_controller["a" /* DomController */], core["t" /* ElementRef */], core["W" /* Renderer */], app["a" /* App */], keyboard["a" /* Keyboard */], core["N" /* NgZone */], [2, view_controller["a" /* ViewController */]], [2, nav_controller["a" /* NavController */]]], null, null), (_l()(), core["_56" /* ɵted */](-1, 1, ["\n    "])), (_l()(), core["_32" /* ɵeld */](31, 0, [[1, 0], ["passwordForm", 1]], 1, 43, "form", [["ion-list", ""], ["novalidate", ""]], [[2, "ng-untouched", null], [2, "ng-touched", null], [2, "ng-pristine", null], [2, "ng-dirty", null], [2, "ng-valid", null], [2, "ng-invalid", null], [2, "ng-pending", null]], [[null, "ngSubmit"], [null, "submit"], [null, "reset"]], function (_v, en, $event) { var ad = true; var _co = _v.component; if (("submit" === en)) {
+        var pd_0 = (core["_45" /* ɵnov */](_v, 33).onSubmit($event) !== false);
+        ad = (pd_0 && ad);
+    } if (("reset" === en)) {
+        var pd_1 = (core["_45" /* ɵnov */](_v, 33).onReset() !== false);
+        ad = (pd_1 && ad);
+    } if (("ngSubmit" === en)) {
+        var pd_2 = (_co.submitPassword($event, core["_45" /* ɵnov */](_v, 54)) !== false);
+        ad = (pd_2 && ad);
+    } return ad; }, null, null)), core["_31" /* ɵdid */](32, 16384, null, 0, esm5_forms["w" /* ɵbf */], [], null, null), core["_31" /* ɵdid */](33, 4210688, null, 0, esm5_forms["p" /* NgForm */], [[8, null], [8, null]], null, { ngSubmit: "ngSubmit" }), core["_51" /* ɵprd */](2048, null, esm5_forms["b" /* ControlContainer */], null, [esm5_forms["p" /* NgForm */]]), core["_31" /* ɵdid */](35, 16384, null, 0, esm5_forms["o" /* NgControlStatusGroup */], [esm5_forms["b" /* ControlContainer */]], null, null), (_l()(), core["_56" /* ɵted */](-1, null, ["\n        "])), (_l()(), core["_32" /* ɵeld */](37, 0, null, null, 20, "ion-item", [["class", "item item-block"]], null, null, null, item_ngfactory["b" /* View_Item_0 */], item_ngfactory["a" /* RenderType_Item */])), core["_31" /* ɵdid */](38, 1097728, null, 3, item["a" /* Item */], [util_form["a" /* Form */], config["a" /* Config */], core["t" /* ElementRef */], core["W" /* Renderer */], [2, item_reorder["a" /* ItemReorder */]]], null, null), core["_53" /* ɵqud */](335544320, 3, { contentLabel: 0 }), core["_53" /* ɵqud */](603979776, 4, { _buttons: 1 }), core["_53" /* ɵqud */](603979776, 5, { _icons: 1 }), core["_31" /* ɵdid */](42, 16384, null, 0, item_content["a" /* ItemContent */], [], null, null), (_l()(), core["_56" /* ɵted */](-1, 2, ["\n            "])), (_l()(), core["_32" /* ɵeld */](44, 0, null, 3, 12, "core-show-password", [["item-content", ""]], null, null, null, show_password_ngfactory["b" /* View_CoreShowPasswordComponent_0 */], show_password_ngfactory["a" /* RenderType_CoreShowPasswordComponent */])), core["_31" /* ɵdid */](45, 4308992, null, 0, show_password["a" /* CoreShowPasswordComponent */], [core["t" /* ElementRef */], utils["b" /* CoreUtilsProvider */], dom["b" /* CoreDomUtilsProvider */]], { name: [0, "name"] }, null), (_l()(), core["_56" /* ɵted */](-1, 0, ["\n                "])), (_l()(), core["_32" /* ɵeld */](47, 0, null, 0, 3, "ion-label", [], null, null, null, null, null)), core["_31" /* ɵdid */](48, 16384, [[3, 4]], 0, label["a" /* Label */], [config["a" /* Config */], core["t" /* ElementRef */], core["W" /* Renderer */], [8, null], [8, null], [8, null], [8, null]], null, null), (_l()(), core["_56" /* ɵted */](49, null, ["", ""])), core["_48" /* ɵpid */](131072, translate_pipe["a" /* TranslatePipe */], [translate_service["a" /* TranslateService */], core["j" /* ChangeDetectorRef */]]), (_l()(), core["_56" /* ɵted */](-1, 0, ["\n                "])), (_l()(), core["_32" /* ɵeld */](52, 0, null, 0, 3, "ion-input", [["name", "password"], ["type", "password"]], null, null, null, input_ngfactory["b" /* View_TextInput_0 */], input_ngfactory["a" /* RenderType_TextInput */])), core["_31" /* ɵdid */](53, 81920, null, 0, auto_focus["a" /* CoreAutoFocusDirective */], [core["t" /* ElementRef */], dom["b" /* CoreDomUtilsProvider */], utils["b" /* CoreUtilsProvider */], [2, nav_controller["a" /* NavController */]]], null, null), core["_31" /* ɵdid */](54, 5423104, [["passwordinput", 4]], 0, input["a" /* TextInput */], [config["a" /* Config */], platform["a" /* Platform */], util_form["a" /* Form */], app["a" /* App */], core["t" /* ElementRef */], core["W" /* Renderer */], [2, content["a" /* Content */]], [2, item["a" /* Item */]], [2, esm5_forms["m" /* NgControl */]], dom_controller["a" /* DomController */]], { type: [0, "type"], clearOnEdit: [1, "clearOnEdit"], placeholder: [2, "placeholder"] }, null), core["_48" /* ɵpid */](131072, translate_pipe["a" /* TranslatePipe */], [translate_service["a" /* TranslateService */], core["j" /* ChangeDetectorRef */]]), (_l()(), core["_56" /* ɵted */](-1, 0, ["\n            "])), (_l()(), core["_56" /* ɵted */](-1, 2, ["\n        "])), (_l()(), core["_56" /* ɵted */](-1, null, ["\n        "])), (_l()(), core["_32" /* ɵeld */](59, 0, null, null, 14, "ion-item", [["class", "item item-block"]], null, null, null, item_ngfactory["b" /* View_Item_0 */], item_ngfactory["a" /* RenderType_Item */])), core["_31" /* ɵdid */](60, 1097728, null, 3, item["a" /* Item */], [util_form["a" /* Form */], config["a" /* Config */], core["t" /* ElementRef */], core["W" /* Renderer */], [2, item_reorder["a" /* ItemReorder */]]], null, null), core["_53" /* ɵqud */](335544320, 6, { contentLabel: 0 }), core["_53" /* ɵqud */](603979776, 7, { _buttons: 1 }), core["_53" /* ɵqud */](603979776, 8, { _icons: 1 }), core["_31" /* ɵdid */](64, 16384, null, 0, item_content["a" /* ItemContent */], [], null, null), (_l()(), core["_56" /* ɵted */](-1, 2, ["\n            "])), (_l()(), core["_32" /* ɵeld */](66, 0, null, 2, 6, "button", [["block", ""], ["icon-end", ""], ["ion-button", ""], ["type", "submit"]], null, null, null, button_ngfactory["b" /* View_Button_0 */], button_ngfactory["a" /* RenderType_Button */])), core["_31" /* ɵdid */](67, 1097728, [[7, 4]], 0, button_button["a" /* Button */], [[8, ""], config["a" /* Config */], core["t" /* ElementRef */], core["W" /* Renderer */]], { block: [0, "block"] }, null), (_l()(), core["_56" /* ɵted */](68, 0, ["\n                ", "\n                "])), core["_48" /* ɵpid */](131072, translate_pipe["a" /* TranslatePipe */], [translate_service["a" /* TranslateService */], core["j" /* ChangeDetectorRef */]]), (_l()(), core["_32" /* ɵeld */](70, 0, null, 0, 1, "ion-icon", [["md", "ios-arrow-forward"], ["name", "arrow-forward"], ["role", "img"]], [[2, "hide", null]], null, null, null, null)), core["_31" /* ɵdid */](71, 147456, null, 0, icon["a" /* Icon */], [config["a" /* Config */], core["t" /* ElementRef */], core["W" /* Renderer */]], { name: [0, "name"], md: [1, "md"] }, null), (_l()(), core["_56" /* ɵted */](-1, 0, ["\n            "])), (_l()(), core["_56" /* ɵted */](-1, 2, ["\n        "])), (_l()(), core["_56" /* ɵted */](-1, null, ["\n    "])), (_l()(), core["_56" /* ɵted */](-1, 1, ["\n"])), (_l()(), core["_56" /* ɵted */](-1, null, ["\n"]))], function (_ck, _v) { _ck(_v, 6, 0); var currVal_5 = "close"; _ck(_v, 22, 0, currVal_5); var currVal_15 = "password"; _ck(_v, 45, 0, currVal_15); _ck(_v, 53, 0); var currVal_17 = "password"; var currVal_18 = false; var currVal_19 = core["_35" /* ɵinlineInterpolate */](1, "", core["_57" /* ɵunv */](_v, 54, 2, core["_45" /* ɵnov */](_v, 55).transform("core.login.password")), ""); _ck(_v, 54, 0, currVal_17, currVal_18, currVal_19); var currVal_20 = ""; _ck(_v, 67, 0, currVal_20); var currVal_23 = "arrow-forward"; var currVal_24 = "ios-arrow-forward"; _ck(_v, 71, 0, currVal_23, currVal_24); }, function (_ck, _v) { var currVal_0 = core["_45" /* ɵnov */](_v, 5)._hidden; var currVal_1 = core["_45" /* ɵnov */](_v, 5)._sbPadding; _ck(_v, 4, 0, currVal_0, currVal_1); var currVal_2 = core["_57" /* ɵunv */](_v, 10, 0, core["_45" /* ɵnov */](_v, 11).transform("core.login.password")); _ck(_v, 10, 0, currVal_2); var currVal_3 = core["_57" /* ɵunv */](_v, 17, 0, core["_45" /* ɵnov */](_v, 19).transform("core.close")); _ck(_v, 17, 0, currVal_3); var currVal_4 = core["_45" /* ɵnov */](_v, 22)._hidden; _ck(_v, 21, 0, currVal_4); var currVal_6 = core["_45" /* ɵnov */](_v, 29).statusbarPadding; var currVal_7 = core["_45" /* ɵnov */](_v, 29)._hasRefresher; _ck(_v, 28, 0, currVal_6, currVal_7); var currVal_8 = core["_45" /* ɵnov */](_v, 35).ngClassUntouched; var currVal_9 = core["_45" /* ɵnov */](_v, 35).ngClassTouched; var currVal_10 = core["_45" /* ɵnov */](_v, 35).ngClassPristine; var currVal_11 = core["_45" /* ɵnov */](_v, 35).ngClassDirty; var currVal_12 = core["_45" /* ɵnov */](_v, 35).ngClassValid; var currVal_13 = core["_45" /* ɵnov */](_v, 35).ngClassInvalid; var currVal_14 = core["_45" /* ɵnov */](_v, 35).ngClassPending; _ck(_v, 31, 0, currVal_8, currVal_9, currVal_10, currVal_11, currVal_12, currVal_13, currVal_14); var currVal_16 = core["_57" /* ɵunv */](_v, 49, 0, core["_45" /* ɵnov */](_v, 50).transform("addon.mod_lesson.enterpassword")); _ck(_v, 49, 0, currVal_16); var currVal_21 = core["_57" /* ɵunv */](_v, 68, 0, core["_45" /* ɵnov */](_v, 69).transform("addon.mod_lesson.continue")); _ck(_v, 68, 0, currVal_21); var currVal_22 = core["_45" /* ɵnov */](_v, 71)._hidden; _ck(_v, 70, 0, currVal_22); }); }
+function View_AddonModLessonPasswordModalPage_Host_0(_l) { return core["_58" /* ɵvid */](0, [(_l()(), core["_32" /* ɵeld */](0, 0, null, null, 1, "page-addon-mod-lesson-password-modal", [], null, null, null, View_AddonModLessonPasswordModalPage_0, RenderType_AddonModLessonPasswordModalPage)), core["_31" /* ɵdid */](1, 49152, null, 0, password_modal_AddonModLessonPasswordModalPage, [view_controller["a" /* ViewController */], events["b" /* CoreEventsProvider */], sites["b" /* CoreSitesProvider */], dom["b" /* CoreDomUtilsProvider */]], null, null)], null, null); }
+var AddonModLessonPasswordModalPageNgFactory = core["_28" /* ɵccf */]("page-addon-mod-lesson-password-modal", password_modal_AddonModLessonPasswordModalPage, View_AddonModLessonPasswordModalPage_Host_0, {}, {}, []);
+
+//# sourceMappingURL=password-modal.ngfactory.js.map
+// EXTERNAL MODULE: ./node_modules/@angular/common/esm5/common.js
+var common = __webpack_require__(7);
+
+// EXTERNAL MODULE: ./node_modules/@ngx-translate/core/src/translate.loader.js
+var translate_loader = __webpack_require__(375);
+
+// EXTERNAL MODULE: ./node_modules/@ngx-translate/core/src/translate.compiler.js
+var translate_compiler = __webpack_require__(376);
+
+// EXTERNAL MODULE: ./node_modules/@ngx-translate/core/src/translate.parser.js
+var translate_parser = __webpack_require__(378);
+
+// EXTERNAL MODULE: ./node_modules/@ngx-translate/core/src/missing-translation-handler.js
+var missing_translation_handler = __webpack_require__(377);
+
+// EXTERNAL MODULE: ./node_modules/@ngx-translate/core/src/translate.store.js
+var translate_store = __webpack_require__(485);
+
+// EXTERNAL MODULE: ./node_modules/ionic-angular/module.js
+var ionic_angular_module = __webpack_require__(738);
+
+// EXTERNAL MODULE: ./src/pipes/pipes.module.ts + 2 modules
+var pipes_module = __webpack_require__(111);
+
+// EXTERNAL MODULE: ./node_modules/ionic-angular/util/module-loader.js
+var module_loader = __webpack_require__(277);
+
+// CONCATENATED MODULE: ./src/addon/mod/lesson/pages/password-modal/password-modal.module.ngfactory.js
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "AddonModLessonPasswordModalPageModuleNgFactory", function() { return AddonModLessonPasswordModalPageModuleNgFactory; });
+/**
+ * @fileoverview This file was generated by the Angular template compiler. Do not edit.
+ *
+ * @suppress {suspiciousCode,uselessCode,missingProperties,missingOverride,checkTypes}
+ * tslint:disable
+ */ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+var AddonModLessonPasswordModalPageModuleNgFactory = core["_29" /* ɵcmf */](password_modal_module_AddonModLessonPasswordModalPageModule, [], function (_l) { return core["_41" /* ɵmod */]([core["_42" /* ɵmpd */](512, core["o" /* ComponentFactoryResolver */], core["_22" /* ɵCodegenComponentFactoryResolver */], [[8, [action_sheet_component_ngfactory["a" /* ActionSheetCmpNgFactory */], alert_component_ngfactory["a" /* AlertCmpNgFactory */], app_root_ngfactory["a" /* IonicAppNgFactory */], loading_component_ngfactory["a" /* LoadingCmpNgFactory */], modal_component_ngfactory["a" /* ModalCmpNgFactory */], picker_component_ngfactory["a" /* PickerCmpNgFactory */], popover_component_ngfactory["a" /* PopoverCmpNgFactory */], select_popover_component_ngfactory["a" /* SelectPopoverNgFactory */], toast_component_ngfactory["a" /* ToastCmpNgFactory */], context_menu_popover_ngfactory["a" /* CoreContextMenuPopoverComponentNgFactory */], course_picker_menu_popover_ngfactory["a" /* CoreCoursePickerMenuPopoverComponentNgFactory */], recaptchamodal_ngfactory["a" /* CoreRecaptchaModalComponentNgFactory */], bs_tooltip_ngfactory["a" /* CoreBSTooltipComponentNgFactory */], AddonModLessonPasswordModalPageNgFactory]], [3, core["o" /* ComponentFactoryResolver */]], core["L" /* NgModuleRef */]]), core["_42" /* ɵmpd */](4608, common["m" /* NgLocalization */], common["l" /* NgLocaleLocalization */], [core["G" /* LOCALE_ID */], [2, common["w" /* ɵa */]]]), core["_42" /* ɵmpd */](4608, esm5_forms["x" /* ɵi */], esm5_forms["x" /* ɵi */], []), core["_42" /* ɵmpd */](4608, esm5_forms["d" /* FormBuilder */], esm5_forms["d" /* FormBuilder */], []), core["_42" /* ɵmpd */](4608, translate_loader["b" /* TranslateLoader */], translate_loader["a" /* TranslateFakeLoader */], []), core["_42" /* ɵmpd */](4608, translate_compiler["a" /* TranslateCompiler */], translate_compiler["b" /* TranslateFakeCompiler */], []), core["_42" /* ɵmpd */](4608, translate_parser["b" /* TranslateParser */], translate_parser["a" /* TranslateDefaultParser */], []), core["_42" /* ɵmpd */](4608, missing_translation_handler["b" /* MissingTranslationHandler */], missing_translation_handler["a" /* FakeMissingTranslationHandler */], []), core["_42" /* ɵmpd */](4608, translate_service["a" /* TranslateService */], translate_service["a" /* TranslateService */], [translate_store["a" /* TranslateStore */], translate_loader["b" /* TranslateLoader */], translate_compiler["a" /* TranslateCompiler */], translate_parser["b" /* TranslateParser */], missing_translation_handler["b" /* MissingTranslationHandler */], translate_service["b" /* USE_DEFAULT_LANG */], translate_service["c" /* USE_STORE */]]), core["_42" /* ɵmpd */](512, common["b" /* CommonModule */], common["b" /* CommonModule */], []), core["_42" /* ɵmpd */](512, esm5_forms["v" /* ɵba */], esm5_forms["v" /* ɵba */], []), core["_42" /* ɵmpd */](512, esm5_forms["i" /* FormsModule */], esm5_forms["i" /* FormsModule */], []), core["_42" /* ɵmpd */](512, esm5_forms["s" /* ReactiveFormsModule */], esm5_forms["s" /* ReactiveFormsModule */], []), core["_42" /* ɵmpd */](512, ionic_angular_module["a" /* IonicModule */], ionic_angular_module["a" /* IonicModule */], []), core["_42" /* ɵmpd */](512, _ngx_translate_core["b" /* TranslateModule */], _ngx_translate_core["b" /* TranslateModule */], []), core["_42" /* ɵmpd */](512, directives_module["a" /* CoreDirectivesModule */], directives_module["a" /* CoreDirectivesModule */], []), core["_42" /* ɵmpd */](512, pipes_module["a" /* CorePipesModule */], pipes_module["a" /* CorePipesModule */], []), core["_42" /* ɵmpd */](512, components_module["a" /* CoreComponentsModule */], components_module["a" /* CoreComponentsModule */], []), core["_42" /* ɵmpd */](512, ionic_angular_module["b" /* IonicPageModule */], ionic_angular_module["b" /* IonicPageModule */], []), core["_42" /* ɵmpd */](512, password_modal_module_AddonModLessonPasswordModalPageModule, password_modal_module_AddonModLessonPasswordModalPageModule, []), core["_42" /* ɵmpd */](256, translate_service["c" /* USE_STORE */], undefined, []), core["_42" /* ɵmpd */](256, translate_service["b" /* USE_DEFAULT_LANG */], undefined, []), core["_42" /* ɵmpd */](256, module_loader["a" /* LAZY_LOADED_TOKEN */], password_modal_AddonModLessonPasswordModalPage, [])]); });
+
+//# sourceMappingURL=password-modal.module.ngfactory.js.map
 
 /***/ })
 

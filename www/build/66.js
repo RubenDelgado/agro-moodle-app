@@ -1,84 +1,39 @@
 webpackJsonp([66],{
 
-/***/ 2083:
+/***/ 2113:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "AddonNotificationsSettingsPageModule", function() { return AddonNotificationsSettingsPageModule; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(3);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ngx_translate_core__ = __webpack_require__(1);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__settings__ = __webpack_require__(2244);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__components_components_module__ = __webpack_require__(13);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__directives_directives_module__ = __webpack_require__(14);
-// (C) Copyright 2015 Moodle Pty Ltd.
-//
-// Licensed under the Apache License, Version 2.0 (the "License");
-// you may not use this file except in compliance with the License.
-// You may obtain a copy of the License at
-//
-//     http://www.apache.org/licenses/LICENSE-2.0
-//
-// Unless required by applicable law or agreed to in writing, software
-// distributed under the License is distributed on an "AS IS" BASIS,
-// WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-// See the License for the specific language governing permissions and
-// limitations under the License.
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
 
+// EXTERNAL MODULE: ./node_modules/@angular/core/esm5/core.js
+var core = __webpack_require__(0);
 
+// EXTERNAL MODULE: ./node_modules/ionic-angular/index.js + 3 modules
+var ionic_angular = __webpack_require__(5);
 
+// EXTERNAL MODULE: ./src/providers/app.ts
+var app = __webpack_require__(12);
 
+// EXTERNAL MODULE: ./src/providers/file.ts
+var file = __webpack_require__(52);
 
+// EXTERNAL MODULE: ./src/providers/utils/dom.ts
+var dom = __webpack_require__(4);
 
-var AddonNotificationsSettingsPageModule = /** @class */ (function () {
-    function AddonNotificationsSettingsPageModule() {
-    }
-    AddonNotificationsSettingsPageModule = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["J" /* NgModule */])({
-            declarations: [
-                __WEBPACK_IMPORTED_MODULE_3__settings__["a" /* AddonNotificationsSettingsPage */],
-            ],
-            imports: [
-                __WEBPACK_IMPORTED_MODULE_4__components_components_module__["a" /* CoreComponentsModule */],
-                __WEBPACK_IMPORTED_MODULE_5__directives_directives_module__["a" /* CoreDirectivesModule */],
-                __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["l" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_3__settings__["a" /* AddonNotificationsSettingsPage */]),
-                __WEBPACK_IMPORTED_MODULE_2__ngx_translate_core__["b" /* TranslateModule */].forChild()
-            ],
-        })
-    ], AddonNotificationsSettingsPageModule);
-    return AddonNotificationsSettingsPageModule;
-}());
+// EXTERNAL MODULE: ./src/providers/utils/mimetype.ts
+var utils_mimetype = __webpack_require__(65);
 
-//# sourceMappingURL=settings.module.js.map
+// EXTERNAL MODULE: ./src/providers/utils/text.ts
+var utils_text = __webpack_require__(10);
 
-/***/ }),
+// EXTERNAL MODULE: ./src/providers/utils/time.ts
+var time = __webpack_require__(24);
 
-/***/ 2244:
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+// EXTERNAL MODULE: ./node_modules/@ionic-native/media/index.js
+var media = __webpack_require__(774);
 
-"use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AddonNotificationsSettingsPage; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(3);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__providers_notifications__ = __webpack_require__(182);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__core_user_providers_user__ = __webpack_require__(30);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__providers_utils_dom__ = __webpack_require__(7);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__core_settings_providers_helper__ = __webpack_require__(1003);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__addon_messageoutput_providers_delegate__ = __webpack_require__(301);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__providers_local_notifications__ = __webpack_require__(96);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__providers_config__ = __webpack_require__(95);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__providers_app__ = __webpack_require__(8);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__core_constants__ = __webpack_require__(18);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__providers_events__ = __webpack_require__(11);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__providers_sites__ = __webpack_require__(2);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__components_split_view_split_view__ = __webpack_require__(81);
+// CONCATENATED MODULE: ./src/core/emulator/pages/capture-media/capture-media.ts
 // (C) Copyright 2015 Moodle Pty Ltd.
 //
 // Licensed under the Apache License, Version 2.0 (the "License");
@@ -101,8 +56,40 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-var __param = (this && this.__param) || function (paramIndex, decorator) {
-    return function (target, key) { decorator(target, key, paramIndex); }
+var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, generator) {
+    return new (P || (P = Promise))(function (resolve, reject) {
+        function fulfilled(value) { try { step(generator.next(value)); } catch (e) { reject(e); } }
+        function rejected(value) { try { step(generator["throw"](value)); } catch (e) { reject(e); } }
+        function step(result) { result.done ? resolve(result.value) : new P(function (resolve) { resolve(result.value); }).then(fulfilled, rejected); }
+        step((generator = generator.apply(thisArg, _arguments || [])).next());
+    });
+};
+var __generator = (this && this.__generator) || function (thisArg, body) {
+    var _ = { label: 0, sent: function() { if (t[0] & 1) throw t[1]; return t[1]; }, trys: [], ops: [] }, f, y, t, g;
+    return g = { next: verb(0), "throw": verb(1), "return": verb(2) }, typeof Symbol === "function" && (g[Symbol.iterator] = function() { return this; }), g;
+    function verb(n) { return function (v) { return step([n, v]); }; }
+    function step(op) {
+        if (f) throw new TypeError("Generator is already executing.");
+        while (_) try {
+            if (f = 1, y && (t = y[op[0] & 2 ? "return" : op[0] ? "throw" : "next"]) && !(t = t.call(y, op[1])).done) return t;
+            if (y = 0, t) op = [0, t.value];
+            switch (op[0]) {
+                case 0: case 1: t = op; break;
+                case 4: _.label++; return { value: op[1], done: false };
+                case 5: _.label++; y = op[1]; op = [0]; continue;
+                case 7: op = _.ops.pop(); _.trys.pop(); continue;
+                default:
+                    if (!(t = _.trys, t = t.length > 0 && t[t.length - 1]) && (op[0] === 6 || op[0] === 2)) { _ = 0; continue; }
+                    if (op[0] === 3 && (!t || (op[1] > t[0] && op[1] < t[3]))) { _.label = op[1]; break; }
+                    if (op[0] === 6 && _.label < t[1]) { _.label = t[1]; t = op; break; }
+                    if (t && _.label < t[2]) { _.label = t[2]; _.ops.push(op); break; }
+                    if (t[2]) _.ops.pop();
+                    _.trys.pop(); continue;
+            }
+            op = body.call(thisArg, _);
+        } catch (e) { op = [6, e]; y = 0; } finally { f = t = 0; }
+        if (op[0] & 5) throw op[1]; return { value: op[0] ? op[1] : void 0, done: true };
+    }
 };
 
 
@@ -113,244 +100,852 @@ var __param = (this && this.__param) || function (paramIndex, decorator) {
 
 
 
-
-
-
-
-
 /**
- * Page that displays notifications settings.
+ * Page to capture media in browser or desktop, or to capture audio in mobile devices.
  */
-var AddonNotificationsSettingsPage = /** @class */ (function () {
-    function AddonNotificationsSettingsPage(notificationsProvider, domUtils, settingsHelper, userProvider, navCtrl, messageOutputDelegate, appProvider, configProvider, eventsProvider, localNotificationsProvider, sitesProvider, svComponent) {
-        var _this = this;
-        this.notificationsProvider = notificationsProvider;
+var capture_media_CoreEmulatorCaptureMediaPage = /** @class */ (function () {
+    function CoreEmulatorCaptureMediaPage(viewCtrl, params, domUtils, timeUtils, fileProvider, textUtils, cdr, plaform, media) {
+        this.viewCtrl = viewCtrl;
         this.domUtils = domUtils;
-        this.settingsHelper = settingsHelper;
-        this.userProvider = userProvider;
-        this.navCtrl = navCtrl;
-        this.messageOutputDelegate = messageOutputDelegate;
-        this.configProvider = configProvider;
-        this.eventsProvider = eventsProvider;
-        this.localNotificationsProvider = localNotificationsProvider;
-        this.sitesProvider = sitesProvider;
-        this.svComponent = svComponent;
-        this.processorHandlers = [];
-        this.notifPrefsEnabled = notificationsProvider.isNotificationPreferencesEnabled();
-        this.canChangeSound = localNotificationsProvider.canDisableSound();
-        if (this.canChangeSound) {
-            configProvider.get(__WEBPACK_IMPORTED_MODULE_10__core_constants__["a" /* CoreConstants */].SETTINGS_NOTIFICATION_SOUND, true).then(function (enabled) {
-                _this.notificationSound = !!enabled;
-            });
-        }
+        this.timeUtils = timeUtils;
+        this.fileProvider = fileProvider;
+        this.textUtils = textUtils;
+        this.cdr = cdr;
+        this.plaform = plaform;
+        this.media = media;
+        this.window = window;
+        this.type = params.get('type');
+        this.maxTime = params.get('maxTime');
+        this.facingMode = params.get('facingMode') || 'environment';
+        this.mimetype = params.get('mimetype');
+        this.extension = params.get('extension');
+        this.quality = params.get('quality') || 0.92;
+        this.returnDataUrl = !!params.get('returnDataUrl');
     }
     /**
-     * View loaded.
+     * Component being initialized.
      */
-    AddonNotificationsSettingsPage.prototype.ionViewDidLoad = function () {
-        if (this.notifPrefsEnabled) {
-            this.fetchPreferences();
+    CoreEmulatorCaptureMediaPage.prototype.ngOnInit = function () {
+        this.initVariables();
+        if (this.isCordovaAudioCapture) {
+            this.initCordovaMediaPlugin();
         }
         else {
-            this.preferencesLoaded = true;
+            this.initHtmlCapture();
         }
     };
     /**
-     * Fetches preference data.
+     * Init recording with Cordova media plugin.
      *
-     * @return Resolved when done.
+     * @return Promise resolved when ready.
      */
-    AddonNotificationsSettingsPage.prototype.fetchPreferences = function () {
-        var _this = this;
-        return this.notificationsProvider.getNotificationPreferences().then(function (preferences) {
-            if (!_this.currentProcessor) {
-                // Initialize current processor. Load "Mobile" (airnotifier) if available.
-                _this.currentProcessor = _this.settingsHelper.getProcessor(preferences.processors, 'airnotifier');
-            }
-            if (!_this.currentProcessor) {
-                // Shouldn't happen.
-                return Promise.reject('No processor found');
-            }
-            preferences.enableall = !preferences.disableall;
-            _this.preferences = preferences;
-            _this.loadProcessor(_this.currentProcessor);
-            // Get display data of message output handlers (thery are displayed in the context menu),
-            _this.processorHandlers = [];
-            if (preferences.processors) {
-                preferences.processors.forEach(function (processor) {
-                    processor.supported = _this.messageOutputDelegate.hasHandler(processor.name, true);
-                    if (processor.hassettings && processor.supported) {
-                        _this.processorHandlers.push(_this.messageOutputDelegate.getDisplayData(processor));
-                    }
-                });
-            }
-        }).catch(function (message) {
-            _this.domUtils.showErrorModal(message);
-        }).finally(function () {
-            _this.preferencesLoaded = true;
-        });
-    };
-    /**
-     * Load a processor.
-     *
-     * @param processor Processor object.
-     */
-    AddonNotificationsSettingsPage.prototype.loadProcessor = function (processor) {
-        if (!processor) {
-            return;
-        }
-        this.currentProcessor = processor;
-        this.components = this.settingsHelper.getProcessorComponents(processor.name, this.preferences.components);
-    };
-    /**
-     * Update preferences after a certain time. The purpose is to store the updated data, it won't be reflected in the view.
-     */
-    AddonNotificationsSettingsPage.prototype.updatePreferencesAfterDelay = function () {
-        var _this = this;
-        // Cancel pending updates.
-        clearTimeout(this.updateTimeout);
-        this.updateTimeout = setTimeout(function () {
-            _this.updateTimeout = null;
-            _this.updatePreferences();
-        }, 5000);
-    };
-    /**
-     * Update preferences. The purpose is to store the updated data, it won't be reflected in the view.
-     */
-    AddonNotificationsSettingsPage.prototype.updatePreferences = function () {
-        var _this = this;
-        this.notificationsProvider.invalidateNotificationPreferences().finally(function () {
-            _this.notificationsProvider.getNotificationPreferences();
-        });
-    };
-    /**
-     * The selected processor was changed.
-     *
-     * @param name Name of the selected processor.
-     */
-    AddonNotificationsSettingsPage.prototype.changeProcessor = function (name) {
-        var _this = this;
-        this.preferences.processors.forEach(function (processor) {
-            if (processor.name == name) {
-                _this.loadProcessor(processor);
-            }
-        });
-    };
-    /**
-     * Refresh the list of preferences.
-     *
-     * @param refresher Refresher.
-     */
-    AddonNotificationsSettingsPage.prototype.refreshPreferences = function (refresher) {
-        var _this = this;
-        this.notificationsProvider.invalidateNotificationPreferences().finally(function () {
-            _this.fetchPreferences().finally(function () {
-                refresher && refresher.complete();
+    CoreEmulatorCaptureMediaPage.prototype.initCordovaMediaPlugin = function () {
+        return __awaiter(this, void 0, void 0, function () {
+            var absolutePath, _a, error_1;
+            return __generator(this, function (_b) {
+                switch (_b.label) {
+                    case 0:
+                        this.filePath = this.getFilePath();
+                        absolutePath = this.textUtils.concatenatePaths(this.fileProvider.getBasePathInstant(), this.filePath);
+                        if (this.plaform.is('ios')) {
+                            // In iOS we need to remove the file:// part.
+                            absolutePath = absolutePath.replace(/^file:\/\//, '');
+                        }
+                        _b.label = 1;
+                    case 1:
+                        _b.trys.push([1, 3, , 4]);
+                        // First create the file.
+                        _a = this;
+                        return [4 /*yield*/, this.fileProvider.createFile(this.filePath)];
+                    case 2:
+                        // First create the file.
+                        _a.fileEntry = _b.sent();
+                        // Now create the media instance.
+                        this.mediaFile = this.media.create(absolutePath);
+                        this.readyToCapture = true;
+                        this.previewMedia = this.previewAudio.nativeElement;
+                        return [3 /*break*/, 4];
+                    case 3:
+                        error_1 = _b.sent();
+                        this.dismissWithError(-1, error_1.message || error_1);
+                        return [3 /*break*/, 4];
+                    case 4: return [2 /*return*/];
+                }
             });
         });
     };
     /**
-     * Open extra preferences.
+     * Init HTML recorder, for desktop apps.
      *
-     * @param handlerData
+     * @return Promise resolved when done.
      */
-    AddonNotificationsSettingsPage.prototype.openExtraPreferences = function (handlerData) {
-        // Decide which navCtrl to use. If this page is inside a split view, use the split view's master nav.
-        var navCtrl = this.svComponent ? this.svComponent.getMasterNav() : this.navCtrl;
-        navCtrl.push(handlerData.page, handlerData.pageParams);
-    };
-    /**
-     * Change the value of a certain preference.
-     *
-     * @param notification Notification object.
-     * @param state State name, ['loggedin', 'loggedoff'].
-     */
-    AddonNotificationsSettingsPage.prototype.changePreference = function (notification, state) {
+    CoreEmulatorCaptureMediaPage.prototype.initHtmlCapture = function () {
         var _this = this;
-        var processorState = notification.currentProcessor[state];
-        var preferenceName = notification.preferencekey + '_' + processorState.name;
-        var value;
-        notification.processors.forEach(function (processor) {
-            if (processor[state].checked) {
-                if (!value) {
-                    value = processor.name;
+        var constraints = {
+            video: this.isAudio ? false : { facingMode: this.facingMode },
+            audio: !this.isImage
+        };
+        return navigator.mediaDevices.getUserMedia(constraints).then(function (stream) {
+            var chunks = [];
+            _this.localMediaStream = stream;
+            if (!_this.isImage) {
+                if (_this.isVideo) {
+                    _this.previewMedia = _this.previewVideo.nativeElement;
                 }
                 else {
-                    value += ',' + processor.name;
+                    _this.previewMedia = _this.previewAudio.nativeElement;
+                    _this.initAudioDrawer(_this.localMediaStream);
+                    _this.audioDrawer.start();
                 }
+                _this.mediaRecorder = new _this.window.MediaRecorder(_this.localMediaStream, { mimeType: _this.mimetype });
+                // When video or audio is recorded, add it to the list of chunks.
+                _this.mediaRecorder.ondataavailable = function (e) {
+                    if (e.data.size > 0) {
+                        chunks.push(e.data);
+                    }
+                };
+                // When recording stops, create a Blob element with the recording and set it to the video or audio.
+                _this.mediaRecorder.onstop = function () {
+                    _this.mediaBlob = new Blob(chunks);
+                    chunks = [];
+                    _this.previewMedia.src = window.URL.createObjectURL(_this.mediaBlob);
+                };
             }
-        });
-        if (!value) {
-            value = 'none';
-        }
-        processorState.updating = true;
-        this.userProvider.updateUserPreference(preferenceName, value).then(function () {
-            // Update the preferences since they were modified.
-            _this.updatePreferencesAfterDelay();
-        }).catch(function (message) {
-            // Show error and revert change.
-            _this.domUtils.showErrorModal(message);
-            notification.currentProcessor[state].checked = !notification.currentProcessor[state].checked;
-        }).finally(function () {
-            processorState.updating = false;
+            if (_this.isImage || _this.isVideo) {
+                var hasLoaded_1 = false, waitTimeout_1;
+                // Listen for stream ready to display the stream.
+                _this.streamVideo.nativeElement.onloadedmetadata = function () {
+                    if (hasLoaded_1) {
+                        // Already loaded or timeout triggered, stop.
+                        return;
+                    }
+                    hasLoaded_1 = true;
+                    clearTimeout(waitTimeout_1);
+                    _this.readyToCapture = true;
+                    _this.streamVideo.nativeElement.onloadedmetadata = null;
+                    // Force change detection. Angular doesn't detect these async operations.
+                    _this.cdr.detectChanges();
+                };
+                // Set the stream as the source of the video.
+                if ('srcObject' in _this.streamVideo.nativeElement) {
+                    _this.streamVideo.nativeElement.srcObject = _this.localMediaStream;
+                }
+                else {
+                    // Fallback for old browsers.
+                    // See https://developer.mozilla.org/en-US/docs/Web/API/HTMLMediaElement/srcObject#Examples
+                    _this.streamVideo.nativeElement.src = window.URL.createObjectURL(_this.localMediaStream);
+                }
+                // If stream isn't ready in a while, show error.
+                waitTimeout_1 = setTimeout(function () {
+                    if (!hasLoaded_1) {
+                        // Show error.
+                        hasLoaded_1 = true;
+                        _this.dismissWithError(-1, 'Cannot connect to webcam.');
+                    }
+                }, 10000);
+            }
+            else {
+                // It's ready to capture.
+                _this.readyToCapture = true;
+            }
+        }).catch(function (error) {
+            _this.dismissWithError(-1, error.message || error);
         });
     };
     /**
-     * Enable all notifications changed.
-     */
-    AddonNotificationsSettingsPage.prototype.enableAll = function (enable) {
-        var _this = this;
-        var modal = this.domUtils.showModalLoading('core.sending', true);
-        this.userProvider.updateUserPreferences([], !enable).then(function () {
-            // Update the preferences since they were modified.
-            _this.updatePreferencesAfterDelay();
-        }).catch(function (message) {
-            // Show error and revert change.
-            _this.domUtils.showErrorModal(message);
-            _this.preferences.enableall = !_this.preferences.enableall;
-        }).finally(function () {
-            modal.dismiss();
-        });
-    };
-    /**
-     * Change the notification sound setting.
+     * Initialize the audio drawer. This code has been extracted from MDN's example on MediaStream Recording:
+     * https://github.com/mdn/web-dictaphone
      *
-     * @param enabled True to enable the notification sound, false to disable it.
+     * @param stream Stream returned by getUserMedia.
      */
-    AddonNotificationsSettingsPage.prototype.changeNotificationSound = function (enabled) {
+    CoreEmulatorCaptureMediaPage.prototype.initAudioDrawer = function (stream) {
+        var skip = true, running = false;
+        var audioCtx = new (this.window.AudioContext || this.window.webkitAudioContext)(), canvasCtx = this.streamAudio.nativeElement.getContext('2d'), source = audioCtx.createMediaStreamSource(stream), analyser = audioCtx.createAnalyser(), bufferLength = analyser.frequencyBinCount, dataArray = new Uint8Array(bufferLength), width = this.streamAudio.nativeElement.width, height = this.streamAudio.nativeElement.height, drawAudio = function () {
+            if (!running) {
+                return;
+            }
+            // Update the draw every animation frame.
+            requestAnimationFrame(drawAudio);
+            // Skip half of the frames to improve performance, shouldn't affect the smoothness.
+            skip = !skip;
+            if (skip) {
+                return;
+            }
+            var sliceWidth = width / bufferLength;
+            var x = 0;
+            analyser.getByteTimeDomainData(dataArray);
+            canvasCtx.fillStyle = 'rgb(200, 200, 200)';
+            canvasCtx.fillRect(0, 0, width, height);
+            canvasCtx.lineWidth = 1;
+            canvasCtx.strokeStyle = 'rgb(0, 0, 0)';
+            canvasCtx.beginPath();
+            for (var i = 0; i < bufferLength; i++) {
+                var v = dataArray[i] / 128.0, y = v * height / 2;
+                if (i === 0) {
+                    canvasCtx.moveTo(x, y);
+                }
+                else {
+                    canvasCtx.lineTo(x, y);
+                }
+                x += sliceWidth;
+            }
+            canvasCtx.lineTo(width, height / 2);
+            canvasCtx.stroke();
+        };
+        analyser.fftSize = 2048;
+        source.connect(analyser);
+        this.audioDrawer = {
+            start: function () {
+                if (running) {
+                    return;
+                }
+                running = true;
+                drawAudio();
+            },
+            stop: function () {
+                running = false;
+            }
+        };
+    };
+    /**
+     * Initialize some variables based on the params.
+     */
+    CoreEmulatorCaptureMediaPage.prototype.initVariables = function () {
+        if (this.type == 'captureimage') {
+            this.isCaptureImage = true;
+            this.type = 'image';
+        }
+        // Initialize some data based on the type of media to capture.
+        if (this.type == 'video') {
+            this.isVideo = true;
+            this.title = 'core.capturevideo';
+        }
+        else if (this.type == 'audio') {
+            this.isAudio = true;
+            this.title = 'core.captureaudio';
+        }
+        else if (this.type == 'image') {
+            this.isImage = true;
+            this.title = 'core.captureimage';
+        }
+        this.isCordovaAudioCapture = app["a" /* CoreApp */].instance.isMobile() && this.isAudio;
+        if (this.isCordovaAudioCapture) {
+            this.extension = this.plaform.is('ios') ? 'wav' : 'aac';
+            this.returnDataUrl = false;
+        }
+    };
+    /**
+     * Main action clicked: record or stop recording.
+     */
+    CoreEmulatorCaptureMediaPage.prototype.actionClicked = function () {
         var _this = this;
-        this.configProvider.set(__WEBPACK_IMPORTED_MODULE_10__core_constants__["a" /* CoreConstants */].SETTINGS_NOTIFICATION_SOUND, enabled ? 1 : 0).finally(function () {
-            var siteId = _this.sitesProvider.getCurrentSiteId();
-            _this.eventsProvider.trigger(__WEBPACK_IMPORTED_MODULE_11__providers_events__["b" /* CoreEventsProvider */].NOTIFICATION_SOUND_CHANGED, { enabled: enabled }, siteId);
-            _this.localNotificationsProvider.rescheduleAll();
+        if (this.isCapturing) {
+            // It's capturing, stop.
+            this.stopCapturing();
+            this.cdr.detectChanges();
+        }
+        else {
+            if (!this.isImage) {
+                // Start the capture.
+                this.isCapturing = true;
+                this.resetChrono = false;
+                if (this.isCordovaAudioCapture) {
+                    this.mediaFile.startRecord();
+                    this.previewMedia.src = '';
+                }
+                else {
+                    this.mediaRecorder && this.mediaRecorder.start();
+                }
+                this.cdr.detectChanges();
+            }
+            else {
+                // Get the image from the video and set it to the canvas, using video width/height.
+                var width = this.streamVideo.nativeElement.videoWidth, height = this.streamVideo.nativeElement.videoHeight, loadingModal_1 = this.domUtils.showModalLoading();
+                this.imgCanvas.nativeElement.width = width;
+                this.imgCanvas.nativeElement.height = height;
+                this.imgCanvas.nativeElement.getContext('2d').drawImage(this.streamVideo.nativeElement, 0, 0, width, height);
+                // Convert the image to blob and show it in an image element.
+                this.imgCanvas.nativeElement.toBlob(function (blob) {
+                    loadingModal_1.dismiss();
+                    _this.mediaBlob = blob;
+                    _this.previewImage.nativeElement.setAttribute('src', window.URL.createObjectURL(_this.mediaBlob));
+                    _this.hasCaptured = true;
+                }, this.mimetype, this.quality);
+            }
+        }
+    };
+    /**
+     * User cancelled.
+     */
+    CoreEmulatorCaptureMediaPage.prototype.cancel = function () {
+        // Send a "cancelled" error like the Cordova plugin does.
+        this.dismissWithError(3, 'Canceled.', 'Camera cancelled');
+        if (this.isCordovaAudioCapture) {
+            // Delete the tmp file.
+            this.fileProvider.removeFile(this.filePath);
+        }
+    };
+    /**
+     * Discard the captured media.
+     */
+    CoreEmulatorCaptureMediaPage.prototype.discard = function () {
+        this.previewMedia && this.previewMedia.pause();
+        this.streamVideo && this.streamVideo.nativeElement.play();
+        this.audioDrawer && this.audioDrawer.start();
+        this.hasCaptured = false;
+        this.isCapturing = false;
+        this.resetChrono = true;
+        delete this.mediaBlob;
+        this.cdr.detectChanges();
+    };
+    /**
+     * Close the modal, returning some data (success).
+     *
+     * @param data Data to return.
+     */
+    CoreEmulatorCaptureMediaPage.prototype.dismissWithData = function (data) {
+        this.viewCtrl.dismiss(data, 'success');
+    };
+    /**
+     * Close the modal, returning an error.
+     *
+     * @param code Error code. Will not be used if it's a Camera capture.
+     * @param message Error message.
+     * @param cameraMessage A specific message to use if it's a Camera capture. If not set, message will be used.
+     */
+    CoreEmulatorCaptureMediaPage.prototype.dismissWithError = function (code, message, cameraMessage) {
+        var isCamera = this.isImage && !this.isCaptureImage, error = isCamera ? (cameraMessage || message) : { code: code, message: message };
+        this.viewCtrl.dismiss(error, 'error');
+    };
+    /**
+     * Done capturing, write the file.
+     */
+    CoreEmulatorCaptureMediaPage.prototype.done = function () {
+        return __awaiter(this, void 0, void 0, function () {
+            var fileEntry, loadingModal, metadata, mimetype, mediaFile, err_1;
+            return __generator(this, function (_a) {
+                switch (_a.label) {
+                    case 0:
+                        if (this.returnDataUrl) {
+                            // Return the image as a base64 string.
+                            this.dismissWithData(this.imgCanvas.nativeElement.toDataURL(this.mimetype, this.quality));
+                            return [2 /*return*/];
+                        }
+                        if (!this.mediaBlob && !this.isCordovaAudioCapture) {
+                            // Shouldn't happen.
+                            this.domUtils.showErrorModal('Please capture the media first.');
+                            return [2 /*return*/];
+                        }
+                        fileEntry = this.fileEntry;
+                        loadingModal = this.domUtils.showModalLoading();
+                        _a.label = 1;
+                    case 1:
+                        _a.trys.push([1, 7, 8, 9]);
+                        if (!!this.isCordovaAudioCapture) return [3 /*break*/, 3];
+                        // Capturing in browser. Write the blob in a file.
+                        if (!this.mediaBlob) {
+                            // Shouldn't happen.
+                            throw new Error('Please capture the media first.');
+                        }
+                        return [4 /*yield*/, this.fileProvider.writeFile(this.getFilePath(), this.mediaBlob)];
+                    case 2:
+                        fileEntry = _a.sent();
+                        _a.label = 3;
+                    case 3:
+                        if (!(this.isImage && !this.isCaptureImage)) return [3 /*break*/, 4];
+                        this.dismissWithData(fileEntry.toURL());
+                        return [3 /*break*/, 6];
+                    case 4: return [4 /*yield*/, this.fileProvider.getMetadata(fileEntry)];
+                    case 5:
+                        metadata = _a.sent();
+                        mimetype = null;
+                        if (this.extension) {
+                            mimetype = utils_mimetype["a" /* CoreMimetypeUtils */].instance.getMimeType(this.extension);
+                        }
+                        mediaFile = {
+                            name: fileEntry.name,
+                            fullPath: fileEntry.nativeURL || fileEntry.fullPath,
+                            type: mimetype,
+                            lastModifiedDate: metadata.modificationTime,
+                            size: metadata.size,
+                            getFormatData: function (successFn, errorFn) {
+                                // Nothing to do.
+                            }
+                        };
+                        this.dismissWithData([mediaFile]);
+                        _a.label = 6;
+                    case 6: return [3 /*break*/, 9];
+                    case 7:
+                        err_1 = _a.sent();
+                        this.domUtils.showErrorModal(err_1);
+                        return [3 /*break*/, 9];
+                    case 8:
+                        loadingModal.dismiss();
+                        return [7 /*endfinally*/];
+                    case 9: return [2 /*return*/];
+                }
+            });
         });
+    };
+    /**
+     * Get path to the file where the media will be stored.
+     *
+     * @return Path.
+     */
+    CoreEmulatorCaptureMediaPage.prototype.getFilePath = function () {
+        var fileName = this.type + '_' + this.timeUtils.readableTimestamp() + '.' + this.extension;
+        return this.textUtils.concatenatePaths(file["b" /* CoreFileProvider */].TMPFOLDER, 'media/' + fileName);
+    };
+    /**
+     * Stop capturing. Only for video and audio.
+     */
+    CoreEmulatorCaptureMediaPage.prototype.stopCapturing = function () {
+        this.isCapturing = false;
+        this.hasCaptured = true;
+        if (this.isCordovaAudioCapture) {
+            this.mediaFile.stopRecord();
+            this.previewMedia.src = this.fileProvider.convertFileSrc(this.fileEntry.toURL());
+        }
+        else {
+            this.streamVideo && this.streamVideo.nativeElement.pause();
+            this.audioDrawer && this.audioDrawer.stop();
+            this.mediaRecorder && this.mediaRecorder.stop();
+        }
     };
     /**
      * Page destroyed.
      */
-    AddonNotificationsSettingsPage.prototype.ngOnDestroy = function () {
-        // If there is a pending action to update preferences, execute it right now.
-        if (this.updateTimeout) {
-            clearTimeout(this.updateTimeout);
-            this.updatePreferences();
+    CoreEmulatorCaptureMediaPage.prototype.ngOnDestroy = function () {
+        this.mediaFile && this.mediaFile.release();
+        if (this.localMediaStream) {
+            var tracks = this.localMediaStream.getTracks();
+            tracks.forEach(function (track) {
+                track.stop();
+            });
         }
+        this.streamVideo && this.streamVideo.nativeElement.pause();
+        this.previewMedia && this.previewMedia.pause();
+        this.audioDrawer && this.audioDrawer.stop();
+        delete this.mediaBlob;
     };
-    AddonNotificationsSettingsPage = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-addon-notifications-settings',template:/*ion-inline-start:"D:\workspace\moodle\agro-moodle-app\src\addon\notifications\pages\settings\settings.html"*/'<ion-header>\n\n    <ion-navbar core-back-button>\n\n        <ion-title>{{ \'addon.notifications.notifications\' | translate }}</ion-title>\n\n        <ion-buttons end>\n\n        </ion-buttons>\n\n    </ion-navbar>\n\n</ion-header>\n\n<core-navbar-buttons>\n\n    <core-context-menu *ngIf="processorHandlers.length > 0">\n\n        <core-context-menu-item *ngFor="let handler of processorHandlers" [priority]="handler.priority" [content]="handler.label | translate" (action)="openExtraPreferences(handler)" [iconAction]="handler.icon"></core-context-menu-item>\n\n    </core-context-menu>\n\n</core-navbar-buttons>\n\n<ion-content>\n\n    <ion-refresher [enabled]="preferencesLoaded && notifPrefsEnabled" (ionRefresh)="refreshPreferences($event)">\n\n        <ion-refresher-content pullingText="{{ \'core.pulltorefresh\' | translate }}"></ion-refresher-content>\n\n    </ion-refresher>\n\n    <core-loading [hideUntil]="preferencesLoaded">\n\n        <!-- If notification preferences aren\'t enabled, show only the notification sound setting. -->\n\n        <ion-item *ngIf="canChangeSound && !notifPrefsEnabled">\n\n            <ion-label>{{ \'addon.notifications.playsound\' | translate }}</ion-label>\n\n            <ion-toggle [(ngModel)]="notificationSound" (ionChange)="changeNotificationSound(notificationSound)"></ion-toggle>\n\n        </ion-item>\n\n\n\n        <ng-container *ngIf="notifPrefsEnabled">\n\n            <ion-card>\n\n                <ion-item text-wrap *ngIf="preferences">\n\n                    <ion-label>{{ \'addon.notifications.notifications\' | translate }}</ion-label>\n\n                    <ion-toggle [(ngModel)]="preferences.enableall" (ionChange)="enableAll(preferences.enableall)"></ion-toggle>\n\n                </ion-item>\n\n                <ion-item text-wrap *ngIf="canChangeSound">\n\n                    <ion-label>{{ \'addon.notifications.playsound\' | translate }}</ion-label>\n\n                    <ion-toggle [(ngModel)]="notificationSound" (ionChange)="changeNotificationSound(notificationSound)"></ion-toggle>\n\n                </ion-item>\n\n            </ion-card>\n\n\n\n            <!-- Show processor selector. -->\n\n            <div padding class="safe-padding-horizontal">\n\n                <ion-select *ngIf="preferences && preferences.processors && preferences.processors.length > 0" [ngModel]="currentProcessor.name" (ngModelChange)="changeProcessor($event)" interface="action-sheet" class="core-button-select">\n\n                    <ion-option *ngFor="let processor of preferences.processors" [value]="processor.name">{{ processor.displayname }}</ion-option>\n\n                </ion-select>\n\n            </div>\n\n\n\n            <ion-card list *ngFor="let component of components">\n\n                <ion-item-divider text-wrap>\n\n                    <ion-row no-padding>\n\n                        <ion-col no-padding>{{ component.displayname }}</ion-col>\n\n                        <ion-col col-2 text-center no-padding class="hidden-phone">{{ \'core.settings.loggedin\' | translate }}</ion-col>\n\n                        <ion-col col-2 text-center no-padding class="hidden-phone">{{ \'core.settings.loggedoff\' | translate }}</ion-col>\n\n                    </ion-row>\n\n                </ion-item-divider>\n\n                <ng-container *ngFor="let notification of component.notifications">\n\n                    <!-- Tablet view -->\n\n                    <ion-row text-wrap class="hidden-phone" align-items-center>\n\n                        <ion-col margin-horizontal>{{ notification.displayname }}</ion-col>\n\n                        <ion-col col-2 text-center *ngFor="let state of [\'loggedin\', \'loggedoff\']">\n\n                            <!-- If notifications enabled, show toggle. -->\n\n                            <ion-spinner [hidden]="!preferences.enableall || !(notification.currentProcessor[state] && notification.currentProcessor[state].updating)"></ion-spinner>\n\n                            <ion-toggle *ngIf="preferences.enableall && !notification.currentProcessor.locked" [(ngModel)]="notification.currentProcessor[state].checked" (ionChange)="changePreference(notification, state)" [disabled]="notification.currentProcessor[state].updating">\n\n                            </ion-toggle>\n\n                            <div padding class="text-gray" *ngIf="preferences.enableall && notification.currentProcessor.locked">{{\'core.settings.locked\' | translate }}</div>\n\n                            <!-- If notifications are disabled, show "Disabled" instead of toggle. -->\n\n                            <span *ngIf="!preferences.enableall">{{ \'core.settings.disabled\' | translate }}</span>\n\n                        </ion-col>\n\n                    </ion-row>\n\n                    <!-- Phone view -->\n\n                    <ion-list-header text-wrap no-margin class="hidden-tablet">{{ notification.displayname }}</ion-list-header>\n\n                    <!-- If notifications enabled, show toggles. If notifications are disabled, show "Disabled" instead of toggle. -->\n\n                    <ion-item *ngFor="let state of [\'loggedin\', \'loggedoff\']" text-wrap class="hidden-tablet">\n\n                        <ion-label>{{ \'core.settings.\' + state | translate }}</ion-label>\n\n                        <ion-spinner item-end *ngIf="preferences.enableall && (notification.currentProcessor[state] && notification.currentProcessor[state].updating)"></ion-spinner>\n\n                        <ion-toggle item-end *ngIf="preferences.enableall && !notification.currentProcessor.locked" [(ngModel)]="notification.currentProcessor[state].checked" (ionChange)="changePreference(notification, state)" [disabled]="notification.currentProcessor[state].updating">\n\n                        </ion-toggle>\n\n                        <ion-note item-end *ngIf="preferences.enableall && notification.currentProcessor.locked">{{\'core.settings.locked\' | translate }}</ion-note>\n\n                        <ion-note item-end *ngIf="!preferences.enableall">{{ \'core.settings.disabled\' | translate }}</ion-note>\n\n                    </ion-item>\n\n                </ng-container>\n\n            </ion-card>\n\n        </ng-container>\n\n    </core-loading>\n\n</ion-content>\n\n'/*ion-inline-end:"D:\workspace\moodle\agro-moodle-app\src\addon\notifications\pages\settings\settings.html"*/,
+    __decorate([
+        Object(core["_10" /* ViewChild */])('streamVideo'),
+        __metadata("design:type", core["t" /* ElementRef */])
+    ], CoreEmulatorCaptureMediaPage.prototype, "streamVideo", void 0);
+    __decorate([
+        Object(core["_10" /* ViewChild */])('previewVideo'),
+        __metadata("design:type", core["t" /* ElementRef */])
+    ], CoreEmulatorCaptureMediaPage.prototype, "previewVideo", void 0);
+    __decorate([
+        Object(core["_10" /* ViewChild */])('imgCanvas'),
+        __metadata("design:type", core["t" /* ElementRef */])
+    ], CoreEmulatorCaptureMediaPage.prototype, "imgCanvas", void 0);
+    __decorate([
+        Object(core["_10" /* ViewChild */])('previewImage'),
+        __metadata("design:type", core["t" /* ElementRef */])
+    ], CoreEmulatorCaptureMediaPage.prototype, "previewImage", void 0);
+    __decorate([
+        Object(core["_10" /* ViewChild */])('streamAudio'),
+        __metadata("design:type", core["t" /* ElementRef */])
+    ], CoreEmulatorCaptureMediaPage.prototype, "streamAudio", void 0);
+    __decorate([
+        Object(core["_10" /* ViewChild */])('previewAudio'),
+        __metadata("design:type", core["t" /* ElementRef */])
+    ], CoreEmulatorCaptureMediaPage.prototype, "previewAudio", void 0);
+    CoreEmulatorCaptureMediaPage = __decorate([
+        Object(core["m" /* Component */])({
+            selector: 'page-core-emulator-capture-media',
+            templateUrl: 'capture-media.html',
         }),
-        __param(11, Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["O" /* Optional */])()),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_2__providers_notifications__["a" /* AddonNotificationsProvider */], __WEBPACK_IMPORTED_MODULE_4__providers_utils_dom__["b" /* CoreDomUtilsProvider */],
-            __WEBPACK_IMPORTED_MODULE_5__core_settings_providers_helper__["a" /* CoreSettingsHelper */], __WEBPACK_IMPORTED_MODULE_3__core_user_providers_user__["b" /* CoreUserProvider */],
-            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["s" /* NavController */], __WEBPACK_IMPORTED_MODULE_6__addon_messageoutput_providers_delegate__["a" /* AddonMessageOutputDelegate */],
-            __WEBPACK_IMPORTED_MODULE_9__providers_app__["b" /* CoreAppProvider */], __WEBPACK_IMPORTED_MODULE_8__providers_config__["b" /* CoreConfigProvider */], __WEBPACK_IMPORTED_MODULE_11__providers_events__["b" /* CoreEventsProvider */],
-            __WEBPACK_IMPORTED_MODULE_7__providers_local_notifications__["a" /* CoreLocalNotificationsProvider */], __WEBPACK_IMPORTED_MODULE_12__providers_sites__["b" /* CoreSitesProvider */],
-            __WEBPACK_IMPORTED_MODULE_13__components_split_view_split_view__["a" /* CoreSplitViewComponent */]])
-    ], AddonNotificationsSettingsPage);
-    return AddonNotificationsSettingsPage;
+        __metadata("design:paramtypes", [ionic_angular["G" /* ViewController */],
+            ionic_angular["t" /* NavParams */],
+            dom["b" /* CoreDomUtilsProvider */],
+            time["b" /* CoreTimeUtilsProvider */],
+            file["b" /* CoreFileProvider */],
+            utils_text["b" /* CoreTextUtilsProvider */],
+            core["j" /* ChangeDetectorRef */],
+            ionic_angular["v" /* Platform */],
+            media["a" /* Media */]])
+    ], CoreEmulatorCaptureMediaPage);
+    return CoreEmulatorCaptureMediaPage;
 }());
 
-//# sourceMappingURL=settings.js.map
+//# sourceMappingURL=capture-media.js.map
+// EXTERNAL MODULE: ./node_modules/@ngx-translate/core/index.js + 1 modules
+var _ngx_translate_core = __webpack_require__(3);
+
+// EXTERNAL MODULE: ./src/components/components.module.ts
+var components_module = __webpack_require__(26);
+
+// EXTERNAL MODULE: ./src/directives/directives.module.ts + 2 modules
+var directives_module = __webpack_require__(32);
+
+// CONCATENATED MODULE: ./src/core/emulator/pages/capture-media/capture-media.module.ts
+// (C) Copyright 2015 Moodle Pty Ltd.
+//
+// Licensed under the Apache License, Version 2.0 (the "License");
+// you may not use this file except in compliance with the License.
+// You may obtain a copy of the License at
+//
+//     http://www.apache.org/licenses/LICENSE-2.0
+//
+// Unless required by applicable law or agreed to in writing, software
+// distributed under the License is distributed on an "AS IS" BASIS,
+// WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+// See the License for the specific language governing permissions and
+// limitations under the License.
+var capture_media_module___decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+
+
+
+
+
+
+var capture_media_module_CoreEmulatorCaptureMediaPageModule = /** @class */ (function () {
+    function CoreEmulatorCaptureMediaPageModule() {
+    }
+    CoreEmulatorCaptureMediaPageModule = capture_media_module___decorate([
+        Object(core["J" /* NgModule */])({
+            declarations: [
+                capture_media_CoreEmulatorCaptureMediaPage
+            ],
+            imports: [
+                components_module["a" /* CoreComponentsModule */],
+                directives_module["a" /* CoreDirectivesModule */],
+                ionic_angular["l" /* IonicPageModule */].forChild(capture_media_CoreEmulatorCaptureMediaPage),
+                _ngx_translate_core["b" /* TranslateModule */].forChild()
+            ]
+        })
+    ], CoreEmulatorCaptureMediaPageModule);
+    return CoreEmulatorCaptureMediaPageModule;
+}());
+
+//# sourceMappingURL=capture-media.module.js.map
+// EXTERNAL MODULE: ./node_modules/ionic-angular/components/action-sheet/action-sheet-component.ngfactory.js
+var action_sheet_component_ngfactory = __webpack_require__(1551);
+
+// EXTERNAL MODULE: ./node_modules/ionic-angular/components/alert/alert-component.ngfactory.js
+var alert_component_ngfactory = __webpack_require__(1552);
+
+// EXTERNAL MODULE: ./node_modules/ionic-angular/components/app/app-root.ngfactory.js
+var app_root_ngfactory = __webpack_require__(1553);
+
+// EXTERNAL MODULE: ./node_modules/ionic-angular/components/loading/loading-component.ngfactory.js
+var loading_component_ngfactory = __webpack_require__(1554);
+
+// EXTERNAL MODULE: ./node_modules/ionic-angular/components/modal/modal-component.ngfactory.js
+var modal_component_ngfactory = __webpack_require__(1555);
+
+// EXTERNAL MODULE: ./node_modules/ionic-angular/components/picker/picker-component.ngfactory.js + 1 modules
+var picker_component_ngfactory = __webpack_require__(1556);
+
+// EXTERNAL MODULE: ./node_modules/ionic-angular/components/popover/popover-component.ngfactory.js
+var popover_component_ngfactory = __webpack_require__(1557);
+
+// EXTERNAL MODULE: ./node_modules/ionic-angular/components/select/select-popover-component.ngfactory.js
+var select_popover_component_ngfactory = __webpack_require__(1558);
+
+// EXTERNAL MODULE: ./node_modules/ionic-angular/components/toast/toast-component.ngfactory.js
+var toast_component_ngfactory = __webpack_require__(1559);
+
+// EXTERNAL MODULE: ./src/components/context-menu/context-menu-popover.ngfactory.js
+var context_menu_popover_ngfactory = __webpack_require__(1560);
+
+// EXTERNAL MODULE: ./src/components/course-picker-menu/course-picker-menu-popover.ngfactory.js
+var course_picker_menu_popover_ngfactory = __webpack_require__(1561);
+
+// EXTERNAL MODULE: ./src/components/recaptcha/recaptchamodal.ngfactory.js
+var recaptchamodal_ngfactory = __webpack_require__(1562);
+
+// EXTERNAL MODULE: ./src/components/bs-tooltip/bs-tooltip.ngfactory.js
+var bs_tooltip_ngfactory = __webpack_require__(1563);
+
+// EXTERNAL MODULE: ./node_modules/ionic-angular/components/button/button.ngfactory.js
+var button_ngfactory = __webpack_require__(47);
+
+// EXTERNAL MODULE: ./node_modules/ionic-angular/components/button/button.js
+var button_button = __webpack_require__(44);
+
+// EXTERNAL MODULE: ./node_modules/ionic-angular/config/config.js
+var config = __webpack_require__(8);
+
+// EXTERNAL MODULE: ./node_modules/@ngx-translate/core/src/translate.pipe.js
+var translate_pipe = __webpack_require__(25);
+
+// EXTERNAL MODULE: ./node_modules/@ngx-translate/core/src/translate.service.js
+var translate_service = __webpack_require__(18);
+
+// EXTERNAL MODULE: ./node_modules/ionic-angular/components/icon/icon.js
+var icon = __webpack_require__(48);
+
+// EXTERNAL MODULE: ./node_modules/@angular/common/esm5/common.js
+var common = __webpack_require__(7);
+
+// EXTERNAL MODULE: ./src/pipes/seconds-to-hms.ts
+var seconds_to_hms = __webpack_require__(1600);
+
+// EXTERNAL MODULE: ./src/providers/logger.ts
+var logger = __webpack_require__(6);
+
+// EXTERNAL MODULE: ./src/components/chrono/chrono.ts
+var chrono = __webpack_require__(1611);
+
+// CONCATENATED MODULE: ./src/components/chrono/chrono.ngfactory.js
+/**
+ * @fileoverview This file was generated by the Angular template compiler. Do not edit.
+ *
+ * @suppress {suspiciousCode,uselessCode,missingProperties,missingOverride,checkTypes}
+ * tslint:disable
+ */ 
+
+
+
+
+
+var styles_CoreChronoComponent = [];
+var RenderType_CoreChronoComponent = core["_30" /* ɵcrt */]({ encapsulation: 2, styles: styles_CoreChronoComponent, data: {} });
+
+function View_CoreChronoComponent_0(_l) { return core["_58" /* ɵvid */](0, [core["_48" /* ɵpid */](0, seconds_to_hms["a" /* CoreSecondsToHMSPipe */], [logger["b" /* CoreLoggerProvider */], utils_text["b" /* CoreTextUtilsProvider */]]), (_l()(), core["_32" /* ɵeld */](1, 0, null, null, 2, "span", [["role", "timer"]], null, null, null, null, null)), (_l()(), core["_56" /* ɵted */](2, null, ["", ""])), core["_50" /* ɵppd */](3, 1)], null, function (_ck, _v) { var _co = _v.component; var currVal_0 = core["_57" /* ɵunv */](_v, 2, 0, _ck(_v, 3, 0, core["_45" /* ɵnov */](_v, 0), (_co.time / 1000))); _ck(_v, 2, 0, currVal_0); }); }
+function View_CoreChronoComponent_Host_0(_l) { return core["_58" /* ɵvid */](0, [(_l()(), core["_32" /* ɵeld */](0, 0, null, null, 1, "core-chrono", [], null, null, null, View_CoreChronoComponent_0, RenderType_CoreChronoComponent)), core["_31" /* ɵdid */](1, 770048, null, 0, chrono["a" /* CoreChronoComponent */], [core["j" /* ChangeDetectorRef */]], null, null)], function (_ck, _v) { _ck(_v, 1, 0); }, null); }
+var CoreChronoComponentNgFactory = core["_28" /* ɵccf */]("core-chrono", chrono["a" /* CoreChronoComponent */], View_CoreChronoComponent_Host_0, { running: "running", startTime: "startTime", endTime: "endTime", reset: "reset" }, { onEnd: "onEnd" }, []);
+
+//# sourceMappingURL=chrono.ngfactory.js.map
+// EXTERNAL MODULE: ./node_modules/ionic-angular/components/grid/row.js
+var row = __webpack_require__(120);
+
+// EXTERNAL MODULE: ./node_modules/ionic-angular/components/grid/col.js
+var col = __webpack_require__(119);
+
+// EXTERNAL MODULE: ./node_modules/ionic-angular/components/toolbar/toolbar-header.js
+var toolbar_header = __webpack_require__(379);
+
+// EXTERNAL MODULE: ./node_modules/ionic-angular/navigation/view-controller.js
+var view_controller = __webpack_require__(41);
+
+// EXTERNAL MODULE: ./node_modules/ionic-angular/components/toolbar/navbar.ngfactory.js
+var navbar_ngfactory = __webpack_require__(739);
+
+// EXTERNAL MODULE: ./node_modules/ionic-angular/components/toolbar/navbar.js
+var navbar = __webpack_require__(216);
+
+// EXTERNAL MODULE: ./node_modules/ionic-angular/components/app/app.js + 3 modules
+var app_app = __webpack_require__(35);
+
+// EXTERNAL MODULE: ./node_modules/ionic-angular/navigation/nav-controller.js
+var nav_controller = __webpack_require__(20);
+
+// EXTERNAL MODULE: ./src/directives/back-button.ts
+var back_button = __webpack_require__(486);
+
+// EXTERNAL MODULE: ./src/providers/events.ts
+var events = __webpack_require__(9);
+
+// EXTERNAL MODULE: ./node_modules/ionic-angular/components/toolbar/toolbar-item.js
+var toolbar_item = __webpack_require__(380);
+
+// EXTERNAL MODULE: ./node_modules/ionic-angular/components/toolbar/toolbar.js
+var toolbar = __webpack_require__(252);
+
+// EXTERNAL MODULE: ./node_modules/ionic-angular/components/toolbar/toolbar-title.ngfactory.js
+var toolbar_title_ngfactory = __webpack_require__(740);
+
+// EXTERNAL MODULE: ./node_modules/ionic-angular/components/toolbar/toolbar-title.js
+var toolbar_title = __webpack_require__(324);
+
+// EXTERNAL MODULE: ./node_modules/ionic-angular/components/content/content.ngfactory.js
+var content_ngfactory = __webpack_require__(185);
+
+// EXTERNAL MODULE: ./node_modules/ionic-angular/components/content/content.js
+var content = __webpack_require__(28);
+
+// EXTERNAL MODULE: ./node_modules/ionic-angular/platform/platform.js + 1 modules
+var platform = __webpack_require__(16);
+
+// EXTERNAL MODULE: ./node_modules/ionic-angular/platform/dom-controller.js
+var dom_controller = __webpack_require__(34);
+
+// EXTERNAL MODULE: ./node_modules/ionic-angular/platform/keyboard.js
+var keyboard = __webpack_require__(112);
+
+// EXTERNAL MODULE: ./src/components/loading/loading.ngfactory.js
+var loading_ngfactory = __webpack_require__(57);
+
+// EXTERNAL MODULE: ./src/components/loading/loading.ts
+var loading = __webpack_require__(54);
+
+// EXTERNAL MODULE: ./src/providers/utils/utils.ts
+var utils = __webpack_require__(2);
+
+// EXTERNAL MODULE: ./node_modules/ionic-angular/components/toolbar/toolbar-footer.js
+var toolbar_footer = __webpack_require__(755);
+
+// EXTERNAL MODULE: ./node_modules/ionic-angular/navigation/nav-params.js
+var nav_params = __webpack_require__(73);
+
+// CONCATENATED MODULE: ./src/core/emulator/pages/capture-media/capture-media.ngfactory.js
+/**
+ * @fileoverview This file was generated by the Angular template compiler. Do not edit.
+ *
+ * @suppress {suspiciousCode,uselessCode,missingProperties,missingOverride,checkTypes}
+ * tslint:disable
+ */ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+var styles_CoreEmulatorCaptureMediaPage = [];
+var RenderType_CoreEmulatorCaptureMediaPage = core["_30" /* ɵcrt */]({ encapsulation: 2, styles: styles_CoreEmulatorCaptureMediaPage, data: {} });
+
+function View_CoreEmulatorCaptureMediaPage_1(_l) { return core["_58" /* ɵvid */](0, [(_l()(), core["_32" /* ɵeld */](0, 0, null, null, 3, "button", [["ion-button", ""]], null, [[null, "click"]], function (_v, en, $event) { var ad = true; var _co = _v.component; if (("click" === en)) {
+        var pd_0 = (_co.done() !== false);
+        ad = (pd_0 && ad);
+    } return ad; }, button_ngfactory["b" /* View_Button_0 */], button_ngfactory["a" /* RenderType_Button */])), core["_31" /* ɵdid */](1, 1097728, [[8, 4]], 0, button_button["a" /* Button */], [[8, ""], config["a" /* Config */], core["t" /* ElementRef */], core["W" /* Renderer */]], null, null), (_l()(), core["_56" /* ɵted */](2, 0, ["", ""])), core["_48" /* ɵpid */](131072, translate_pipe["a" /* TranslatePipe */], [translate_service["a" /* TranslateService */], core["j" /* ChangeDetectorRef */]])], null, function (_ck, _v) { var currVal_0 = core["_57" /* ɵunv */](_v, 2, 0, core["_45" /* ɵnov */](_v, 3).transform("core.done")); _ck(_v, 2, 0, currVal_0); }); }
+function View_CoreEmulatorCaptureMediaPage_2(_l) { return core["_58" /* ɵvid */](0, [(_l()(), core["_32" /* ɵeld */](0, 0, [[1, 0], ["streamVideo", 1]], null, 0, "video", [["autoplay", ""], ["class", "core-webcam-stream"]], [[8, "hidden", 0]], null, null, null, null))], null, function (_ck, _v) { var _co = _v.component; var currVal_0 = _co.hasCaptured; _ck(_v, 0, 0, currVal_0); }); }
+function View_CoreEmulatorCaptureMediaPage_3(_l) { return core["_58" /* ɵvid */](0, [(_l()(), core["_32" /* ɵeld */](0, 0, [[2, 0], ["previewVideo", 1]], null, 0, "video", [["class", "core-webcam-video-captured"], ["controls", ""]], [[8, "hidden", 0]], null, null, null, null))], null, function (_ck, _v) { var _co = _v.component; var currVal_0 = !_co.hasCaptured; _ck(_v, 0, 0, currVal_0); }); }
+function View_CoreEmulatorCaptureMediaPage_4(_l) { return core["_58" /* ɵvid */](0, [(_l()(), core["_32" /* ɵeld */](0, 0, [[3, 0], ["imgCanvas", 1]], null, 0, "canvas", [["class", "core-webcam-image-canvas"]], null, null, null, null, null))], null, null); }
+function View_CoreEmulatorCaptureMediaPage_5(_l) { return core["_58" /* ɵvid */](0, [(_l()(), core["_32" /* ɵeld */](0, 0, [[4, 0], ["previewImage", 1]], null, 1, "img", [["class", "core-webcam-image"]], [[8, "hidden", 0], [8, "alt", 0]], null, null, null, null)), core["_48" /* ɵpid */](131072, translate_pipe["a" /* TranslatePipe */], [translate_service["a" /* TranslateService */], core["j" /* ChangeDetectorRef */]])], null, function (_ck, _v) { var _co = _v.component; var currVal_0 = !_co.hasCaptured; var currVal_1 = core["_35" /* ɵinlineInterpolate */](1, "", core["_57" /* ɵunv */](_v, 0, 1, core["_45" /* ɵnov */](_v, 1).transform("core.capturedimage")), ""); _ck(_v, 0, 0, currVal_0, currVal_1); }); }
+function View_CoreEmulatorCaptureMediaPage_8(_l) { return core["_58" /* ɵvid */](0, [(_l()(), core["_32" /* ɵeld */](0, 0, null, null, 1, "ion-icon", [["name", "microphone"], ["role", "img"]], [[2, "hide", null]], null, null, null, null)), core["_31" /* ɵdid */](1, 147456, null, 0, icon["a" /* Icon */], [config["a" /* Config */], core["t" /* ElementRef */], core["W" /* Renderer */]], { name: [0, "name"] }, null)], function (_ck, _v) { var currVal_1 = "microphone"; _ck(_v, 1, 0, currVal_1); }, function (_ck, _v) { var currVal_0 = core["_45" /* ɵnov */](_v, 1)._hidden; _ck(_v, 0, 0, currVal_0); }); }
+function View_CoreEmulatorCaptureMediaPage_9(_l) { return core["_58" /* ɵvid */](0, [(_l()(), core["_32" /* ɵeld */](0, 0, null, null, 1, "ion-icon", [["name", "square"], ["role", "img"]], [[2, "hide", null]], null, null, null, null)), core["_31" /* ɵdid */](1, 147456, null, 0, icon["a" /* Icon */], [config["a" /* Config */], core["t" /* ElementRef */], core["W" /* Renderer */]], { name: [0, "name"] }, null)], function (_ck, _v) { var currVal_1 = "square"; _ck(_v, 1, 0, currVal_1); }, function (_ck, _v) { var currVal_0 = core["_45" /* ɵnov */](_v, 1)._hidden; _ck(_v, 0, 0, currVal_0); }); }
+function View_CoreEmulatorCaptureMediaPage_7(_l) { return core["_58" /* ɵvid */](0, [(_l()(), core["_32" /* ɵeld */](0, 0, null, null, 8, "button", [["clear", ""], ["icon-only", ""], ["ion-button", ""]], [[1, "aria-label", 0]], [[null, "click"]], function (_v, en, $event) { var ad = true; var _co = _v.component; if (("click" === en)) {
+        var pd_0 = (_co.actionClicked() !== false);
+        ad = (pd_0 && ad);
+    } return ad; }, button_ngfactory["b" /* View_Button_0 */], button_ngfactory["a" /* RenderType_Button */])), core["_31" /* ɵdid */](1, 1097728, null, 0, button_button["a" /* Button */], [[8, ""], config["a" /* Config */], core["t" /* ElementRef */], core["W" /* Renderer */]], { clear: [0, "clear"] }, null), (_l()(), core["_56" /* ɵted */](-1, 0, ["\n                    "])), (_l()(), core["_27" /* ɵand */](16777216, null, 0, 1, null, View_CoreEmulatorCaptureMediaPage_8)), core["_31" /* ɵdid */](4, 16384, null, 0, common["k" /* NgIf */], [core["_12" /* ViewContainerRef */], core["_7" /* TemplateRef */]], { ngIf: [0, "ngIf"] }, null), (_l()(), core["_56" /* ɵted */](-1, 0, ["\n                    "])), (_l()(), core["_27" /* ɵand */](16777216, null, 0, 1, null, View_CoreEmulatorCaptureMediaPage_9)), core["_31" /* ɵdid */](7, 16384, null, 0, common["k" /* NgIf */], [core["_12" /* ViewContainerRef */], core["_7" /* TemplateRef */]], { ngIf: [0, "ngIf"] }, null), (_l()(), core["_56" /* ɵted */](-1, 0, ["\n                "]))], function (_ck, _v) { var _co = _v.component; var currVal_1 = ""; _ck(_v, 1, 0, currVal_1); var currVal_2 = !_co.isCapturing; _ck(_v, 4, 0, currVal_2); var currVal_3 = _co.isCapturing; _ck(_v, 7, 0, currVal_3); }, function (_ck, _v) { var _co = _v.component; var currVal_0 = _co.title; _ck(_v, 0, 0, currVal_0); }); }
+function View_CoreEmulatorCaptureMediaPage_6(_l) { return core["_58" /* ɵvid */](0, [(_l()(), core["_32" /* ɵeld */](0, 0, null, null, 11, "div", [["class", "core-audio-record-container"]], null, null, null, null, null)), (_l()(), core["_56" /* ɵted */](-1, null, ["\n                "])), (_l()(), core["_56" /* ɵted */](-1, null, ["\n                "])), (_l()(), core["_32" /* ɵeld */](3, 0, [[5, 0], ["streamAudio", 1]], null, 0, "canvas", [["class", "core-audio-canvas"]], [[8, "hidden", 0]], null, null, null, null)), (_l()(), core["_56" /* ɵted */](-1, null, ["\n\n                "])), (_l()(), core["_56" /* ɵted */](-1, null, ["\n                "])), (_l()(), core["_27" /* ɵand */](16777216, null, null, 1, null, View_CoreEmulatorCaptureMediaPage_7)), core["_31" /* ɵdid */](7, 16384, null, 0, common["k" /* NgIf */], [core["_12" /* ViewContainerRef */], core["_7" /* TemplateRef */]], { ngIf: [0, "ngIf"] }, null), (_l()(), core["_56" /* ɵted */](-1, null, ["\n\n                "])), (_l()(), core["_56" /* ɵted */](-1, null, ["\n                "])), (_l()(), core["_32" /* ɵeld */](10, 0, [[6, 0], ["previewAudio", 1]], null, 0, "audio", [["class", "core-audio-captured"], ["controls", ""]], [[8, "hidden", 0]], null, null, null, null)), (_l()(), core["_56" /* ɵted */](-1, null, ["\n            "]))], function (_ck, _v) { var _co = _v.component; var currVal_1 = (!_co.hasCaptured && _co.isCordovaAudioCapture); _ck(_v, 7, 0, currVal_1); }, function (_ck, _v) { var _co = _v.component; var currVal_0 = (_co.hasCaptured || _co.isCordovaAudioCapture); _ck(_v, 3, 0, currVal_0); var currVal_2 = !_co.hasCaptured; _ck(_v, 10, 0, currVal_2); }); }
+function View_CoreEmulatorCaptureMediaPage_12(_l) { return core["_58" /* ɵvid */](0, [(_l()(), core["_32" /* ɵeld */](0, 0, null, null, 1, "ion-icon", [["name", "microphone"], ["role", "img"]], [[2, "hide", null]], null, null, null, null)), core["_31" /* ɵdid */](1, 147456, null, 0, icon["a" /* Icon */], [config["a" /* Config */], core["t" /* ElementRef */], core["W" /* Renderer */]], { name: [0, "name"] }, null)], function (_ck, _v) { var currVal_1 = "microphone"; _ck(_v, 1, 0, currVal_1); }, function (_ck, _v) { var currVal_0 = core["_45" /* ɵnov */](_v, 1)._hidden; _ck(_v, 0, 0, currVal_0); }); }
+function View_CoreEmulatorCaptureMediaPage_13(_l) { return core["_58" /* ɵvid */](0, [(_l()(), core["_32" /* ɵeld */](0, 0, null, null, 1, "ion-icon", [["name", "videocam"], ["role", "img"]], [[2, "hide", null]], null, null, null, null)), core["_31" /* ɵdid */](1, 147456, null, 0, icon["a" /* Icon */], [config["a" /* Config */], core["t" /* ElementRef */], core["W" /* Renderer */]], { name: [0, "name"] }, null)], function (_ck, _v) { var currVal_1 = "videocam"; _ck(_v, 1, 0, currVal_1); }, function (_ck, _v) { var currVal_0 = core["_45" /* ɵnov */](_v, 1)._hidden; _ck(_v, 0, 0, currVal_0); }); }
+function View_CoreEmulatorCaptureMediaPage_14(_l) { return core["_58" /* ɵvid */](0, [(_l()(), core["_32" /* ɵeld */](0, 0, null, null, 1, "ion-icon", [["name", "camera"], ["role", "img"]], [[2, "hide", null]], null, null, null, null)), core["_31" /* ɵdid */](1, 147456, null, 0, icon["a" /* Icon */], [config["a" /* Config */], core["t" /* ElementRef */], core["W" /* Renderer */]], { name: [0, "name"] }, null)], function (_ck, _v) { var currVal_1 = "camera"; _ck(_v, 1, 0, currVal_1); }, function (_ck, _v) { var currVal_0 = core["_45" /* ɵnov */](_v, 1)._hidden; _ck(_v, 0, 0, currVal_0); }); }
+function View_CoreEmulatorCaptureMediaPage_15(_l) { return core["_58" /* ɵvid */](0, [(_l()(), core["_32" /* ɵeld */](0, 0, null, null, 1, "ion-icon", [["name", "square"], ["role", "img"]], [[2, "hide", null]], null, null, null, null)), core["_31" /* ɵdid */](1, 147456, null, 0, icon["a" /* Icon */], [config["a" /* Config */], core["t" /* ElementRef */], core["W" /* Renderer */]], { name: [0, "name"] }, null)], function (_ck, _v) { var currVal_1 = "square"; _ck(_v, 1, 0, currVal_1); }, function (_ck, _v) { var currVal_0 = core["_45" /* ɵnov */](_v, 1)._hidden; _ck(_v, 0, 0, currVal_0); }); }
+function View_CoreEmulatorCaptureMediaPage_11(_l) { return core["_58" /* ɵvid */](0, [(_l()(), core["_32" /* ɵeld */](0, 0, null, null, 14, "button", [["clear", ""], ["icon-only", ""], ["ion-button", ""]], [[1, "aria-label", 0]], [[null, "click"]], function (_v, en, $event) { var ad = true; var _co = _v.component; if (("click" === en)) {
+        var pd_0 = (_co.actionClicked() !== false);
+        ad = (pd_0 && ad);
+    } return ad; }, button_ngfactory["b" /* View_Button_0 */], button_ngfactory["a" /* RenderType_Button */])), core["_31" /* ɵdid */](1, 1097728, null, 0, button_button["a" /* Button */], [[8, ""], config["a" /* Config */], core["t" /* ElementRef */], core["W" /* Renderer */]], { clear: [0, "clear"] }, null), (_l()(), core["_56" /* ɵted */](-1, 0, ["\n                "])), (_l()(), core["_27" /* ɵand */](16777216, null, 0, 1, null, View_CoreEmulatorCaptureMediaPage_12)), core["_31" /* ɵdid */](4, 16384, null, 0, common["k" /* NgIf */], [core["_12" /* ViewContainerRef */], core["_7" /* TemplateRef */]], { ngIf: [0, "ngIf"] }, null), (_l()(), core["_56" /* ɵted */](-1, 0, ["\n                "])), (_l()(), core["_27" /* ɵand */](16777216, null, 0, 1, null, View_CoreEmulatorCaptureMediaPage_13)), core["_31" /* ɵdid */](7, 16384, null, 0, common["k" /* NgIf */], [core["_12" /* ViewContainerRef */], core["_7" /* TemplateRef */]], { ngIf: [0, "ngIf"] }, null), (_l()(), core["_56" /* ɵted */](-1, 0, ["\n                "])), (_l()(), core["_27" /* ɵand */](16777216, null, 0, 1, null, View_CoreEmulatorCaptureMediaPage_14)), core["_31" /* ɵdid */](10, 16384, null, 0, common["k" /* NgIf */], [core["_12" /* ViewContainerRef */], core["_7" /* TemplateRef */]], { ngIf: [0, "ngIf"] }, null), (_l()(), core["_56" /* ɵted */](-1, 0, ["\n                "])), (_l()(), core["_27" /* ɵand */](16777216, null, 0, 1, null, View_CoreEmulatorCaptureMediaPage_15)), core["_31" /* ɵdid */](13, 16384, null, 0, common["k" /* NgIf */], [core["_12" /* ViewContainerRef */], core["_7" /* TemplateRef */]], { ngIf: [0, "ngIf"] }, null), (_l()(), core["_56" /* ɵted */](-1, 0, ["\n            "]))], function (_ck, _v) { var _co = _v.component; var currVal_1 = ""; _ck(_v, 1, 0, currVal_1); var currVal_2 = (!_co.isCapturing && _co.isAudio); _ck(_v, 4, 0, currVal_2); var currVal_3 = (!_co.isCapturing && _co.isVideo); _ck(_v, 7, 0, currVal_3); var currVal_4 = _co.isImage; _ck(_v, 10, 0, currVal_4); var currVal_5 = _co.isCapturing; _ck(_v, 13, 0, currVal_5); }, function (_ck, _v) { var _co = _v.component; var currVal_0 = _co.title; _ck(_v, 0, 0, currVal_0); }); }
+function View_CoreEmulatorCaptureMediaPage_16(_l) { return core["_58" /* ɵvid */](0, [(_l()(), core["_32" /* ɵeld */](0, 0, null, null, 6, "button", [["clear", ""], ["icon-only", ""], ["ion-button", ""]], [[1, "aria-label", 0]], [[null, "click"]], function (_v, en, $event) { var ad = true; var _co = _v.component; if (("click" === en)) {
+        var pd_0 = (_co.discard() !== false);
+        ad = (pd_0 && ad);
+    } return ad; }, button_ngfactory["b" /* View_Button_0 */], button_ngfactory["a" /* RenderType_Button */])), core["_31" /* ɵdid */](1, 1097728, null, 0, button_button["a" /* Button */], [[8, ""], config["a" /* Config */], core["t" /* ElementRef */], core["W" /* Renderer */]], { clear: [0, "clear"] }, null), core["_48" /* ɵpid */](131072, translate_pipe["a" /* TranslatePipe */], [translate_service["a" /* TranslateService */], core["j" /* ChangeDetectorRef */]]), (_l()(), core["_56" /* ɵted */](-1, 0, ["\n                "])), (_l()(), core["_32" /* ɵeld */](4, 0, null, 0, 1, "ion-icon", [["name", "trash"], ["role", "img"]], [[2, "hide", null]], null, null, null, null)), core["_31" /* ɵdid */](5, 147456, null, 0, icon["a" /* Icon */], [config["a" /* Config */], core["t" /* ElementRef */], core["W" /* Renderer */]], { name: [0, "name"] }, null), (_l()(), core["_56" /* ɵted */](-1, 0, ["\n            "]))], function (_ck, _v) { var currVal_1 = ""; _ck(_v, 1, 0, currVal_1); var currVal_3 = "trash"; _ck(_v, 5, 0, currVal_3); }, function (_ck, _v) { var currVal_0 = core["_57" /* ɵunv */](_v, 0, 0, core["_45" /* ɵnov */](_v, 2).transform("core.discard")); _ck(_v, 0, 0, currVal_0); var currVal_2 = core["_45" /* ɵnov */](_v, 5)._hidden; _ck(_v, 4, 0, currVal_2); }); }
+function View_CoreEmulatorCaptureMediaPage_17(_l) { return core["_58" /* ɵvid */](0, [(_l()(), core["_32" /* ɵeld */](0, 0, null, null, 1, "core-chrono", [], [[8, "hidden", 0]], [[null, "onEnd"]], function (_v, en, $event) { var ad = true; var _co = _v.component; if (("onEnd" === en)) {
+        var pd_0 = (_co.stopCapturing() !== false);
+        ad = (pd_0 && ad);
+    } return ad; }, View_CoreChronoComponent_0, RenderType_CoreChronoComponent)), core["_31" /* ɵdid */](1, 770048, null, 0, chrono["a" /* CoreChronoComponent */], [core["j" /* ChangeDetectorRef */]], { running: [0, "running"], endTime: [1, "endTime"], reset: [2, "reset"] }, { onEnd: "onEnd" })], function (_ck, _v) { var _co = _v.component; var currVal_1 = _co.isCapturing; var currVal_2 = _co.maxTime; var currVal_3 = _co.resetChrono; _ck(_v, 1, 0, currVal_1, currVal_2, currVal_3); }, function (_ck, _v) { var _co = _v.component; var currVal_0 = _co.hasCaptured; _ck(_v, 0, 0, currVal_0); }); }
+function View_CoreEmulatorCaptureMediaPage_10(_l) { return core["_58" /* ɵvid */](0, [(_l()(), core["_32" /* ɵeld */](0, 0, null, null, 22, "ion-row", [["class", "row"]], null, null, null, null, null)), core["_31" /* ɵdid */](1, 16384, null, 0, row["a" /* Row */], [], null, null), (_l()(), core["_56" /* ɵted */](-1, null, ["\n        "])), (_l()(), core["_32" /* ɵeld */](3, 0, null, null, 1, "ion-col", [["class", "col"]], null, null, null, null, null)), core["_31" /* ɵdid */](4, 16384, null, 0, col["a" /* Col */], [], null, null), (_l()(), core["_56" /* ɵted */](-1, null, ["\n        "])), (_l()(), core["_32" /* ɵeld */](6, 0, null, null, 8, "ion-col", [["class", "col"], ["text-center", ""]], null, null, null, null, null)), core["_31" /* ɵdid */](7, 16384, null, 0, col["a" /* Col */], [], null, null), (_l()(), core["_56" /* ɵted */](-1, null, ["\n            "])), (_l()(), core["_27" /* ɵand */](16777216, null, null, 1, null, View_CoreEmulatorCaptureMediaPage_11)), core["_31" /* ɵdid */](10, 16384, null, 0, common["k" /* NgIf */], [core["_12" /* ViewContainerRef */], core["_7" /* TemplateRef */]], { ngIf: [0, "ngIf"] }, null), (_l()(), core["_56" /* ɵted */](-1, null, ["\n            "])), (_l()(), core["_27" /* ɵand */](16777216, null, null, 1, null, View_CoreEmulatorCaptureMediaPage_16)), core["_31" /* ɵdid */](13, 16384, null, 0, common["k" /* NgIf */], [core["_12" /* ViewContainerRef */], core["_7" /* TemplateRef */]], { ngIf: [0, "ngIf"] }, null), (_l()(), core["_56" /* ɵted */](-1, null, ["\n        "])), (_l()(), core["_56" /* ɵted */](-1, null, ["\n        "])), (_l()(), core["_32" /* ɵeld */](16, 0, null, null, 5, "ion-col", [["class", "chrono-container col"], ["padding", ""], ["text-end", ""]], null, null, null, null, null)), core["_31" /* ɵdid */](17, 16384, null, 0, col["a" /* Col */], [], null, null), (_l()(), core["_56" /* ɵted */](-1, null, ["\n            "])), (_l()(), core["_27" /* ɵand */](16777216, null, null, 1, null, View_CoreEmulatorCaptureMediaPage_17)), core["_31" /* ɵdid */](20, 16384, null, 0, common["k" /* NgIf */], [core["_12" /* ViewContainerRef */], core["_7" /* TemplateRef */]], { ngIf: [0, "ngIf"] }, null), (_l()(), core["_56" /* ɵted */](-1, null, ["\n        "])), (_l()(), core["_56" /* ɵted */](-1, null, ["\n    "]))], function (_ck, _v) { var _co = _v.component; var currVal_0 = (!_co.hasCaptured && !_co.isCordovaAudioCapture); _ck(_v, 10, 0, currVal_0); var currVal_1 = _co.hasCaptured; _ck(_v, 13, 0, currVal_1); var currVal_2 = !_co.isImage; _ck(_v, 20, 0, currVal_2); }, null); }
+function View_CoreEmulatorCaptureMediaPage_0(_l) { return core["_58" /* ɵvid */](0, [core["_53" /* ɵqud */](671088640, 1, { streamVideo: 0 }), core["_53" /* ɵqud */](671088640, 2, { previewVideo: 0 }), core["_53" /* ɵqud */](671088640, 3, { imgCanvas: 0 }), core["_53" /* ɵqud */](671088640, 4, { previewImage: 0 }), core["_53" /* ɵqud */](671088640, 5, { streamAudio: 0 }), core["_53" /* ɵqud */](671088640, 6, { previewAudio: 0 }), (_l()(), core["_32" /* ɵeld */](6, 0, null, null, 30, "ion-header", [], null, null, null, null, null)), core["_31" /* ɵdid */](7, 16384, null, 0, toolbar_header["a" /* Header */], [config["a" /* Config */], core["t" /* ElementRef */], core["W" /* Renderer */], [2, view_controller["a" /* ViewController */]]], null, null), (_l()(), core["_56" /* ɵted */](-1, null, ["\n    "])), (_l()(), core["_32" /* ɵeld */](9, 0, null, null, 26, "ion-navbar", [["class", "toolbar"], ["core-back-button", ""]], [[8, "hidden", 0], [2, "statusbar-padding", null]], null, null, navbar_ngfactory["b" /* View_Navbar_0 */], navbar_ngfactory["a" /* RenderType_Navbar */])), core["_31" /* ɵdid */](10, 49152, null, 0, navbar["a" /* Navbar */], [app_app["a" /* App */], [2, view_controller["a" /* ViewController */]], [2, nav_controller["a" /* NavController */]], config["a" /* Config */], core["t" /* ElementRef */], core["W" /* Renderer */]], null, null), core["_31" /* ɵdid */](11, 212992, null, 0, back_button["a" /* CoreBackButtonDirective */], [navbar["a" /* Navbar */], translate_service["a" /* TranslateService */], events["b" /* CoreEventsProvider */]], null, null), (_l()(), core["_56" /* ɵted */](-1, 3, ["\n        "])), (_l()(), core["_32" /* ɵeld */](13, 0, null, 1, 8, "ion-buttons", [["start", ""]], null, null, null, null, null)), core["_31" /* ɵdid */](14, 16384, null, 1, toolbar_item["a" /* ToolbarItem */], [config["a" /* Config */], core["t" /* ElementRef */], core["W" /* Renderer */], [2, toolbar["a" /* Toolbar */]], [2, navbar["a" /* Navbar */]]], null, null), core["_53" /* ɵqud */](603979776, 7, { _buttons: 1 }), (_l()(), core["_56" /* ɵted */](-1, null, ["\n            "])), (_l()(), core["_32" /* ɵeld */](17, 0, null, null, 3, "button", [["ion-button", ""]], null, [[null, "click"]], function (_v, en, $event) { var ad = true; var _co = _v.component; if (("click" === en)) {
+        var pd_0 = (_co.cancel() !== false);
+        ad = (pd_0 && ad);
+    } return ad; }, button_ngfactory["b" /* View_Button_0 */], button_ngfactory["a" /* RenderType_Button */])), core["_31" /* ɵdid */](18, 1097728, [[7, 4]], 0, button_button["a" /* Button */], [[8, ""], config["a" /* Config */], core["t" /* ElementRef */], core["W" /* Renderer */]], null, null), (_l()(), core["_56" /* ɵted */](19, 0, ["", ""])), core["_48" /* ɵpid */](131072, translate_pipe["a" /* TranslatePipe */], [translate_service["a" /* TranslateService */], core["j" /* ChangeDetectorRef */]]), (_l()(), core["_56" /* ɵted */](-1, null, ["\n        "])), (_l()(), core["_56" /* ɵted */](-1, 3, ["\n\n        "])), (_l()(), core["_32" /* ɵeld */](23, 0, null, 3, 3, "ion-title", [], null, null, null, toolbar_title_ngfactory["b" /* View_ToolbarTitle_0 */], toolbar_title_ngfactory["a" /* RenderType_ToolbarTitle */])), core["_31" /* ɵdid */](24, 49152, null, 0, toolbar_title["a" /* ToolbarTitle */], [config["a" /* Config */], core["t" /* ElementRef */], core["W" /* Renderer */], [2, toolbar["a" /* Toolbar */]], [2, navbar["a" /* Navbar */]]], null, null), (_l()(), core["_56" /* ɵted */](25, 0, ["", ""])), core["_48" /* ɵpid */](131072, translate_pipe["a" /* TranslatePipe */], [translate_service["a" /* TranslateService */], core["j" /* ChangeDetectorRef */]]), (_l()(), core["_56" /* ɵted */](-1, 3, ["\n\n        "])), (_l()(), core["_32" /* ɵeld */](28, 0, null, 2, 6, "ion-buttons", [["end", ""]], null, null, null, null, null)), core["_31" /* ɵdid */](29, 16384, null, 1, toolbar_item["a" /* ToolbarItem */], [config["a" /* Config */], core["t" /* ElementRef */], core["W" /* Renderer */], [2, toolbar["a" /* Toolbar */]], [2, navbar["a" /* Navbar */]]], null, null), core["_53" /* ɵqud */](603979776, 8, { _buttons: 1 }), (_l()(), core["_56" /* ɵted */](-1, null, ["\n            "])), (_l()(), core["_27" /* ɵand */](16777216, null, null, 1, null, View_CoreEmulatorCaptureMediaPage_1)), core["_31" /* ɵdid */](33, 16384, null, 0, common["k" /* NgIf */], [core["_12" /* ViewContainerRef */], core["_7" /* TemplateRef */]], { ngIf: [0, "ngIf"] }, null), (_l()(), core["_56" /* ɵted */](-1, null, ["\n        "])), (_l()(), core["_56" /* ɵted */](-1, 3, ["\n    "])), (_l()(), core["_56" /* ɵted */](-1, null, ["\n"])), (_l()(), core["_56" /* ɵted */](-1, null, ["\n"])), (_l()(), core["_32" /* ɵeld */](38, 0, null, null, 28, "ion-content", [["class", "has-footer"]], [[2, "statusbar-padding", null], [2, "has-refresher", null]], null, null, content_ngfactory["b" /* View_Content_0 */], content_ngfactory["a" /* RenderType_Content */])), core["_31" /* ɵdid */](39, 4374528, null, 0, content["a" /* Content */], [config["a" /* Config */], platform["a" /* Platform */], dom_controller["a" /* DomController */], core["t" /* ElementRef */], core["W" /* Renderer */], app_app["a" /* App */], keyboard["a" /* Keyboard */], core["N" /* NgZone */], [2, view_controller["a" /* ViewController */]], [2, nav_controller["a" /* NavController */]]], null, null), (_l()(), core["_56" /* ɵted */](-1, 1, ["\n    "])), (_l()(), core["_32" /* ɵeld */](41, 0, null, 1, 24, "core-loading", [], null, null, null, loading_ngfactory["b" /* View_CoreLoadingComponent_0 */], loading_ngfactory["a" /* RenderType_CoreLoadingComponent */])), core["_31" /* ɵdid */](42, 638976, null, 0, loading["a" /* CoreLoadingComponent */], [translate_service["a" /* TranslateService */], core["t" /* ElementRef */], events["b" /* CoreEventsProvider */], utils["b" /* CoreUtilsProvider */]], { hideUntil: [0, "hideUntil"] }, null), (_l()(), core["_56" /* ɵted */](-1, 0, ["\n        "])), (_l()(), core["_32" /* ɵeld */](44, 0, null, 0, 20, "div", [["class", "core-av-wrapper"]], null, null, null, null, null)), (_l()(), core["_56" /* ɵted */](-1, null, ["\n            "])), (_l()(), core["_56" /* ɵted */](-1, null, ["\n            "])), (_l()(), core["_27" /* ɵand */](16777216, null, null, 1, null, View_CoreEmulatorCaptureMediaPage_2)), core["_31" /* ɵdid */](48, 16384, null, 0, common["k" /* NgIf */], [core["_12" /* ViewContainerRef */], core["_7" /* TemplateRef */]], { ngIf: [0, "ngIf"] }, null), (_l()(), core["_56" /* ɵted */](-1, null, ["\n\n            "])), (_l()(), core["_56" /* ɵted */](-1, null, ["\n            "])), (_l()(), core["_27" /* ɵand */](16777216, null, null, 1, null, View_CoreEmulatorCaptureMediaPage_3)), core["_31" /* ɵdid */](52, 16384, null, 0, common["k" /* NgIf */], [core["_12" /* ViewContainerRef */], core["_7" /* TemplateRef */]], { ngIf: [0, "ngIf"] }, null), (_l()(), core["_56" /* ɵted */](-1, null, ["\n\n            "])), (_l()(), core["_56" /* ɵted */](-1, null, ["\n            "])), (_l()(), core["_27" /* ɵand */](16777216, null, null, 1, null, View_CoreEmulatorCaptureMediaPage_4)), core["_31" /* ɵdid */](56, 16384, null, 0, common["k" /* NgIf */], [core["_12" /* ViewContainerRef */], core["_7" /* TemplateRef */]], { ngIf: [0, "ngIf"] }, null), (_l()(), core["_56" /* ɵted */](-1, null, ["\n            "])), (_l()(), core["_27" /* ɵand */](16777216, null, null, 1, null, View_CoreEmulatorCaptureMediaPage_5)), core["_31" /* ɵdid */](59, 16384, null, 0, common["k" /* NgIf */], [core["_12" /* ViewContainerRef */], core["_7" /* TemplateRef */]], { ngIf: [0, "ngIf"] }, null), (_l()(), core["_56" /* ɵted */](-1, null, ["\n\n            "])), (_l()(), core["_56" /* ɵted */](-1, null, ["\n            "])), (_l()(), core["_27" /* ɵand */](16777216, null, null, 1, null, View_CoreEmulatorCaptureMediaPage_6)), core["_31" /* ɵdid */](63, 16384, null, 0, common["k" /* NgIf */], [core["_12" /* ViewContainerRef */], core["_7" /* TemplateRef */]], { ngIf: [0, "ngIf"] }, null), (_l()(), core["_56" /* ɵted */](-1, null, ["\n        "])), (_l()(), core["_56" /* ɵted */](-1, 0, ["\n    "])), (_l()(), core["_56" /* ɵted */](-1, 1, ["\n"])), (_l()(), core["_56" /* ɵted */](-1, null, ["\n\n"])), (_l()(), core["_32" /* ɵeld */](68, 0, null, null, 5, "ion-footer", [], null, null, null, null, null)), core["_31" /* ɵdid */](69, 16384, null, 0, toolbar_footer["a" /* Footer */], [config["a" /* Config */], core["t" /* ElementRef */], core["W" /* Renderer */], [2, view_controller["a" /* ViewController */]]], null, null), (_l()(), core["_56" /* ɵted */](-1, null, ["\n    "])), (_l()(), core["_27" /* ɵand */](16777216, null, null, 1, null, View_CoreEmulatorCaptureMediaPage_10)), core["_31" /* ɵdid */](72, 16384, null, 0, common["k" /* NgIf */], [core["_12" /* ViewContainerRef */], core["_7" /* TemplateRef */]], { ngIf: [0, "ngIf"] }, null), (_l()(), core["_56" /* ɵted */](-1, null, ["\n"])), (_l()(), core["_56" /* ɵted */](-1, null, ["\n\n"]))], function (_ck, _v) { var _co = _v.component; _ck(_v, 11, 0); var currVal_4 = _co.hasCaptured; _ck(_v, 33, 0, currVal_4); var currVal_7 = _co.readyToCapture; _ck(_v, 42, 0, currVal_7); var currVal_8 = !_co.isAudio; _ck(_v, 48, 0, currVal_8); var currVal_9 = _co.isVideo; _ck(_v, 52, 0, currVal_9); var currVal_10 = _co.isImage; _ck(_v, 56, 0, currVal_10); var currVal_11 = _co.isImage; _ck(_v, 59, 0, currVal_11); var currVal_12 = _co.isAudio; _ck(_v, 63, 0, currVal_12); var currVal_13 = _co.readyToCapture; _ck(_v, 72, 0, currVal_13); }, function (_ck, _v) { var _co = _v.component; var currVal_0 = core["_45" /* ɵnov */](_v, 10)._hidden; var currVal_1 = core["_45" /* ɵnov */](_v, 10)._sbPadding; _ck(_v, 9, 0, currVal_0, currVal_1); var currVal_2 = core["_57" /* ɵunv */](_v, 19, 0, core["_45" /* ɵnov */](_v, 20).transform("core.cancel")); _ck(_v, 19, 0, currVal_2); var currVal_3 = core["_57" /* ɵunv */](_v, 25, 0, core["_45" /* ɵnov */](_v, 26).transform(_co.title)); _ck(_v, 25, 0, currVal_3); var currVal_5 = core["_45" /* ɵnov */](_v, 39).statusbarPadding; var currVal_6 = core["_45" /* ɵnov */](_v, 39)._hasRefresher; _ck(_v, 38, 0, currVal_5, currVal_6); }); }
+function View_CoreEmulatorCaptureMediaPage_Host_0(_l) { return core["_58" /* ɵvid */](0, [(_l()(), core["_32" /* ɵeld */](0, 0, null, null, 1, "page-core-emulator-capture-media", [], null, null, null, View_CoreEmulatorCaptureMediaPage_0, RenderType_CoreEmulatorCaptureMediaPage)), core["_31" /* ɵdid */](1, 245760, null, 0, capture_media_CoreEmulatorCaptureMediaPage, [view_controller["a" /* ViewController */], nav_params["a" /* NavParams */], dom["b" /* CoreDomUtilsProvider */], time["b" /* CoreTimeUtilsProvider */], file["b" /* CoreFileProvider */], utils_text["b" /* CoreTextUtilsProvider */], core["j" /* ChangeDetectorRef */], platform["a" /* Platform */], media["a" /* Media */]], null, null)], function (_ck, _v) { _ck(_v, 1, 0); }, null); }
+var CoreEmulatorCaptureMediaPageNgFactory = core["_28" /* ɵccf */]("page-core-emulator-capture-media", capture_media_CoreEmulatorCaptureMediaPage, View_CoreEmulatorCaptureMediaPage_Host_0, {}, {}, []);
+
+//# sourceMappingURL=capture-media.ngfactory.js.map
+// EXTERNAL MODULE: ./node_modules/@angular/forms/esm5/forms.js
+var esm5_forms = __webpack_require__(23);
+
+// EXTERNAL MODULE: ./node_modules/@ngx-translate/core/src/translate.loader.js
+var translate_loader = __webpack_require__(375);
+
+// EXTERNAL MODULE: ./node_modules/@ngx-translate/core/src/translate.compiler.js
+var translate_compiler = __webpack_require__(376);
+
+// EXTERNAL MODULE: ./node_modules/@ngx-translate/core/src/translate.parser.js
+var translate_parser = __webpack_require__(378);
+
+// EXTERNAL MODULE: ./node_modules/@ngx-translate/core/src/missing-translation-handler.js
+var missing_translation_handler = __webpack_require__(377);
+
+// EXTERNAL MODULE: ./node_modules/@ngx-translate/core/src/translate.store.js
+var translate_store = __webpack_require__(485);
+
+// EXTERNAL MODULE: ./node_modules/ionic-angular/module.js
+var ionic_angular_module = __webpack_require__(738);
+
+// EXTERNAL MODULE: ./src/pipes/pipes.module.ts + 2 modules
+var pipes_module = __webpack_require__(111);
+
+// EXTERNAL MODULE: ./node_modules/ionic-angular/util/module-loader.js
+var module_loader = __webpack_require__(277);
+
+// CONCATENATED MODULE: ./src/core/emulator/pages/capture-media/capture-media.module.ngfactory.js
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "CoreEmulatorCaptureMediaPageModuleNgFactory", function() { return CoreEmulatorCaptureMediaPageModuleNgFactory; });
+/**
+ * @fileoverview This file was generated by the Angular template compiler. Do not edit.
+ *
+ * @suppress {suspiciousCode,uselessCode,missingProperties,missingOverride,checkTypes}
+ * tslint:disable
+ */ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+var CoreEmulatorCaptureMediaPageModuleNgFactory = core["_29" /* ɵcmf */](capture_media_module_CoreEmulatorCaptureMediaPageModule, [], function (_l) { return core["_41" /* ɵmod */]([core["_42" /* ɵmpd */](512, core["o" /* ComponentFactoryResolver */], core["_22" /* ɵCodegenComponentFactoryResolver */], [[8, [action_sheet_component_ngfactory["a" /* ActionSheetCmpNgFactory */], alert_component_ngfactory["a" /* AlertCmpNgFactory */], app_root_ngfactory["a" /* IonicAppNgFactory */], loading_component_ngfactory["a" /* LoadingCmpNgFactory */], modal_component_ngfactory["a" /* ModalCmpNgFactory */], picker_component_ngfactory["a" /* PickerCmpNgFactory */], popover_component_ngfactory["a" /* PopoverCmpNgFactory */], select_popover_component_ngfactory["a" /* SelectPopoverNgFactory */], toast_component_ngfactory["a" /* ToastCmpNgFactory */], context_menu_popover_ngfactory["a" /* CoreContextMenuPopoverComponentNgFactory */], course_picker_menu_popover_ngfactory["a" /* CoreCoursePickerMenuPopoverComponentNgFactory */], recaptchamodal_ngfactory["a" /* CoreRecaptchaModalComponentNgFactory */], bs_tooltip_ngfactory["a" /* CoreBSTooltipComponentNgFactory */], CoreEmulatorCaptureMediaPageNgFactory]], [3, core["o" /* ComponentFactoryResolver */]], core["L" /* NgModuleRef */]]), core["_42" /* ɵmpd */](4608, common["m" /* NgLocalization */], common["l" /* NgLocaleLocalization */], [core["G" /* LOCALE_ID */], [2, common["w" /* ɵa */]]]), core["_42" /* ɵmpd */](4608, esm5_forms["x" /* ɵi */], esm5_forms["x" /* ɵi */], []), core["_42" /* ɵmpd */](4608, esm5_forms["d" /* FormBuilder */], esm5_forms["d" /* FormBuilder */], []), core["_42" /* ɵmpd */](4608, translate_loader["b" /* TranslateLoader */], translate_loader["a" /* TranslateFakeLoader */], []), core["_42" /* ɵmpd */](4608, translate_compiler["a" /* TranslateCompiler */], translate_compiler["b" /* TranslateFakeCompiler */], []), core["_42" /* ɵmpd */](4608, translate_parser["b" /* TranslateParser */], translate_parser["a" /* TranslateDefaultParser */], []), core["_42" /* ɵmpd */](4608, missing_translation_handler["b" /* MissingTranslationHandler */], missing_translation_handler["a" /* FakeMissingTranslationHandler */], []), core["_42" /* ɵmpd */](4608, translate_service["a" /* TranslateService */], translate_service["a" /* TranslateService */], [translate_store["a" /* TranslateStore */], translate_loader["b" /* TranslateLoader */], translate_compiler["a" /* TranslateCompiler */], translate_parser["b" /* TranslateParser */], missing_translation_handler["b" /* MissingTranslationHandler */], translate_service["b" /* USE_DEFAULT_LANG */], translate_service["c" /* USE_STORE */]]), core["_42" /* ɵmpd */](512, common["b" /* CommonModule */], common["b" /* CommonModule */], []), core["_42" /* ɵmpd */](512, esm5_forms["v" /* ɵba */], esm5_forms["v" /* ɵba */], []), core["_42" /* ɵmpd */](512, esm5_forms["i" /* FormsModule */], esm5_forms["i" /* FormsModule */], []), core["_42" /* ɵmpd */](512, esm5_forms["s" /* ReactiveFormsModule */], esm5_forms["s" /* ReactiveFormsModule */], []), core["_42" /* ɵmpd */](512, ionic_angular_module["a" /* IonicModule */], ionic_angular_module["a" /* IonicModule */], []), core["_42" /* ɵmpd */](512, _ngx_translate_core["b" /* TranslateModule */], _ngx_translate_core["b" /* TranslateModule */], []), core["_42" /* ɵmpd */](512, directives_module["a" /* CoreDirectivesModule */], directives_module["a" /* CoreDirectivesModule */], []), core["_42" /* ɵmpd */](512, pipes_module["a" /* CorePipesModule */], pipes_module["a" /* CorePipesModule */], []), core["_42" /* ɵmpd */](512, components_module["a" /* CoreComponentsModule */], components_module["a" /* CoreComponentsModule */], []), core["_42" /* ɵmpd */](512, ionic_angular_module["b" /* IonicPageModule */], ionic_angular_module["b" /* IonicPageModule */], []), core["_42" /* ɵmpd */](512, capture_media_module_CoreEmulatorCaptureMediaPageModule, capture_media_module_CoreEmulatorCaptureMediaPageModule, []), core["_42" /* ɵmpd */](256, translate_service["c" /* USE_STORE */], undefined, []), core["_42" /* ɵmpd */](256, translate_service["b" /* USE_DEFAULT_LANG */], undefined, []), core["_42" /* ɵmpd */](256, module_loader["a" /* LAZY_LOADED_TOKEN */], capture_media_CoreEmulatorCaptureMediaPage, [])]); });
+
+//# sourceMappingURL=capture-media.module.ngfactory.js.map
 
 /***/ })
 
