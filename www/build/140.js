@@ -1,6 +1,6 @@
 webpackJsonp([140],{
 
-/***/ 1997:
+/***/ 2002:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -11,7 +11,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ngx_translate_core__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__components_components_module__ = __webpack_require__(13);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__directives_directives_module__ = __webpack_require__(14);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__competencies__ = __webpack_require__(2153);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__competencies__ = __webpack_require__(2158);
 // (C) Copyright 2015 Moodle Pty Ltd.
 //
 // Licensed under the Apache License, Version 2.0 (the "License");
@@ -60,7 +60,7 @@ var AddonCompetencyCompetenciesPageModule = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 2153:
+/***/ 2158:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -208,7 +208,7 @@ var AddonCompetencyCompetenciesPage = /** @class */ (function () {
     ], AddonCompetencyCompetenciesPage.prototype, "splitviewCtrl", void 0);
     AddonCompetencyCompetenciesPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-addon-competency-competencies',template:/*ion-inline-start:"C:\Users\sid_m\Documents\ASTER-ANIMA\agro\develop-agro\agro-moodle-app\src\addon\competency\pages\competencies\competencies.html"*/'<ion-header>\n\n    <ion-navbar core-back-button>\n\n        <ion-title>{{ title }}</ion-title>\n\n    </ion-navbar>\n\n</ion-header>\n\n<core-split-view>\n\n    <ion-content>\n\n        <ion-refresher [enabled]="competenciesLoaded" (ionRefresh)="refreshCompetencies($event)">\n\n            <ion-refresher-content pullingText="{{ \'core.pulltorefresh\' | translate }}"></ion-refresher-content>\n\n        </ion-refresher>\n\n        <core-loading [hideUntil]="competenciesLoaded">\n\n            <ion-list>\n\n                <a ion-item text-wrap *ngFor="let competency of competencies" [title]="competency.competency.shortname" (click)="openCompetency(competency.competency.id)" [class.core-split-item-selected]="competency.competency.id == competencyId">\n\n                    <h2>{{ competency.competency.shortname }} <em>{{competency.competency.idnumber}}</em></h2>\n\n                    <ion-badge item-end *ngIf="competency.usercompetency" [color]="competency.usercompetency.proficiency ? \'success\' : \'danger\'">{{ competency.usercompetency.gradename }}</ion-badge>\n\n                    <ion-badge item-end *ngIf="competency.usercompetencycourse" [color]="competency.usercompetencycourse.proficiency ? \'success\' : \'danger\'">{{ competency.usercompetencycourse.gradename }}</ion-badge>\n\n                </a>\n\n            </ion-list>\n\n        </core-loading>\n\n    </ion-content>\n\n</core-split-view>'/*ion-inline-end:"C:\Users\sid_m\Documents\ASTER-ANIMA\agro\develop-agro\agro-moodle-app\src\addon\competency\pages\competencies\competencies.html"*/,
+            selector: 'page-addon-competency-competencies',template:/*ion-inline-start:"D:\workspace\moodle\agro-moodle-app\src\addon\competency\pages\competencies\competencies.html"*/'<ion-header>\n\n    <ion-navbar core-back-button>\n\n        <ion-title>{{ title }}</ion-title>\n\n    </ion-navbar>\n\n</ion-header>\n\n<core-split-view>\n\n    <ion-content>\n\n        <ion-refresher [enabled]="competenciesLoaded" (ionRefresh)="refreshCompetencies($event)">\n\n            <ion-refresher-content pullingText="{{ \'core.pulltorefresh\' | translate }}"></ion-refresher-content>\n\n        </ion-refresher>\n\n        <core-loading [hideUntil]="competenciesLoaded">\n\n            <ion-list>\n\n                <a ion-item text-wrap *ngFor="let competency of competencies" [title]="competency.competency.shortname" (click)="openCompetency(competency.competency.id)" [class.core-split-item-selected]="competency.competency.id == competencyId">\n\n                    <h2>{{ competency.competency.shortname }} <em>{{competency.competency.idnumber}}</em></h2>\n\n                    <ion-badge item-end *ngIf="competency.usercompetency" [color]="competency.usercompetency.proficiency ? \'success\' : \'danger\'">{{ competency.usercompetency.gradename }}</ion-badge>\n\n                    <ion-badge item-end *ngIf="competency.usercompetencycourse" [color]="competency.usercompetencycourse.proficiency ? \'success\' : \'danger\'">{{ competency.usercompetencycourse.gradename }}</ion-badge>\n\n                </a>\n\n            </ion-list>\n\n        </core-loading>\n\n    </ion-content>\n\n</core-split-view>'/*ion-inline-end:"D:\workspace\moodle\agro-moodle-app\src\addon\competency\pages\competencies\competencies.html"*/,
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["t" /* NavParams */], __WEBPACK_IMPORTED_MODULE_2__ngx_translate_core__["c" /* TranslateService */], __WEBPACK_IMPORTED_MODULE_3__providers_utils_dom__["b" /* CoreDomUtilsProvider */],
             __WEBPACK_IMPORTED_MODULE_5__providers_competency__["a" /* AddonCompetencyProvider */]])

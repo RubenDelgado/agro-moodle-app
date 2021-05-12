@@ -1,6 +1,6 @@
 webpackJsonp([8],{
 
-/***/ 2101:
+/***/ 2142:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -9,7 +9,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(3);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ngx_translate_core__ = __webpack_require__(1);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__textarea__ = __webpack_require__(2257);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__textarea__ = __webpack_require__(2302);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__components_components_module__ = __webpack_require__(13);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__directives_directives_module__ = __webpack_require__(14);
 // (C) Copyright 2015 Moodle Pty Ltd.
@@ -63,7 +63,7 @@ var CoreViewerTextAreaPageModule = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 2257:
+/***/ 2302:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -132,7 +132,7 @@ var CoreViewerTextAreaPage = /** @class */ (function () {
     };
     CoreViewerTextAreaPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-core-viewer-textarea',template:/*ion-inline-start:"C:\Users\sid_m\Documents\ASTER-ANIMA\agro\develop-agro\agro-moodle-app\src\core\viewer\pages\textarea\textarea.html"*/'<ion-header>\n\n    <ion-navbar>\n\n        <ion-title>{{ title }}</ion-title>\n\n    </ion-navbar>\n\n</ion-header>\n\n<ion-content>\n\n    <div class="prompt-message"><core-format-text [text]="message"></core-format-text></div>\n\n    <ion-textarea rows="1" core-auto-rows name="feedback" [attr.aria-multiline]="true" [(ngModel)]="text" [placeholder]="placeholder"></ion-textarea>\n\n    <div class="prompt-button-group">\n\n        <button *ngFor="let button of buttons" ion-button="prompt-button" (click)="buttonClicked(button)" [ngClass]="button.cssClass">\n\n            {{ button.text }}\n\n        </button>\n\n    </div>\n\n</ion-content>\n\n'/*ion-inline-end:"C:\Users\sid_m\Documents\ASTER-ANIMA\agro\develop-agro\agro-moodle-app\src\core\viewer\pages\textarea\textarea.html"*/,
+            selector: 'page-core-viewer-textarea',template:/*ion-inline-start:"D:\workspace\moodle\agro-moodle-app\src\core\viewer\pages\textarea\textarea.html"*/'<ion-header>\n\n    <ion-navbar>\n\n        <ion-title>{{ title }}</ion-title>\n\n    </ion-navbar>\n\n</ion-header>\n\n<ion-content>\n\n    <div class="prompt-message"><core-format-text [text]="message"></core-format-text></div>\n\n    <ion-textarea rows="1" core-auto-rows name="feedback" [attr.aria-multiline]="true" [(ngModel)]="text" [placeholder]="placeholder"></ion-textarea>\n\n    <div class="prompt-button-group">\n\n        <button *ngFor="let button of buttons" ion-button="prompt-button" (click)="buttonClicked(button)" [ngClass]="button.cssClass">\n\n            {{ button.text }}\n\n        </button>\n\n    </div>\n\n</ion-content>\n\n'/*ion-inline-end:"D:\workspace\moodle\agro-moodle-app\src\core\viewer\pages\textarea\textarea.html"*/,
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["G" /* ViewController */],
             __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["t" /* NavParams */]])

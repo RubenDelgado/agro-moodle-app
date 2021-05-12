@@ -1,6 +1,6 @@
 webpackJsonp([117],{
 
-/***/ 2017:
+/***/ 2029:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -12,7 +12,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__components_components_module__ = __webpack_require__(13);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__directives_directives_module__ = __webpack_require__(14);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__pipes_pipes_module__ = __webpack_require__(66);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__users__ = __webpack_require__(2173);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__users__ = __webpack_require__(2185);
 // (C) Copyright 2015 Moodle Pty Ltd.
 //
 // Licensed under the Apache License, Version 2.0 (the "License");
@@ -63,7 +63,7 @@ var AddonModChatUsersPageModule = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 2173:
+/***/ 2185:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -170,7 +170,7 @@ var AddonModChatUsersPage = /** @class */ (function () {
     };
     AddonModChatUsersPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-addon-mod-chat-users',template:/*ion-inline-start:"C:\Users\sid_m\Documents\ASTER-ANIMA\agro\develop-agro\agro-moodle-app\src\addon\mod\chat\pages\users\users.html"*/'<ion-header>\n\n    <ion-navbar core-back-button>\n\n        <ion-title>{{ \'addon.mod_chat.currentusers\' | translate }}</ion-title>\n\n        <ion-buttons end>\n\n            <button ion-button icon-only (click)="closeModal()" [attr.aria-label]="\'core.close\' | translate">\n\n                <ion-icon name="close"></ion-icon>\n\n            </button>\n\n        </ion-buttons>\n\n    </ion-navbar>\n\n</ion-header>\n\n<ion-content>\n\n    <core-loading [hideUntil]="usersLoaded">\n\n        <ion-item text-wrap *ngFor="let user of users" [class.addon-mod-chat-user]="currentUserId != user.id && isOnline">\n\n            <ion-avatar core-user-avatar [user]="user" item-start></ion-avatar>\n\n            <h2>{{ user.fullname }}</h2>\n\n            <ng-container *ngIf="currentUserId != user.id && isOnline">\n\n                <button ion-button clear icon-left (click)="talkTo(user)">\n\n                    <ion-icon name="chatboxes"></ion-icon>\n\n                    {{ \'addon.mod_chat.talk\' | translate }}\n\n                </button>\n\n                <button ion-button clear icon-left (click)="beepTo(user)">\n\n                    <ion-icon name="notifications"></ion-icon>\n\n                    {{ \'addon.mod_chat.beep\' | translate }}\n\n                </button>\n\n            </ng-container>\n\n        </ion-item>\n\n    </core-loading>\n\n</ion-content>\n\n'/*ion-inline-end:"C:\Users\sid_m\Documents\ASTER-ANIMA\agro\develop-agro\agro-moodle-app\src\addon\mod\chat\pages\users\users.html"*/,
+            selector: 'page-addon-mod-chat-users',template:/*ion-inline-start:"D:\workspace\moodle\agro-moodle-app\src\addon\mod\chat\pages\users\users.html"*/'<ion-header>\n\n    <ion-navbar core-back-button>\n\n        <ion-title>{{ \'addon.mod_chat.currentusers\' | translate }}</ion-title>\n\n        <ion-buttons end>\n\n            <button ion-button icon-only (click)="closeModal()" [attr.aria-label]="\'core.close\' | translate">\n\n                <ion-icon name="close"></ion-icon>\n\n            </button>\n\n        </ion-buttons>\n\n    </ion-navbar>\n\n</ion-header>\n\n<ion-content>\n\n    <core-loading [hideUntil]="usersLoaded">\n\n        <ion-item text-wrap *ngFor="let user of users" [class.addon-mod-chat-user]="currentUserId != user.id && isOnline">\n\n            <ion-avatar core-user-avatar [user]="user" item-start></ion-avatar>\n\n            <h2>{{ user.fullname }}</h2>\n\n            <ng-container *ngIf="currentUserId != user.id && isOnline">\n\n                <button ion-button clear icon-left (click)="talkTo(user)">\n\n                    <ion-icon name="chatboxes"></ion-icon>\n\n                    {{ \'addon.mod_chat.talk\' | translate }}\n\n                </button>\n\n                <button ion-button clear icon-left (click)="beepTo(user)">\n\n                    <ion-icon name="notifications"></ion-icon>\n\n                    {{ \'addon.mod_chat.beep\' | translate }}\n\n                </button>\n\n            </ng-container>\n\n        </ion-item>\n\n    </core-loading>\n\n</ion-content>\n\n'/*ion-inline-end:"D:\workspace\moodle\agro-moodle-app\src\addon\mod\chat\pages\users\users.html"*/,
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["t" /* NavParams */], __WEBPACK_IMPORTED_MODULE_6__ionic_native_network__["a" /* Network */], __WEBPACK_IMPORTED_MODULE_0__angular_core__["N" /* NgZone */], __WEBPACK_IMPORTED_MODULE_2__providers_app__["b" /* CoreAppProvider */],
             __WEBPACK_IMPORTED_MODULE_3__providers_sites__["b" /* CoreSitesProvider */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["G" /* ViewController */],

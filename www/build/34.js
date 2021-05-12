@@ -1,6 +1,6 @@
 webpackJsonp([34],{
 
-/***/ 2123:
+/***/ 2115:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -10,7 +10,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(3);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ngx_translate_core__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__components_components_module__ = __webpack_require__(13);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__menu__ = __webpack_require__(2281);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__menu__ = __webpack_require__(2275);
 // (C) Copyright 2015 Moodle Pty Ltd.
 //
 // Licensed under the Apache License, Version 2.0 (the "License");
@@ -57,7 +57,7 @@ var CoreMainMenuPageModule = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 2281:
+/***/ 2275:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -289,7 +289,7 @@ var CoreMainMenuPage = /** @class */ (function () {
     ], CoreMainMenuPage.prototype, "mainTabs", void 0);
     CoreMainMenuPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-core-mainmenu',template:/*ion-inline-start:"C:\Users\sid_m\Documents\ASTER-ANIMA\agro\develop-agro\agro-moodle-app\src\core\mainmenu\pages\menu\menu.html"*/'<core-ion-tabs #mainTabs [hidden]="!showTabs" [loaded]="loaded" tabsLayout="title-hide" [attr.tabsPlacement]="tabsPlacement">\n\n    <core-ion-tab [enabled]="false" [show]="false" [root]="redirectPage" [rootParams]="redirectParams"></core-ion-tab>\n\n    <core-ion-tab *ngFor="let tab of tabs" [root]="tab.page" [rootParams]="tab.pageParams" [tabTitle]="tab.title | translate" [tabIcon]="tab.icon" [tabBadge]="tab.badge" class="{{tab.class}}" [enabled]="!tab.hide" [show]="!tab.hide"></core-ion-tab>\n\n    <core-ion-tab root="CoreMainMenuMorePage" [tabTitle]="\'core.more\' | translate" tabIcon="menu"></core-ion-tab>\n\n</core-ion-tabs>\n\n<div class="core-network-message" [hidden]="!showTabs">\n\n    <div class="core-online-message">\n\n        {{ "core.youreonline" | translate }}\n\n    </div>\n\n    <div class="core-offline-message">\n\n        {{ "core.youreoffline" | translate }}\n\n    </div>\n\n</div>\n\n'/*ion-inline-end:"C:\Users\sid_m\Documents\ASTER-ANIMA\agro\develop-agro\agro-moodle-app\src\core\mainmenu\pages\menu\menu.html"*/,
+            selector: 'page-core-mainmenu',template:/*ion-inline-start:"D:\workspace\moodle\agro-moodle-app\src\core\mainmenu\pages\menu\menu.html"*/'<core-ion-tabs #mainTabs [hidden]="!showTabs" [loaded]="loaded" tabsLayout="title-hide" [attr.tabsPlacement]="tabsPlacement">\n\n    <core-ion-tab [enabled]="false" [show]="false" [root]="redirectPage" [rootParams]="redirectParams"></core-ion-tab>\n\n    <core-ion-tab *ngFor="let tab of tabs" [root]="tab.page" [rootParams]="tab.pageParams" [tabTitle]="tab.title | translate" [tabIcon]="tab.icon" [tabBadge]="tab.badge" class="{{tab.class}}" [enabled]="!tab.hide" [show]="!tab.hide"></core-ion-tab>\n\n    <core-ion-tab root="CoreMainMenuMorePage" [tabTitle]="\'core.more\' | translate" tabIcon="menu"></core-ion-tab>\n\n</core-ion-tabs>\n\n<div class="core-network-message" [hidden]="!showTabs">\n\n    <div class="core-online-message">\n\n        {{ "core.youreonline" | translate }}\n\n    </div>\n\n    <div class="core-offline-message">\n\n        {{ "core.youreoffline" | translate }}\n\n    </div>\n\n</div>\n\n'/*ion-inline-end:"D:\workspace\moodle\agro-moodle-app\src\core\mainmenu\pages\menu\menu.html"*/,
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_7__providers_delegate__["a" /* CoreMainMenuDelegate */],
             __WEBPACK_IMPORTED_MODULE_3__providers_sites__["b" /* CoreSitesProvider */],

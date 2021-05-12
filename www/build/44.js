@@ -1,6 +1,6 @@
 webpackJsonp([44],{
 
-/***/ 2072:
+/***/ 2106:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -9,7 +9,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(3);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ngx_translate_core__ = __webpack_require__(1);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__change_password__ = __webpack_require__(2228);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__change_password__ = __webpack_require__(2266);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__components_components_module__ = __webpack_require__(13);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__directives_directives_module__ = __webpack_require__(14);
 // (C) Copyright 2015 Moodle Pty Ltd.
@@ -60,7 +60,7 @@ var CoreLoginChangePasswordPageModule = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 2228:
+/***/ 2266:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -138,7 +138,7 @@ var CoreLoginChangePasswordPage = /** @class */ (function () {
     };
     CoreLoginChangePasswordPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-core-change-password',template:/*ion-inline-start:"C:\Users\sid_m\Documents\ASTER-ANIMA\agro\develop-agro\agro-moodle-app\src\core\login\pages\change-password\change-password.html"*/'<ion-header>\n\n    <ion-navbar core-back-button>\n\n        <ion-title>{{ \'core.login.changepassword\' | translate }}</ion-title>\n\n        <ion-buttons end>\n\n            <button ion-button icon-only (click)="showHelp()" [attr.aria-label]="\'core.help\' | translate">\n\n                <ion-icon name="help-circle"></ion-icon>\n\n            </button>\n\n        </ion-buttons>\n\n    </ion-navbar>\n\n</ion-header>\n\n<ion-content padding>\n\n    <ion-list>\n\n        <ion-item text-wrap *ngIf="!changingPassword">\n\n            <h2>{{ \'core.login.forcepasswordchangenotice\' | translate }}</h2>\n\n            <p padding-vertical>{{ \'core.login.changepasswordinstructions\' | translate }}</p>\n\n            <button text-wrap ion-button block (click)="openChangePasswordPage()">{{ \'core.login.changepasswordbutton\' | translate }}</button>\n\n        </ion-item>\n\n        <ion-item text-wrap *ngIf="changingPassword">\n\n            <p padding-bottom>{{ \'core.login.changepasswordreconnectinstructions\' | translate }}</p>\n\n            <button text-wrap ion-button block (click)="login()">{{ \'core.login.reconnect\' | translate }}</button>\n\n        </ion-item>\n\n        <ion-item text-wrap>\n\n            <p padding-bottom>{{ \'core.login.changepasswordlogoutinstructions\' | translate }}</p>\n\n            <button text-wrap ion-button block color="light" (click)="logout()">{{ logoutLabel | translate }}</button>\n\n        </ion-item>\n\n    </ion-list>\n\n</ion-content>\n\n'/*ion-inline-end:"C:\Users\sid_m\Documents\ASTER-ANIMA\agro\develop-agro\agro-moodle-app\src\core\login\pages\change-password\change-password.html"*/,
+            selector: 'page-core-change-password',template:/*ion-inline-start:"D:\workspace\moodle\agro-moodle-app\src\core\login\pages\change-password\change-password.html"*/'<ion-header>\n\n    <ion-navbar core-back-button>\n\n        <ion-title>{{ \'core.login.changepassword\' | translate }}</ion-title>\n\n        <ion-buttons end>\n\n            <button ion-button icon-only (click)="showHelp()" [attr.aria-label]="\'core.help\' | translate">\n\n                <ion-icon name="help-circle"></ion-icon>\n\n            </button>\n\n        </ion-buttons>\n\n    </ion-navbar>\n\n</ion-header>\n\n<ion-content padding>\n\n    <ion-list>\n\n        <ion-item text-wrap *ngIf="!changingPassword">\n\n            <h2>{{ \'core.login.forcepasswordchangenotice\' | translate }}</h2>\n\n            <p padding-vertical>{{ \'core.login.changepasswordinstructions\' | translate }}</p>\n\n            <button text-wrap ion-button block (click)="openChangePasswordPage()">{{ \'core.login.changepasswordbutton\' | translate }}</button>\n\n        </ion-item>\n\n        <ion-item text-wrap *ngIf="changingPassword">\n\n            <p padding-bottom>{{ \'core.login.changepasswordreconnectinstructions\' | translate }}</p>\n\n            <button text-wrap ion-button block (click)="login()">{{ \'core.login.reconnect\' | translate }}</button>\n\n        </ion-item>\n\n        <ion-item text-wrap>\n\n            <p padding-bottom>{{ \'core.login.changepasswordlogoutinstructions\' | translate }}</p>\n\n            <button text-wrap ion-button block color="light" (click)="logout()">{{ logoutLabel | translate }}</button>\n\n        </ion-item>\n\n    </ion-list>\n\n</ion-content>\n\n'/*ion-inline-end:"D:\workspace\moodle\agro-moodle-app\src\core\login\pages\change-password\change-password.html"*/,
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1__ngx_translate_core__["c" /* TranslateService */], __WEBPACK_IMPORTED_MODULE_2__providers_sites__["b" /* CoreSitesProvider */],
             __WEBPACK_IMPORTED_MODULE_3__providers_helper__["b" /* CoreLoginHelperProvider */], __WEBPACK_IMPORTED_MODULE_4__providers_utils_dom__["b" /* CoreDomUtilsProvider */]])

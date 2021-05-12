@@ -1,6 +1,6 @@
 webpackJsonp([62],{
 
-/***/ 2058:
+/***/ 2088:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -8,7 +8,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "CoreCommentsAddPageModule", function() { return CoreCommentsAddPageModule; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(3);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__add__ = __webpack_require__(2214);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__add__ = __webpack_require__(2249);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ngx_translate_core__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__directives_directives_module__ = __webpack_require__(14);
 // (C) Copyright 2015 Moodle Pty Ltd.
@@ -57,7 +57,7 @@ var CoreCommentsAddPageModule = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 2214:
+/***/ 2249:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -157,7 +157,7 @@ var CoreCommentsAddPage = /** @class */ (function () {
     ], CoreCommentsAddPage.prototype, "formElement", void 0);
     CoreCommentsAddPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-core-comments-add',template:/*ion-inline-start:"C:\Users\sid_m\Documents\ASTER-ANIMA\agro\develop-agro\agro-moodle-app\src\core\comments\pages\add\add.html"*/'<ion-header>\n\n    <ion-navbar core-back-button>\n\n        <ion-title>{{ \'core.comments.addcomment\' | translate }}</ion-title>\n\n        <ion-buttons end>\n\n            <button ion-button icon-only (click)="closeModal()" [attr.aria-label]="\'core.close\' | translate">\n\n                <ion-icon name="close"></ion-icon>\n\n            </button>\n\n        </ion-buttons>\n\n    </ion-navbar>\n\n</ion-header>\n\n<ion-content>\n\n    <form name="itemEdit" (ngSubmit)="addComment($event)" #commentForm>\n\n        <ion-item>\n\n            <ion-textarea placeholder="{{ \'core.comments.addcomment\' | translate }}" rows="5" [(ngModel)]="content" name="content" required="required"></ion-textarea>\n\n        </ion-item>\n\n        <div padding>\n\n            <button ion-button block type="submit" [disabled]="processing || content.length < 1">\n\n                {{ \'core.comments.savecomment\' | translate }}\n\n            </button>\n\n        </div>\n\n    </form>\n\n</ion-content>\n\n'/*ion-inline-end:"C:\Users\sid_m\Documents\ASTER-ANIMA\agro\develop-agro\agro-moodle-app\src\core\comments\pages\add\add.html"*/,
+            selector: 'page-core-comments-add',template:/*ion-inline-start:"D:\workspace\moodle\agro-moodle-app\src\core\comments\pages\add\add.html"*/'<ion-header>\n\n    <ion-navbar core-back-button>\n\n        <ion-title>{{ \'core.comments.addcomment\' | translate }}</ion-title>\n\n        <ion-buttons end>\n\n            <button ion-button icon-only (click)="closeModal()" [attr.aria-label]="\'core.close\' | translate">\n\n                <ion-icon name="close"></ion-icon>\n\n            </button>\n\n        </ion-buttons>\n\n    </ion-navbar>\n\n</ion-header>\n\n<ion-content>\n\n    <form name="itemEdit" (ngSubmit)="addComment($event)" #commentForm>\n\n        <ion-item>\n\n            <ion-textarea placeholder="{{ \'core.comments.addcomment\' | translate }}" rows="5" [(ngModel)]="content" name="content" required="required"></ion-textarea>\n\n        </ion-item>\n\n        <div padding>\n\n            <button ion-button block type="submit" [disabled]="processing || content.length < 1">\n\n                {{ \'core.comments.savecomment\' | translate }}\n\n            </button>\n\n        </div>\n\n    </form>\n\n</ion-content>\n\n'/*ion-inline-end:"D:\workspace\moodle\agro-moodle-app\src\core\comments\pages\add\add.html"*/,
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["t" /* NavParams */],
             __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["G" /* ViewController */],

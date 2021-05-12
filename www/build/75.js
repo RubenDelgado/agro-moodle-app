@@ -1,6 +1,6 @@
 webpackJsonp([75],{
 
-/***/ 2130:
+/***/ 2073:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -11,7 +11,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ngx_translate_core__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__components_components_module__ = __webpack_require__(13);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__directives_directives_module__ = __webpack_require__(14);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__edit__ = __webpack_require__(2289);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__edit__ = __webpack_require__(2231);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__core_editor_components_components_module__ = __webpack_require__(130);
 // (C) Copyright 2015 Moodle Pty Ltd.
 //
@@ -63,7 +63,7 @@ var AddonModWikiEditPageModule = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 2289:
+/***/ 2231:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -80,8 +80,8 @@ var AddonModWikiEditPageModule = /** @class */ (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__core_course_providers_course__ = __webpack_require__(12);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__core_course_providers_helper__ = __webpack_require__(22);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__providers_wiki__ = __webpack_require__(184);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__providers_wiki_offline__ = __webpack_require__(243);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__providers_wiki_sync__ = __webpack_require__(244);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__providers_wiki_offline__ = __webpack_require__(242);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__providers_wiki_sync__ = __webpack_require__(243);
 // (C) Copyright 2015 Moodle Pty Ltd.
 //
 // Licensed under the Apache License, Version 2.0 (the "License");
@@ -626,7 +626,7 @@ var AddonModWikiEditPage = /** @class */ (function () {
     ], AddonModWikiEditPage.prototype, "formElement", void 0);
     AddonModWikiEditPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-addon-mod-wiki-edit',template:/*ion-inline-start:"C:\Users\sid_m\Documents\ASTER-ANIMA\agro\develop-agro\agro-moodle-app\src\addon\mod\wiki\pages\edit\edit.html"*/'<ion-header>\n\n    <ion-navbar core-back-button>\n\n        <ion-title><core-format-text [text]="title" contextLevel="module" [contextInstanceId]="module.id" [courseId]="courseId"></core-format-text></ion-title>\n\n\n\n        <ion-buttons end>\n\n            <button ion-button clear (click)="save()" [attr.aria-label]="\'core.save\' | translate">\n\n                {{ \'core.save\' | translate }}\n\n            </button>\n\n        </ion-buttons>\n\n    </ion-navbar>\n\n</ion-header>\n\n<ion-content>\n\n    <core-loading [hideUntil]="loaded">\n\n        <form ion-list [formGroup]="pageForm" #editPageForm>\n\n            <ion-item text-wrap *ngIf="canEditTitle" class="item-title">\n\n                <ion-input name="title" type="text" [placeholder]="\'addon.mod_wiki.newpagetitle\' | translate" [formControlName]="\'title\'"></ion-input>\n\n            </ion-item>\n\n\n\n            <ion-item>\n\n                <core-rich-text-editor item-content [control]="contentControl" [placeholder]="\'core.content\' | translate" name="wiki_page_content" [component]="component" [componentId]="componentId" [autoSave]="true" contextLevel="module" [contextInstanceId]="module.id || 0" elementId="newcontent_editor" [draftExtraParams]="editorExtraParams"></core-rich-text-editor>\n\n            </ion-item>\n\n\n\n            <ion-item *ngIf="wrongVersionLock" text-center class="addon-mod_wiki-wrongversionlock" >\n\n                <ion-badge color="danger" padding>{{ \'addon.mod_wiki.wrongversionlock\' | translate }}</ion-badge>\n\n            </ion-item>\n\n        </form>\n\n    </core-loading>\n\n</ion-content>\n\n'/*ion-inline-end:"C:\Users\sid_m\Documents\ASTER-ANIMA\agro\develop-agro\agro-moodle-app\src\addon\mod\wiki\pages\edit\edit.html"*/,
+            selector: 'page-addon-mod-wiki-edit',template:/*ion-inline-start:"D:\workspace\moodle\agro-moodle-app\src\addon\mod\wiki\pages\edit\edit.html"*/'<ion-header>\n\n    <ion-navbar core-back-button>\n\n        <ion-title><core-format-text [text]="title" contextLevel="module" [contextInstanceId]="module.id" [courseId]="courseId"></core-format-text></ion-title>\n\n\n\n        <ion-buttons end>\n\n            <button ion-button clear (click)="save()" [attr.aria-label]="\'core.save\' | translate">\n\n                {{ \'core.save\' | translate }}\n\n            </button>\n\n        </ion-buttons>\n\n    </ion-navbar>\n\n</ion-header>\n\n<ion-content>\n\n    <core-loading [hideUntil]="loaded">\n\n        <form ion-list [formGroup]="pageForm" #editPageForm>\n\n            <ion-item text-wrap *ngIf="canEditTitle" class="item-title">\n\n                <ion-input name="title" type="text" [placeholder]="\'addon.mod_wiki.newpagetitle\' | translate" [formControlName]="\'title\'"></ion-input>\n\n            </ion-item>\n\n\n\n            <ion-item>\n\n                <core-rich-text-editor item-content [control]="contentControl" [placeholder]="\'core.content\' | translate" name="wiki_page_content" [component]="component" [componentId]="componentId" [autoSave]="true" contextLevel="module" [contextInstanceId]="module.id || 0" elementId="newcontent_editor" [draftExtraParams]="editorExtraParams"></core-rich-text-editor>\n\n            </ion-item>\n\n\n\n            <ion-item *ngIf="wrongVersionLock" text-center class="addon-mod_wiki-wrongversionlock" >\n\n                <ion-badge color="danger" padding>{{ \'addon.mod_wiki.wrongversionlock\' | translate }}</ion-badge>\n\n            </ion-item>\n\n        </form>\n\n    </core-loading>\n\n</ion-content>\n\n'/*ion-inline-end:"D:\workspace\moodle\agro-moodle-app\src\addon\mod\wiki\pages\edit\edit.html"*/,
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["t" /* NavParams */], __WEBPACK_IMPORTED_MODULE_2__angular_forms__["a" /* FormBuilder */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["s" /* NavController */], __WEBPACK_IMPORTED_MODULE_5__providers_sites__["b" /* CoreSitesProvider */],
             __WEBPACK_IMPORTED_MODULE_6__providers_sync__["a" /* CoreSyncProvider */], __WEBPACK_IMPORTED_MODULE_7__providers_utils_dom__["b" /* CoreDomUtilsProvider */],

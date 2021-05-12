@@ -1,6 +1,6 @@
 webpackJsonp([101],{
 
-/***/ 2027:
+/***/ 2045:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -11,7 +11,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ngx_translate_core__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__components_components_module__ = __webpack_require__(13);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__directives_directives_module__ = __webpack_require__(14);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__sort_order_selector__ = __webpack_require__(2183);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__sort_order_selector__ = __webpack_require__(2201);
 // (C) Copyright 2015 Moodle Pty Ltd.
 //
 // Licensed under the Apache License, Version 2.0 (the "License");
@@ -60,7 +60,7 @@ var AddonModForumSortOrderSelectorPagePageModule = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 2183:
+/***/ 2201:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -117,7 +117,7 @@ var AddonModForumSortOrderSelectorPage = /** @class */ (function () {
     };
     AddonModForumSortOrderSelectorPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-addon-mod-forum-sort-order-selector',template:/*ion-inline-start:"C:\Users\sid_m\Documents\ASTER-ANIMA\agro\develop-agro\agro-moodle-app\src\addon\mod\forum\pages\sort-order-selector\sort-order-selector.html"*/'<ion-header>\n\n    <ion-navbar core-back-button>\n\n        <ion-title>{{ \'core.sort\' | translate }}</ion-title>\n\n        <ion-buttons end>\n\n            <button ion-button icon-only (click)="closeModal()" [attr.aria-label]="\'core.close\' | translate">\n\n                <ion-icon name="close"></ion-icon>\n\n            </button>\n\n        </ion-buttons>\n\n    </ion-navbar>\n\n</ion-header>\n\n<ion-content>\n\n    <ion-list id="addon-mod-forum-sort-selector" role="menu" aria-labelledby="addon-mod-forum-sort-order-button">\n\n        <ng-container *ngFor="let sortOrder of sortOrders">\n\n            <a ion-item text-wrap (click)="selectSortOrder(sortOrder)" [class.core-primary-selected-item]="selected == sortOrder.value" detail-none role="menuitem" [attr.aria-label]="sortOrder.label | translate">\n\n                <h2>{{ sortOrder.label | translate }}</h2>\n\n            </a>\n\n        </ng-container>\n\n    </ion-list>\n\n</ion-content>\n\n'/*ion-inline-end:"C:\Users\sid_m\Documents\ASTER-ANIMA\agro\develop-agro\agro-moodle-app\src\addon\mod\forum\pages\sort-order-selector\sort-order-selector.html"*/,
+            selector: 'page-addon-mod-forum-sort-order-selector',template:/*ion-inline-start:"D:\workspace\moodle\agro-moodle-app\src\addon\mod\forum\pages\sort-order-selector\sort-order-selector.html"*/'<ion-header>\n\n    <ion-navbar core-back-button>\n\n        <ion-title>{{ \'core.sort\' | translate }}</ion-title>\n\n        <ion-buttons end>\n\n            <button ion-button icon-only (click)="closeModal()" [attr.aria-label]="\'core.close\' | translate">\n\n                <ion-icon name="close"></ion-icon>\n\n            </button>\n\n        </ion-buttons>\n\n    </ion-navbar>\n\n</ion-header>\n\n<ion-content>\n\n    <ion-list id="addon-mod-forum-sort-selector" role="menu" aria-labelledby="addon-mod-forum-sort-order-button">\n\n        <ng-container *ngFor="let sortOrder of sortOrders">\n\n            <a ion-item text-wrap (click)="selectSortOrder(sortOrder)" [class.core-primary-selected-item]="selected == sortOrder.value" detail-none role="menuitem" [attr.aria-label]="sortOrder.label | translate">\n\n                <h2>{{ sortOrder.label | translate }}</h2>\n\n            </a>\n\n        </ng-container>\n\n    </ion-list>\n\n</ion-content>\n\n'/*ion-inline-end:"D:\workspace\moodle\agro-moodle-app\src\addon\mod\forum\pages\sort-order-selector\sort-order-selector.html"*/,
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["t" /* NavParams */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["G" /* ViewController */]])
     ], AddonModForumSortOrderSelectorPage);

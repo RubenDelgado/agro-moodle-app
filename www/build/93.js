@@ -1,6 +1,6 @@
 webpackJsonp([93],{
 
-/***/ 2034:
+/***/ 2053:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -10,7 +10,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(3);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ngx_translate_core__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__directives_directives_module__ = __webpack_require__(14);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__toc__ = __webpack_require__(2190);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__toc__ = __webpack_require__(2209);
 // (C) Copyright 2015 Moodle Pty Ltd.
 //
 // Licensed under the Apache License, Version 2.0 (the "License");
@@ -57,7 +57,7 @@ var AddonModImscpTocPageModule = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 2190:
+/***/ 2209:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -123,7 +123,7 @@ var AddonModImscpTocPage = /** @class */ (function () {
     };
     AddonModImscpTocPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-addon-mod-imscp-toc',template:/*ion-inline-start:"C:\Users\sid_m\Documents\ASTER-ANIMA\agro\develop-agro\agro-moodle-app\src\addon\mod\imscp\pages\toc\toc.html"*/'<ion-header>\n\n    <ion-navbar core-back-button>\n\n        <ion-title>{{ \'addon.mod_imscp.toc\' | translate }}</ion-title>\n\n        <ion-buttons end>\n\n            <button ion-button icon-only (click)="closeModal()" [attr.aria-label]="\'core.close\' | translate">\n\n                <ion-icon name="close"></ion-icon>\n\n            </button>\n\n        </ion-buttons>\n\n    </ion-navbar>\n\n</ion-header>\n\n<ion-content>\n\n    <nav>\n\n        <ion-list>\n\n            <a ion-item *ngFor="let item of items" (click)="loadItem(item.href)" [class.core-bold]="!item.href" [class.core-nav-item-selected]="selected == item.href">\n\n                <span padding-left *ngFor="let i of getNumberForPadding(item.level)"></span>{{item.title}}\n\n            </a>\n\n        </ion-list>\n\n    </nav>\n\n</ion-content>\n\n'/*ion-inline-end:"C:\Users\sid_m\Documents\ASTER-ANIMA\agro\develop-agro\agro-moodle-app\src\addon\mod\imscp\pages\toc\toc.html"*/
+            selector: 'page-addon-mod-imscp-toc',template:/*ion-inline-start:"D:\workspace\moodle\agro-moodle-app\src\addon\mod\imscp\pages\toc\toc.html"*/'<ion-header>\n\n    <ion-navbar core-back-button>\n\n        <ion-title>{{ \'addon.mod_imscp.toc\' | translate }}</ion-title>\n\n        <ion-buttons end>\n\n            <button ion-button icon-only (click)="closeModal()" [attr.aria-label]="\'core.close\' | translate">\n\n                <ion-icon name="close"></ion-icon>\n\n            </button>\n\n        </ion-buttons>\n\n    </ion-navbar>\n\n</ion-header>\n\n<ion-content>\n\n    <nav>\n\n        <ion-list>\n\n            <a ion-item *ngFor="let item of items" (click)="loadItem(item.href)" [class.core-bold]="!item.href" [class.core-nav-item-selected]="selected == item.href">\n\n                <span padding-left *ngFor="let i of getNumberForPadding(item.level)"></span>{{item.title}}\n\n            </a>\n\n        </ion-list>\n\n    </nav>\n\n</ion-content>\n\n'/*ion-inline-end:"D:\workspace\moodle\agro-moodle-app\src\addon\mod\imscp\pages\toc\toc.html"*/
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["t" /* NavParams */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["G" /* ViewController */]])
     ], AddonModImscpTocPage);

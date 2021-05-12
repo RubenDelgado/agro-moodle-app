@@ -1,6 +1,6 @@
 webpackJsonp([57],{
 
-/***/ 2062:
+/***/ 2094:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -9,7 +9,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(3);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ngx_translate_core__ = __webpack_require__(1);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__unsupported_module__ = __webpack_require__(2218);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__unsupported_module__ = __webpack_require__(2254);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__components_components_module__ = __webpack_require__(13);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__directives_directives_module__ = __webpack_require__(14);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__components_components_module__ = __webpack_require__(44);
@@ -63,7 +63,7 @@ var CoreCourseUnsupportedModulePageModule = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 2218:
+/***/ 2254:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -121,7 +121,7 @@ var CoreCourseUnsupportedModulePage = /** @class */ (function () {
     };
     CoreCourseUnsupportedModulePage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-core-course-unsupported-module',template:/*ion-inline-start:"C:\Users\sid_m\Documents\ASTER-ANIMA\agro\develop-agro\agro-moodle-app\src\core\course\pages\unsupported-module\unsupported-module.html"*/'<ion-header>\n\n    <ion-navbar core-back-button>\n\n        <ion-title><core-format-text [text]="module.name" contextLevel="module" [contextInstanceId]="module.id" [courseId]="courseId"></core-format-text></ion-title>\n\n\n\n        <ion-buttons end>\n\n            <core-context-menu>\n\n                <core-context-menu-item [priority]="900" *ngIf="module.url" [href]="module.url" [content]="\'core.openinbrowser\' | translate" [iconAction]="\'open\'"></core-context-menu-item>\n\n                <core-context-menu-item [priority]="800" *ngIf="module.description" [content]="\'core.moduleintro\' | translate" (action)="expandDescription()" [iconAction]="\'arrow-forward\'"></core-context-menu-item>\n\n            </core-context-menu>\n\n        </ion-buttons>\n\n    </ion-navbar>\n\n</ion-header>\n\n<ion-content>\n\n    <core-course-unsupported-module [module]="module" [courseId]="courseId"></core-course-unsupported-module>\n\n</ion-content>\n\n'/*ion-inline-end:"C:\Users\sid_m\Documents\ASTER-ANIMA\agro\develop-agro\agro-moodle-app\src\core\course\pages\unsupported-module\unsupported-module.html"*/,
+            selector: 'page-core-course-unsupported-module',template:/*ion-inline-start:"D:\workspace\moodle\agro-moodle-app\src\core\course\pages\unsupported-module\unsupported-module.html"*/'<ion-header>\n\n    <ion-navbar core-back-button>\n\n        <ion-title><core-format-text [text]="module.name" contextLevel="module" [contextInstanceId]="module.id" [courseId]="courseId"></core-format-text></ion-title>\n\n\n\n        <ion-buttons end>\n\n            <core-context-menu>\n\n                <core-context-menu-item [priority]="900" *ngIf="module.url" [href]="module.url" [content]="\'core.openinbrowser\' | translate" [iconAction]="\'open\'"></core-context-menu-item>\n\n                <core-context-menu-item [priority]="800" *ngIf="module.description" [content]="\'core.moduleintro\' | translate" (action)="expandDescription()" [iconAction]="\'arrow-forward\'"></core-context-menu-item>\n\n            </core-context-menu>\n\n        </ion-buttons>\n\n    </ion-navbar>\n\n</ion-header>\n\n<ion-content>\n\n    <core-course-unsupported-module [module]="module" [courseId]="courseId"></core-course-unsupported-module>\n\n</ion-content>\n\n'/*ion-inline-end:"D:\workspace\moodle\agro-moodle-app\src\core\course\pages\unsupported-module\unsupported-module.html"*/,
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["t" /* NavParams */], __WEBPACK_IMPORTED_MODULE_2__ngx_translate_core__["c" /* TranslateService */], __WEBPACK_IMPORTED_MODULE_3__providers_utils_text__["b" /* CoreTextUtilsProvider */]])
     ], CoreCourseUnsupportedModulePage);

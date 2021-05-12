@@ -1,6 +1,6 @@
 webpackJsonp([143],{
 
-/***/ 2102:
+/***/ 1999:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -12,8 +12,8 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__components_components_module__ = __webpack_require__(13);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__directives_directives_module__ = __webpack_require__(14);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__pipes_pipes_module__ = __webpack_require__(66);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__components_components_module__ = __webpack_require__(1032);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__index__ = __webpack_require__(2258);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__components_components_module__ = __webpack_require__(1023);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__index__ = __webpack_require__(2155);
 // (C) Copyright 2015 Moodle Pty Ltd.
 //
 // Licensed under the Apache License, Version 2.0 (the "License");
@@ -66,7 +66,7 @@ var AddonCalendarIndexPageModule = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 2258:
+/***/ 2155:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -80,10 +80,10 @@ var AddonCalendarIndexPageModule = /** @class */ (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__providers_utils_dom__ = __webpack_require__(7);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__providers_calendar__ = __webpack_require__(121);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__providers_calendar_offline__ = __webpack_require__(190);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__providers_helper__ = __webpack_require__(192);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__components_calendar_calendar__ = __webpack_require__(1033);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__components_upcoming_events_upcoming_events__ = __webpack_require__(1034);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__components_filter_filter__ = __webpack_require__(1006);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__providers_helper__ = __webpack_require__(191);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__components_calendar_calendar__ = __webpack_require__(1024);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__components_upcoming_events_upcoming_events__ = __webpack_require__(1025);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__components_filter_filter__ = __webpack_require__(1005);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__providers_calendar_sync__ = __webpack_require__(431);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__core_courses_providers_helper__ = __webpack_require__(178);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__ionic_native_network__ = __webpack_require__(120);
@@ -433,7 +433,7 @@ var AddonCalendarIndexPage = /** @class */ (function () {
     ], AddonCalendarIndexPage.prototype, "upcomingEventsComponent", void 0);
     AddonCalendarIndexPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-addon-calendar-index',template:/*ion-inline-start:"C:\Users\sid_m\Documents\ASTER-ANIMA\agro\develop-agro\agro-moodle-app\src\addon\calendar\pages\index\index.html"*/'<ion-header>\n\n    <ion-navbar core-back-button>\n\n        <ion-title>{{ (showCalendar ? \'addon.calendar.calendarevents\' : \'addon.calendar.upcomingevents\') | translate }}</ion-title>\n\n        <ion-buttons end>\n\n            <button ion-button icon-only (click)="openFilter($event)" [attr.aria-label]="\'core.filter\' | translate">\n\n                <ion-icon name="funnel" *ngIf="filter.filtered"></ion-icon>\n\n                <ion-icon name="ios-funnel-outline" *ngIf="!filter.filtered"></ion-icon>\n\n            </button>\n\n            <core-context-menu>\n\n                <core-context-menu-item *ngIf="showCalendar" [priority]="800" [content]="\'addon.calendar.upcomingevents\' | translate" [iconAction]="\'list\'" (action)="toggleDisplay()"></core-context-menu-item>\n\n                <core-context-menu-item *ngIf="!showCalendar" [priority]="800" [content]="\'addon.calendar.monthlyview\' | translate" [iconAction]="\'fa-calendar-o\'" (action)="toggleDisplay()"></core-context-menu-item>\n\n                <core-context-menu-item [hidden]="!notificationsEnabled" [priority]="600" [content]="\'core.settings.settings\' | translate" (action)="openSettings()" [iconAction]="\'cog\'"></core-context-menu-item>\n\n                <core-context-menu-item [hidden]="!loaded || !hasOffline || !isOnline"  [priority]="400" [content]="\'core.settings.synchronizenow\' | translate" (action)="doRefresh(null, $event, true)" [iconAction]="syncIcon" [closeOnClick]="false"></core-context-menu-item>\n\n            </core-context-menu>\n\n        </ion-buttons>\n\n    </ion-navbar>\n\n</ion-header>\n\n<ion-content>\n\n    <ion-refresher [enabled]="loaded" (ionRefresh)="doRefresh($event)">\n\n        <ion-refresher-content pullingText="{{ \'core.pulltorefresh\' | translate }}"></ion-refresher-content>\n\n    </ion-refresher>\n\n\n\n    <!-- There is data to be synchronized -->\n\n    <ion-card class="core-warning-card" icon-start *ngIf="hasOffline">\n\n        <ion-icon name="warning"></ion-icon> {{ \'core.hasdatatosync\' | translate:{$a: \'addon.calendar.calendar\' | translate} }}\n\n    </ion-card>\n\n\n\n    <addon-calendar-calendar [hidden]="!showCalendar" [initialYear]="year" [initialMonth]="month" [filter]="filter" [displayNavButtons]="showCalendar" (onEventClicked)="gotoEvent($event)" (onDayClicked)="gotoDay($event)"></addon-calendar-calendar>\n\n\n\n    <addon-calendar-upcoming-events *ngIf="loadUpcoming" [hidden]="showCalendar" [filter]="filter" (onEventClicked)="gotoEvent($event)"></addon-calendar-upcoming-events>\n\n\n\n    <!-- Create a calendar event. -->\n\n    <ion-fab core-fab bottom end *ngIf="canCreate">\n\n        <button ion-fab (click)="openEdit()" [attr.aria-label]="\'addon.calendar.newevent\' | translate">\n\n            <ion-icon name="add"></ion-icon>\n\n        </button>\n\n    </ion-fab>\n\n</ion-content>\n\n'/*ion-inline-end:"C:\Users\sid_m\Documents\ASTER-ANIMA\agro\develop-agro\agro-moodle-app\src\addon\calendar\pages\index\index.html"*/,
+            selector: 'page-addon-calendar-index',template:/*ion-inline-start:"D:\workspace\moodle\agro-moodle-app\src\addon\calendar\pages\index\index.html"*/'<ion-header>\n\n    <ion-navbar core-back-button>\n\n        <ion-title>{{ (showCalendar ? \'addon.calendar.calendarevents\' : \'addon.calendar.upcomingevents\') | translate }}</ion-title>\n\n        <ion-buttons end>\n\n            <button ion-button icon-only (click)="openFilter($event)" [attr.aria-label]="\'core.filter\' | translate">\n\n                <ion-icon name="funnel" *ngIf="filter.filtered"></ion-icon>\n\n                <ion-icon name="ios-funnel-outline" *ngIf="!filter.filtered"></ion-icon>\n\n            </button>\n\n            <core-context-menu>\n\n                <core-context-menu-item *ngIf="showCalendar" [priority]="800" [content]="\'addon.calendar.upcomingevents\' | translate" [iconAction]="\'list\'" (action)="toggleDisplay()"></core-context-menu-item>\n\n                <core-context-menu-item *ngIf="!showCalendar" [priority]="800" [content]="\'addon.calendar.monthlyview\' | translate" [iconAction]="\'fa-calendar-o\'" (action)="toggleDisplay()"></core-context-menu-item>\n\n                <core-context-menu-item [hidden]="!notificationsEnabled" [priority]="600" [content]="\'core.settings.settings\' | translate" (action)="openSettings()" [iconAction]="\'cog\'"></core-context-menu-item>\n\n                <core-context-menu-item [hidden]="!loaded || !hasOffline || !isOnline"  [priority]="400" [content]="\'core.settings.synchronizenow\' | translate" (action)="doRefresh(null, $event, true)" [iconAction]="syncIcon" [closeOnClick]="false"></core-context-menu-item>\n\n            </core-context-menu>\n\n        </ion-buttons>\n\n    </ion-navbar>\n\n</ion-header>\n\n<ion-content>\n\n    <ion-refresher [enabled]="loaded" (ionRefresh)="doRefresh($event)">\n\n        <ion-refresher-content pullingText="{{ \'core.pulltorefresh\' | translate }}"></ion-refresher-content>\n\n    </ion-refresher>\n\n\n\n    <!-- There is data to be synchronized -->\n\n    <ion-card class="core-warning-card" icon-start *ngIf="hasOffline">\n\n        <ion-icon name="warning"></ion-icon> {{ \'core.hasdatatosync\' | translate:{$a: \'addon.calendar.calendar\' | translate} }}\n\n    </ion-card>\n\n\n\n    <addon-calendar-calendar [hidden]="!showCalendar" [initialYear]="year" [initialMonth]="month" [filter]="filter" [displayNavButtons]="showCalendar" (onEventClicked)="gotoEvent($event)" (onDayClicked)="gotoDay($event)"></addon-calendar-calendar>\n\n\n\n    <addon-calendar-upcoming-events *ngIf="loadUpcoming" [hidden]="showCalendar" [filter]="filter" (onEventClicked)="gotoEvent($event)"></addon-calendar-upcoming-events>\n\n\n\n    <!-- Create a calendar event. -->\n\n    <ion-fab core-fab bottom end *ngIf="canCreate">\n\n        <button ion-fab (click)="openEdit()" [attr.aria-label]="\'addon.calendar.newevent\' | translate">\n\n            <ion-icon name="add"></ion-icon>\n\n        </button>\n\n    </ion-fab>\n\n</ion-content>\n\n'/*ion-inline-end:"D:\workspace\moodle\agro-moodle-app\src\addon\calendar\pages\index\index.html"*/,
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_4__providers_local_notifications__["a" /* CoreLocalNotificationsProvider */],
             __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["t" /* NavParams */],

@@ -1,6 +1,6 @@
 webpackJsonp([63],{
 
-/***/ 2057:
+/***/ 2087:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -8,7 +8,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "CorePlaceholderPageModule", function() { return CorePlaceholderPageModule; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(3);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__placeholder__ = __webpack_require__(2213);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__placeholder__ = __webpack_require__(2248);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ngx_translate_core__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__components_module__ = __webpack_require__(13);
 // (C) Copyright 2015 Moodle Pty Ltd.
@@ -61,7 +61,7 @@ var CorePlaceholderPageModule = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 2213:
+/***/ 2248:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -97,7 +97,7 @@ var CoreSplitViewPlaceholderPage = /** @class */ (function () {
     }
     CoreSplitViewPlaceholderPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'core-placeholder',template:/*ion-inline-start:"C:\Users\sid_m\Documents\ASTER-ANIMA\agro\develop-agro\agro-moodle-app\src\components\split-view\placeholder\core-placeholder.html"*/'<ion-header>\n\n    <ion-navbar core-back-button>\n\n        <ion-title>&nbsp;</ion-title>\n\n    </ion-navbar>\n\n</ion-header>\n\n\n\n<ion-content>\n\n    <core-empty-box icon="arrow-dropleft" [message]="\'core.emptysplit\' | translate" [flipIconRtl]="true"></core-empty-box>\n\n</ion-content>\n\n'/*ion-inline-end:"C:\Users\sid_m\Documents\ASTER-ANIMA\agro\develop-agro\agro-moodle-app\src\components\split-view\placeholder\core-placeholder.html"*/,
+            selector: 'core-placeholder',template:/*ion-inline-start:"D:\workspace\moodle\agro-moodle-app\src\components\split-view\placeholder\core-placeholder.html"*/'<ion-header>\n\n    <ion-navbar core-back-button>\n\n        <ion-title>&nbsp;</ion-title>\n\n    </ion-navbar>\n\n</ion-header>\n\n\n\n<ion-content>\n\n    <core-empty-box icon="arrow-dropleft" [message]="\'core.emptysplit\' | translate" [flipIconRtl]="true"></core-empty-box>\n\n</ion-content>\n\n'/*ion-inline-end:"D:\workspace\moodle\agro-moodle-app\src\components\split-view\placeholder\core-placeholder.html"*/,
         }),
         __metadata("design:paramtypes", [])
     ], CoreSplitViewPlaceholderPage);

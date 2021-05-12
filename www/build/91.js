@@ -1,6 +1,6 @@
 webpackJsonp([91],{
 
-/***/ 2035:
+/***/ 2055:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -10,7 +10,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(3);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__components_components_module__ = __webpack_require__(13);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__directives_directives_module__ = __webpack_require__(14);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__menu_modal__ = __webpack_require__(2191);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__menu_modal__ = __webpack_require__(2211);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__ngx_translate_core__ = __webpack_require__(1);
 // (C) Copyright 2015 Moodle Pty Ltd.
 //
@@ -60,7 +60,7 @@ var AddonModLessonMenuModalPageModule = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 2191:
+/***/ 2211:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -116,7 +116,7 @@ var AddonModLessonMenuModalPage = /** @class */ (function () {
     };
     AddonModLessonMenuModalPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-addon-mod-lesson-menu-modal',template:/*ion-inline-start:"C:\Users\sid_m\Documents\ASTER-ANIMA\agro\develop-agro\agro-moodle-app\src\addon\mod\lesson\pages\menu-modal\menu-modal.html"*/'<ion-header>\n\n    <ion-navbar core-back-button>\n\n        <ion-title>{{ pageInstance.lesson.name }}</ion-title>\n\n        <ion-buttons end>\n\n            <button ion-button icon-only (click)="closeModal()" [attr.aria-label]="\'core.close\' | translate">\n\n                <ion-icon name="close"></ion-icon>\n\n            </button>\n\n        </ion-buttons>\n\n    </ion-navbar>\n\n</ion-header>\n\n<ion-content class="addon-mod_lesson-menu-modal">\n\n    <nav>\n\n        <ion-list>\n\n            <!-- Media file. -->\n\n            <ng-container *ngIf="pageInstance.mediaFile">\n\n                <ion-item-divider><h2>{{ \'addon.mod_lesson.linkedmedia\' | translate }}</h2></ion-item-divider>\n\n                <core-file [file]="pageInstance.mediaFile" [component]="pageInstance.component" [componentId]="pageInstance.lesson.coursemodule"></core-file>\n\n            </ng-container>\n\n\n\n            <!-- Lesson menu. -->\n\n            <ng-container *ngIf="pageInstance.displayMenu">\n\n                <ion-item-divider><h2>{{ \'addon.mod_lesson.lessonmenu\' | translate }}</h2></ion-item-divider>\n\n                <ion-item text-center *ngIf="pageInstance.loadingMenu">\n\n                    <ion-spinner></ion-spinner>\n\n                </ion-item>\n\n                <div *ngIf="!pageInstance.loadingMenu">\n\n                    <ng-container *ngFor="let page of pageInstance.lessonPages">\n\n                        <a ion-item text-wrap *ngIf="page.display && page.displayinmenublock" (click)="loadPage(page.id)" [ngClass]=\'{"addon-mod_lesson-selected core-white-push-arrow": !pageInstance.eolData && pageInstance.currentPage == page.id}\'>\n\n                            <p><core-format-text [text]="page.title" contextLevel="module" [contextInstanceId]="pageInstance && pageInstance.lesson && pageInstance.lesson.coursemodule" [courseId]="pageInstance && pageInstance.courseId"></core-format-text></p>\n\n                        </a>\n\n                    </ng-container>\n\n                </div>\n\n            </ng-container>\n\n        </ion-list>\n\n    </nav>\n\n</ion-content>\n\n'/*ion-inline-end:"C:\Users\sid_m\Documents\ASTER-ANIMA\agro\develop-agro\agro-moodle-app\src\addon\mod\lesson\pages\menu-modal\menu-modal.html"*/,
+            selector: 'page-addon-mod-lesson-menu-modal',template:/*ion-inline-start:"D:\workspace\moodle\agro-moodle-app\src\addon\mod\lesson\pages\menu-modal\menu-modal.html"*/'<ion-header>\n\n    <ion-navbar core-back-button>\n\n        <ion-title>{{ pageInstance.lesson.name }}</ion-title>\n\n        <ion-buttons end>\n\n            <button ion-button icon-only (click)="closeModal()" [attr.aria-label]="\'core.close\' | translate">\n\n                <ion-icon name="close"></ion-icon>\n\n            </button>\n\n        </ion-buttons>\n\n    </ion-navbar>\n\n</ion-header>\n\n<ion-content class="addon-mod_lesson-menu-modal">\n\n    <nav>\n\n        <ion-list>\n\n            <!-- Media file. -->\n\n            <ng-container *ngIf="pageInstance.mediaFile">\n\n                <ion-item-divider><h2>{{ \'addon.mod_lesson.linkedmedia\' | translate }}</h2></ion-item-divider>\n\n                <core-file [file]="pageInstance.mediaFile" [component]="pageInstance.component" [componentId]="pageInstance.lesson.coursemodule"></core-file>\n\n            </ng-container>\n\n\n\n            <!-- Lesson menu. -->\n\n            <ng-container *ngIf="pageInstance.displayMenu">\n\n                <ion-item-divider><h2>{{ \'addon.mod_lesson.lessonmenu\' | translate }}</h2></ion-item-divider>\n\n                <ion-item text-center *ngIf="pageInstance.loadingMenu">\n\n                    <ion-spinner></ion-spinner>\n\n                </ion-item>\n\n                <div *ngIf="!pageInstance.loadingMenu">\n\n                    <ng-container *ngFor="let page of pageInstance.lessonPages">\n\n                        <a ion-item text-wrap *ngIf="page.display && page.displayinmenublock" (click)="loadPage(page.id)" [ngClass]=\'{"addon-mod_lesson-selected core-white-push-arrow": !pageInstance.eolData && pageInstance.currentPage == page.id}\'>\n\n                            <p><core-format-text [text]="page.title" contextLevel="module" [contextInstanceId]="pageInstance && pageInstance.lesson && pageInstance.lesson.coursemodule" [courseId]="pageInstance && pageInstance.courseId"></core-format-text></p>\n\n                        </a>\n\n                    </ng-container>\n\n                </div>\n\n            </ng-container>\n\n        </ion-list>\n\n    </nav>\n\n</ion-content>\n\n'/*ion-inline-end:"D:\workspace\moodle\agro-moodle-app\src\addon\mod\lesson\pages\menu-modal\menu-modal.html"*/,
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["t" /* NavParams */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["G" /* ViewController */]])
     ], AddonModLessonMenuModalPage);
