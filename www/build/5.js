@@ -1,6 +1,6 @@
 webpackJsonp([5],{
 
-/***/ 2130:
+/***/ 2131:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -12,7 +12,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__components_components_module__ = __webpack_require__(13);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__directives_directives_module__ = __webpack_require__(14);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__components_components_module__ = __webpack_require__(436);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__submission__ = __webpack_require__(2289);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__submission__ = __webpack_require__(2290);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__core_editor_components_components_module__ = __webpack_require__(130);
 // (C) Copyright 2015 Moodle Pty Ltd.
 //
@@ -66,7 +66,7 @@ var AddonModWorkshopSubmissionPageModule = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 2289:
+/***/ 2290:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -642,11 +642,11 @@ var AddonModWorkshopSubmissionPage = /** @class */ (function () {
 }());
 
 //# sourceMappingURL=submission.js.map
-/* WEBPACK VAR INJECTION */}.call(__webpack_exports__, __webpack_require__(2290)(module)))
+/* WEBPACK VAR INJECTION */}.call(__webpack_exports__, __webpack_require__(2291)(module)))
 
 /***/ }),
 
-/***/ 2290:
+/***/ 2291:
 /***/ (function(module, exports) {
 
 module.exports = function(originalModule) {
