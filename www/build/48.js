@@ -1,6 +1,6 @@
 webpackJsonp([48],{
 
-/***/ 2069:
+/***/ 2068:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -10,7 +10,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(3);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ngx_translate_core__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__directives_directives_module__ = __webpack_require__(14);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__course__ = __webpack_require__(2225);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__course__ = __webpack_require__(2224);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__components_components_module__ = __webpack_require__(1009);
 // (C) Copyright 2015 Moodle Pty Ltd.
 //
@@ -60,7 +60,7 @@ var CoreGradesCoursePageModule = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 2225:
+/***/ 2224:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";

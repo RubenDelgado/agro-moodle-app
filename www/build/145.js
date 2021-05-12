@@ -1,6 +1,6 @@
 webpackJsonp([145],{
 
-/***/ 2127:
+/***/ 2126:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -12,7 +12,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__components_components_module__ = __webpack_require__(13);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__directives_directives_module__ = __webpack_require__(14);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__core_editor_components_components_module__ = __webpack_require__(130);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__edit_event__ = __webpack_require__(2285);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__edit_event__ = __webpack_require__(2284);
 // (C) Copyright 2015 Moodle Pty Ltd.
 //
 // Licensed under the Apache License, Version 2.0 (the "License");
@@ -63,7 +63,7 @@ var AddonCalendarEditEventPageModule = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 2285:
+/***/ 2284:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
