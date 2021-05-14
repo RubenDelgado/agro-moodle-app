@@ -76,6 +76,7 @@
         "@ionic-native/network": "4.20.0",
         "@ionic-native/push": "4.20.0",
         "@ionic-native/qr-scanner": "4.20.0",
+        "@ionic-native/safari-view-controller": "^4.20.0",
         "@ionic-native/screen-orientation": "4.20.0",
         "@ionic-native/splash-screen": "4.20.0",
         "@ionic-native/sqlite": "4.20.0",
@@ -104,6 +105,7 @@
         "cordova-plugin-media": "5.0.3",
         "cordova-plugin-media-capture": "3.0.3",
         "cordova-plugin-network-information": "2.0.2",
+        "cordova-plugin-safariviewcontroller": "^2.0.0",
         "cordova-plugin-screen-orientation": "3.0.2",
         "cordova-plugin-splashscreen": "6.0.0",
         "cordova-plugin-statusbar": "2.4.3",
@@ -236,7 +238,8 @@
             },
             "cordova.plugins.diagnostic": {
                 "ANDROID_SUPPORT_VERSION": "28.+"
-            }
+            },
+            "cordova-plugin-safariviewcontroller": {}
         }
     },
     "main": "desktop/electron.js",

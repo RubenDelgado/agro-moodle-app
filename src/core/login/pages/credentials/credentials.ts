@@ -28,6 +28,7 @@ import { CoreCustomURLSchemes } from '@providers/urlschemes';
 import { Subscription } from 'rxjs';
 
 import { InAppBrowser } from '@ionic-native/in-app-browser';
+import { SafariViewController } from '@ionic-native/safari-view-controller';
 
 /**
  * Page to enter the user credentials.
@@ -71,7 +72,8 @@ export class CoreLoginCredentialsPage implements OnDestroy {
             private domUtils: CoreDomUtilsProvider,
             private translate: TranslateService,
             private eventsProvider: CoreEventsProvider,
-            private iab: InAppBrowser) {
+            private iab: InAppBrowser,
+            private safariViewController: SafariViewController) {
 
         this.siteUrl = navParams.get('siteUrl');
         this.siteName = navParams.get('siteName') || null;
@@ -312,11 +314,39 @@ export class CoreLoginCredentialsPage implements OnDestroy {
     signup(): void {
         //this.navCtrl.push('CoreLoginEmailSignupPage', { siteUrl: this.siteUrl });
 
-        const browser = this.iab.create('https://universidadagro.com.mx/login/signup.php', '_system', 'location=yes,enableviewportscale=yes');
+        //const browser = this.iab.create('https://universidadagro.com.mx/login/signup.php', '_system', 'location=yes,enableviewportscale=yes');
         //const browser = this.iab.create('https://universidadagro.com.mx/login/signup.php');
-        browser.show()
+        //browser.show()
 
         //window.open("https://universidadagro.com.mx/login/signup.php",'_system', 'location=yes');
+
+        this.safariViewController.isAvailable()
+          .then((available: boolean) => {
+              if (available) {
+        
+                this.safariViewController.show({
+                  url: 'https://universidadagro.com.mx/login/signup.php',
+                  hidden: false,
+                  animated: false,
+                  transition: 'curl',
+                  enterReaderModeIfAvailable: true,
+                  tintColor: '#ff0000'
+                })
+                .subscribe((result: any) => {
+                    if(result.event === 'opened') console.log('Opened');
+                    else if(result.event === 'loaded') console.log('Loaded');
+                    else if(result.event === 'closed') console.log('Closed');
+                  },
+                  (error: any) => console.error(error)
+                );
+        
+              } else {
+                // use fallback browser, example InAppBrowser
+                const browser = this.iab.create('https://universidadagro.com.mx/login/signup.php', '_system', 'location=yes,enableviewportscale=yes');
+                browser.show()
+              }
+            }
+          );
     }
 
     /**

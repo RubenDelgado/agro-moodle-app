@@ -1,30 +1,78 @@
 webpackJsonp([97],{
 
-/***/ 2073:
+/***/ 2049:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "AddonModH5PActivityAttemptResultsPageModule", function() { return AddonModH5PActivityAttemptResultsPageModule; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(3);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ngx_translate_core__ = __webpack_require__(1);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__components_components_module__ = __webpack_require__(13);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__directives_directives_module__ = __webpack_require__(14);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__pipes_pipes_module__ = __webpack_require__(66);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__attempt_results__ = __webpack_require__(2206);
+// (C) Copyright 2015 Moodle Pty Ltd.
+//
+// Licensed under the Apache License, Version 2.0 (the "License");
+// you may not use this file except in compliance with the License.
+// You may obtain a copy of the License at
+//
+//     http://www.apache.org/licenses/LICENSE-2.0
+//
+// Unless required by applicable law or agreed to in writing, software
+// distributed under the License is distributed on an "AS IS" BASIS,
+// WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+// See the License for the specific language governing permissions and
+// limitations under the License.
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
 
-// EXTERNAL MODULE: ./node_modules/@angular/core/esm5/core.js
-var core = __webpack_require__(0);
 
-// EXTERNAL MODULE: ./node_modules/ionic-angular/index.js + 3 modules
-var ionic_angular = __webpack_require__(5);
 
-// EXTERNAL MODULE: ./node_modules/@ngx-translate/core/index.js + 1 modules
-var _ngx_translate_core = __webpack_require__(3);
 
-// EXTERNAL MODULE: ./src/directives/directives.module.ts + 2 modules
-var directives_module = __webpack_require__(32);
 
-// EXTERNAL MODULE: ./src/addon/mod/quiz/components/components.module.ts
-var components_module = __webpack_require__(783);
 
-// EXTERNAL MODULE: ./src/addon/mod/quiz/components/index/index.ts
-var index = __webpack_require__(523);
 
-// CONCATENATED MODULE: ./src/addon/mod/quiz/pages/index/index.ts
+var AddonModH5PActivityAttemptResultsPageModule = /** @class */ (function () {
+    function AddonModH5PActivityAttemptResultsPageModule() {
+    }
+    AddonModH5PActivityAttemptResultsPageModule = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["J" /* NgModule */])({
+            declarations: [
+                __WEBPACK_IMPORTED_MODULE_6__attempt_results__["a" /* AddonModH5PActivityAttemptResultsPage */],
+            ],
+            imports: [
+                __WEBPACK_IMPORTED_MODULE_3__components_components_module__["a" /* CoreComponentsModule */],
+                __WEBPACK_IMPORTED_MODULE_4__directives_directives_module__["a" /* CoreDirectivesModule */],
+                __WEBPACK_IMPORTED_MODULE_5__pipes_pipes_module__["a" /* CorePipesModule */],
+                __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["l" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_6__attempt_results__["a" /* AddonModH5PActivityAttemptResultsPage */]),
+                __WEBPACK_IMPORTED_MODULE_2__ngx_translate_core__["b" /* TranslateModule */].forChild(),
+            ],
+        })
+    ], AddonModH5PActivityAttemptResultsPageModule);
+    return AddonModH5PActivityAttemptResultsPageModule;
+}());
+
+//# sourceMappingURL=attempt-results.module.js.map
+
+/***/ }),
+
+/***/ 2206:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AddonModH5PActivityAttemptResultsPage; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(3);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__providers_utils_dom__ = __webpack_require__(7);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__core_user_providers_user__ = __webpack_require__(30);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__providers_h5pactivity__ = __webpack_require__(181);
 // (C) Copyright 2015 Moodle Pty Ltd.
 //
 // Licensed under the Apache License, Version 2.0 (the "License");
@@ -47,459 +95,188 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-
-
-
-/**
- * Page that displays the quiz entry page.
- */
-var index_AddonModQuizIndexPage = /** @class */ (function () {
-    function AddonModQuizIndexPage(navParams) {
-        this.module = navParams.get('module') || {};
-        this.courseId = navParams.get('courseId');
-        this.title = this.module.name;
+var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, generator) {
+    return new (P || (P = Promise))(function (resolve, reject) {
+        function fulfilled(value) { try { step(generator.next(value)); } catch (e) { reject(e); } }
+        function rejected(value) { try { step(generator["throw"](value)); } catch (e) { reject(e); } }
+        function step(result) { result.done ? resolve(result.value) : new P(function (resolve) { resolve(result.value); }).then(fulfilled, rejected); }
+        step((generator = generator.apply(thisArg, _arguments || [])).next());
+    });
+};
+var __generator = (this && this.__generator) || function (thisArg, body) {
+    var _ = { label: 0, sent: function() { if (t[0] & 1) throw t[1]; return t[1]; }, trys: [], ops: [] }, f, y, t, g;
+    return g = { next: verb(0), "throw": verb(1), "return": verb(2) }, typeof Symbol === "function" && (g[Symbol.iterator] = function() { return this; }), g;
+    function verb(n) { return function (v) { return step([n, v]); }; }
+    function step(op) {
+        if (f) throw new TypeError("Generator is already executing.");
+        while (_) try {
+            if (f = 1, y && (t = y[op[0] & 2 ? "return" : op[0] ? "throw" : "next"]) && !(t = t.call(y, op[1])).done) return t;
+            if (y = 0, t) op = [0, t.value];
+            switch (op[0]) {
+                case 0: case 1: t = op; break;
+                case 4: _.label++; return { value: op[1], done: false };
+                case 5: _.label++; y = op[1]; op = [0]; continue;
+                case 7: op = _.ops.pop(); _.trys.pop(); continue;
+                default:
+                    if (!(t = _.trys, t = t.length > 0 && t[t.length - 1]) && (op[0] === 6 || op[0] === 2)) { _ = 0; continue; }
+                    if (op[0] === 3 && (!t || (op[1] > t[0] && op[1] < t[3]))) { _.label = op[1]; break; }
+                    if (op[0] === 6 && _.label < t[1]) { _.label = t[1]; t = op; break; }
+                    if (t && _.label < t[2]) { _.label = t[2]; _.ops.push(op); break; }
+                    if (t[2]) _.ops.pop();
+                    _.trys.pop(); continue;
+            }
+            op = body.call(thisArg, _);
+        } catch (e) { op = [6, e]; y = 0; } finally { f = t = 0; }
+        if (op[0] & 5) throw op[1]; return { value: op[0] ? op[1] : void 0, done: true };
     }
-    /**
-     * Update some data based on the quiz instance.
-     *
-     * @param quiz Quiz instance.
-     */
-    AddonModQuizIndexPage.prototype.updateData = function (quiz) {
-        this.title = quiz.name || this.title;
-    };
-    /**
-     * User entered the page.
-     */
-    AddonModQuizIndexPage.prototype.ionViewDidEnter = function () {
-        this.quizComponent.ionViewDidEnter();
-    };
-    /**
-     * User left the page.
-     */
-    AddonModQuizIndexPage.prototype.ionViewDidLeave = function () {
-        this.quizComponent.ionViewDidLeave();
-    };
-    __decorate([
-        Object(core["_10" /* ViewChild */])(index["a" /* AddonModQuizIndexComponent */]),
-        __metadata("design:type", index["a" /* AddonModQuizIndexComponent */])
-    ], AddonModQuizIndexPage.prototype, "quizComponent", void 0);
-    AddonModQuizIndexPage = __decorate([
-        Object(core["m" /* Component */])({
-            selector: 'page-addon-mod-quiz-index',
-            templateUrl: 'index.html',
-        }),
-        __metadata("design:paramtypes", [ionic_angular["t" /* NavParams */]])
-    ], AddonModQuizIndexPage);
-    return AddonModQuizIndexPage;
-}());
-
-//# sourceMappingURL=index.js.map
-// CONCATENATED MODULE: ./src/addon/mod/quiz/pages/index/index.module.ts
-// (C) Copyright 2015 Moodle Pty Ltd.
-//
-// Licensed under the Apache License, Version 2.0 (the "License");
-// you may not use this file except in compliance with the License.
-// You may obtain a copy of the License at
-//
-//     http://www.apache.org/licenses/LICENSE-2.0
-//
-// Unless required by applicable law or agreed to in writing, software
-// distributed under the License is distributed on an "AS IS" BASIS,
-// WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-// See the License for the specific language governing permissions and
-// limitations under the License.
-var index_module___decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
 
 
 
 
 
-
-var index_module_AddonModQuizIndexPageModule = /** @class */ (function () {
-    function AddonModQuizIndexPageModule() {
+/**
+ * Page that displays results of an attempt.
+ */
+var AddonModH5PActivityAttemptResultsPage = /** @class */ (function () {
+    function AddonModH5PActivityAttemptResultsPage(navParams) {
+        this.component = __WEBPACK_IMPORTED_MODULE_4__providers_h5pactivity__["b" /* AddonModH5PActivityProvider */].COMPONENT;
+        this.courseId = navParams.get('courseId');
+        this.h5pActivityId = navParams.get('h5pActivityId');
+        this.attemptId = navParams.get('attemptId');
     }
-    AddonModQuizIndexPageModule = index_module___decorate([
-        Object(core["J" /* NgModule */])({
-            declarations: [
-                index_AddonModQuizIndexPage,
-            ],
-            imports: [
-                directives_module["a" /* CoreDirectivesModule */],
-                components_module["a" /* AddonModQuizComponentsModule */],
-                ionic_angular["l" /* IonicPageModule */].forChild(index_AddonModQuizIndexPage),
-                _ngx_translate_core["b" /* TranslateModule */].forChild()
-            ],
-        })
-    ], AddonModQuizIndexPageModule);
-    return AddonModQuizIndexPageModule;
+    /**
+     * Component being initialized.
+     *
+     * @return Promise resolved when done.
+     */
+    AddonModH5PActivityAttemptResultsPage.prototype.ngOnInit = function () {
+        return __awaiter(this, void 0, void 0, function () {
+            var error_1;
+            return __generator(this, function (_a) {
+                switch (_a.label) {
+                    case 0:
+                        _a.trys.push([0, 2, 3, 4]);
+                        return [4 /*yield*/, this.fetchData()];
+                    case 1:
+                        _a.sent();
+                        return [3 /*break*/, 4];
+                    case 2:
+                        error_1 = _a.sent();
+                        __WEBPACK_IMPORTED_MODULE_2__providers_utils_dom__["a" /* CoreDomUtils */].instance.showErrorModalDefault(error_1, 'Error loading attempt.');
+                        return [3 /*break*/, 4];
+                    case 3:
+                        this.loaded = true;
+                        return [7 /*endfinally*/];
+                    case 4: return [2 /*return*/];
+                }
+            });
+        });
+    };
+    /**
+     * Refresh the data.
+     *
+     * @param refresher Refresher.
+     */
+    AddonModH5PActivityAttemptResultsPage.prototype.doRefresh = function (refresher) {
+        this.refreshData().finally(function () {
+            refresher.complete();
+        });
+    };
+    /**
+     * Get quiz data and attempt data.
+     *
+     * @return Promise resolved when done.
+     */
+    AddonModH5PActivityAttemptResultsPage.prototype.fetchData = function () {
+        return __awaiter(this, void 0, void 0, function () {
+            var _a, _b;
+            return __generator(this, function (_c) {
+                switch (_c.label) {
+                    case 0:
+                        _a = this;
+                        return [4 /*yield*/, __WEBPACK_IMPORTED_MODULE_4__providers_h5pactivity__["a" /* AddonModH5PActivity */].instance.getH5PActivityById(this.courseId, this.h5pActivityId)];
+                    case 1:
+                        _a.h5pActivity = _c.sent();
+                        _b = this;
+                        return [4 /*yield*/, __WEBPACK_IMPORTED_MODULE_4__providers_h5pactivity__["a" /* AddonModH5PActivity */].instance.getAttemptResults(this.h5pActivityId, this.attemptId, {
+                                cmId: this.h5pActivity.coursemodule,
+                            })];
+                    case 2:
+                        _b.attempt = _c.sent();
+                        return [4 /*yield*/, this.fetchUserProfile()];
+                    case 3:
+                        _c.sent();
+                        return [2 /*return*/];
+                }
+            });
+        });
+    };
+    /**
+     * Get user profile.
+     *
+     * @return Promise resolved when done.
+     */
+    AddonModH5PActivityAttemptResultsPage.prototype.fetchUserProfile = function () {
+        return __awaiter(this, void 0, void 0, function () {
+            var _a, error_2;
+            return __generator(this, function (_b) {
+                switch (_b.label) {
+                    case 0:
+                        _b.trys.push([0, 2, , 3]);
+                        _a = this;
+                        return [4 /*yield*/, __WEBPACK_IMPORTED_MODULE_3__core_user_providers_user__["a" /* CoreUser */].instance.getProfile(this.attempt.userid, this.courseId, true)];
+                    case 1:
+                        _a.user = _b.sent();
+                        return [3 /*break*/, 3];
+                    case 2:
+                        error_2 = _b.sent();
+                        return [3 /*break*/, 3];
+                    case 3: return [2 /*return*/];
+                }
+            });
+        });
+    };
+    /**
+     * Refresh the data.
+     *
+     * @return Promise resolved when done.
+     */
+    AddonModH5PActivityAttemptResultsPage.prototype.refreshData = function () {
+        return __awaiter(this, void 0, void 0, function () {
+            var error_3;
+            return __generator(this, function (_a) {
+                switch (_a.label) {
+                    case 0:
+                        _a.trys.push([0, 2, , 3]);
+                        return [4 /*yield*/, Promise.all([
+                                __WEBPACK_IMPORTED_MODULE_4__providers_h5pactivity__["a" /* AddonModH5PActivity */].instance.invalidateActivityData(this.courseId),
+                                __WEBPACK_IMPORTED_MODULE_4__providers_h5pactivity__["a" /* AddonModH5PActivity */].instance.invalidateAttemptResults(this.h5pActivityId, this.attemptId),
+                            ])];
+                    case 1:
+                        _a.sent();
+                        return [3 /*break*/, 3];
+                    case 2:
+                        error_3 = _a.sent();
+                        return [3 /*break*/, 3];
+                    case 3: return [4 /*yield*/, this.fetchData()];
+                    case 4:
+                        _a.sent();
+                        return [2 /*return*/];
+                }
+            });
+        });
+    };
+    AddonModH5PActivityAttemptResultsPage = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
+            selector: 'page-addon-mod-h5pactivity-attempt-results',template:/*ion-inline-start:"D:\workspace\moodle\agro-moodle-app\src\addon\mod\h5pactivity\pages\attempt-results\attempt-results.html"*/'<ion-header>\n\n    <ion-navbar core-back-button>\n\n        <ion-title><core-format-text *ngIf="h5pActivity" [text]="h5pActivity.name" contextLevel="module" [contextInstanceId]="h5pActivity.coursemodule" [courseId]="courseId"></core-format-text></ion-title>\n\n    </ion-navbar>\n\n</ion-header>\n\n<ion-content>\n\n    <ion-refresher [enabled]="loaded" (ionRefresh)="doRefresh($event)">\n\n        <ion-refresher-content pullingText="{{ \'core.pulltorefresh\' | translate }}"></ion-refresher-content>\n\n    </ion-refresher>\n\n    <core-loading [hideUntil]="loaded">\n\n        <ng-container *ngIf="attempt">\n\n            <!-- Attempt number and user that did the attempt. -->\n\n            <a ion-item text-wrap *ngIf="user" core-user-link [userId]="user.id" [courseId]="courseId" [title]="user.fullname">\n\n                <ion-avatar core-user-avatar [user]="user" item-start></ion-avatar>\n\n                <h2>{{ \'addon.mod_h5pactivity.attempt\' | translate }} #{{attempt.attempt}}: {{user.fullname}}</h2>\n\n            </a>\n\n            <!-- Attempt number (if user not known). -->\n\n            <ion-item text-wrap *ngIf="!user">\n\n                <h2>{{ \'addon.mod_h5pactivity.attempt\' | translate }} #{{attempt.attempt}}</h2>\n\n            </ion-item>\n\n\n\n            <!-- Attempt summary. -->\n\n            <ion-card class="addon-mod_h5pactivity-attempt-result-summary">\n\n                <ion-list>\n\n                    <ion-item text-wrap no-lines>\n\n                        <h2>{{ \'addon.mod_h5pactivity.startdate\' | translate }}</h2>\n\n                        <p>{{ attempt.timecreated | coreFormatDate:\'strftimedatetime\' }}</p>\n\n                    </ion-item>\n\n                    <ion-item text-wrap no-lines>\n\n                        <h2>{{ \'addon.mod_h5pactivity.completion\' | translate }}</h2>\n\n                        <p *ngIf="attempt.completion">\n\n                            <img src="assets/img/completion/completion-auto-y.svg" role="presentation" alt="">\n\n                            {{ \'addon.mod_h5pactivity.attempt_completion_yes\' | translate }}\n\n                        </p>\n\n                        <p *ngIf="!attempt.completion">\n\n                            <img src="assets/img/completion/completion-auto-n.svg" role="presentation" alt="">\n\n                            {{ \'addon.mod_h5pactivity.attempt_completion_no\' | translate }}\n\n                        </p>\n\n                    </ion-item>\n\n                    <ion-item text-wrap no-lines>\n\n                        <h2>{{ \'addon.mod_h5pactivity.duration\' | translate }}</h2>\n\n                        <p>{{ attempt.durationReadable }}</p>\n\n                    </ion-item>\n\n                    <ion-item text-wrap no-lines>\n\n                        <h2>{{ \'addon.mod_h5pactivity.outcome\' | translate }}</h2>\n\n                        <p *ngIf="attempt.success !== null && attempt.success" >\n\n                            <core-icon name="fa-check-circle"></core-icon>\n\n                            {{ \'addon.mod_h5pactivity.attempt_success_pass\' | translate }}\n\n                        </p>\n\n                        <p *ngIf="attempt.success !== null && !attempt.success" >\n\n                            <core-icon name="fa-circle-o"></core-icon>\n\n                            {{ \'addon.mod_h5pactivity.attempt_success_fail\' | translate }}\n\n                        </p>\n\n                        <p *ngIf="attempt.success === null" >\n\n                            {{ \'addon.mod_h5pactivity.attempt_success_unknown\' | translate }}\n\n                        </p>\n\n                    </ion-item>\n\n                    <ion-item *ngIf="attempt.maxscore" text-wrap no-lines>\n\n                        <h2>{{ \'addon.mod_h5pactivity.totalscore\' | translate }}</h2>\n\n                        <p>{{ \'addon.mod_h5pactivity.score_out_of\' | translate:{$a: attempt} }}</p>\n\n                    </ion-item>\n\n                </ion-list>\n\n            </ion-card>\n\n\n\n            <!-- Results. -->\n\n            <ng-container *ngIf="attempt.results">\n\n                <ion-card *ngFor="let result of attempt.results">\n\n                    <ion-card-header text-wrap>\n\n                        <core-format-text [text]="result.description" [component]="component" [componentId]="h5pActivity.cmid" contextLevel="module" [contextInstanceId]="h5pActivity.cmid" [courseId]="courseId"></core-format-text>\n\n                    </ion-card-header>\n\n                    <ion-item *ngIf="result.content" text-wrap>\n\n                        <core-format-text [text]="result.content" [component]="component" [componentId]="h5pActivity.cmid" contextLevel="module" [contextInstanceId]="h5pActivity.cmid" [courseId]="courseId"></core-format-text>\n\n                    </ion-item>\n\n\n\n                    <!-- Options. -->\n\n                    <ng-container *ngIf="result.options && result.options.length">\n\n                        <ion-item text-wrap class="addon-mod_h5pactivity-result-table-header">\n\n                            <ion-row align-items-center>\n\n                                <ion-col text-center>{{ result.optionslabel }}</ion-col>\n\n                                <ion-col text-center>{{ result.correctlabel }}</ion-col>\n\n                                <ion-col text-center>{{ result.answerlabel }}</ion-col>\n\n                            </ion-row>\n\n                        </ion-item>\n\n                        <ion-item text-wrap *ngFor="let option of result.options" class="addon-mod_h5pactivity-result-table-row">\n\n                            <ion-row align-items-center>\n\n                                <ion-col text-center>\n\n                                    <core-format-text [text]="option.description" [component]="component" [componentId]="h5pActivity.cmid" contextLevel="module" [contextInstanceId]="h5pActivity.cmid" [courseId]="courseId"></core-format-text>\n\n                                </ion-col>\n\n                                <ion-col text-center>\n\n                                    <ng-container *ngIf="option.correctanswer">\n\n                                        <ng-container *ngTemplateOutlet="answerTemplate; context: {answer: option.correctanswer}"></ng-container>\n\n                                    </ng-container>\n\n                                </ion-col>\n\n                                <ion-col text-center>\n\n                                    <ng-container *ngIf="option.useranswer">\n\n                                        <ng-container *ngTemplateOutlet="answerTemplate; context: {answer: option.useranswer}"></ng-container>\n\n                                    </ng-container>\n\n                                </ion-col>\n\n                            </ion-row>\n\n                        </ion-item>\n\n\n\n                        <!-- Result score. -->\n\n                        <ion-item *ngIf="result.maxscore" text-wrap text-end class="addon-mod_h5pactivity-result-score">\n\n                            <p><strong>{{ \'addon.mod_h5pactivity.score\' | translate }}: {{ \'addon.mod_h5pactivity.score_out_of\' | translate:{$a: result} }}</strong></p>\n\n                        </ion-item>\n\n                    </ng-container>\n\n\n\n                    <!-- Result doesn\'t support tracking. -->\n\n                    <ion-item text-wrap class="core-warning-item" *ngIf="!result.track">\n\n                        <ion-icon item-start name="warning" color="warning"></ion-icon> {{ \'addon.mod_h5pactivity.no_compatible_track\' | translate:{$a: result.interactiontype} }}\n\n                    </ion-item>\n\n                </ion-card>\n\n            </ng-container>\n\n        </ng-container>\n\n    </core-loading>\n\n</ion-content>\n\n\n\n<!-- Template to render an answer. -->\n\n<ng-template #answerTemplate let-answer="answer">\n\n    <p *ngIf="answer.correct">\n\n        <core-icon name="fa-check" [label]="\'addon.mod_h5pactivity.answer_correct\' | translate" color="success"></core-icon>\n\n        {{ answer.answer }}\n\n    </p>\n\n    <p *ngIf="answer.incorrect">\n\n        <core-icon name="fa-remove" [label]="\'addon.mod_h5pactivity.answer_incorrect\' | translate" color="danger"></core-icon>\n\n        {{ answer.answer }}\n\n    </p>\n\n    <p *ngIf="answer.text">\n\n        {{ answer.answer }}\n\n    </p>\n\n    <p *ngIf="answer.checked">\n\n        <core-icon name="fa-check-circle" [label]="\'addon.mod_h5pactivity.answer_checked\' | translate"></core-icon>\n\n    </p>\n\n    <p *ngIf="answer.pass">\n\n        <core-icon name="fa-check" [label]="\'addon.mod_h5pactivity.answer_pass\' | translate" color="success"></core-icon>\n\n    </p>\n\n    <p *ngIf="answer.fail">\n\n        <core-icon name="fa-remove" [label]="\'addon.mod_h5pactivity.answer_fail\' | translate" color="danger"></core-icon>\n\n    </p>\n\n</ng-template>\n\n'/*ion-inline-end:"D:\workspace\moodle\agro-moodle-app\src\addon\mod\h5pactivity\pages\attempt-results\attempt-results.html"*/,
+        }),
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["t" /* NavParams */]])
+    ], AddonModH5PActivityAttemptResultsPage);
+    return AddonModH5PActivityAttemptResultsPage;
 }());
 
-//# sourceMappingURL=index.module.js.map
-// EXTERNAL MODULE: ./node_modules/ionic-angular/components/action-sheet/action-sheet-component.ngfactory.js
-var action_sheet_component_ngfactory = __webpack_require__(1551);
-
-// EXTERNAL MODULE: ./node_modules/ionic-angular/components/alert/alert-component.ngfactory.js
-var alert_component_ngfactory = __webpack_require__(1552);
-
-// EXTERNAL MODULE: ./node_modules/ionic-angular/components/app/app-root.ngfactory.js
-var app_root_ngfactory = __webpack_require__(1553);
-
-// EXTERNAL MODULE: ./node_modules/ionic-angular/components/loading/loading-component.ngfactory.js
-var loading_component_ngfactory = __webpack_require__(1554);
-
-// EXTERNAL MODULE: ./node_modules/ionic-angular/components/modal/modal-component.ngfactory.js
-var modal_component_ngfactory = __webpack_require__(1555);
-
-// EXTERNAL MODULE: ./node_modules/ionic-angular/components/picker/picker-component.ngfactory.js + 1 modules
-var picker_component_ngfactory = __webpack_require__(1556);
-
-// EXTERNAL MODULE: ./node_modules/ionic-angular/components/popover/popover-component.ngfactory.js
-var popover_component_ngfactory = __webpack_require__(1557);
-
-// EXTERNAL MODULE: ./node_modules/ionic-angular/components/select/select-popover-component.ngfactory.js
-var select_popover_component_ngfactory = __webpack_require__(1558);
-
-// EXTERNAL MODULE: ./node_modules/ionic-angular/components/toast/toast-component.ngfactory.js
-var toast_component_ngfactory = __webpack_require__(1559);
-
-// EXTERNAL MODULE: ./src/components/context-menu/context-menu-popover.ngfactory.js
-var context_menu_popover_ngfactory = __webpack_require__(1560);
-
-// EXTERNAL MODULE: ./src/components/course-picker-menu/course-picker-menu-popover.ngfactory.js
-var course_picker_menu_popover_ngfactory = __webpack_require__(1561);
-
-// EXTERNAL MODULE: ./src/components/recaptcha/recaptchamodal.ngfactory.js
-var recaptchamodal_ngfactory = __webpack_require__(1562);
-
-// EXTERNAL MODULE: ./src/components/bs-tooltip/bs-tooltip.ngfactory.js
-var bs_tooltip_ngfactory = __webpack_require__(1563);
-
-// EXTERNAL MODULE: ./src/core/block/components/only-title-block/only-title-block.ngfactory.js
-var only_title_block_ngfactory = __webpack_require__(1566);
-
-// EXTERNAL MODULE: ./src/core/block/components/pre-rendered-block/pre-rendered-block.ngfactory.js
-var pre_rendered_block_ngfactory = __webpack_require__(1567);
-
-// EXTERNAL MODULE: ./src/core/block/components/course-blocks/course-blocks.ngfactory.js
-var course_blocks_ngfactory = __webpack_require__(1564);
-
-// EXTERNAL MODULE: ./src/core/course/components/unsupported-module/unsupported-module.ngfactory.js
-var unsupported_module_ngfactory = __webpack_require__(1565);
-
-// EXTERNAL MODULE: ./src/core/course/components/tag-area/tag-area.ngfactory.js
-var tag_area_ngfactory = __webpack_require__(1568);
-
-// EXTERNAL MODULE: ./src/addon/mod/quiz/components/index/index.ngfactory.js
-var index_ngfactory = __webpack_require__(1629);
-
-// EXTERNAL MODULE: ./src/addon/mod/quiz/components/connection-error/connection-error.ngfactory.js
-var connection_error_ngfactory = __webpack_require__(1652);
-
-// EXTERNAL MODULE: ./node_modules/ionic-angular/components/toolbar/toolbar-header.js
-var toolbar_header = __webpack_require__(379);
-
-// EXTERNAL MODULE: ./node_modules/ionic-angular/config/config.js
-var config = __webpack_require__(8);
-
-// EXTERNAL MODULE: ./node_modules/ionic-angular/navigation/view-controller.js
-var view_controller = __webpack_require__(41);
-
-// EXTERNAL MODULE: ./node_modules/ionic-angular/components/toolbar/navbar.ngfactory.js
-var navbar_ngfactory = __webpack_require__(739);
-
-// EXTERNAL MODULE: ./node_modules/ionic-angular/components/toolbar/navbar.js
-var navbar = __webpack_require__(216);
-
-// EXTERNAL MODULE: ./node_modules/ionic-angular/components/app/app.js + 3 modules
-var app = __webpack_require__(35);
-
-// EXTERNAL MODULE: ./node_modules/ionic-angular/navigation/nav-controller.js
-var nav_controller = __webpack_require__(20);
-
-// EXTERNAL MODULE: ./src/directives/back-button.ts
-var back_button = __webpack_require__(486);
-
-// EXTERNAL MODULE: ./node_modules/@ngx-translate/core/src/translate.service.js
-var translate_service = __webpack_require__(18);
-
-// EXTERNAL MODULE: ./src/providers/events.ts
-var events = __webpack_require__(9);
-
-// EXTERNAL MODULE: ./node_modules/ionic-angular/components/toolbar/toolbar-title.ngfactory.js
-var toolbar_title_ngfactory = __webpack_require__(740);
-
-// EXTERNAL MODULE: ./node_modules/ionic-angular/components/toolbar/toolbar-title.js
-var toolbar_title = __webpack_require__(324);
-
-// EXTERNAL MODULE: ./node_modules/ionic-angular/components/toolbar/toolbar.js
-var toolbar = __webpack_require__(252);
-
-// EXTERNAL MODULE: ./src/directives/format-text.ts
-var format_text = __webpack_require__(49);
-
-// EXTERNAL MODULE: ./src/providers/sites.ts
-var sites = __webpack_require__(1);
-
-// EXTERNAL MODULE: ./src/providers/utils/dom.ts
-var dom = __webpack_require__(4);
-
-// EXTERNAL MODULE: ./src/providers/utils/text.ts
-var utils_text = __webpack_require__(10);
-
-// EXTERNAL MODULE: ./node_modules/ionic-angular/platform/platform.js + 1 modules
-var platform = __webpack_require__(16);
-
-// EXTERNAL MODULE: ./src/providers/utils/utils.ts
-var utils = __webpack_require__(2);
-
-// EXTERNAL MODULE: ./src/providers/utils/url.ts
-var url = __webpack_require__(19);
-
-// EXTERNAL MODULE: ./src/providers/logger.ts
-var logger = __webpack_require__(6);
-
-// EXTERNAL MODULE: ./src/providers/filepool.ts
-var filepool = __webpack_require__(17);
-
-// EXTERNAL MODULE: ./src/core/contentlinks/providers/helper.ts
-var helper = __webpack_require__(14);
-
-// EXTERNAL MODULE: ./node_modules/ionic-angular/components/content/content.js
-var content = __webpack_require__(28);
-
-// EXTERNAL MODULE: ./src/components/split-view/split-view.ts
-var split_view = __webpack_require__(29);
-
-// EXTERNAL MODULE: ./src/providers/utils/iframe.ts
-var iframe = __webpack_require__(42);
-
-// EXTERNAL MODULE: ./src/core/filter/providers/filter.ts
-var filter = __webpack_require__(43);
-
-// EXTERNAL MODULE: ./src/core/filter/providers/helper.ts
-var providers_helper = __webpack_require__(30);
-
-// EXTERNAL MODULE: ./src/core/filter/providers/delegate.ts
-var delegate = __webpack_require__(36);
-
-// EXTERNAL MODULE: ./src/providers/urlschemes.ts
-var urlschemes = __webpack_require__(40);
-
-// EXTERNAL MODULE: ./node_modules/ionic-angular/components/toolbar/toolbar-item.js
-var toolbar_item = __webpack_require__(380);
-
-// EXTERNAL MODULE: ./node_modules/ionic-angular/components/content/content.ngfactory.js
-var content_ngfactory = __webpack_require__(185);
-
-// EXTERNAL MODULE: ./node_modules/ionic-angular/platform/dom-controller.js
-var dom_controller = __webpack_require__(34);
-
-// EXTERNAL MODULE: ./node_modules/ionic-angular/platform/keyboard.js
-var keyboard = __webpack_require__(112);
-
-// EXTERNAL MODULE: ./node_modules/ionic-angular/components/refresher/refresher.js
-var refresher = __webpack_require__(163);
-
-// EXTERNAL MODULE: ./node_modules/ionic-angular/gestures/gesture-controller.js
-var gesture_controller = __webpack_require__(45);
-
-// EXTERNAL MODULE: ./node_modules/ionic-angular/components/refresher/refresher-content.ngfactory.js
-var refresher_content_ngfactory = __webpack_require__(217);
-
-// EXTERNAL MODULE: ./node_modules/ionic-angular/components/refresher/refresher-content.js
-var refresher_content = __webpack_require__(178);
-
-// EXTERNAL MODULE: ./node_modules/@ngx-translate/core/src/translate.pipe.js
-var translate_pipe = __webpack_require__(25);
-
-// EXTERNAL MODULE: ./src/addon/mod/quiz/providers/quiz.ts
-var quiz = __webpack_require__(171);
-
-// EXTERNAL MODULE: ./src/addon/mod/quiz/providers/helper.ts
-var quiz_providers_helper = __webpack_require__(257);
-
-// EXTERNAL MODULE: ./src/addon/mod/quiz/providers/quiz-offline.ts
-var quiz_offline = __webpack_require__(269);
-
-// EXTERNAL MODULE: ./src/addon/mod/quiz/providers/quiz-sync.ts
-var quiz_sync = __webpack_require__(264);
-
-// EXTERNAL MODULE: ./src/core/question/providers/behaviour-delegate.ts
-var behaviour_delegate = __webpack_require__(121);
-
-// EXTERNAL MODULE: ./src/addon/mod/quiz/providers/prefetch-handler.ts
-var prefetch_handler = __webpack_require__(338);
-
-// EXTERNAL MODULE: ./node_modules/ionic-angular/navigation/nav-params.js
-var nav_params = __webpack_require__(73);
-
-// CONCATENATED MODULE: ./src/addon/mod/quiz/pages/index/index.ngfactory.js
-/**
- * @fileoverview This file was generated by the Angular template compiler. Do not edit.
- *
- * @suppress {suspiciousCode,uselessCode,missingProperties,missingOverride,checkTypes}
- * tslint:disable
- */ 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-var styles_AddonModQuizIndexPage = [];
-var RenderType_AddonModQuizIndexPage = core["_30" /* ɵcrt */]({ encapsulation: 2, styles: styles_AddonModQuizIndexPage, data: {} });
-
-function View_AddonModQuizIndexPage_0(_l) { return core["_58" /* ɵvid */](0, [core["_53" /* ɵqud */](402653184, 1, { quizComponent: 0 }), (_l()(), core["_32" /* ɵeld */](1, 0, null, null, 18, "ion-header", [], null, null, null, null, null)), core["_31" /* ɵdid */](2, 16384, null, 0, toolbar_header["a" /* Header */], [config["a" /* Config */], core["t" /* ElementRef */], core["W" /* Renderer */], [2, view_controller["a" /* ViewController */]]], null, null), (_l()(), core["_56" /* ɵted */](-1, null, ["\n    "])), (_l()(), core["_32" /* ɵeld */](4, 0, null, null, 14, "ion-navbar", [["class", "toolbar"], ["core-back-button", ""]], [[8, "hidden", 0], [2, "statusbar-padding", null]], null, null, navbar_ngfactory["b" /* View_Navbar_0 */], navbar_ngfactory["a" /* RenderType_Navbar */])), core["_31" /* ɵdid */](5, 49152, null, 0, navbar["a" /* Navbar */], [app["a" /* App */], [2, view_controller["a" /* ViewController */]], [2, nav_controller["a" /* NavController */]], config["a" /* Config */], core["t" /* ElementRef */], core["W" /* Renderer */]], null, null), core["_31" /* ɵdid */](6, 212992, null, 0, back_button["a" /* CoreBackButtonDirective */], [navbar["a" /* Navbar */], translate_service["a" /* TranslateService */], events["b" /* CoreEventsProvider */]], null, null), (_l()(), core["_56" /* ɵted */](-1, 3, ["\n        "])), (_l()(), core["_32" /* ɵeld */](8, 0, null, 3, 3, "ion-title", [], null, null, null, toolbar_title_ngfactory["b" /* View_ToolbarTitle_0 */], toolbar_title_ngfactory["a" /* RenderType_ToolbarTitle */])), core["_31" /* ɵdid */](9, 49152, null, 0, toolbar_title["a" /* ToolbarTitle */], [config["a" /* Config */], core["t" /* ElementRef */], core["W" /* Renderer */], [2, toolbar["a" /* Toolbar */]], [2, navbar["a" /* Navbar */]]], null, null), (_l()(), core["_32" /* ɵeld */](10, 16777216, null, 0, 1, "core-format-text", [["contextLevel", "module"]], null, null, null, null, null)), core["_31" /* ɵdid */](11, 540672, null, 0, format_text["a" /* CoreFormatTextDirective */], [core["t" /* ElementRef */], sites["b" /* CoreSitesProvider */], dom["b" /* CoreDomUtilsProvider */], utils_text["b" /* CoreTextUtilsProvider */], translate_service["a" /* TranslateService */], platform["a" /* Platform */], utils["b" /* CoreUtilsProvider */], url["b" /* CoreUrlUtilsProvider */], logger["b" /* CoreLoggerProvider */], filepool["b" /* CoreFilepoolProvider */], helper["b" /* CoreContentLinksHelperProvider */], [2, nav_controller["a" /* NavController */]], [2, content["a" /* Content */]], [2, split_view["a" /* CoreSplitViewComponent */]], iframe["a" /* CoreIframeUtilsProvider */], events["b" /* CoreEventsProvider */], filter["a" /* CoreFilterProvider */], providers_helper["a" /* CoreFilterHelperProvider */], delegate["a" /* CoreFilterDelegate */], core["_12" /* ViewContainerRef */], urlschemes["b" /* CoreCustomURLSchemesProvider */]], { text: [0, "text"], contextLevel: [1, "contextLevel"], contextInstanceId: [2, "contextInstanceId"], courseId: [3, "courseId"] }, null), (_l()(), core["_56" /* ɵted */](-1, 3, ["\n\n        "])), (_l()(), core["_32" /* ɵeld */](13, 0, null, 2, 4, "ion-buttons", [["end", ""]], null, null, null, null, null)), core["_31" /* ɵdid */](14, 16384, null, 1, toolbar_item["a" /* ToolbarItem */], [config["a" /* Config */], core["t" /* ElementRef */], core["W" /* Renderer */], [2, toolbar["a" /* Toolbar */]], [2, navbar["a" /* Navbar */]]], null, null), core["_53" /* ɵqud */](603979776, 2, { _buttons: 1 }), (_l()(), core["_56" /* ɵted */](-1, null, ["\n            "])), (_l()(), core["_56" /* ɵted */](-1, null, ["\n        "])), (_l()(), core["_56" /* ɵted */](-1, 3, ["\n    "])), (_l()(), core["_56" /* ɵted */](-1, null, ["\n"])), (_l()(), core["_56" /* ɵted */](-1, null, ["\n"])), (_l()(), core["_32" /* ɵeld */](21, 0, null, null, 13, "ion-content", [], [[2, "statusbar-padding", null], [2, "has-refresher", null]], null, null, content_ngfactory["b" /* View_Content_0 */], content_ngfactory["a" /* RenderType_Content */])), core["_31" /* ɵdid */](22, 4374528, null, 0, content["a" /* Content */], [config["a" /* Config */], platform["a" /* Platform */], dom_controller["a" /* DomController */], core["t" /* ElementRef */], core["W" /* Renderer */], app["a" /* App */], keyboard["a" /* Keyboard */], core["N" /* NgZone */], [2, view_controller["a" /* ViewController */]], [2, nav_controller["a" /* NavController */]]], null, null), (_l()(), core["_56" /* ɵted */](-1, 1, ["\n    "])), (_l()(), core["_32" /* ɵeld */](24, 0, null, 2, 6, "ion-refresher", [], [[2, "refresher-active", null], [4, "top", null]], [[null, "ionRefresh"]], function (_v, en, $event) { var ad = true; var _co = _v.component; if (("ionRefresh" === en)) {
-        var pd_0 = (_co.quizComponent.doRefresh($event) !== false);
-        ad = (pd_0 && ad);
-    } return ad; }, null, null)), core["_31" /* ɵdid */](25, 212992, null, 0, refresher["a" /* Refresher */], [platform["a" /* Platform */], content["a" /* Content */], core["N" /* NgZone */], gesture_controller["l" /* GestureController */]], { enabled: [0, "enabled"] }, { ionRefresh: "ionRefresh" }), (_l()(), core["_56" /* ɵted */](-1, null, ["\n        "])), (_l()(), core["_32" /* ɵeld */](27, 0, null, null, 2, "ion-refresher-content", [], [[1, "state", 0]], null, null, refresher_content_ngfactory["b" /* View_RefresherContent_0 */], refresher_content_ngfactory["a" /* RenderType_RefresherContent */])), core["_31" /* ɵdid */](28, 114688, null, 0, refresher_content["a" /* RefresherContent */], [refresher["a" /* Refresher */], config["a" /* Config */]], { pullingText: [0, "pullingText"] }, null), core["_48" /* ɵpid */](131072, translate_pipe["a" /* TranslatePipe */], [translate_service["a" /* TranslateService */], core["j" /* ChangeDetectorRef */]]), (_l()(), core["_56" /* ɵted */](-1, null, ["\n    "])), (_l()(), core["_56" /* ɵted */](-1, 1, ["\n\n    "])), (_l()(), core["_32" /* ɵeld */](32, 0, null, 1, 1, "addon-mod-quiz-index", [], null, [[null, "dataRetrieved"]], function (_v, en, $event) { var ad = true; var _co = _v.component; if (("dataRetrieved" === en)) {
-        var pd_0 = (_co.updateData($event) !== false);
-        ad = (pd_0 && ad);
-    } return ad; }, index_ngfactory["c" /* View_AddonModQuizIndexComponent_0 */], index_ngfactory["b" /* RenderType_AddonModQuizIndexComponent */])), core["_31" /* ɵdid */](33, 245760, [[1, 4]], 0, index["a" /* AddonModQuizIndexComponent */], [core["C" /* Injector */], quiz["a" /* AddonModQuizProvider */], [2, content["a" /* Content */]], quiz_providers_helper["a" /* AddonModQuizHelperProvider */], quiz_offline["a" /* AddonModQuizOfflineProvider */], quiz_sync["a" /* AddonModQuizSyncProvider */], behaviour_delegate["a" /* CoreQuestionBehaviourDelegate */], prefetch_handler["a" /* AddonModQuizPrefetchHandler */], nav_controller["a" /* NavController */]], { module: [0, "module"], courseId: [1, "courseId"] }, { dataRetrieved: "dataRetrieved" }), (_l()(), core["_56" /* ɵted */](-1, 1, ["\n"])), (_l()(), core["_56" /* ɵted */](-1, null, ["\n"]))], function (_ck, _v) { var _co = _v.component; _ck(_v, 6, 0); var currVal_2 = _co.title; var currVal_3 = "module"; var currVal_4 = _co.module.id; var currVal_5 = _co.courseId; _ck(_v, 11, 0, currVal_2, currVal_3, currVal_4, currVal_5); var currVal_10 = _co.quizComponent.loaded; _ck(_v, 25, 0, currVal_10); var currVal_12 = core["_35" /* ɵinlineInterpolate */](1, "", core["_57" /* ɵunv */](_v, 28, 0, core["_45" /* ɵnov */](_v, 29).transform("core.pulltorefresh")), ""); _ck(_v, 28, 0, currVal_12); var currVal_13 = _co.module; var currVal_14 = _co.courseId; _ck(_v, 33, 0, currVal_13, currVal_14); }, function (_ck, _v) { var currVal_0 = core["_45" /* ɵnov */](_v, 5)._hidden; var currVal_1 = core["_45" /* ɵnov */](_v, 5)._sbPadding; _ck(_v, 4, 0, currVal_0, currVal_1); var currVal_6 = core["_45" /* ɵnov */](_v, 22).statusbarPadding; var currVal_7 = core["_45" /* ɵnov */](_v, 22)._hasRefresher; _ck(_v, 21, 0, currVal_6, currVal_7); var currVal_8 = (core["_45" /* ɵnov */](_v, 25).state !== "inactive"); var currVal_9 = core["_45" /* ɵnov */](_v, 25)._top; _ck(_v, 24, 0, currVal_8, currVal_9); var currVal_11 = core["_45" /* ɵnov */](_v, 28).r.state; _ck(_v, 27, 0, currVal_11); }); }
-function View_AddonModQuizIndexPage_Host_0(_l) { return core["_58" /* ɵvid */](0, [(_l()(), core["_32" /* ɵeld */](0, 0, null, null, 1, "page-addon-mod-quiz-index", [], null, null, null, View_AddonModQuizIndexPage_0, RenderType_AddonModQuizIndexPage)), core["_31" /* ɵdid */](1, 49152, null, 0, index_AddonModQuizIndexPage, [nav_params["a" /* NavParams */]], null, null)], null, null); }
-var AddonModQuizIndexPageNgFactory = core["_28" /* ɵccf */]("page-addon-mod-quiz-index", index_AddonModQuizIndexPage, View_AddonModQuizIndexPage_Host_0, {}, {}, []);
-
-//# sourceMappingURL=index.ngfactory.js.map
-// EXTERNAL MODULE: ./node_modules/@angular/common/esm5/common.js
-var common = __webpack_require__(7);
-
-// EXTERNAL MODULE: ./node_modules/@angular/forms/esm5/forms.js
-var esm5_forms = __webpack_require__(23);
-
-// EXTERNAL MODULE: ./node_modules/@ngx-translate/core/src/translate.loader.js
-var translate_loader = __webpack_require__(375);
-
-// EXTERNAL MODULE: ./node_modules/@ngx-translate/core/src/translate.compiler.js
-var translate_compiler = __webpack_require__(376);
-
-// EXTERNAL MODULE: ./node_modules/@ngx-translate/core/src/translate.parser.js
-var translate_parser = __webpack_require__(378);
-
-// EXTERNAL MODULE: ./node_modules/@ngx-translate/core/src/missing-translation-handler.js
-var missing_translation_handler = __webpack_require__(377);
-
-// EXTERNAL MODULE: ./node_modules/@ngx-translate/core/src/translate.store.js
-var translate_store = __webpack_require__(485);
-
-// EXTERNAL MODULE: ./node_modules/ionic-angular/module.js
-var ionic_angular_module = __webpack_require__(738);
-
-// EXTERNAL MODULE: ./src/pipes/pipes.module.ts + 2 modules
-var pipes_module = __webpack_require__(111);
-
-// EXTERNAL MODULE: ./src/components/components.module.ts
-var components_components_module = __webpack_require__(26);
-
-// EXTERNAL MODULE: ./src/core/block/components/components.module.ts
-var block_components_components_module = __webpack_require__(278);
-
-// EXTERNAL MODULE: ./src/core/course/components/components.module.ts
-var course_components_components_module = __webpack_require__(74);
-
-// EXTERNAL MODULE: ./node_modules/ionic-angular/util/module-loader.js
-var module_loader = __webpack_require__(277);
-
-// CONCATENATED MODULE: ./src/addon/mod/quiz/pages/index/index.module.ngfactory.js
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "AddonModQuizIndexPageModuleNgFactory", function() { return AddonModQuizIndexPageModuleNgFactory; });
-/**
- * @fileoverview This file was generated by the Angular template compiler. Do not edit.
- *
- * @suppress {suspiciousCode,uselessCode,missingProperties,missingOverride,checkTypes}
- * tslint:disable
- */ 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-var AddonModQuizIndexPageModuleNgFactory = core["_29" /* ɵcmf */](index_module_AddonModQuizIndexPageModule, [], function (_l) { return core["_41" /* ɵmod */]([core["_42" /* ɵmpd */](512, core["o" /* ComponentFactoryResolver */], core["_22" /* ɵCodegenComponentFactoryResolver */], [[8, [action_sheet_component_ngfactory["a" /* ActionSheetCmpNgFactory */], alert_component_ngfactory["a" /* AlertCmpNgFactory */], app_root_ngfactory["a" /* IonicAppNgFactory */], loading_component_ngfactory["a" /* LoadingCmpNgFactory */], modal_component_ngfactory["a" /* ModalCmpNgFactory */], picker_component_ngfactory["a" /* PickerCmpNgFactory */], popover_component_ngfactory["a" /* PopoverCmpNgFactory */], select_popover_component_ngfactory["a" /* SelectPopoverNgFactory */], toast_component_ngfactory["a" /* ToastCmpNgFactory */], context_menu_popover_ngfactory["a" /* CoreContextMenuPopoverComponentNgFactory */], course_picker_menu_popover_ngfactory["a" /* CoreCoursePickerMenuPopoverComponentNgFactory */], recaptchamodal_ngfactory["a" /* CoreRecaptchaModalComponentNgFactory */], bs_tooltip_ngfactory["a" /* CoreBSTooltipComponentNgFactory */], only_title_block_ngfactory["a" /* CoreBlockOnlyTitleComponentNgFactory */], pre_rendered_block_ngfactory["a" /* CoreBlockPreRenderedComponentNgFactory */], course_blocks_ngfactory["a" /* CoreBlockCourseBlocksComponentNgFactory */], unsupported_module_ngfactory["a" /* CoreCourseUnsupportedModuleComponentNgFactory */], tag_area_ngfactory["a" /* CoreCourseTagAreaComponentNgFactory */], index_ngfactory["a" /* AddonModQuizIndexComponentNgFactory */], connection_error_ngfactory["a" /* AddonModQuizConnectionErrorComponentNgFactory */], AddonModQuizIndexPageNgFactory]], [3, core["o" /* ComponentFactoryResolver */]], core["L" /* NgModuleRef */]]), core["_42" /* ɵmpd */](4608, common["m" /* NgLocalization */], common["l" /* NgLocaleLocalization */], [core["G" /* LOCALE_ID */], [2, common["w" /* ɵa */]]]), core["_42" /* ɵmpd */](4608, esm5_forms["x" /* ɵi */], esm5_forms["x" /* ɵi */], []), core["_42" /* ɵmpd */](4608, esm5_forms["d" /* FormBuilder */], esm5_forms["d" /* FormBuilder */], []), core["_42" /* ɵmpd */](4608, translate_loader["b" /* TranslateLoader */], translate_loader["a" /* TranslateFakeLoader */], []), core["_42" /* ɵmpd */](4608, translate_compiler["a" /* TranslateCompiler */], translate_compiler["b" /* TranslateFakeCompiler */], []), core["_42" /* ɵmpd */](4608, translate_parser["b" /* TranslateParser */], translate_parser["a" /* TranslateDefaultParser */], []), core["_42" /* ɵmpd */](4608, missing_translation_handler["b" /* MissingTranslationHandler */], missing_translation_handler["a" /* FakeMissingTranslationHandler */], []), core["_42" /* ɵmpd */](4608, translate_service["a" /* TranslateService */], translate_service["a" /* TranslateService */], [translate_store["a" /* TranslateStore */], translate_loader["b" /* TranslateLoader */], translate_compiler["a" /* TranslateCompiler */], translate_parser["b" /* TranslateParser */], missing_translation_handler["b" /* MissingTranslationHandler */], translate_service["b" /* USE_DEFAULT_LANG */], translate_service["c" /* USE_STORE */]]), core["_42" /* ɵmpd */](512, directives_module["a" /* CoreDirectivesModule */], directives_module["a" /* CoreDirectivesModule */], []), core["_42" /* ɵmpd */](512, common["b" /* CommonModule */], common["b" /* CommonModule */], []), core["_42" /* ɵmpd */](512, esm5_forms["v" /* ɵba */], esm5_forms["v" /* ɵba */], []), core["_42" /* ɵmpd */](512, esm5_forms["i" /* FormsModule */], esm5_forms["i" /* FormsModule */], []), core["_42" /* ɵmpd */](512, esm5_forms["s" /* ReactiveFormsModule */], esm5_forms["s" /* ReactiveFormsModule */], []), core["_42" /* ɵmpd */](512, ionic_angular_module["a" /* IonicModule */], ionic_angular_module["a" /* IonicModule */], []), core["_42" /* ɵmpd */](512, _ngx_translate_core["b" /* TranslateModule */], _ngx_translate_core["b" /* TranslateModule */], []), core["_42" /* ɵmpd */](512, pipes_module["a" /* CorePipesModule */], pipes_module["a" /* CorePipesModule */], []), core["_42" /* ɵmpd */](512, components_components_module["a" /* CoreComponentsModule */], components_components_module["a" /* CoreComponentsModule */], []), core["_42" /* ɵmpd */](512, block_components_components_module["a" /* CoreBlockComponentsModule */], block_components_components_module["a" /* CoreBlockComponentsModule */], []), core["_42" /* ɵmpd */](512, course_components_components_module["a" /* CoreCourseComponentsModule */], course_components_components_module["a" /* CoreCourseComponentsModule */], []), core["_42" /* ɵmpd */](512, components_module["a" /* AddonModQuizComponentsModule */], components_module["a" /* AddonModQuizComponentsModule */], []), core["_42" /* ɵmpd */](512, ionic_angular_module["b" /* IonicPageModule */], ionic_angular_module["b" /* IonicPageModule */], []), core["_42" /* ɵmpd */](512, index_module_AddonModQuizIndexPageModule, index_module_AddonModQuizIndexPageModule, []), core["_42" /* ɵmpd */](256, translate_service["c" /* USE_STORE */], undefined, []), core["_42" /* ɵmpd */](256, translate_service["b" /* USE_DEFAULT_LANG */], undefined, []), core["_42" /* ɵmpd */](256, module_loader["a" /* LAZY_LOADED_TOKEN */], index_AddonModQuizIndexPage, [])]); });
-
-//# sourceMappingURL=index.module.ngfactory.js.map
+//# sourceMappingURL=attempt-results.js.map
 
 /***/ })
 

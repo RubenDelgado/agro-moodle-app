@@ -1,60 +1,84 @@
 webpackJsonp([88],{
 
-/***/ 2084:
+/***/ 2058:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "AddonModLessonUserRetakePageModule", function() { return AddonModLessonUserRetakePageModule; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(3);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ngx_translate_core__ = __webpack_require__(1);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__components_components_module__ = __webpack_require__(13);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__directives_directives_module__ = __webpack_require__(14);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__pipes_pipes_module__ = __webpack_require__(66);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__user_retake__ = __webpack_require__(2215);
+// (C) Copyright 2015 Moodle Pty Ltd.
+//
+// Licensed under the Apache License, Version 2.0 (the "License");
+// you may not use this file except in compliance with the License.
+// You may obtain a copy of the License at
+//
+//     http://www.apache.org/licenses/LICENSE-2.0
+//
+// Unless required by applicable law or agreed to in writing, software
+// distributed under the License is distributed on an "AS IS" BASIS,
+// WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+// See the License for the specific language governing permissions and
+// limitations under the License.
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
 
-// EXTERNAL MODULE: ./node_modules/@angular/core/esm5/core.js
-var core = __webpack_require__(0);
 
-// EXTERNAL MODULE: ./node_modules/ionic-angular/index.js + 3 modules
-var ionic_angular = __webpack_require__(5);
 
-// EXTERNAL MODULE: ./node_modules/@ngx-translate/core/index.js + 1 modules
-var _ngx_translate_core = __webpack_require__(3);
 
-// EXTERNAL MODULE: ./src/components/components.module.ts
-var components_module = __webpack_require__(26);
 
-// EXTERNAL MODULE: ./src/directives/directives.module.ts + 2 modules
-var directives_module = __webpack_require__(32);
 
-// EXTERNAL MODULE: ./node_modules/@angular/forms/esm5/forms.js
-var esm5_forms = __webpack_require__(23);
 
-// EXTERNAL MODULE: ./src/providers/events.ts
-var events = __webpack_require__(9);
+var AddonModLessonUserRetakePageModule = /** @class */ (function () {
+    function AddonModLessonUserRetakePageModule() {
+    }
+    AddonModLessonUserRetakePageModule = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["J" /* NgModule */])({
+            declarations: [
+                __WEBPACK_IMPORTED_MODULE_6__user_retake__["a" /* AddonModLessonUserRetakePage */],
+            ],
+            imports: [
+                __WEBPACK_IMPORTED_MODULE_3__components_components_module__["a" /* CoreComponentsModule */],
+                __WEBPACK_IMPORTED_MODULE_4__directives_directives_module__["a" /* CoreDirectivesModule */],
+                __WEBPACK_IMPORTED_MODULE_5__pipes_pipes_module__["a" /* CorePipesModule */],
+                __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["l" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_6__user_retake__["a" /* AddonModLessonUserRetakePage */]),
+                __WEBPACK_IMPORTED_MODULE_2__ngx_translate_core__["b" /* TranslateModule */].forChild()
+            ],
+        })
+    ], AddonModLessonUserRetakePageModule);
+    return AddonModLessonUserRetakePageModule;
+}());
 
-// EXTERNAL MODULE: ./src/providers/sites.ts
-var sites = __webpack_require__(1);
+//# sourceMappingURL=user-retake.module.js.map
 
-// EXTERNAL MODULE: ./src/providers/sync.ts
-var sync = __webpack_require__(82);
+/***/ }),
 
-// EXTERNAL MODULE: ./src/providers/utils/dom.ts
-var dom = __webpack_require__(4);
+/***/ 2215:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
 
-// EXTERNAL MODULE: ./src/providers/utils/text.ts
-var utils_text = __webpack_require__(10);
-
-// EXTERNAL MODULE: ./src/core/course/providers/course.ts
-var course = __webpack_require__(15);
-
-// EXTERNAL MODULE: ./src/core/course/providers/helper.ts
-var helper = __webpack_require__(38);
-
-// EXTERNAL MODULE: ./src/addon/mod/wiki/providers/wiki.ts
-var wiki = __webpack_require__(239);
-
-// EXTERNAL MODULE: ./src/addon/mod/wiki/providers/wiki-offline.ts
-var wiki_offline = __webpack_require__(299);
-
-// EXTERNAL MODULE: ./src/addon/mod/wiki/providers/wiki-sync.ts
-var wiki_sync = __webpack_require__(300);
-
-// CONCATENATED MODULE: ./src/addon/mod/wiki/pages/edit/edit.ts
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AddonModLessonUserRetakePage; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(3);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ngx_translate_core__ = __webpack_require__(1);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__providers_sites__ = __webpack_require__(2);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__providers_utils_dom__ = __webpack_require__(7);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__providers_utils_text__ = __webpack_require__(10);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__providers_utils_time__ = __webpack_require__(17);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__providers_utils_utils__ = __webpack_require__(4);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__core_user_providers_user__ = __webpack_require__(30);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__providers_lesson__ = __webpack_require__(111);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__providers_helper__ = __webpack_require__(1017);
 // (C) Copyright 2015 Moodle Pty Ltd.
 //
 // Licensed under the Apache License, Version 2.0 (the "License");
@@ -77,44 +101,6 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, generator) {
-    return new (P || (P = Promise))(function (resolve, reject) {
-        function fulfilled(value) { try { step(generator.next(value)); } catch (e) { reject(e); } }
-        function rejected(value) { try { step(generator["throw"](value)); } catch (e) { reject(e); } }
-        function step(result) { result.done ? resolve(result.value) : new P(function (resolve) { resolve(result.value); }).then(fulfilled, rejected); }
-        step((generator = generator.apply(thisArg, _arguments || [])).next());
-    });
-};
-var __generator = (this && this.__generator) || function (thisArg, body) {
-    var _ = { label: 0, sent: function() { if (t[0] & 1) throw t[1]; return t[1]; }, trys: [], ops: [] }, f, y, t, g;
-    return g = { next: verb(0), "throw": verb(1), "return": verb(2) }, typeof Symbol === "function" && (g[Symbol.iterator] = function() { return this; }), g;
-    function verb(n) { return function (v) { return step([n, v]); }; }
-    function step(op) {
-        if (f) throw new TypeError("Generator is already executing.");
-        while (_) try {
-            if (f = 1, y && (t = y[op[0] & 2 ? "return" : op[0] ? "throw" : "next"]) && !(t = t.call(y, op[1])).done) return t;
-            if (y = 0, t) op = [0, t.value];
-            switch (op[0]) {
-                case 0: case 1: t = op; break;
-                case 4: _.label++; return { value: op[1], done: false };
-                case 5: _.label++; y = op[1]; op = [0]; continue;
-                case 7: op = _.ops.pop(); _.trys.pop(); continue;
-                default:
-                    if (!(t = _.trys, t = t.length > 0 && t[t.length - 1]) && (op[0] === 6 || op[0] === 2)) { _ = 0; continue; }
-                    if (op[0] === 3 && (!t || (op[1] > t[0] && op[1] < t[3]))) { _.label = op[1]; break; }
-                    if (op[0] === 6 && _.label < t[1]) { _.label = t[1]; t = op; break; }
-                    if (t && _.label < t[2]) { _.label = t[2]; _.ops.push(op); break; }
-                    if (t[2]) _.ops.pop();
-                    _.trys.pop(); continue;
-            }
-            op = body.call(thisArg, _);
-        } catch (e) { op = [6, e]; y = 0; } finally { f = t = 0; }
-        if (op[0] & 5) throw op[1]; return { value: op[0] ? op[1] : void 0, done: true };
-    }
-};
-
-
-
 
 
 
@@ -127,885 +113,196 @@ var __generator = (this && this.__generator) || function (thisArg, body) {
 
 
 /**
- * Page that allows adding or editing a wiki page.
+ * Page that displays a retake made by a certain user.
  */
-var edit_AddonModWikiEditPage = /** @class */ (function () {
-    function AddonModWikiEditPage(navParams, fb, navCtrl, sitesProvider, syncProvider, domUtils, translate, courseProvider, eventsProvider, wikiProvider, wikiOffline, wikiSync, textUtils, courseHelper) {
-        this.navCtrl = navCtrl;
-        this.sitesProvider = sitesProvider;
-        this.syncProvider = syncProvider;
-        this.domUtils = domUtils;
-        this.translate = translate;
-        this.courseProvider = courseProvider;
-        this.eventsProvider = eventsProvider;
-        this.wikiProvider = wikiProvider;
-        this.wikiOffline = wikiOffline;
-        this.wikiSync = wikiSync;
+var AddonModLessonUserRetakePage = /** @class */ (function () {
+    function AddonModLessonUserRetakePage(navParams, sitesProvider, textUtils, translate, domUtils, userProvider, timeUtils, lessonProvider, lessonHelper, utils) {
         this.textUtils = textUtils;
-        this.courseHelper = courseHelper;
-        this.component = wiki["a" /* AddonModWikiProvider */].COMPONENT; // Component to link the files to.
-        this.editorExtraParams = {};
-        this.forceLeave = false; // To allow leaving the page without checking for changes.
-        this.isDestroyed = false; // Whether the page has been destroyed.
-        this.module = navParams.get('module') || {};
+        this.translate = translate;
+        this.domUtils = domUtils;
+        this.userProvider = userProvider;
+        this.timeUtils = timeUtils;
+        this.lessonProvider = lessonProvider;
+        this.lessonHelper = lessonHelper;
+        this.utils = utils;
+        this.component = __WEBPACK_IMPORTED_MODULE_9__providers_lesson__["a" /* AddonModLessonProvider */].COMPONENT;
+        this.lessonId = navParams.get('lessonId');
         this.courseId = navParams.get('courseId');
-        this.subwikiId = navParams.get('subwikiId');
-        this.wikiId = navParams.get('wikiId');
-        this.pageId = navParams.get('pageId');
-        this.section = navParams.get('section');
-        this.groupId = navParams.get('groupId');
-        this.userId = navParams.get('userId');
-        var pageTitle = navParams.get('pageTitle');
-        pageTitle = pageTitle ? pageTitle.replace(/\+/g, ' ') : '';
-        this.initialSubwikiId = this.subwikiId;
-        this.componentId = this.module.id;
-        this.canEditTitle = !pageTitle;
-        this.title = pageTitle ? this.translate.instant('addon.mod_wiki.editingpage', { $a: pageTitle }) :
-            this.translate.instant('addon.mod_wiki.newpagehdr');
-        this.blockId = this.wikiSync.getSubwikiBlockId(this.subwikiId, this.wikiId, this.userId, this.groupId);
-        // Create the form group and its controls.
-        this.contentControl = fb.control('');
-        this.pageForm = fb.group({
-            title: pageTitle
-        });
-        this.pageForm.addControl('text', this.contentControl);
-        // Block the wiki so it cannot be synced.
-        this.syncProvider.blockOperation(this.component, this.blockId);
-        if (!this.module.id) {
-            this.editorExtraParams.type = 'wiki';
-        }
-        if (this.pageId) {
-            this.editorExtraParams.pageid = this.pageId;
-            if (this.section) {
-                this.editorExtraParams.section = this.section;
-            }
-        }
-        else if (pageTitle) {
-            this.editorExtraParams.pagetitle = pageTitle;
-        }
+        this.userId = navParams.get('userId') || sitesProvider.getCurrentSiteUserId();
+        this.retakeNumber = navParams.get('retake');
     }
     /**
      * Component being initialized.
      */
-    AddonModWikiEditPage.prototype.ngOnInit = function () {
+    AddonModLessonUserRetakePage.prototype.ngOnInit = function () {
         var _this = this;
-        this.fetchWikiPageData().then(function (success) {
-            if (success && _this.blockId && !_this.isDestroyed) {
-                // Block the subwiki now that we have blockId for sure.
-                var newBlockId = _this.wikiSync.getSubwikiBlockId(_this.subwikiId, _this.wikiId, _this.userId, _this.groupId);
-                if (newBlockId != _this.blockId) {
-                    _this.syncProvider.unblockOperation(_this.component, _this.blockId);
-                    _this.blockId = newBlockId;
-                    _this.syncProvider.blockOperation(_this.component, _this.blockId);
-                }
-            }
+        // Fetch the data.
+        this.fetchData().finally(function () {
+            _this.loaded = true;
+        });
+    };
+    /**
+     * Change the retake displayed.
+     *
+     * @param retakeNumber The new retake number.
+     */
+    AddonModLessonUserRetakePage.prototype.changeRetake = function (retakeNumber) {
+        var _this = this;
+        this.loaded = false;
+        this.setRetake(retakeNumber).catch(function (error) {
+            _this.selectedRetake = _this.previousSelectedRetake;
+            _this.domUtils.showErrorModal(_this.utils.addDataNotDownloadedError(error, 'Error getting attempt.'));
         }).finally(function () {
             _this.loaded = true;
         });
     };
     /**
-     * Convenience function to get wiki page data.
+     * Pull to refresh.
      *
-     * @return Promise resolved with boolean: whether it was successful.
+     * @param refresher Refresher.
      */
-    AddonModWikiEditPage.prototype.fetchWikiPageData = function () {
+    AddonModLessonUserRetakePage.prototype.doRefresh = function (refresher) {
+        this.refreshData().finally(function () {
+            refresher.complete();
+        });
+    };
+    /**
+     * Get lesson and retake data.
+     *
+     * @return Promise resolved when done.
+     */
+    AddonModLessonUserRetakePage.prototype.fetchData = function () {
         var _this = this;
-        var promise, canEdit = false;
-        if (this.pageId) {
-            // Editing a page that already exists.
-            this.canEditTitle = false;
-            this.editing = true;
-            this.editOffline = false; // Cannot edit pages in offline.
-            // Get page contents to obtain title and editing permission
-            promise = this.wikiProvider.getPageContents(this.pageId, { cmId: this.module.id }).then(function (pageContents) {
-                _this.pageForm.controls.title.setValue(pageContents.title); // Set the title in the form group.
-                _this.wikiId = pageContents.wikiid;
-                _this.subwikiId = pageContents.subwikiid;
-                _this.title = _this.translate.instant('addon.mod_wiki.editingpage', { $a: pageContents.title });
-                _this.groupId = pageContents.groupid;
-                _this.userId = pageContents.userid;
-                canEdit = pageContents.caneditpage;
-                // Wait for sync to be over (if any).
-                return _this.wikiSync.waitForSync(_this.blockId);
-            }).then(function () {
-                // Get subwiki files, needed to replace URLs for rich text editor.
-                return _this.wikiProvider.getSubwikiFiles(_this.wikiId, {
-                    groupId: _this.groupId,
-                    userId: _this.userId,
-                    cmId: _this.module.id,
-                });
-            }).then(function (files) {
-                _this.subwikiFiles = files;
-                // Get editable text of the page/section.
-                return _this.wikiProvider.getPageForEditing(_this.pageId, _this.section);
-            }).then(function (editContents) {
-                // Get the original page contents, treating file URLs if needed.
-                var content = _this.textUtils.replacePluginfileUrls(editContents.content, _this.subwikiFiles);
-                _this.contentControl.setValue(content);
-                _this.originalContent = content;
-                _this.version = editContents.version;
-                if (canEdit) {
-                    // Renew the lock every certain time.
-                    _this.renewLockInterval = setInterval(function () {
-                        _this.renewLock();
-                    }, wiki["a" /* AddonModWikiProvider */].RENEW_LOCK_TIME);
-                }
+        return this.lessonProvider.getLessonById(this.courseId, this.lessonId).then(function (lessonData) {
+            _this.lesson = lessonData;
+            // Get the retakes overview for all participants.
+            return _this.lessonProvider.getRetakesOverview(_this.lesson.id, {
+                cmId: _this.lesson.coursemodule,
             });
-        }
-        else {
-            var pageTitle_1 = this.pageForm.controls.title.value;
-            // New page. Wait for sync to be over (if any).
-            promise = this.wikiSync.waitForSync(this.blockId);
-            if (pageTitle_1) {
-                // Title is set, it could be editing an offline page or creating a new page using an edit link.
-                promise = promise.then(function (result) {
-                    // First of all, verify if this page was created in the current sync.
-                    if (result) {
-                        var page = result.created.find(function (page) {
-                            return page.title == pageTitle_1;
-                        });
-                        if (page && page.pageId > 0) {
-                            // Page was created, now it exists in the site.
-                            _this.pageId = page.pageId;
-                            return _this.fetchWikiPageData();
-                        }
+        }).then(function (data) {
+            // Search the student.
+            var student;
+            if (data && data.students) {
+                for (var i = 0; i < data.students.length; i++) {
+                    if (data.students[i].id == _this.userId) {
+                        student = data.students[i];
+                        break;
                     }
-                    // Check if there's already some offline data for this page.
-                    return _this.wikiOffline.getNewPage(pageTitle_1, _this.subwikiId, _this.wikiId, _this.userId, _this.groupId);
-                }).then(function (page) {
-                    // Load offline content.
-                    _this.contentControl.setValue(page.cachedcontent);
-                    _this.originalContent = page.cachedcontent;
-                    _this.editOffline = true;
-                }).catch(function () {
-                    // No offline data found.
-                    _this.editOffline = false;
-                });
+                }
             }
-            else {
-                this.editOffline = false;
+            if (!student) {
+                // Student not found.
+                return Promise.reject(_this.translate.instant('addon.mod_lesson.cannotfinduser'));
             }
-            promise.then(function () {
-                _this.editing = false;
-                canEdit = !!_this.blockId; // If no blockId, the user cannot edit the page.
+            if (!student.attempts || !student.attempts.length) {
+                // No retakes.
+                return Promise.reject(_this.translate.instant('addon.mod_lesson.cannotfindattempt'));
+            }
+            student.bestgrade = _this.textUtils.roundToDecimals(student.bestgrade, 2);
+            student.attempts.forEach(function (retake) {
+                if (!_this.selectedRetake && _this.retakeNumber == retake.try) {
+                    // The retake specified as parameter exists. Use it.
+                    _this.selectedRetake = _this.retakeNumber;
+                }
+                retake.label = _this.lessonHelper.getRetakeLabel(retake);
             });
-        }
-        return promise.then(function () {
-            return true;
+            if (!_this.selectedRetake) {
+                // Retake number not specified or not valid, use the last retake.
+                _this.selectedRetake = student.attempts[student.attempts.length - 1].try;
+            }
+            // Get the profile image of the user.
+            return _this.userProvider.getProfile(student.id, _this.courseId, true).then(function (user) {
+                student.profileimageurl = user.profileimageurl;
+                return student;
+            }).catch(function () {
+                // Error getting profile, resolve promise without adding any extra data.
+                return student;
+            });
+        }).then(function (student) {
+            _this.student = student;
+            return _this.setRetake(_this.selectedRetake);
         }).catch(function (error) {
-            _this.domUtils.showErrorModalDefault(error, 'Error getting wiki data.');
-            // Go back.
-            _this.forceLeavePage();
-            return false;
-        }).finally(function () {
-            if (!canEdit) {
-                // Cannot edit, show alert and go back.
-                _this.domUtils.showAlert(_this.translate.instant('core.notice'), _this.translate.instant('addon.mod_wiki.cannoteditpage'));
-                _this.forceLeavePage();
-            }
+            _this.domUtils.showErrorModalDefault(error, 'Error getting data.', true);
         });
     };
     /**
-     * Force leaving the page, without checking for changes.
-     */
-    AddonModWikiEditPage.prototype.forceLeavePage = function () {
-        this.forceLeave = true;
-        this.navCtrl.pop();
-    };
-    /**
-     * Navigate to a new offline page.
+     * Refreshes data.
      *
-     * @param title Page title.
-     */
-    AddonModWikiEditPage.prototype.goToNewOfflinePage = function (title) {
-        if (this.courseId && (this.module.id || this.wikiId)) {
-            // We have enough data to navigate to the page.
-            if (!this.editOffline || this.previousViewPageIsDifferentOffline(title)) {
-                this.pageParamsToLoad = {
-                    module: this.module,
-                    courseId: this.courseId,
-                    pageId: null,
-                    pageTitle: title,
-                    wikiId: this.wikiId,
-                    subwikiId: this.subwikiId,
-                    userId: this.userId,
-                    groupId: this.groupId
-                };
-            }
-        }
-        else {
-            this.domUtils.showAlert(this.translate.instant('core.success'), this.translate.instant('core.datastoredoffline'));
-        }
-        this.forceLeavePage();
-    };
-    /**
-     * Check if we need to navigate to a new state.
-     *
-     * @param title Page title.
      * @return Promise resolved when done.
      */
-    AddonModWikiEditPage.prototype.gotoPage = function (title) {
+    AddonModLessonUserRetakePage.prototype.refreshData = function () {
         var _this = this;
-        return this.retrieveModuleInfo(this.wikiId).then(function () {
-            var openPage = false;
-            // Not the firstpage.
-            if (_this.initialSubwikiId) {
-                if (!_this.editing && _this.editOffline && _this.previousViewPageIsDifferentOffline(title)) {
-                    // The user submitted an offline page that isn't loaded in the back view, open it.
-                    openPage = true;
-                }
-                else if (!_this.editOffline && _this.previousViewIsDifferentPageOnline()) {
-                    // The user submitted an offline page that isn't loaded in the back view, open it.
-                    openPage = true;
-                }
-            }
-            if (openPage) {
-                // Setting that will do the app navigate to the page.
-                _this.pageParamsToLoad = {
-                    module: _this.module,
-                    courseId: _this.courseId,
-                    pageId: _this.pageId,
-                    pageTitle: title,
-                    wikiId: _this.wikiId,
-                    subwikiId: _this.subwikiId,
-                    userId: _this.userId,
-                    groupId: _this.groupId
-                };
-            }
-            _this.forceLeavePage();
-        }).catch(function () {
-            // Go back if it fails.
-            _this.forceLeavePage();
+        var promises = [];
+        promises.push(this.lessonProvider.invalidateLessonData(this.courseId));
+        if (this.lesson) {
+            promises.push(this.lessonProvider.invalidateRetakesOverview(this.lesson.id));
+            promises.push(this.lessonProvider.invalidateUserRetakesForUser(this.lesson.id, this.userId));
+        }
+        return Promise.all(promises).catch(function () {
+            // Ignore errors.
+        }).then(function () {
+            return _this.fetchData();
         });
     };
     /**
-     * Check if data has changed.
+     * Set the retake to view and load its data.
      *
-     * @return Whether data has changed.
+     * @param retakeNumber Retake number to set.
+     * @return Promise resolved when done.
      */
-    AddonModWikiEditPage.prototype.hasDataChanged = function () {
-        var values = this.pageForm.value;
-        return !(this.originalContent == values.text || (!this.editing && !values.text && !values.title));
-    };
-    /**
-     * Check if we can leave the page or not.
-     *
-     * @return Resolved if we can leave it, rejected if not.
-     */
-    AddonModWikiEditPage.prototype.ionViewCanLeave = function () {
-        return __awaiter(this, void 0, void 0, function () {
-            return __generator(this, function (_a) {
-                switch (_a.label) {
-                    case 0:
-                        if (this.forceLeave) {
-                            return [2 /*return*/];
-                        }
-                        if (!this.hasDataChanged()) return [3 /*break*/, 2];
-                        return [4 /*yield*/, this.domUtils.showConfirm(this.translate.instant('core.confirmcanceledit'))];
-                    case 1:
-                        _a.sent();
-                        _a.label = 2;
-                    case 2:
-                        this.domUtils.triggerFormCancelledEvent(this.formElement, this.sitesProvider.getCurrentSiteId());
-                        return [2 /*return*/];
-                }
-            });
-        });
-    };
-    /**
-     * View left.
-     */
-    AddonModWikiEditPage.prototype.ionViewDidLeave = function () {
-        if (this.pageParamsToLoad) {
-            // Go to the page we've just created/edited.
-            this.navCtrl.push('AddonModWikiIndexPage', this.pageParamsToLoad);
-        }
-    };
-    /**
-     * In case we are NOT editing an offline page, check if the page loaded in previous view is different than this view.
-     *
-     * @return Whether previous view wiki page is different than current page.
-     */
-    AddonModWikiEditPage.prototype.previousViewIsDifferentPageOnline = function () {
-        // We cannot precisely detect when the state is the same but this is close to it.
-        var previousView = this.navCtrl.getPrevious();
-        return !this.editing || previousView.component.name != 'AddonModWikiIndexPage' ||
-            previousView.data.module.id != this.module.id || previousView.data.pageId != this.pageId;
-    };
-    /**
-     * In case we're editing an offline page, check if the page loaded in previous view is different than this view.
-     *
-     * @param title The current page title.
-     * @return Whether previous view wiki page is different than current page.
-     */
-    AddonModWikiEditPage.prototype.previousViewPageIsDifferentOffline = function (title) {
-        // We cannot precisely detect when the state is the same but this is close to it.
-        var previousView = this.navCtrl.getPrevious();
-        if (previousView.component.name != 'AddonModWikiIndexPage' || previousView.data.module.id != this.module.id ||
-            previousView.data.wikiId != this.wikiId || previousView.data.pageTitle != title) {
-            return true;
-        }
-        // Check subwiki using subwiki or user and group.
-        var previousSubwikiId = parseInt(previousView.data.subwikiId, 10) || 0;
-        if (previousSubwikiId > 0 && this.subwikiId > 0) {
-            return previousSubwikiId != this.subwikiId;
-        }
-        var previousUserId = parseInt(previousView.data.userId, 10) || 0, previousGroupId = parseInt(previousView.data.groupId, 10) || 0;
-        return this.userId != previousUserId || this.groupId != previousGroupId;
-    };
-    /**
-     * Save the data.
-     */
-    AddonModWikiEditPage.prototype.save = function () {
+    AddonModLessonUserRetakePage.prototype.setRetake = function (retakeNumber) {
         var _this = this;
-        var values = this.pageForm.value, title = values.title, modal = this.domUtils.showModalLoading('core.sending', true);
-        var promise, text = values.text;
-        text = this.textUtils.restorePluginfileUrls(text, this.subwikiFiles);
-        text = this.textUtils.formatHtmlLines(text);
-        if (this.editing) {
-            // Edit existing page.
-            promise = this.wikiProvider.editPage(this.pageId, text, this.section).then(function () {
-                _this.domUtils.triggerFormSubmittedEvent(_this.formElement, true, _this.sitesProvider.getCurrentSiteId());
-                // Invalidate page since it changed.
-                return _this.wikiProvider.invalidatePage(_this.pageId).then(function () {
-                    return _this.gotoPage(title);
-                });
-            });
-        }
-        else {
-            // Creating a new page.
-            if (!title) {
-                // Title is mandatory, stop.
-                this.domUtils.showAlert(this.translate.instant('core.notice'), this.translate.instant('addon.mod_wiki.titleshouldnotbeempty'));
-                modal.dismiss();
-                return;
+        this.selectedRetake = retakeNumber;
+        return this.lessonProvider.getUserRetake(this.lessonId, retakeNumber, {
+            cmId: this.lesson.coursemodule,
+            userId: this.userId,
+        }).then(function (data) {
+            if (data && data.completed != -1) {
+                // Completed.
+                data.userstats.grade = _this.textUtils.roundToDecimals(data.userstats.grade, 2);
+                data.userstats.timetakenReadable = _this.timeUtils.formatTime(data.userstats.timetotake);
             }
-            if (!this.editOffline) {
-                // Check if the user has an offline page with the same title.
-                promise = this.wikiOffline.getNewPage(title, this.subwikiId, this.wikiId, this.userId, this.groupId).then(function () {
-                    // There's a page with same name, reject with error message.
-                    return Promise.reject(_this.translate.instant('addon.mod_wiki.pageexists'));
-                }, function () {
-                    // Not found, page can be sent.
-                });
-            }
-            else {
-                promise = Promise.resolve();
-            }
-            promise = promise.then(function () {
-                // Try to send the page.
-                var wikiId = _this.wikiId || (_this.module && _this.module.instance);
-                return _this.wikiProvider.newPage(title, text, {
-                    subwikiId: _this.subwikiId,
-                    wikiId: wikiId,
-                    userId: _this.userId,
-                    groupId: _this.groupId,
-                    cmId: _this.module.id,
-                }).then(function (id) {
-                    _this.domUtils.triggerFormSubmittedEvent(_this.formElement, id > 0, _this.sitesProvider.getCurrentSiteId());
-                    if (id > 0) {
-                        _this.eventsProvider.trigger(events["b" /* CoreEventsProvider */].ACTIVITY_DATA_SENT, { module: 'wiki' });
-                        // Page was created, get its data and go to the page.
-                        _this.pageId = id;
-                        return _this.wikiProvider.getPageContents(_this.pageId, { cmId: _this.module.id }).then(function (pageContents) {
-                            var promises = [];
-                            wikiId = parseInt(pageContents.wikiid, 10);
-                            if (!_this.subwikiId) {
-                                // Subwiki was not created, invalidate subwikis as well.
-                                promises.push(_this.wikiProvider.invalidateSubwikis(wikiId));
-                            }
-                            _this.subwikiId = parseInt(pageContents.subwikiid, 10);
-                            _this.userId = parseInt(pageContents.userid, 10);
-                            _this.groupId = parseInt(pageContents.groupid, 10);
-                            // Invalidate subwiki pages since there are new.
-                            promises.push(_this.wikiProvider.invalidateSubwikiPages(wikiId));
-                            return Promise.all(promises).then(function () {
-                                return _this.gotoPage(title);
+            if (data && data.answerpages) {
+                // Format pages data.
+                data.answerpages.forEach(function (page) {
+                    if (_this.lessonProvider.answerPageIsContent(page)) {
+                        page.isContent = true;
+                        if (page.answerdata && page.answerdata.answers) {
+                            page.answerdata.answers.forEach(function (answer) {
+                                // Content pages only have 1 valid field in the answer array.
+                                answer[0] = _this.lessonHelper.getContentPageAnswerDataFromHtml(answer[0]);
                             });
-                        }).finally(function () {
-                            // Notify page created.
-                            _this.eventsProvider.trigger(wiki["a" /* AddonModWikiProvider */].PAGE_CREATED_EVENT, {
-                                pageId: _this.pageId,
-                                subwikiId: _this.subwikiId,
-                                pageTitle: title,
-                            }, _this.sitesProvider.getCurrentSiteId());
-                        });
+                        }
                     }
-                    else {
-                        // Page stored in offline. Go to see the offline page.
-                        _this.goToNewOfflinePage(title);
+                    else if (_this.lessonProvider.answerPageIsQuestion(page)) {
+                        page.isQuestion = true;
+                        if (page.answerdata && page.answerdata.answers) {
+                            page.answerdata.answers.forEach(function (answer) {
+                                // Only the first field of the answer array requires to be parsed.
+                                answer[0] = _this.lessonHelper.getQuestionPageAnswerDataFromHtml(answer[0]);
+                            });
+                        }
                     }
                 });
-            });
-        }
-        return promise.catch(function (error) {
-            _this.domUtils.showErrorModalDefault(error, 'Error saving wiki data.');
-        }).finally(function () {
-            modal.dismiss();
+            }
+            _this.retake = data;
+            _this.previousSelectedRetake = _this.selectedRetake;
         });
     };
-    /**
-     * Renew lock and control versions.
-     */
-    AddonModWikiEditPage.prototype.renewLock = function () {
-        var _this = this;
-        this.wikiProvider.getPageForEditing(this.pageId, this.section, true).then(function (response) {
-            if (response.version && _this.version != response.version) {
-                _this.wrongVersionLock = true;
-            }
-        });
-    };
-    /**
-     * Fetch module information to redirect when needed.
-     *
-     * @param wikiId Wiki ID.
-     * @return Promise resolved when done.
-     */
-    AddonModWikiEditPage.prototype.retrieveModuleInfo = function (wikiId) {
-        var _this = this;
-        if (this.module.id && this.courseId) {
-            // We have enough data.
-            return Promise.resolve();
-        }
-        var promise = this.module.id ? Promise.resolve(this.module) :
-            this.courseProvider.getModuleBasicInfoByInstance(wikiId, 'wiki');
-        return promise.then(function (mod) {
-            _this.module = mod;
-            _this.componentId = _this.module.id;
-            if (!_this.courseId && _this.module.course) {
-                _this.courseId = _this.module.course;
-            }
-            else if (!_this.courseId) {
-                return _this.courseHelper.getModuleCourseIdByInstance(wikiId, 'wiki').then(function (course) {
-                    _this.courseId = course;
-                });
-            }
-        });
-    };
-    /**
-     * Component being destroyed.
-     */
-    AddonModWikiEditPage.prototype.ngOnDestroy = function () {
-        this.isDestroyed = true;
-        clearInterval(this.renewLockInterval);
-        // Unblock the subwiki.
-        if (this.blockId) {
-            this.syncProvider.unblockOperation(this.component, this.blockId);
-        }
-    };
-    __decorate([
-        Object(core["_10" /* ViewChild */])('editPageForm'),
-        __metadata("design:type", core["t" /* ElementRef */])
-    ], AddonModWikiEditPage.prototype, "formElement", void 0);
-    AddonModWikiEditPage = __decorate([
-        Object(core["m" /* Component */])({
-            selector: 'page-addon-mod-wiki-edit',
-            templateUrl: 'edit.html',
+    AddonModLessonUserRetakePage = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
+            selector: 'page-addon-mod-lesson-user-retake',template:/*ion-inline-start:"D:\workspace\moodle\agro-moodle-app\src\addon\mod\lesson\pages\user-retake\user-retake.html"*/'<ion-header>\n\n    <ion-navbar core-back-button>\n\n        <ion-title>{{ \'addon.mod_lesson.detailedstats\' | translate }}</ion-title>\n\n    </ion-navbar>\n\n</ion-header>\n\n<ion-content>\n\n    <ion-refresher [enabled]="loaded" (ionRefresh)="doRefresh($event)">\n\n        <ion-refresher-content pullingText="{{ \'core.pulltorefresh\' | translate }}"></ion-refresher-content>\n\n    </ion-refresher>\n\n\n\n    <core-loading [hideUntil]="loaded">\n\n        <ion-list *ngIf="student">\n\n            <!-- Student data. -->\n\n            <a ion-item text-wrap core-user-link [userId]="student.id" [courseId]="courseId" [title]="student.fullname">\n\n                <ion-avatar core-user-avatar [user]="student" item-start [userId]="student.id" [courseId]="courseId"></ion-avatar>\n\n                <h2>{{student.fullname}}</h2>\n\n                <core-progress-bar [progress]="student.bestgrade"></core-progress-bar>\n\n            </a>\n\n\n\n            <!-- Retake selector if there is more than one retake. -->\n\n            <ion-item text-wrap *ngIf="student.attempts && student.attempts.length > 1">\n\n                <ion-label id="addon-mod_lesson-retakeslabel">{{ \'addon.mod_lesson.attemptheader\' | translate }}</ion-label>\n\n                <ion-select [(ngModel)]="selectedRetake" (ionChange)="changeRetake(selectedRetake)" aria-labelledby="addon-mod_lesson-retakeslabel" interface="action-sheet">\n\n                    <ion-option *ngFor="let retake of student.attempts" [value]="retake.try">{{retake.label}}</ion-option>\n\n                </ion-select>\n\n            </ion-item>\n\n\n\n            <!-- Retake stats. -->\n\n            <div *ngIf="retake && retake.userstats && retake.userstats.gradeinfo" class="addon-mod_lesson-userstats">\n\n                <ion-item text-wrap>\n\n                    <ion-row>\n\n                        <ion-col>\n\n                            <p class="item-heading">{{ \'addon.mod_lesson.grade\' | translate }}</p>\n\n                            <p>{{ \'core.percentagenumber\' | translate:{$a: retake.userstats.grade} }}</p>\n\n                        </ion-col>\n\n\n\n                        <ion-col>\n\n                            <p class="item-heading">{{ \'addon.mod_lesson.rawgrade\' | translate }}</p>\n\n                            <p>{{ retake.userstats.gradeinfo.earned }} / {{ retake.userstats.gradeinfo.total }}</p>\n\n                        </ion-col>\n\n                    </ion-row>\n\n                </ion-item>\n\n                <ion-item text-wrap>\n\n                    <p class="item-heading">{{ \'addon.mod_lesson.timetaken\' | translate }}</p>\n\n                    <p>{{ retake.userstats.timetakenReadable }}</p>\n\n                </ion-item>\n\n                <ion-item text-wrap>\n\n                    <p class="item-heading">{{ \'addon.mod_lesson.completed\' | translate }}</p>\n\n                    <p>{{ retake.userstats.completed * 1000 | coreFormatDate }}</p>\n\n                </ion-item>\n\n            </div>\n\n\n\n            <!-- Not completed, no stats. -->\n\n            <ion-item text-wrap *ngIf="retake && (!retake.userstats || !retake.userstats.gradeinfo)">\n\n                {{ \'addon.mod_lesson.notcompleted\' | translate }}\n\n            </ion-item>\n\n\n\n            <!-- Pages. -->\n\n            <ng-container *ngIf="retake">\n\n                <!-- The "text-dimmed" class does nothing, but the same goes for the "dimmed" class in Moodle. -->\n\n                <ion-card *ngFor="let page of retake.answerpages" class="addon-mod_lesson-answerpage" [ngClass]="{\'text-dimmed\': page.grayout}">\n\n                    <ion-card-header text-wrap>\n\n                        <h2>{{page.qtype}}: {{page.title}}</h2>\n\n                    </ion-card-header>\n\n                    <ion-item text-wrap>\n\n                        <p class="item-heading">{{ \'addon.mod_lesson.question\' | translate }}</p>\n\n                        <p><core-format-text [component]="component" [componentId]="lesson.coursemodule" [maxHeight]="50" [text]="page.contents" contextLevel="module" [contextInstanceId]="lesson.coursemodule" [courseId]="courseId"></core-format-text></p>\n\n                    </ion-item>\n\n                    <ion-item text-wrap>\n\n                        <p class="item-heading">{{ \'addon.mod_lesson.answer\' | translate }}</p>\n\n                    </ion-item>\n\n                    <ion-item text-wrap *ngIf="!page.answerdata || !page.answerdata.answers || !page.answerdata.answers.length">\n\n                        <p>{{ \'addon.mod_lesson.didnotanswerquestion\' | translate }}</p>\n\n                    </ion-item>\n\n                    <div *ngIf="page.answerdata && page.answerdata.answers && page.answerdata.answers.length" class="addon-mod_lesson-answer">\n\n                        <div *ngFor="let answer of page.answerdata.answers">\n\n                            <ion-item text-wrap *ngIf="page.isContent">\n\n                                <!-- Content page, display a button and the content. -->\n\n                                <ion-row>\n\n                                    <ion-col>\n\n                                        <button ion-button block text-wrap color="light" [disabled]="true">{{ answer[0].buttonText }}</button>\n\n                                    </ion-col>\n\n                                    <ion-col>\n\n                                        <p [innerHTML]="answer[0].content"></p>\n\n                                    </ion-col>\n\n                                </ion-row>\n\n                            </ion-item>\n\n\n\n                            <div *ngIf="page.isQuestion">\n\n                                <!-- Question page, show the right input for the answer. -->\n\n\n\n                                <!-- Truefalse or matching. -->\n\n                                <ion-item text-wrap *ngIf="answer[0].isCheckbox" [ngClass]="{\'addon-mod_lesson-highlight\': answer[0].highlight}">\n\n                                    <ion-label>\n\n                                        <p><core-format-text [component]="component" [componentId]="lesson.coursemodule" [text]="answer[0].content" contextLevel="module" [contextInstanceId]="lesson.coursemodule" [courseId]="courseId"></core-format-text></p>\n\n                                        <ion-badge *ngIf="answer[1]" color="dark">\n\n                                            <core-format-text [component]="component" [componentId]="lesson.coursemodule" [text]="answer[1]" contextLevel="module" [contextInstanceId]="lesson.coursemodule" [courseId]="courseId"></core-format-text>\n\n                                        </ion-badge>\n\n                                    </ion-label>\n\n                                    <ion-checkbox [attr.name]="answer[0].name" [ngModel]="answer[0].checked" [disabled]="true" item-end>\n\n                                    </ion-checkbox>\n\n                                </ion-item>\n\n\n\n                                <!-- Short answer or numeric. -->\n\n                                <ion-item text-wrap *ngIf="answer[0].isText">\n\n                                    <p>{{ answer[0].value }}</p>\n\n                                    <ion-badge *ngIf="answer[1]" color="dark">\n\n                                        <core-format-text [component]="component" [componentId]="lesson.coursemodule" [text]="answer[1]" contextLevel="module" [contextInstanceId]="lesson.coursemodule" [courseId]="courseId"></core-format-text>\n\n                                    </ion-badge>\n\n                                </ion-item>\n\n\n\n                                <!-- Matching. -->\n\n                                <ion-item text-wrap *ngIf="answer[0].isSelect">\n\n                                    <ion-row>\n\n                                        <ion-col>\n\n                                            <p><core-format-text [component]="component" [componentId]="lesson.coursemodule" [text]=" answer[0].content" contextLevel="module" [contextInstanceId]="lesson.coursemodule" [courseId]="courseId"></core-format-text></p>\n\n                                        </ion-col>\n\n                                        <ion-col>\n\n                                            <p>{{answer[0].value}}</p>\n\n                                            <ion-badge *ngIf="answer[1]" color="dark">\n\n                                                <core-format-text [component]="component" [componentId]="lesson.coursemodule" [text]="answer[1]" contextLevel="module" [contextInstanceId]="lesson.coursemodule" [courseId]="courseId"></core-format-text>\n\n                                            </ion-badge>\n\n                                        </ion-col>\n\n                                    </ion-row>\n\n                                </ion-item>\n\n\n\n                                <!-- Essay or couldn\'t determine. -->\n\n                                <ion-item text-wrap *ngIf="!answer[0].isCheckbox && !answer[0].isText && !answer[0].isSelect">\n\n                                    <p><core-format-text [component]="component" [componentId]="lesson.coursemodule" [text]="answer[0]" contextLevel="module" [contextInstanceId]="lesson.coursemodule" [courseId]="courseId"></core-format-text></p>\n\n                                    <ion-badge *ngIf="answer[1]" color="dark">\n\n                                        <core-format-text [component]="component" [componentId]="lesson.coursemodule" [text]="answer[1]" contextLevel="module" [contextInstanceId]="lesson.coursemodule" [courseId]="courseId"></core-format-text>\n\n                                    </ion-badge>\n\n                                </ion-item>\n\n                            </div>\n\n\n\n                            <ion-item text-wrap *ngIf="!page.isContent && !page.isQuestion">\n\n                                <!-- Another page (end of branch, ...). -->\n\n                                <p><core-format-text [component]="component" [componentId]="lesson.coursemodule" [text]="answer[0]" contextLevel="module" [contextInstanceId]="lesson.coursemodule" [courseId]="courseId"></core-format-text></p>\n\n                                <ion-badge *ngIf="answer[1]" color="dark">\n\n                                    <core-format-text [component]="component" [componentId]="lesson.coursemodule" [text]="answer[1]" contextLevel="module" [contextInstanceId]="lesson.coursemodule" [courseId]="courseId"></core-format-text>\n\n                                </ion-badge>\n\n                            </ion-item>\n\n                        </div>\n\n\n\n                        <ion-item text-wrap *ngIf="page.answerdata.response">\n\n                            <p class="item-heading">{{ \'addon.mod_lesson.response\' | translate }}</p>\n\n                            <p><core-format-text [component]="component" [componentId]="lesson.coursemodule" [text]="page.answerdata.response" contextLevel="module" [contextInstanceId]="lesson.coursemodule" [courseId]="courseId"></core-format-text></p>\n\n                        </ion-item>\n\n                        <ion-item text-wrap *ngIf="page.answerdata.score">\n\n                            <p>{{page.answerdata.score}}</p>\n\n                        </ion-item>\n\n                    </div>\n\n                </ion-card>\n\n            </ng-container>\n\n        </ion-list>\n\n    </core-loading>\n\n</ion-content>\n\n'/*ion-inline-end:"D:\workspace\moodle\agro-moodle-app\src\addon\mod\lesson\pages\user-retake\user-retake.html"*/,
         }),
-        __metadata("design:paramtypes", [ionic_angular["t" /* NavParams */], esm5_forms["d" /* FormBuilder */], ionic_angular["s" /* NavController */], sites["b" /* CoreSitesProvider */],
-            sync["a" /* CoreSyncProvider */], dom["b" /* CoreDomUtilsProvider */],
-            _ngx_translate_core["c" /* TranslateService */], course["b" /* CoreCourseProvider */],
-            events["b" /* CoreEventsProvider */], wiki["a" /* AddonModWikiProvider */],
-            wiki_offline["a" /* AddonModWikiOfflineProvider */], wiki_sync["a" /* AddonModWikiSyncProvider */],
-            utils_text["b" /* CoreTextUtilsProvider */], helper["b" /* CoreCourseHelperProvider */]])
-    ], AddonModWikiEditPage);
-    return AddonModWikiEditPage;
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["t" /* NavParams */], __WEBPACK_IMPORTED_MODULE_3__providers_sites__["b" /* CoreSitesProvider */], __WEBPACK_IMPORTED_MODULE_5__providers_utils_text__["b" /* CoreTextUtilsProvider */],
+            __WEBPACK_IMPORTED_MODULE_2__ngx_translate_core__["c" /* TranslateService */], __WEBPACK_IMPORTED_MODULE_4__providers_utils_dom__["b" /* CoreDomUtilsProvider */],
+            __WEBPACK_IMPORTED_MODULE_8__core_user_providers_user__["b" /* CoreUserProvider */], __WEBPACK_IMPORTED_MODULE_6__providers_utils_time__["b" /* CoreTimeUtilsProvider */],
+            __WEBPACK_IMPORTED_MODULE_9__providers_lesson__["a" /* AddonModLessonProvider */], __WEBPACK_IMPORTED_MODULE_10__providers_helper__["a" /* AddonModLessonHelperProvider */],
+            __WEBPACK_IMPORTED_MODULE_7__providers_utils_utils__["b" /* CoreUtilsProvider */]])
+    ], AddonModLessonUserRetakePage);
+    return AddonModLessonUserRetakePage;
 }());
 
-//# sourceMappingURL=edit.js.map
-// EXTERNAL MODULE: ./src/core/editor/components/components.module.ts
-var components_components_module = __webpack_require__(202);
-
-// CONCATENATED MODULE: ./src/addon/mod/wiki/pages/edit/edit.module.ts
-// (C) Copyright 2015 Moodle Pty Ltd.
-//
-// Licensed under the Apache License, Version 2.0 (the "License");
-// you may not use this file except in compliance with the License.
-// You may obtain a copy of the License at
-//
-//     http://www.apache.org/licenses/LICENSE-2.0
-//
-// Unless required by applicable law or agreed to in writing, software
-// distributed under the License is distributed on an "AS IS" BASIS,
-// WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-// See the License for the specific language governing permissions and
-// limitations under the License.
-var edit_module___decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-
-
-
-
-
-
-
-var edit_module_AddonModWikiEditPageModule = /** @class */ (function () {
-    function AddonModWikiEditPageModule() {
-    }
-    AddonModWikiEditPageModule = edit_module___decorate([
-        Object(core["J" /* NgModule */])({
-            declarations: [
-                edit_AddonModWikiEditPage,
-            ],
-            imports: [
-                components_module["a" /* CoreComponentsModule */],
-                directives_module["a" /* CoreDirectivesModule */],
-                components_components_module["a" /* CoreEditorComponentsModule */],
-                ionic_angular["l" /* IonicPageModule */].forChild(edit_AddonModWikiEditPage),
-                _ngx_translate_core["b" /* TranslateModule */].forChild()
-            ],
-        })
-    ], AddonModWikiEditPageModule);
-    return AddonModWikiEditPageModule;
-}());
-
-//# sourceMappingURL=edit.module.js.map
-// EXTERNAL MODULE: ./node_modules/ionic-angular/components/action-sheet/action-sheet-component.ngfactory.js
-var action_sheet_component_ngfactory = __webpack_require__(1551);
-
-// EXTERNAL MODULE: ./node_modules/ionic-angular/components/alert/alert-component.ngfactory.js
-var alert_component_ngfactory = __webpack_require__(1552);
-
-// EXTERNAL MODULE: ./node_modules/ionic-angular/components/app/app-root.ngfactory.js
-var app_root_ngfactory = __webpack_require__(1553);
-
-// EXTERNAL MODULE: ./node_modules/ionic-angular/components/loading/loading-component.ngfactory.js
-var loading_component_ngfactory = __webpack_require__(1554);
-
-// EXTERNAL MODULE: ./node_modules/ionic-angular/components/modal/modal-component.ngfactory.js
-var modal_component_ngfactory = __webpack_require__(1555);
-
-// EXTERNAL MODULE: ./node_modules/ionic-angular/components/picker/picker-component.ngfactory.js + 1 modules
-var picker_component_ngfactory = __webpack_require__(1556);
-
-// EXTERNAL MODULE: ./node_modules/ionic-angular/components/popover/popover-component.ngfactory.js
-var popover_component_ngfactory = __webpack_require__(1557);
-
-// EXTERNAL MODULE: ./node_modules/ionic-angular/components/select/select-popover-component.ngfactory.js
-var select_popover_component_ngfactory = __webpack_require__(1558);
-
-// EXTERNAL MODULE: ./node_modules/ionic-angular/components/toast/toast-component.ngfactory.js
-var toast_component_ngfactory = __webpack_require__(1559);
-
-// EXTERNAL MODULE: ./src/components/context-menu/context-menu-popover.ngfactory.js
-var context_menu_popover_ngfactory = __webpack_require__(1560);
-
-// EXTERNAL MODULE: ./src/components/course-picker-menu/course-picker-menu-popover.ngfactory.js
-var course_picker_menu_popover_ngfactory = __webpack_require__(1561);
-
-// EXTERNAL MODULE: ./src/components/recaptcha/recaptchamodal.ngfactory.js
-var recaptchamodal_ngfactory = __webpack_require__(1562);
-
-// EXTERNAL MODULE: ./src/components/bs-tooltip/bs-tooltip.ngfactory.js
-var bs_tooltip_ngfactory = __webpack_require__(1563);
-
-// EXTERNAL MODULE: ./src/core/editor/components/rich-text-editor/rich-text-editor.ngfactory.js
-var rich_text_editor_ngfactory = __webpack_require__(279);
-
-// EXTERNAL MODULE: ./node_modules/ionic-angular/components/item/item.ngfactory.js + 1 modules
-var item_ngfactory = __webpack_require__(31);
-
-// EXTERNAL MODULE: ./node_modules/ionic-angular/components/item/item.js
-var item = __webpack_require__(22);
-
-// EXTERNAL MODULE: ./node_modules/ionic-angular/util/form.js
-var util_form = __webpack_require__(21);
-
-// EXTERNAL MODULE: ./node_modules/ionic-angular/config/config.js
-var config = __webpack_require__(8);
-
-// EXTERNAL MODULE: ./node_modules/ionic-angular/components/item/item-reorder.js + 1 modules
-var item_reorder = __webpack_require__(27);
-
-// EXTERNAL MODULE: ./node_modules/ionic-angular/components/item/item-content.js
-var item_content = __webpack_require__(33);
-
-// EXTERNAL MODULE: ./node_modules/ionic-angular/components/input/input.ngfactory.js
-var input_ngfactory = __webpack_require__(115);
-
-// EXTERNAL MODULE: ./node_modules/ionic-angular/components/input/input.js
-var input = __webpack_require__(95);
-
-// EXTERNAL MODULE: ./node_modules/ionic-angular/platform/platform.js + 1 modules
-var platform = __webpack_require__(16);
-
-// EXTERNAL MODULE: ./node_modules/ionic-angular/components/app/app.js + 3 modules
-var app = __webpack_require__(35);
-
-// EXTERNAL MODULE: ./node_modules/ionic-angular/components/content/content.js
-var content_content = __webpack_require__(28);
-
-// EXTERNAL MODULE: ./node_modules/ionic-angular/platform/dom-controller.js
-var dom_controller = __webpack_require__(34);
-
-// EXTERNAL MODULE: ./node_modules/@ngx-translate/core/src/translate.pipe.js
-var translate_pipe = __webpack_require__(25);
-
-// EXTERNAL MODULE: ./node_modules/@ngx-translate/core/src/translate.service.js
-var translate_service = __webpack_require__(18);
-
-// EXTERNAL MODULE: ./node_modules/ionic-angular/components/badge/badge.js
-var badge = __webpack_require__(144);
-
-// EXTERNAL MODULE: ./node_modules/ionic-angular/components/toolbar/toolbar-header.js
-var toolbar_header = __webpack_require__(379);
-
-// EXTERNAL MODULE: ./node_modules/ionic-angular/navigation/view-controller.js
-var view_controller = __webpack_require__(41);
-
-// EXTERNAL MODULE: ./node_modules/ionic-angular/components/toolbar/navbar.ngfactory.js
-var navbar_ngfactory = __webpack_require__(739);
-
-// EXTERNAL MODULE: ./node_modules/ionic-angular/components/toolbar/navbar.js
-var navbar = __webpack_require__(216);
-
-// EXTERNAL MODULE: ./node_modules/ionic-angular/navigation/nav-controller.js
-var nav_controller = __webpack_require__(20);
-
-// EXTERNAL MODULE: ./src/directives/back-button.ts
-var back_button = __webpack_require__(486);
-
-// EXTERNAL MODULE: ./node_modules/ionic-angular/components/toolbar/toolbar-title.ngfactory.js
-var toolbar_title_ngfactory = __webpack_require__(740);
-
-// EXTERNAL MODULE: ./node_modules/ionic-angular/components/toolbar/toolbar-title.js
-var toolbar_title = __webpack_require__(324);
-
-// EXTERNAL MODULE: ./node_modules/ionic-angular/components/toolbar/toolbar.js
-var toolbar = __webpack_require__(252);
-
-// EXTERNAL MODULE: ./src/directives/format-text.ts
-var format_text = __webpack_require__(49);
-
-// EXTERNAL MODULE: ./src/providers/utils/utils.ts
-var utils = __webpack_require__(2);
-
-// EXTERNAL MODULE: ./src/providers/utils/url.ts
-var url = __webpack_require__(19);
-
-// EXTERNAL MODULE: ./src/providers/logger.ts
-var logger = __webpack_require__(6);
-
-// EXTERNAL MODULE: ./src/providers/filepool.ts
-var filepool = __webpack_require__(17);
-
-// EXTERNAL MODULE: ./src/core/contentlinks/providers/helper.ts
-var providers_helper = __webpack_require__(14);
-
-// EXTERNAL MODULE: ./src/components/split-view/split-view.ts
-var split_view = __webpack_require__(29);
-
-// EXTERNAL MODULE: ./src/providers/utils/iframe.ts
-var iframe = __webpack_require__(42);
-
-// EXTERNAL MODULE: ./src/core/filter/providers/filter.ts
-var filter = __webpack_require__(43);
-
-// EXTERNAL MODULE: ./src/core/filter/providers/helper.ts
-var filter_providers_helper = __webpack_require__(30);
-
-// EXTERNAL MODULE: ./src/core/filter/providers/delegate.ts
-var delegate = __webpack_require__(36);
-
-// EXTERNAL MODULE: ./src/providers/urlschemes.ts
-var urlschemes = __webpack_require__(40);
-
-// EXTERNAL MODULE: ./node_modules/ionic-angular/components/toolbar/toolbar-item.js
-var toolbar_item = __webpack_require__(380);
-
-// EXTERNAL MODULE: ./node_modules/ionic-angular/components/button/button.ngfactory.js
-var button_ngfactory = __webpack_require__(47);
-
-// EXTERNAL MODULE: ./node_modules/ionic-angular/components/button/button.js
-var button_button = __webpack_require__(44);
-
-// EXTERNAL MODULE: ./node_modules/ionic-angular/components/content/content.ngfactory.js
-var content_ngfactory = __webpack_require__(185);
-
-// EXTERNAL MODULE: ./node_modules/ionic-angular/platform/keyboard.js
-var keyboard = __webpack_require__(112);
-
-// EXTERNAL MODULE: ./src/components/loading/loading.ngfactory.js
-var loading_ngfactory = __webpack_require__(57);
-
-// EXTERNAL MODULE: ./src/components/loading/loading.ts
-var loading = __webpack_require__(54);
-
-// EXTERNAL MODULE: ./node_modules/@angular/common/esm5/common.js
-var common = __webpack_require__(7);
-
-// EXTERNAL MODULE: ./src/core/editor/components/rich-text-editor/rich-text-editor.ts
-var rich_text_editor = __webpack_require__(254);
-
-// EXTERNAL MODULE: ./src/core/editor/providers/editor-offline.ts
-var editor_offline = __webpack_require__(219);
-
-// EXTERNAL MODULE: ./node_modules/@ionic-native/device/index.js
-var device = __webpack_require__(180);
-
-// EXTERNAL MODULE: ./node_modules/ionic-angular/navigation/nav-params.js
-var nav_params = __webpack_require__(73);
-
-// CONCATENATED MODULE: ./src/addon/mod/wiki/pages/edit/edit.ngfactory.js
-/**
- * @fileoverview This file was generated by the Angular template compiler. Do not edit.
- *
- * @suppress {suspiciousCode,uselessCode,missingProperties,missingOverride,checkTypes}
- * tslint:disable
- */ 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-var styles_AddonModWikiEditPage = [];
-var RenderType_AddonModWikiEditPage = core["_30" /* ɵcrt */]({ encapsulation: 2, styles: styles_AddonModWikiEditPage, data: {} });
-
-function View_AddonModWikiEditPage_1(_l) { return core["_58" /* ɵvid */](0, [(_l()(), core["_32" /* ɵeld */](0, 0, null, null, 13, "ion-item", [["class", "item-title item item-block"], ["text-wrap", ""]], null, null, null, item_ngfactory["b" /* View_Item_0 */], item_ngfactory["a" /* RenderType_Item */])), core["_31" /* ɵdid */](1, 1097728, null, 3, item["a" /* Item */], [util_form["a" /* Form */], config["a" /* Config */], core["t" /* ElementRef */], core["W" /* Renderer */], [2, item_reorder["a" /* ItemReorder */]]], null, null), core["_53" /* ɵqud */](335544320, 3, { contentLabel: 0 }), core["_53" /* ɵqud */](603979776, 4, { _buttons: 1 }), core["_53" /* ɵqud */](603979776, 5, { _icons: 1 }), core["_31" /* ɵdid */](5, 16384, null, 0, item_content["a" /* ItemContent */], [], null, null), (_l()(), core["_56" /* ɵted */](-1, 2, ["\n                "])), (_l()(), core["_32" /* ɵeld */](7, 0, null, 3, 5, "ion-input", [["name", "title"], ["type", "text"]], [[2, "ng-untouched", null], [2, "ng-touched", null], [2, "ng-pristine", null], [2, "ng-dirty", null], [2, "ng-valid", null], [2, "ng-invalid", null], [2, "ng-pending", null]], null, null, input_ngfactory["b" /* View_TextInput_0 */], input_ngfactory["a" /* RenderType_TextInput */])), core["_31" /* ɵdid */](8, 671744, null, 0, esm5_forms["f" /* FormControlName */], [[3, esm5_forms["b" /* ControlContainer */]], [8, null], [8, null], [8, null]], { name: [0, "name"] }, null), core["_51" /* ɵprd */](2048, null, esm5_forms["m" /* NgControl */], null, [esm5_forms["f" /* FormControlName */]]), core["_31" /* ɵdid */](10, 16384, null, 0, esm5_forms["n" /* NgControlStatus */], [esm5_forms["m" /* NgControl */]], null, null), core["_31" /* ɵdid */](11, 5423104, null, 0, input["a" /* TextInput */], [config["a" /* Config */], platform["a" /* Platform */], util_form["a" /* Form */], app["a" /* App */], core["t" /* ElementRef */], core["W" /* Renderer */], [2, content_content["a" /* Content */]], [2, item["a" /* Item */]], [2, esm5_forms["m" /* NgControl */]], dom_controller["a" /* DomController */]], { type: [0, "type"], placeholder: [1, "placeholder"] }, null), core["_48" /* ɵpid */](131072, translate_pipe["a" /* TranslatePipe */], [translate_service["a" /* TranslateService */], core["j" /* ChangeDetectorRef */]]), (_l()(), core["_56" /* ɵted */](-1, 2, ["\n            "]))], function (_ck, _v) { var currVal_7 = "title"; _ck(_v, 8, 0, currVal_7); var currVal_8 = "text"; var currVal_9 = core["_57" /* ɵunv */](_v, 11, 1, core["_45" /* ɵnov */](_v, 12).transform("addon.mod_wiki.newpagetitle")); _ck(_v, 11, 0, currVal_8, currVal_9); }, function (_ck, _v) { var currVal_0 = core["_45" /* ɵnov */](_v, 10).ngClassUntouched; var currVal_1 = core["_45" /* ɵnov */](_v, 10).ngClassTouched; var currVal_2 = core["_45" /* ɵnov */](_v, 10).ngClassPristine; var currVal_3 = core["_45" /* ɵnov */](_v, 10).ngClassDirty; var currVal_4 = core["_45" /* ɵnov */](_v, 10).ngClassValid; var currVal_5 = core["_45" /* ɵnov */](_v, 10).ngClassInvalid; var currVal_6 = core["_45" /* ɵnov */](_v, 10).ngClassPending; _ck(_v, 7, 0, currVal_0, currVal_1, currVal_2, currVal_3, currVal_4, currVal_5, currVal_6); }); }
-function View_AddonModWikiEditPage_2(_l) { return core["_58" /* ɵvid */](0, [(_l()(), core["_32" /* ɵeld */](0, 0, null, null, 11, "ion-item", [["class", "addon-mod_wiki-wrongversionlock item item-block"], ["text-center", ""]], null, null, null, item_ngfactory["b" /* View_Item_0 */], item_ngfactory["a" /* RenderType_Item */])), core["_31" /* ɵdid */](1, 1097728, null, 3, item["a" /* Item */], [util_form["a" /* Form */], config["a" /* Config */], core["t" /* ElementRef */], core["W" /* Renderer */], [2, item_reorder["a" /* ItemReorder */]]], null, null), core["_53" /* ɵqud */](335544320, 9, { contentLabel: 0 }), core["_53" /* ɵqud */](603979776, 10, { _buttons: 1 }), core["_53" /* ɵqud */](603979776, 11, { _icons: 1 }), core["_31" /* ɵdid */](5, 16384, null, 0, item_content["a" /* ItemContent */], [], null, null), (_l()(), core["_56" /* ɵted */](-1, 2, ["\n                "])), (_l()(), core["_32" /* ɵeld */](7, 0, null, 2, 3, "ion-badge", [["color", "danger"], ["padding", ""]], null, null, null, null, null)), core["_31" /* ɵdid */](8, 16384, null, 0, badge["a" /* Badge */], [config["a" /* Config */], core["t" /* ElementRef */], core["W" /* Renderer */]], { color: [0, "color"] }, null), (_l()(), core["_56" /* ɵted */](9, null, ["", ""])), core["_48" /* ɵpid */](131072, translate_pipe["a" /* TranslatePipe */], [translate_service["a" /* TranslateService */], core["j" /* ChangeDetectorRef */]]), (_l()(), core["_56" /* ɵted */](-1, 2, ["\n            "]))], function (_ck, _v) { var currVal_0 = "danger"; _ck(_v, 8, 0, currVal_0); }, function (_ck, _v) { var currVal_1 = core["_57" /* ɵunv */](_v, 9, 0, core["_45" /* ɵnov */](_v, 10).transform("addon.mod_wiki.wrongversionlock")); _ck(_v, 9, 0, currVal_1); }); }
-function View_AddonModWikiEditPage_0(_l) { return core["_58" /* ɵvid */](0, [core["_53" /* ɵqud */](402653184, 1, { formElement: 0 }), (_l()(), core["_32" /* ɵeld */](1, 0, null, null, 23, "ion-header", [], null, null, null, null, null)), core["_31" /* ɵdid */](2, 16384, null, 0, toolbar_header["a" /* Header */], [config["a" /* Config */], core["t" /* ElementRef */], core["W" /* Renderer */], [2, view_controller["a" /* ViewController */]]], null, null), (_l()(), core["_56" /* ɵted */](-1, null, ["\n    "])), (_l()(), core["_32" /* ɵeld */](4, 0, null, null, 19, "ion-navbar", [["class", "toolbar"], ["core-back-button", ""]], [[8, "hidden", 0], [2, "statusbar-padding", null]], null, null, navbar_ngfactory["b" /* View_Navbar_0 */], navbar_ngfactory["a" /* RenderType_Navbar */])), core["_31" /* ɵdid */](5, 49152, null, 0, navbar["a" /* Navbar */], [app["a" /* App */], [2, view_controller["a" /* ViewController */]], [2, nav_controller["a" /* NavController */]], config["a" /* Config */], core["t" /* ElementRef */], core["W" /* Renderer */]], null, null), core["_31" /* ɵdid */](6, 212992, null, 0, back_button["a" /* CoreBackButtonDirective */], [navbar["a" /* Navbar */], translate_service["a" /* TranslateService */], events["b" /* CoreEventsProvider */]], null, null), (_l()(), core["_56" /* ɵted */](-1, 3, ["\n        "])), (_l()(), core["_32" /* ɵeld */](8, 0, null, 3, 3, "ion-title", [], null, null, null, toolbar_title_ngfactory["b" /* View_ToolbarTitle_0 */], toolbar_title_ngfactory["a" /* RenderType_ToolbarTitle */])), core["_31" /* ɵdid */](9, 49152, null, 0, toolbar_title["a" /* ToolbarTitle */], [config["a" /* Config */], core["t" /* ElementRef */], core["W" /* Renderer */], [2, toolbar["a" /* Toolbar */]], [2, navbar["a" /* Navbar */]]], null, null), (_l()(), core["_32" /* ɵeld */](10, 16777216, null, 0, 1, "core-format-text", [["contextLevel", "module"]], null, null, null, null, null)), core["_31" /* ɵdid */](11, 540672, null, 0, format_text["a" /* CoreFormatTextDirective */], [core["t" /* ElementRef */], sites["b" /* CoreSitesProvider */], dom["b" /* CoreDomUtilsProvider */], utils_text["b" /* CoreTextUtilsProvider */], translate_service["a" /* TranslateService */], platform["a" /* Platform */], utils["b" /* CoreUtilsProvider */], url["b" /* CoreUrlUtilsProvider */], logger["b" /* CoreLoggerProvider */], filepool["b" /* CoreFilepoolProvider */], providers_helper["b" /* CoreContentLinksHelperProvider */], [2, nav_controller["a" /* NavController */]], [2, content_content["a" /* Content */]], [2, split_view["a" /* CoreSplitViewComponent */]], iframe["a" /* CoreIframeUtilsProvider */], events["b" /* CoreEventsProvider */], filter["a" /* CoreFilterProvider */], filter_providers_helper["a" /* CoreFilterHelperProvider */], delegate["a" /* CoreFilterDelegate */], core["_12" /* ViewContainerRef */], urlschemes["b" /* CoreCustomURLSchemesProvider */]], { text: [0, "text"], contextLevel: [1, "contextLevel"], contextInstanceId: [2, "contextInstanceId"], courseId: [3, "courseId"] }, null), (_l()(), core["_56" /* ɵted */](-1, 3, ["\n\n        "])), (_l()(), core["_32" /* ɵeld */](13, 0, null, 2, 9, "ion-buttons", [["end", ""]], null, null, null, null, null)), core["_31" /* ɵdid */](14, 16384, null, 1, toolbar_item["a" /* ToolbarItem */], [config["a" /* Config */], core["t" /* ElementRef */], core["W" /* Renderer */], [2, toolbar["a" /* Toolbar */]], [2, navbar["a" /* Navbar */]]], null, null), core["_53" /* ɵqud */](603979776, 2, { _buttons: 1 }), (_l()(), core["_56" /* ɵted */](-1, null, ["\n            "])), (_l()(), core["_32" /* ɵeld */](17, 0, null, null, 4, "button", [["clear", ""], ["ion-button", ""]], [[1, "aria-label", 0]], [[null, "click"]], function (_v, en, $event) { var ad = true; var _co = _v.component; if (("click" === en)) {
-        var pd_0 = (_co.save() !== false);
-        ad = (pd_0 && ad);
-    } return ad; }, button_ngfactory["b" /* View_Button_0 */], button_ngfactory["a" /* RenderType_Button */])), core["_31" /* ɵdid */](18, 1097728, [[2, 4]], 0, button_button["a" /* Button */], [[8, ""], config["a" /* Config */], core["t" /* ElementRef */], core["W" /* Renderer */]], { clear: [0, "clear"] }, null), core["_48" /* ɵpid */](131072, translate_pipe["a" /* TranslatePipe */], [translate_service["a" /* TranslateService */], core["j" /* ChangeDetectorRef */]]), (_l()(), core["_56" /* ɵted */](20, 0, ["\n                ", "\n            "])), core["_48" /* ɵpid */](131072, translate_pipe["a" /* TranslatePipe */], [translate_service["a" /* TranslateService */], core["j" /* ChangeDetectorRef */]]), (_l()(), core["_56" /* ɵted */](-1, null, ["\n        "])), (_l()(), core["_56" /* ɵted */](-1, 3, ["\n    "])), (_l()(), core["_56" /* ɵted */](-1, null, ["\n"])), (_l()(), core["_56" /* ɵted */](-1, null, ["\n"])), (_l()(), core["_32" /* ɵeld */](26, 0, null, null, 31, "ion-content", [], [[2, "statusbar-padding", null], [2, "has-refresher", null]], null, null, content_ngfactory["b" /* View_Content_0 */], content_ngfactory["a" /* RenderType_Content */])), core["_31" /* ɵdid */](27, 4374528, null, 0, content_content["a" /* Content */], [config["a" /* Config */], platform["a" /* Platform */], dom_controller["a" /* DomController */], core["t" /* ElementRef */], core["W" /* Renderer */], app["a" /* App */], keyboard["a" /* Keyboard */], core["N" /* NgZone */], [2, view_controller["a" /* ViewController */]], [2, nav_controller["a" /* NavController */]]], null, null), (_l()(), core["_56" /* ɵted */](-1, 1, ["\n    "])), (_l()(), core["_32" /* ɵeld */](29, 0, null, 1, 27, "core-loading", [], null, null, null, loading_ngfactory["b" /* View_CoreLoadingComponent_0 */], loading_ngfactory["a" /* RenderType_CoreLoadingComponent */])), core["_31" /* ɵdid */](30, 638976, null, 0, loading["a" /* CoreLoadingComponent */], [translate_service["a" /* TranslateService */], core["t" /* ElementRef */], events["b" /* CoreEventsProvider */], utils["b" /* CoreUtilsProvider */]], { hideUntil: [0, "hideUntil"] }, null), (_l()(), core["_56" /* ɵted */](-1, 0, ["\n        "])), (_l()(), core["_32" /* ɵeld */](32, 0, [[1, 0], ["editPageForm", 1]], 0, 23, "form", [["ion-list", ""], ["novalidate", ""]], [[2, "ng-untouched", null], [2, "ng-touched", null], [2, "ng-pristine", null], [2, "ng-dirty", null], [2, "ng-valid", null], [2, "ng-invalid", null], [2, "ng-pending", null]], [[null, "submit"], [null, "reset"]], function (_v, en, $event) { var ad = true; if (("submit" === en)) {
-        var pd_0 = (core["_45" /* ɵnov */](_v, 34).onSubmit($event) !== false);
-        ad = (pd_0 && ad);
-    } if (("reset" === en)) {
-        var pd_1 = (core["_45" /* ɵnov */](_v, 34).onReset() !== false);
-        ad = (pd_1 && ad);
-    } return ad; }, null, null)), core["_31" /* ɵdid */](33, 16384, null, 0, esm5_forms["w" /* ɵbf */], [], null, null), core["_31" /* ɵdid */](34, 540672, null, 0, esm5_forms["h" /* FormGroupDirective */], [[8, null], [8, null]], { form: [0, "form"] }, null), core["_51" /* ɵprd */](2048, null, esm5_forms["b" /* ControlContainer */], null, [esm5_forms["h" /* FormGroupDirective */]]), core["_31" /* ɵdid */](36, 16384, null, 0, esm5_forms["o" /* NgControlStatusGroup */], [esm5_forms["b" /* ControlContainer */]], null, null), (_l()(), core["_56" /* ɵted */](-1, null, ["\n            "])), (_l()(), core["_27" /* ɵand */](16777216, null, null, 1, null, View_AddonModWikiEditPage_1)), core["_31" /* ɵdid */](39, 16384, null, 0, common["k" /* NgIf */], [core["_12" /* ViewContainerRef */], core["_7" /* TemplateRef */]], { ngIf: [0, "ngIf"] }, null), (_l()(), core["_56" /* ɵted */](-1, null, ["\n\n            "])), (_l()(), core["_32" /* ɵeld */](41, 0, null, null, 10, "ion-item", [["class", "item item-block"]], null, null, null, item_ngfactory["b" /* View_Item_0 */], item_ngfactory["a" /* RenderType_Item */])), core["_31" /* ɵdid */](42, 1097728, null, 3, item["a" /* Item */], [util_form["a" /* Form */], config["a" /* Config */], core["t" /* ElementRef */], core["W" /* Renderer */], [2, item_reorder["a" /* ItemReorder */]]], null, null), core["_53" /* ɵqud */](335544320, 6, { contentLabel: 0 }), core["_53" /* ɵqud */](603979776, 7, { _buttons: 1 }), core["_53" /* ɵqud */](603979776, 8, { _icons: 1 }), core["_31" /* ɵdid */](46, 16384, null, 0, item_content["a" /* ItemContent */], [], null, null), (_l()(), core["_56" /* ɵted */](-1, 2, ["\n                "])), (_l()(), core["_32" /* ɵeld */](48, 0, null, 3, 2, "core-rich-text-editor", [["contextLevel", "module"], ["elementId", "newcontent_editor"], ["item-content", ""], ["name", "wiki_page_content"]], null, null, null, rich_text_editor_ngfactory["c" /* View_CoreEditorRichTextEditorComponent_0 */], rich_text_editor_ngfactory["b" /* RenderType_CoreEditorRichTextEditorComponent */])), core["_31" /* ɵdid */](49, 1228800, null, 0, rich_text_editor["a" /* CoreEditorRichTextEditorComponent */], [dom["b" /* CoreDomUtilsProvider */], url["b" /* CoreUrlUtilsProvider */], sites["b" /* CoreSitesProvider */], filepool["b" /* CoreFilepoolProvider */], [2, content_content["a" /* Content */]], core["t" /* ElementRef */], events["b" /* CoreEventsProvider */], utils["b" /* CoreUtilsProvider */], platform["a" /* Platform */], editor_offline["a" /* CoreEditorOfflineProvider */], device["a" /* Device */]], { placeholder: [0, "placeholder"], control: [1, "control"], name: [2, "name"], component: [3, "component"], componentId: [4, "componentId"], autoSave: [5, "autoSave"], contextLevel: [6, "contextLevel"], contextInstanceId: [7, "contextInstanceId"], elementId: [8, "elementId"], draftExtraParams: [9, "draftExtraParams"] }, null), core["_48" /* ɵpid */](131072, translate_pipe["a" /* TranslatePipe */], [translate_service["a" /* TranslateService */], core["j" /* ChangeDetectorRef */]]), (_l()(), core["_56" /* ɵted */](-1, 2, ["\n            "])), (_l()(), core["_56" /* ɵted */](-1, null, ["\n\n            "])), (_l()(), core["_27" /* ɵand */](16777216, null, null, 1, null, View_AddonModWikiEditPage_2)), core["_31" /* ɵdid */](54, 16384, null, 0, common["k" /* NgIf */], [core["_12" /* ViewContainerRef */], core["_7" /* TemplateRef */]], { ngIf: [0, "ngIf"] }, null), (_l()(), core["_56" /* ɵted */](-1, null, ["\n        "])), (_l()(), core["_56" /* ɵted */](-1, 0, ["\n    "])), (_l()(), core["_56" /* ɵted */](-1, 1, ["\n"])), (_l()(), core["_56" /* ɵted */](-1, null, ["\n"]))], function (_ck, _v) { var _co = _v.component; _ck(_v, 6, 0); var currVal_2 = _co.title; var currVal_3 = "module"; var currVal_4 = _co.module.id; var currVal_5 = _co.courseId; _ck(_v, 11, 0, currVal_2, currVal_3, currVal_4, currVal_5); var currVal_7 = ""; _ck(_v, 18, 0, currVal_7); var currVal_11 = _co.loaded; _ck(_v, 30, 0, currVal_11); var currVal_19 = _co.pageForm; _ck(_v, 34, 0, currVal_19); var currVal_20 = _co.canEditTitle; _ck(_v, 39, 0, currVal_20); var currVal_21 = core["_57" /* ɵunv */](_v, 49, 0, core["_45" /* ɵnov */](_v, 50).transform("core.content")); var currVal_22 = _co.contentControl; var currVal_23 = "wiki_page_content"; var currVal_24 = _co.component; var currVal_25 = _co.componentId; var currVal_26 = true; var currVal_27 = "module"; var currVal_28 = (_co.module.id || 0); var currVal_29 = "newcontent_editor"; var currVal_30 = _co.editorExtraParams; _ck(_v, 49, 0, currVal_21, currVal_22, currVal_23, currVal_24, currVal_25, currVal_26, currVal_27, currVal_28, currVal_29, currVal_30); var currVal_31 = _co.wrongVersionLock; _ck(_v, 54, 0, currVal_31); }, function (_ck, _v) { var currVal_0 = core["_45" /* ɵnov */](_v, 5)._hidden; var currVal_1 = core["_45" /* ɵnov */](_v, 5)._sbPadding; _ck(_v, 4, 0, currVal_0, currVal_1); var currVal_6 = core["_57" /* ɵunv */](_v, 17, 0, core["_45" /* ɵnov */](_v, 19).transform("core.save")); _ck(_v, 17, 0, currVal_6); var currVal_8 = core["_57" /* ɵunv */](_v, 20, 0, core["_45" /* ɵnov */](_v, 21).transform("core.save")); _ck(_v, 20, 0, currVal_8); var currVal_9 = core["_45" /* ɵnov */](_v, 27).statusbarPadding; var currVal_10 = core["_45" /* ɵnov */](_v, 27)._hasRefresher; _ck(_v, 26, 0, currVal_9, currVal_10); var currVal_12 = core["_45" /* ɵnov */](_v, 36).ngClassUntouched; var currVal_13 = core["_45" /* ɵnov */](_v, 36).ngClassTouched; var currVal_14 = core["_45" /* ɵnov */](_v, 36).ngClassPristine; var currVal_15 = core["_45" /* ɵnov */](_v, 36).ngClassDirty; var currVal_16 = core["_45" /* ɵnov */](_v, 36).ngClassValid; var currVal_17 = core["_45" /* ɵnov */](_v, 36).ngClassInvalid; var currVal_18 = core["_45" /* ɵnov */](_v, 36).ngClassPending; _ck(_v, 32, 0, currVal_12, currVal_13, currVal_14, currVal_15, currVal_16, currVal_17, currVal_18); }); }
-function View_AddonModWikiEditPage_Host_0(_l) { return core["_58" /* ɵvid */](0, [(_l()(), core["_32" /* ɵeld */](0, 0, null, null, 1, "page-addon-mod-wiki-edit", [], null, null, null, View_AddonModWikiEditPage_0, RenderType_AddonModWikiEditPage)), core["_31" /* ɵdid */](1, 245760, null, 0, edit_AddonModWikiEditPage, [nav_params["a" /* NavParams */], esm5_forms["d" /* FormBuilder */], nav_controller["a" /* NavController */], sites["b" /* CoreSitesProvider */], sync["a" /* CoreSyncProvider */], dom["b" /* CoreDomUtilsProvider */], translate_service["a" /* TranslateService */], course["b" /* CoreCourseProvider */], events["b" /* CoreEventsProvider */], wiki["a" /* AddonModWikiProvider */], wiki_offline["a" /* AddonModWikiOfflineProvider */], wiki_sync["a" /* AddonModWikiSyncProvider */], utils_text["b" /* CoreTextUtilsProvider */], helper["b" /* CoreCourseHelperProvider */]], null, null)], function (_ck, _v) { _ck(_v, 1, 0); }, null); }
-var AddonModWikiEditPageNgFactory = core["_28" /* ɵccf */]("page-addon-mod-wiki-edit", edit_AddonModWikiEditPage, View_AddonModWikiEditPage_Host_0, {}, {}, []);
-
-//# sourceMappingURL=edit.ngfactory.js.map
-// EXTERNAL MODULE: ./node_modules/@ngx-translate/core/src/translate.loader.js
-var translate_loader = __webpack_require__(375);
-
-// EXTERNAL MODULE: ./node_modules/@ngx-translate/core/src/translate.compiler.js
-var translate_compiler = __webpack_require__(376);
-
-// EXTERNAL MODULE: ./node_modules/@ngx-translate/core/src/translate.parser.js
-var translate_parser = __webpack_require__(378);
-
-// EXTERNAL MODULE: ./node_modules/@ngx-translate/core/src/missing-translation-handler.js
-var missing_translation_handler = __webpack_require__(377);
-
-// EXTERNAL MODULE: ./node_modules/@ngx-translate/core/src/translate.store.js
-var translate_store = __webpack_require__(485);
-
-// EXTERNAL MODULE: ./node_modules/ionic-angular/module.js
-var ionic_angular_module = __webpack_require__(738);
-
-// EXTERNAL MODULE: ./src/pipes/pipes.module.ts + 2 modules
-var pipes_module = __webpack_require__(111);
-
-// EXTERNAL MODULE: ./node_modules/ionic-angular/util/module-loader.js
-var module_loader = __webpack_require__(277);
-
-// CONCATENATED MODULE: ./src/addon/mod/wiki/pages/edit/edit.module.ngfactory.js
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "AddonModWikiEditPageModuleNgFactory", function() { return AddonModWikiEditPageModuleNgFactory; });
-/**
- * @fileoverview This file was generated by the Angular template compiler. Do not edit.
- *
- * @suppress {suspiciousCode,uselessCode,missingProperties,missingOverride,checkTypes}
- * tslint:disable
- */ 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-var AddonModWikiEditPageModuleNgFactory = core["_29" /* ɵcmf */](edit_module_AddonModWikiEditPageModule, [], function (_l) { return core["_41" /* ɵmod */]([core["_42" /* ɵmpd */](512, core["o" /* ComponentFactoryResolver */], core["_22" /* ɵCodegenComponentFactoryResolver */], [[8, [action_sheet_component_ngfactory["a" /* ActionSheetCmpNgFactory */], alert_component_ngfactory["a" /* AlertCmpNgFactory */], app_root_ngfactory["a" /* IonicAppNgFactory */], loading_component_ngfactory["a" /* LoadingCmpNgFactory */], modal_component_ngfactory["a" /* ModalCmpNgFactory */], picker_component_ngfactory["a" /* PickerCmpNgFactory */], popover_component_ngfactory["a" /* PopoverCmpNgFactory */], select_popover_component_ngfactory["a" /* SelectPopoverNgFactory */], toast_component_ngfactory["a" /* ToastCmpNgFactory */], context_menu_popover_ngfactory["a" /* CoreContextMenuPopoverComponentNgFactory */], course_picker_menu_popover_ngfactory["a" /* CoreCoursePickerMenuPopoverComponentNgFactory */], recaptchamodal_ngfactory["a" /* CoreRecaptchaModalComponentNgFactory */], bs_tooltip_ngfactory["a" /* CoreBSTooltipComponentNgFactory */], rich_text_editor_ngfactory["a" /* CoreEditorRichTextEditorComponentNgFactory */], AddonModWikiEditPageNgFactory]], [3, core["o" /* ComponentFactoryResolver */]], core["L" /* NgModuleRef */]]), core["_42" /* ɵmpd */](4608, common["m" /* NgLocalization */], common["l" /* NgLocaleLocalization */], [core["G" /* LOCALE_ID */], [2, common["w" /* ɵa */]]]), core["_42" /* ɵmpd */](4608, esm5_forms["x" /* ɵi */], esm5_forms["x" /* ɵi */], []), core["_42" /* ɵmpd */](4608, esm5_forms["d" /* FormBuilder */], esm5_forms["d" /* FormBuilder */], []), core["_42" /* ɵmpd */](4608, translate_loader["b" /* TranslateLoader */], translate_loader["a" /* TranslateFakeLoader */], []), core["_42" /* ɵmpd */](4608, translate_compiler["a" /* TranslateCompiler */], translate_compiler["b" /* TranslateFakeCompiler */], []), core["_42" /* ɵmpd */](4608, translate_parser["b" /* TranslateParser */], translate_parser["a" /* TranslateDefaultParser */], []), core["_42" /* ɵmpd */](4608, missing_translation_handler["b" /* MissingTranslationHandler */], missing_translation_handler["a" /* FakeMissingTranslationHandler */], []), core["_42" /* ɵmpd */](4608, translate_service["a" /* TranslateService */], translate_service["a" /* TranslateService */], [translate_store["a" /* TranslateStore */], translate_loader["b" /* TranslateLoader */], translate_compiler["a" /* TranslateCompiler */], translate_parser["b" /* TranslateParser */], missing_translation_handler["b" /* MissingTranslationHandler */], translate_service["b" /* USE_DEFAULT_LANG */], translate_service["c" /* USE_STORE */]]), core["_42" /* ɵmpd */](512, common["b" /* CommonModule */], common["b" /* CommonModule */], []), core["_42" /* ɵmpd */](512, esm5_forms["v" /* ɵba */], esm5_forms["v" /* ɵba */], []), core["_42" /* ɵmpd */](512, esm5_forms["i" /* FormsModule */], esm5_forms["i" /* FormsModule */], []), core["_42" /* ɵmpd */](512, esm5_forms["s" /* ReactiveFormsModule */], esm5_forms["s" /* ReactiveFormsModule */], []), core["_42" /* ɵmpd */](512, ionic_angular_module["a" /* IonicModule */], ionic_angular_module["a" /* IonicModule */], []), core["_42" /* ɵmpd */](512, _ngx_translate_core["b" /* TranslateModule */], _ngx_translate_core["b" /* TranslateModule */], []), core["_42" /* ɵmpd */](512, directives_module["a" /* CoreDirectivesModule */], directives_module["a" /* CoreDirectivesModule */], []), core["_42" /* ɵmpd */](512, pipes_module["a" /* CorePipesModule */], pipes_module["a" /* CorePipesModule */], []), core["_42" /* ɵmpd */](512, components_module["a" /* CoreComponentsModule */], components_module["a" /* CoreComponentsModule */], []), core["_42" /* ɵmpd */](512, components_components_module["a" /* CoreEditorComponentsModule */], components_components_module["a" /* CoreEditorComponentsModule */], []), core["_42" /* ɵmpd */](512, ionic_angular_module["b" /* IonicPageModule */], ionic_angular_module["b" /* IonicPageModule */], []), core["_42" /* ɵmpd */](512, edit_module_AddonModWikiEditPageModule, edit_module_AddonModWikiEditPageModule, []), core["_42" /* ɵmpd */](256, translate_service["c" /* USE_STORE */], undefined, []), core["_42" /* ɵmpd */](256, translate_service["b" /* USE_DEFAULT_LANG */], undefined, []), core["_42" /* ɵmpd */](256, module_loader["a" /* LAZY_LOADED_TOKEN */], edit_AddonModWikiEditPage, [])]); });
-
-//# sourceMappingURL=edit.module.ngfactory.js.map
+//# sourceMappingURL=user-retake.js.map
 
 /***/ })
 

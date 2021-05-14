@@ -1,27 +1,81 @@
 webpackJsonp([139],{
 
-/***/ 2016:
+/***/ 2003:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "AddonCompetencyCompetencyPageModule", function() { return AddonCompetencyCompetencyPageModule; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(3);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ngx_translate_core__ = __webpack_require__(1);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__components_components_module__ = __webpack_require__(13);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__directives_directives_module__ = __webpack_require__(14);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__pipes_pipes_module__ = __webpack_require__(66);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__competency__ = __webpack_require__(2160);
+// (C) Copyright 2015 Moodle Pty Ltd.
+//
+// Licensed under the Apache License, Version 2.0 (the "License");
+// you may not use this file except in compliance with the License.
+// You may obtain a copy of the License at
+//
+//     http://www.apache.org/licenses/LICENSE-2.0
+//
+// Unless required by applicable law or agreed to in writing, software
+// distributed under the License is distributed on an "AS IS" BASIS,
+// WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+// See the License for the specific language governing permissions and
+// limitations under the License.
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
 
-// EXTERNAL MODULE: ./node_modules/@angular/core/esm5/core.js
-var core = __webpack_require__(0);
 
-// EXTERNAL MODULE: ./node_modules/ionic-angular/index.js + 3 modules
-var ionic_angular = __webpack_require__(5);
 
-// EXTERNAL MODULE: ./node_modules/@ngx-translate/core/index.js + 1 modules
-var _ngx_translate_core = __webpack_require__(3);
 
-// EXTERNAL MODULE: ./src/directives/directives.module.ts + 2 modules
-var directives_module = __webpack_require__(32);
 
-// EXTERNAL MODULE: ./src/addon/competency/components/components.module.ts
-var components_module = __webpack_require__(769);
 
-// CONCATENATED MODULE: ./src/addon/competency/pages/coursecompetencies/coursecompetencies.ts
+
+var AddonCompetencyCompetencyPageModule = /** @class */ (function () {
+    function AddonCompetencyCompetencyPageModule() {
+    }
+    AddonCompetencyCompetencyPageModule = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["J" /* NgModule */])({
+            declarations: [
+                __WEBPACK_IMPORTED_MODULE_6__competency__["a" /* AddonCompetencyCompetencyPage */],
+            ],
+            imports: [
+                __WEBPACK_IMPORTED_MODULE_3__components_components_module__["a" /* CoreComponentsModule */],
+                __WEBPACK_IMPORTED_MODULE_4__directives_directives_module__["a" /* CoreDirectivesModule */],
+                __WEBPACK_IMPORTED_MODULE_5__pipes_pipes_module__["a" /* CorePipesModule */],
+                __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["l" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_6__competency__["a" /* AddonCompetencyCompetencyPage */]),
+                __WEBPACK_IMPORTED_MODULE_2__ngx_translate_core__["b" /* TranslateModule */].forChild()
+            ],
+        })
+    ], AddonCompetencyCompetencyPageModule);
+    return AddonCompetencyCompetencyPageModule;
+}());
+
+//# sourceMappingURL=competency.module.js.map
+
+/***/ }),
+
+/***/ 2160:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AddonCompetencyCompetencyPage; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(3);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ngx_translate_core__ = __webpack_require__(1);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__providers_sites__ = __webpack_require__(2);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__providers_utils_dom__ = __webpack_require__(7);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__components_split_view_split_view__ = __webpack_require__(81);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__providers_competency__ = __webpack_require__(108);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__providers_helper__ = __webpack_require__(434);
 // (C) Copyright 2015 Moodle Pty Ltd.
 //
 // Licensed under the Apache License, Version 2.0 (the "License");
@@ -44,46 +98,8 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-
-
-/**
- * Page that displays the list of competencies of a course.
- */
-var coursecompetencies_AddonCompetencyCourseCompetenciesPage = /** @class */ (function () {
-    function AddonCompetencyCourseCompetenciesPage(navParams) {
-        this.courseId = navParams.get('courseId');
-        this.userId = navParams.get('userId');
-    }
-    AddonCompetencyCourseCompetenciesPage = __decorate([
-        Object(core["m" /* Component */])({
-            selector: 'page-addon-competency-coursecompetencies',
-            templateUrl: 'coursecompetencies.html',
-        }),
-        __metadata("design:paramtypes", [ionic_angular["t" /* NavParams */]])
-    ], AddonCompetencyCourseCompetenciesPage);
-    return AddonCompetencyCourseCompetenciesPage;
-}());
-
-//# sourceMappingURL=coursecompetencies.js.map
-// CONCATENATED MODULE: ./src/addon/competency/pages/coursecompetencies/coursecompetencies.module.ts
-// (C) Copyright 2015 Moodle Pty Ltd.
-//
-// Licensed under the Apache License, Version 2.0 (the "License");
-// you may not use this file except in compliance with the License.
-// You may obtain a copy of the License at
-//
-//     http://www.apache.org/licenses/LICENSE-2.0
-//
-// Unless required by applicable law or agreed to in writing, software
-// distributed under the License is distributed on an "AS IS" BASIS,
-// WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-// See the License for the specific language governing permissions and
-// limitations under the License.
-var coursecompetencies_module___decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
+var __param = (this && this.__param) || function (paramIndex, decorator) {
+    return function (target, key) { decorator(target, key, paramIndex); }
 };
 
 
@@ -91,243 +107,149 @@ var coursecompetencies_module___decorate = (this && this.__decorate) || function
 
 
 
-var coursecompetencies_module_AddonCompetencyCourseCompetenciesPageModule = /** @class */ (function () {
-    function AddonCompetencyCourseCompetenciesPageModule() {
+
+
+/**
+ * Page that displays a learning plan.
+ */
+var AddonCompetencyCompetencyPage = /** @class */ (function () {
+    function AddonCompetencyCompetencyPage(navCtrl, navParams, translate, sitesProvider, domUtils, svComponent, competencyProvider, competencyHelperProvider) {
+        this.navCtrl = navCtrl;
+        this.translate = translate;
+        this.sitesProvider = sitesProvider;
+        this.domUtils = domUtils;
+        this.svComponent = svComponent;
+        this.competencyProvider = competencyProvider;
+        this.competencyHelperProvider = competencyHelperProvider;
+        this.competencyLoaded = false;
+        this.competencyId = navParams.get('competencyId');
+        this.planId = navParams.get('planId');
+        this.courseId = navParams.get('courseId');
+        this.userId = navParams.get('userId');
     }
-    AddonCompetencyCourseCompetenciesPageModule = coursecompetencies_module___decorate([
-        Object(core["J" /* NgModule */])({
-            declarations: [
-                coursecompetencies_AddonCompetencyCourseCompetenciesPage,
-            ],
-            imports: [
-                directives_module["a" /* CoreDirectivesModule */],
-                ionic_angular["l" /* IonicPageModule */].forChild(coursecompetencies_AddonCompetencyCourseCompetenciesPage),
-                _ngx_translate_core["b" /* TranslateModule */].forChild(),
-                components_module["a" /* AddonCompetencyComponentsModule */]
-            ],
-        })
-    ], AddonCompetencyCourseCompetenciesPageModule);
-    return AddonCompetencyCourseCompetenciesPageModule;
+    /**
+     * View loaded.
+     */
+    AddonCompetencyCompetencyPage.prototype.ionViewDidLoad = function () {
+        var _this = this;
+        this.fetchCompetency().then(function () {
+            var name = _this.competency && _this.competency.competency && _this.competency.competency.competency &&
+                _this.competency.competency.competency.shortname;
+            if (_this.planId) {
+                _this.competencyProvider.logCompetencyInPlanView(_this.planId, _this.competencyId, _this.planStatus, name, _this.userId).catch(function () {
+                    // Ignore errors.
+                });
+            }
+            else {
+                _this.competencyProvider.logCompetencyInCourseView(_this.courseId, _this.competencyId, name, _this.userId).catch(function () {
+                    // Ignore errors.
+                });
+            }
+        }).finally(function () {
+            _this.competencyLoaded = true;
+        });
+    };
+    /**
+     * Fetches the competency and updates the view.
+     *
+     * @return Promise resolved when done.
+     */
+    AddonCompetencyCompetencyPage.prototype.fetchCompetency = function () {
+        var _this = this;
+        var promise;
+        if (this.planId) {
+            this.planStatus = null;
+            promise = this.competencyProvider.getCompetencyInPlan(this.planId, this.competencyId);
+        }
+        else if (this.courseId) {
+            promise = this.competencyProvider.getCompetencyInCourse(this.courseId, this.competencyId, this.userId);
+        }
+        else {
+            promise = Promise.reject(null);
+        }
+        return promise.then(function (competency) {
+            // Calculate the context.
+            if (_this.courseId) {
+                _this.contextLevel = 'course';
+                _this.contextInstanceId = _this.courseId;
+            }
+            else {
+                _this.contextLevel = 'user';
+                _this.contextInstanceId = _this.userId || competency.usercompetencysummary.user.id;
+            }
+            _this.competency = competency.usercompetencysummary;
+            _this.userCompetency = _this.competency.usercompetencyplan || _this.competency.usercompetency;
+            if (_this.planId) {
+                _this.planStatus = competency.plan.status;
+                _this.competency.usercompetency.statusname =
+                    _this.competencyHelperProvider.getCompetencyStatusName(_this.competency.usercompetency.status);
+            }
+            else {
+                _this.userCompetency = _this.competency.usercompetencycourse;
+                _this.coursemodules = competency.coursemodules;
+            }
+            if (_this.competency.user.id != _this.sitesProvider.getCurrentSiteUserId()) {
+                // Get the user profile from the returned object.
+                _this.user = _this.competency.user;
+            }
+            _this.competency.evidence.forEach(function (evidence) {
+                if (evidence.descidentifier) {
+                    var key = 'addon.competency.' + evidence.descidentifier;
+                    evidence.description = _this.translate.instant(key, { $a: evidence.desca });
+                }
+            });
+        }).catch(function (message) {
+            _this.domUtils.showErrorModalDefault(message, 'Error getting competency data.');
+        });
+    };
+    /**
+     * Refreshes the competency.
+     *
+     * @param refresher Refresher.
+     */
+    AddonCompetencyCompetencyPage.prototype.refreshCompetency = function (refresher) {
+        var _this = this;
+        var promise;
+        if (this.planId) {
+            promise = this.competencyProvider.invalidateCompetencyInPlan(this.planId, this.competencyId);
+        }
+        else {
+            promise = this.competencyProvider.invalidateCompetencyInCourse(this.courseId, this.competencyId);
+        }
+        return promise.finally(function () {
+            _this.fetchCompetency().finally(function () {
+                refresher.complete();
+            });
+        });
+    };
+    /**
+     * Opens the summary of a competency.
+     *
+     * @param competencyId
+     */
+    AddonCompetencyCompetencyPage.prototype.openCompetencySummary = function (competencyId) {
+        // Decide which navCtrl to use. If this page is inside a split view, use the split view's master nav.
+        var navCtrl = this.svComponent ? this.svComponent.getMasterNav() : this.navCtrl;
+        navCtrl.push('AddonCompetencyCompetencySummaryPage', {
+            competencyId: competencyId,
+            contextLevel: this.contextLevel,
+            contextInstanceId: this.contextInstanceId
+        });
+    };
+    AddonCompetencyCompetencyPage = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
+            selector: 'page-addon-competency-competency',template:/*ion-inline-start:"D:\workspace\moodle\agro-moodle-app\src\addon\competency\pages\competency\competency.html"*/'<ion-header>\n\n    <ion-navbar core-back-button>\n\n        <ion-title *ngIf="competency">{{ competency.competency.competency.shortname }} <small>{{ competency.competency.competency.idnumber }}</small></ion-title>\n\n    </ion-navbar>\n\n</ion-header>\n\n<ion-content>\n\n    <ion-refresher [enabled]="competencyLoaded" (ionRefresh)="refreshCompetency($event)">\n\n        <ion-refresher-content pullingText="{{ \'core.pulltorefresh\' | translate }}"></ion-refresher-content>\n\n    </ion-refresher>\n\n    <core-loading [hideUntil]="competencyLoaded">\n\n        <ion-card *ngIf="user">\n\n            <ion-item text-wrap>\n\n                <ion-avatar core-user-avatar [user]="user" item-start></ion-avatar>\n\n                <h2>{{ user.fullname }}</h2>\n\n            </ion-item>\n\n        </ion-card>\n\n\n\n        <ion-card *ngIf="competency">\n\n            <ion-item text-wrap *ngIf="competency.competency.competency.description">\n\n                <core-format-text [text]="competency.competency.competency.description" [contextLevel]="contextLevel" [contextInstanceId]="contextInstanceId"></core-format-text>\n\n            </ion-item>\n\n            <ion-item text-wrap>\n\n                <strong>{{ \'addon.competency.path\' | translate }}</strong>\n\n                <a *ngIf="competency.competency.comppath.showlinks" [href]="competency.competency.comppath.pluginbaseurl + \'/competencies.php?competencyframeworkid=\' + competency.competency.comppath.framework.id + \'&pagecontextid=\' + competency.competency.comppath.pagecontextid" core-link [title]="competency.competency.comppath.framework.name">{{ competency.competency.comppath.framework.name }}</a>\n\n                <ng-container *ngIf="!competency.competency.comppath.showlinks">{{ competency.competency.comppath.framework.name }}</ng-container>\n\n                &nbsp;/&nbsp;\n\n                <span *ngFor="let ancestor of competency.competency.comppath.ancestors">\n\n                    <a *ngIf="competency.competency.comppath.showlinks" (click)="openCompetencySummary(ancestor.id)" class="core-clickable">{{ ancestor.name }}</a>\n\n                    <ng-container *ngIf="!competency.competency.comppath.showlinks">{{ ancestor.name }}</ng-container>\n\n                    <ng-container *ngIf="!ancestor.last">&nbsp;/&nbsp;</ng-container>\n\n                </span>\n\n            </ion-item>\n\n            <ion-item text-wrap>\n\n                <strong>{{ \'addon.competency.crossreferencedcompetencies\' | translate }}</strong>:\n\n                <div *ngIf="!competency.competency.hasrelatedcompetencies">{{ \'addon.competency.nocrossreferencedcompetencies\' | translate }}</div>\n\n                <div *ngIf="competency.competency.hasrelatedcompetencies">\n\n                    <p *ngFor="let relatedcomp of competency.competency.relatedcompetencies">\n\n                        <a (click)="openCompetencySummary(relatedcomp.id)" class="core-clickable">\n\n                            {{ relatedcomp.shortname }} - {{ relatedcomp.idnumber }}\n\n                        </a>\n\n                    </p>\n\n                </div>\n\n            </ion-item>\n\n            <ion-item text-wrap *ngIf="coursemodules">\n\n                <strong>{{ \'addon.competency.activities\' | translate }}</strong>\n\n                <p *ngIf="coursemodules.length == 0">\n\n                    {{ \'addon.competency.noactivities\' | translate }}\n\n                </p>\n\n                <a ion-item text-wrap *ngFor="let activity of coursemodules" [href]="activity.url" [title]="activity.name" core-link capture="true">\n\n                    <img item-start core-external-content [src]="activity.iconurl" alt="" role="presentation" *ngIf="activity.iconurl" class="core-module-icon">\n\n                    <core-format-text [text]="activity.name" contextLevel="module" [contextInstanceId]="activity.id" [courseId]="courseId"></core-format-text>\n\n                </a>\n\n            </ion-item>\n\n            <ion-item text-wrap *ngIf="userCompetency.status">\n\n                <strong>{{ \'addon.competency.reviewstatus\' | translate }}</strong>\n\n                {{ userCompetency.statusname }}\n\n            </ion-item>\n\n            <ion-item text-wrap>\n\n                <strong>{{ \'addon.competency.proficient\' | translate }}</strong>\n\n                <ion-badge color="success" *ngIf="userCompetency.proficiency">\n\n                    {{ \'core.yes\' | translate }}\n\n                </ion-badge>\n\n                <ion-badge color="danger" *ngIf="!userCompetency.proficiency">\n\n                    {{ \'core.no\' | translate }}\n\n                </ion-badge>\n\n            </ion-item>\n\n            <ion-item text-wrap>\n\n                <strong>{{ \'addon.competency.rating\' | translate }}</strong>\n\n                <ion-badge color="dark">{{ userCompetency.gradename }}</ion-badge>\n\n            </ion-item>\n\n        </ion-card>\n\n\n\n        <div *ngIf="competency">\n\n            <h3 margin-horizontal>{{ \'addon.competency.evidence\' | translate }}</h3>\n\n            <p margin-horizontal *ngIf="competency.evidence.length == 0">\n\n                {{ \'addon.competency.noevidence\' | translate }}\n\n            </p>\n\n            <ion-card *ngFor="let evidence of competency.evidence">\n\n                <a ion-item text-wrap *ngIf="evidence.actionuser" core-user-link [userId]="evidence.actionuser.id" [courseId]="courseId">\n\n                    <ion-avatar core-user-avatar [user]="evidence.actionuser" item-start></ion-avatar>\n\n                    <h2>{{ evidence.actionuser.fullname }}</h2>\n\n                    <p>{{ evidence.timemodified * 1000 | coreFormatDate }}</p>\n\n                </a>\n\n                <ion-item text-wrap>\n\n                    <p><ion-badge color="dark">{{ evidence.gradename }}</ion-badge></p>\n\n                    <p margin-top *ngIf="evidence.description">{{ evidence.description }}</p>\n\n                    <blockquote *ngIf="evidence.note">{{ evidence.note }}</blockquote>\n\n                </ion-item>\n\n            </ion-card>\n\n        </div>\n\n    </core-loading>\n\n</ion-content>\n\n'/*ion-inline-end:"D:\workspace\moodle\agro-moodle-app\src\addon\competency\pages\competency\competency.html"*/,
+        }),
+        __param(5, Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["O" /* Optional */])()),
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["s" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["t" /* NavParams */], __WEBPACK_IMPORTED_MODULE_2__ngx_translate_core__["c" /* TranslateService */],
+            __WEBPACK_IMPORTED_MODULE_3__providers_sites__["b" /* CoreSitesProvider */], __WEBPACK_IMPORTED_MODULE_4__providers_utils_dom__["b" /* CoreDomUtilsProvider */],
+            __WEBPACK_IMPORTED_MODULE_5__components_split_view_split_view__["a" /* CoreSplitViewComponent */], __WEBPACK_IMPORTED_MODULE_6__providers_competency__["a" /* AddonCompetencyProvider */],
+            __WEBPACK_IMPORTED_MODULE_7__providers_helper__["a" /* AddonCompetencyHelperProvider */]])
+    ], AddonCompetencyCompetencyPage);
+    return AddonCompetencyCompetencyPage;
 }());
 
-//# sourceMappingURL=coursecompetencies.module.js.map
-// EXTERNAL MODULE: ./node_modules/ionic-angular/components/action-sheet/action-sheet-component.ngfactory.js
-var action_sheet_component_ngfactory = __webpack_require__(1551);
-
-// EXTERNAL MODULE: ./node_modules/ionic-angular/components/alert/alert-component.ngfactory.js
-var alert_component_ngfactory = __webpack_require__(1552);
-
-// EXTERNAL MODULE: ./node_modules/ionic-angular/components/app/app-root.ngfactory.js
-var app_root_ngfactory = __webpack_require__(1553);
-
-// EXTERNAL MODULE: ./node_modules/ionic-angular/components/loading/loading-component.ngfactory.js
-var loading_component_ngfactory = __webpack_require__(1554);
-
-// EXTERNAL MODULE: ./node_modules/ionic-angular/components/modal/modal-component.ngfactory.js
-var modal_component_ngfactory = __webpack_require__(1555);
-
-// EXTERNAL MODULE: ./node_modules/ionic-angular/components/picker/picker-component.ngfactory.js + 1 modules
-var picker_component_ngfactory = __webpack_require__(1556);
-
-// EXTERNAL MODULE: ./node_modules/ionic-angular/components/popover/popover-component.ngfactory.js
-var popover_component_ngfactory = __webpack_require__(1557);
-
-// EXTERNAL MODULE: ./node_modules/ionic-angular/components/select/select-popover-component.ngfactory.js
-var select_popover_component_ngfactory = __webpack_require__(1558);
-
-// EXTERNAL MODULE: ./node_modules/ionic-angular/components/toast/toast-component.ngfactory.js
-var toast_component_ngfactory = __webpack_require__(1559);
-
-// EXTERNAL MODULE: ./src/components/context-menu/context-menu-popover.ngfactory.js
-var context_menu_popover_ngfactory = __webpack_require__(1560);
-
-// EXTERNAL MODULE: ./src/components/course-picker-menu/course-picker-menu-popover.ngfactory.js
-var course_picker_menu_popover_ngfactory = __webpack_require__(1561);
-
-// EXTERNAL MODULE: ./src/components/recaptcha/recaptchamodal.ngfactory.js
-var recaptchamodal_ngfactory = __webpack_require__(1562);
-
-// EXTERNAL MODULE: ./src/components/bs-tooltip/bs-tooltip.ngfactory.js
-var bs_tooltip_ngfactory = __webpack_require__(1563);
-
-// EXTERNAL MODULE: ./src/addon/competency/components/course/course.ngfactory.js
-var course_ngfactory = __webpack_require__(1615);
-
-// EXTERNAL MODULE: ./node_modules/ionic-angular/components/toolbar/toolbar-header.js
-var toolbar_header = __webpack_require__(379);
-
-// EXTERNAL MODULE: ./node_modules/ionic-angular/config/config.js
-var config = __webpack_require__(8);
-
-// EXTERNAL MODULE: ./node_modules/ionic-angular/navigation/view-controller.js
-var view_controller = __webpack_require__(41);
-
-// EXTERNAL MODULE: ./node_modules/ionic-angular/components/toolbar/navbar.ngfactory.js
-var navbar_ngfactory = __webpack_require__(739);
-
-// EXTERNAL MODULE: ./node_modules/ionic-angular/components/toolbar/navbar.js
-var navbar = __webpack_require__(216);
-
-// EXTERNAL MODULE: ./node_modules/ionic-angular/components/app/app.js + 3 modules
-var app = __webpack_require__(35);
-
-// EXTERNAL MODULE: ./node_modules/ionic-angular/navigation/nav-controller.js
-var nav_controller = __webpack_require__(20);
-
-// EXTERNAL MODULE: ./src/directives/back-button.ts
-var back_button = __webpack_require__(486);
-
-// EXTERNAL MODULE: ./node_modules/@ngx-translate/core/src/translate.service.js
-var translate_service = __webpack_require__(18);
-
-// EXTERNAL MODULE: ./src/providers/events.ts
-var events = __webpack_require__(9);
-
-// EXTERNAL MODULE: ./node_modules/ionic-angular/components/toolbar/toolbar-title.ngfactory.js
-var toolbar_title_ngfactory = __webpack_require__(740);
-
-// EXTERNAL MODULE: ./node_modules/ionic-angular/components/toolbar/toolbar-title.js
-var toolbar_title = __webpack_require__(324);
-
-// EXTERNAL MODULE: ./node_modules/ionic-angular/components/toolbar/toolbar.js
-var toolbar = __webpack_require__(252);
-
-// EXTERNAL MODULE: ./node_modules/@ngx-translate/core/src/translate.pipe.js
-var translate_pipe = __webpack_require__(25);
-
-// EXTERNAL MODULE: ./src/addon/competency/components/course/course.ts
-var course = __webpack_require__(537);
-
-// EXTERNAL MODULE: ./src/providers/app.ts
-var providers_app = __webpack_require__(12);
-
-// EXTERNAL MODULE: ./src/providers/utils/dom.ts
-var dom = __webpack_require__(4);
-
-// EXTERNAL MODULE: ./src/addon/competency/providers/competency.ts
-var competency = __webpack_require__(169);
-
-// EXTERNAL MODULE: ./src/addon/competency/providers/helper.ts
-var helper = __webpack_require__(383);
-
-// EXTERNAL MODULE: ./node_modules/ionic-angular/navigation/nav-params.js
-var nav_params = __webpack_require__(73);
-
-// CONCATENATED MODULE: ./src/addon/competency/pages/coursecompetencies/coursecompetencies.ngfactory.js
-/**
- * @fileoverview This file was generated by the Angular template compiler. Do not edit.
- *
- * @suppress {suspiciousCode,uselessCode,missingProperties,missingOverride,checkTypes}
- * tslint:disable
- */ 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-var styles_AddonCompetencyCourseCompetenciesPage = [];
-var RenderType_AddonCompetencyCourseCompetenciesPage = core["_30" /* ɵcrt */]({ encapsulation: 2, styles: styles_AddonCompetencyCourseCompetenciesPage, data: {} });
-
-function View_AddonCompetencyCourseCompetenciesPage_0(_l) { return core["_58" /* ɵvid */](0, [(_l()(), core["_32" /* ɵeld */](0, 0, null, null, 12, "ion-header", [], null, null, null, null, null)), core["_31" /* ɵdid */](1, 16384, null, 0, toolbar_header["a" /* Header */], [config["a" /* Config */], core["t" /* ElementRef */], core["W" /* Renderer */], [2, view_controller["a" /* ViewController */]]], null, null), (_l()(), core["_56" /* ɵted */](-1, null, ["\n    "])), (_l()(), core["_32" /* ɵeld */](3, 0, null, null, 8, "ion-navbar", [["class", "toolbar"], ["core-back-button", ""]], [[8, "hidden", 0], [2, "statusbar-padding", null]], null, null, navbar_ngfactory["b" /* View_Navbar_0 */], navbar_ngfactory["a" /* RenderType_Navbar */])), core["_31" /* ɵdid */](4, 49152, null, 0, navbar["a" /* Navbar */], [app["a" /* App */], [2, view_controller["a" /* ViewController */]], [2, nav_controller["a" /* NavController */]], config["a" /* Config */], core["t" /* ElementRef */], core["W" /* Renderer */]], null, null), core["_31" /* ɵdid */](5, 212992, null, 0, back_button["a" /* CoreBackButtonDirective */], [navbar["a" /* Navbar */], translate_service["a" /* TranslateService */], events["b" /* CoreEventsProvider */]], null, null), (_l()(), core["_56" /* ɵted */](-1, 3, ["\n        "])), (_l()(), core["_32" /* ɵeld */](7, 0, null, 3, 3, "ion-title", [], null, null, null, toolbar_title_ngfactory["b" /* View_ToolbarTitle_0 */], toolbar_title_ngfactory["a" /* RenderType_ToolbarTitle */])), core["_31" /* ɵdid */](8, 49152, null, 0, toolbar_title["a" /* ToolbarTitle */], [config["a" /* Config */], core["t" /* ElementRef */], core["W" /* Renderer */], [2, toolbar["a" /* Toolbar */]], [2, navbar["a" /* Navbar */]]], null, null), (_l()(), core["_56" /* ɵted */](9, 0, ["", ""])), core["_48" /* ɵpid */](131072, translate_pipe["a" /* TranslatePipe */], [translate_service["a" /* TranslateService */], core["j" /* ChangeDetectorRef */]]), (_l()(), core["_56" /* ɵted */](-1, 3, ["\n    "])), (_l()(), core["_56" /* ɵted */](-1, null, ["\n"])), (_l()(), core["_56" /* ɵted */](-1, null, ["\n"])), (_l()(), core["_32" /* ɵeld */](14, 0, null, null, 1, "addon-competency-course", [["class", "core-avoid-header"]], null, null, null, course_ngfactory["c" /* View_AddonCompetencyCourseComponent_0 */], course_ngfactory["b" /* RenderType_AddonCompetencyCourseComponent */])), core["_31" /* ɵdid */](15, 114688, null, 0, course["a" /* AddonCompetencyCourseComponent */], [nav_controller["a" /* NavController */], providers_app["b" /* CoreAppProvider */], dom["b" /* CoreDomUtilsProvider */], competency["a" /* AddonCompetencyProvider */], helper["a" /* AddonCompetencyHelperProvider */]], { courseId: [0, "courseId"], userId: [1, "userId"] }, null)], function (_ck, _v) { var _co = _v.component; _ck(_v, 5, 0); var currVal_3 = _co.courseId; var currVal_4 = _co.userId; _ck(_v, 15, 0, currVal_3, currVal_4); }, function (_ck, _v) { var currVal_0 = core["_45" /* ɵnov */](_v, 4)._hidden; var currVal_1 = core["_45" /* ɵnov */](_v, 4)._sbPadding; _ck(_v, 3, 0, currVal_0, currVal_1); var currVal_2 = core["_57" /* ɵunv */](_v, 9, 0, core["_45" /* ɵnov */](_v, 10).transform("addon.competency.coursecompetencies")); _ck(_v, 9, 0, currVal_2); }); }
-function View_AddonCompetencyCourseCompetenciesPage_Host_0(_l) { return core["_58" /* ɵvid */](0, [(_l()(), core["_32" /* ɵeld */](0, 0, null, null, 1, "page-addon-competency-coursecompetencies", [], null, null, null, View_AddonCompetencyCourseCompetenciesPage_0, RenderType_AddonCompetencyCourseCompetenciesPage)), core["_31" /* ɵdid */](1, 49152, null, 0, coursecompetencies_AddonCompetencyCourseCompetenciesPage, [nav_params["a" /* NavParams */]], null, null)], null, null); }
-var AddonCompetencyCourseCompetenciesPageNgFactory = core["_28" /* ɵccf */]("page-addon-competency-coursecompetencies", coursecompetencies_AddonCompetencyCourseCompetenciesPage, View_AddonCompetencyCourseCompetenciesPage_Host_0, {}, {}, []);
-
-//# sourceMappingURL=coursecompetencies.ngfactory.js.map
-// EXTERNAL MODULE: ./node_modules/@angular/common/esm5/common.js
-var common = __webpack_require__(7);
-
-// EXTERNAL MODULE: ./node_modules/@angular/forms/esm5/forms.js
-var esm5_forms = __webpack_require__(23);
-
-// EXTERNAL MODULE: ./node_modules/@ngx-translate/core/src/translate.loader.js
-var translate_loader = __webpack_require__(375);
-
-// EXTERNAL MODULE: ./node_modules/@ngx-translate/core/src/translate.compiler.js
-var translate_compiler = __webpack_require__(376);
-
-// EXTERNAL MODULE: ./node_modules/@ngx-translate/core/src/translate.parser.js
-var translate_parser = __webpack_require__(378);
-
-// EXTERNAL MODULE: ./node_modules/@ngx-translate/core/src/missing-translation-handler.js
-var missing_translation_handler = __webpack_require__(377);
-
-// EXTERNAL MODULE: ./node_modules/@ngx-translate/core/src/translate.store.js
-var translate_store = __webpack_require__(485);
-
-// EXTERNAL MODULE: ./node_modules/ionic-angular/module.js
-var ionic_angular_module = __webpack_require__(738);
-
-// EXTERNAL MODULE: ./src/pipes/pipes.module.ts + 2 modules
-var pipes_module = __webpack_require__(111);
-
-// EXTERNAL MODULE: ./src/components/components.module.ts
-var components_components_module = __webpack_require__(26);
-
-// EXTERNAL MODULE: ./node_modules/ionic-angular/util/module-loader.js
-var module_loader = __webpack_require__(277);
-
-// CONCATENATED MODULE: ./src/addon/competency/pages/coursecompetencies/coursecompetencies.module.ngfactory.js
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "AddonCompetencyCourseCompetenciesPageModuleNgFactory", function() { return AddonCompetencyCourseCompetenciesPageModuleNgFactory; });
-/**
- * @fileoverview This file was generated by the Angular template compiler. Do not edit.
- *
- * @suppress {suspiciousCode,uselessCode,missingProperties,missingOverride,checkTypes}
- * tslint:disable
- */ 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-var AddonCompetencyCourseCompetenciesPageModuleNgFactory = core["_29" /* ɵcmf */](coursecompetencies_module_AddonCompetencyCourseCompetenciesPageModule, [], function (_l) { return core["_41" /* ɵmod */]([core["_42" /* ɵmpd */](512, core["o" /* ComponentFactoryResolver */], core["_22" /* ɵCodegenComponentFactoryResolver */], [[8, [action_sheet_component_ngfactory["a" /* ActionSheetCmpNgFactory */], alert_component_ngfactory["a" /* AlertCmpNgFactory */], app_root_ngfactory["a" /* IonicAppNgFactory */], loading_component_ngfactory["a" /* LoadingCmpNgFactory */], modal_component_ngfactory["a" /* ModalCmpNgFactory */], picker_component_ngfactory["a" /* PickerCmpNgFactory */], popover_component_ngfactory["a" /* PopoverCmpNgFactory */], select_popover_component_ngfactory["a" /* SelectPopoverNgFactory */], toast_component_ngfactory["a" /* ToastCmpNgFactory */], context_menu_popover_ngfactory["a" /* CoreContextMenuPopoverComponentNgFactory */], course_picker_menu_popover_ngfactory["a" /* CoreCoursePickerMenuPopoverComponentNgFactory */], recaptchamodal_ngfactory["a" /* CoreRecaptchaModalComponentNgFactory */], bs_tooltip_ngfactory["a" /* CoreBSTooltipComponentNgFactory */], course_ngfactory["a" /* AddonCompetencyCourseComponentNgFactory */], AddonCompetencyCourseCompetenciesPageNgFactory]], [3, core["o" /* ComponentFactoryResolver */]], core["L" /* NgModuleRef */]]), core["_42" /* ɵmpd */](4608, common["m" /* NgLocalization */], common["l" /* NgLocaleLocalization */], [core["G" /* LOCALE_ID */], [2, common["w" /* ɵa */]]]), core["_42" /* ɵmpd */](4608, esm5_forms["x" /* ɵi */], esm5_forms["x" /* ɵi */], []), core["_42" /* ɵmpd */](4608, esm5_forms["d" /* FormBuilder */], esm5_forms["d" /* FormBuilder */], []), core["_42" /* ɵmpd */](4608, translate_loader["b" /* TranslateLoader */], translate_loader["a" /* TranslateFakeLoader */], []), core["_42" /* ɵmpd */](4608, translate_compiler["a" /* TranslateCompiler */], translate_compiler["b" /* TranslateFakeCompiler */], []), core["_42" /* ɵmpd */](4608, translate_parser["b" /* TranslateParser */], translate_parser["a" /* TranslateDefaultParser */], []), core["_42" /* ɵmpd */](4608, missing_translation_handler["b" /* MissingTranslationHandler */], missing_translation_handler["a" /* FakeMissingTranslationHandler */], []), core["_42" /* ɵmpd */](4608, translate_service["a" /* TranslateService */], translate_service["a" /* TranslateService */], [translate_store["a" /* TranslateStore */], translate_loader["b" /* TranslateLoader */], translate_compiler["a" /* TranslateCompiler */], translate_parser["b" /* TranslateParser */], missing_translation_handler["b" /* MissingTranslationHandler */], translate_service["b" /* USE_DEFAULT_LANG */], translate_service["c" /* USE_STORE */]]), core["_42" /* ɵmpd */](512, directives_module["a" /* CoreDirectivesModule */], directives_module["a" /* CoreDirectivesModule */], []), core["_42" /* ɵmpd */](512, common["b" /* CommonModule */], common["b" /* CommonModule */], []), core["_42" /* ɵmpd */](512, esm5_forms["v" /* ɵba */], esm5_forms["v" /* ɵba */], []), core["_42" /* ɵmpd */](512, esm5_forms["i" /* FormsModule */], esm5_forms["i" /* FormsModule */], []), core["_42" /* ɵmpd */](512, esm5_forms["s" /* ReactiveFormsModule */], esm5_forms["s" /* ReactiveFormsModule */], []), core["_42" /* ɵmpd */](512, ionic_angular_module["a" /* IonicModule */], ionic_angular_module["a" /* IonicModule */], []), core["_42" /* ɵmpd */](512, ionic_angular_module["b" /* IonicPageModule */], ionic_angular_module["b" /* IonicPageModule */], []), core["_42" /* ɵmpd */](512, _ngx_translate_core["b" /* TranslateModule */], _ngx_translate_core["b" /* TranslateModule */], []), core["_42" /* ɵmpd */](512, pipes_module["a" /* CorePipesModule */], pipes_module["a" /* CorePipesModule */], []), core["_42" /* ɵmpd */](512, components_components_module["a" /* CoreComponentsModule */], components_components_module["a" /* CoreComponentsModule */], []), core["_42" /* ɵmpd */](512, components_module["a" /* AddonCompetencyComponentsModule */], components_module["a" /* AddonCompetencyComponentsModule */], []), core["_42" /* ɵmpd */](512, coursecompetencies_module_AddonCompetencyCourseCompetenciesPageModule, coursecompetencies_module_AddonCompetencyCourseCompetenciesPageModule, []), core["_42" /* ɵmpd */](256, translate_service["c" /* USE_STORE */], undefined, []), core["_42" /* ɵmpd */](256, translate_service["b" /* USE_DEFAULT_LANG */], undefined, []), core["_42" /* ɵmpd */](256, module_loader["a" /* LAZY_LOADED_TOKEN */], coursecompetencies_AddonCompetencyCourseCompetenciesPage, [])]); });
-
-//# sourceMappingURL=coursecompetencies.module.ngfactory.js.map
+//# sourceMappingURL=competency.js.map
 
 /***/ })
 

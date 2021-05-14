@@ -18,6 +18,7 @@ import { CoreLoginCredentialsPage } from './credentials';
 import { TranslateModule } from '@ngx-translate/core';
 import { CoreComponentsModule } from '@components/components.module';
 import { CoreDirectivesModule } from '@directives/directives.module';
+import { SafariViewController } from '@ionic-native/safari-view-controller';
 
 @NgModule({
     declarations: [
@@ -28,6 +29,9 @@ import { CoreDirectivesModule } from '@directives/directives.module';
         CoreDirectivesModule,
         IonicPageModule.forChild(CoreLoginCredentialsPage),
         TranslateModule.forChild()
+    ],
+    providers: [
+        SafariViewController
     ]
 })
 export class CoreLoginCredentialsPageModule {}
