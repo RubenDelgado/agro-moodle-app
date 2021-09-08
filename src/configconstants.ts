@@ -17,8 +17,8 @@ export class CoreConfigConstants {
     static app_id = 'com.universidad.agro.anima';
     static appname = 'Universidad Agro';
     static desktopappname = 'Universidad Agro';
-    static versioncode = 1;
-    static versionname = '1.0.0';
+    static versioncode = 2;
+    static versionname = '2.0.0';
     static cache_update_frequency_usually = 420000;
     static cache_update_frequency_often = 1200000;
     static cache_update_frequency_sometimes = 3600000;
@@ -126,6 +126,6 @@ export class CoreConfigConstants {
         mac: 'id1255924440',
         linux: 'https://download.moodle.org/desktop/download.php?platform=linux&arch=64',
     };
-    static compilationtime = 1621013877316;
-    static lastcommit = 'e3f9b386f030256b13329b0181b417f85f80c14e';
+    static compilationtime = 1630340916484;
+    static lastcommit = '3a234abdbbd049b767435b0dd4ba2aad5e49b58d';
 }
